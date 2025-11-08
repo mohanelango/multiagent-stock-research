@@ -1,0 +1,35 @@
+project:
+  name: "Automated Stock Market Research Team"
+  version: "0.1.0"
+
+orchestration:
+  timeout_sec: 90
+  max_news: 9
+  price_days_default: 30
+
+Strict Mode:
+  strict_mode: true
+
+llm:
+  provider: "openai"         # Swap: "ollama", "anthropic", etc. via LangChain
+  model: "gpt-5"       # or "gpt-4o", "gpt-4o-mini-2024-07-18", etc.
+  temperature: 1
+
+report:
+  outdir: "artifacts"
+  filename_template: "{{symbol}}_{{date}}_report.md"
+
+compliance:
+  forbidden_phrases:
+    - "guaranteed returns"
+    - "cannot go down"
+    - "inside information"
+  disclosure:
+    - "This report is for informational purposes only and not investment advice."
+    - "Data sources: yfinance (free), FinancialModelingPrep (demo), public RSS feeds."
+    - "Past performance does not guarantee future results."
+
+news:
+  sources:
+    - "https://feeds.finance.yahoo.com/rss/2.0/headline?s={{symbol}}&region=US&lang=en-US"
+    - "https://www.benzinga.com/feeds/pro/news/{{symbol}}"   # Some may fail; tool handles fallback

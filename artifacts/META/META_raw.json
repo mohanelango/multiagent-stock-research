@@ -1,0 +1,280 @@
+{
+  "symbol": "META",
+  "prices": {
+    "symbol": "META",
+    "data": [
+      {
+        "Date": "2025-10-24 00:00:00-04:00",
+        "Open": 736.7899780273438,
+        "High": 741.2100219726562,
+        "Low": 731.1500244140625,
+        "Close": 738.3599853515625,
+        "Volume": 9151300
+      },
+      {
+        "Date": "2025-10-27 00:00:00-04:00",
+        "Open": 749.72998046875,
+        "High": 755.75,
+        "Low": 748.010009765625,
+        "Close": 750.8200073242188,
+        "Volume": 11321100
+      },
+      {
+        "Date": "2025-10-28 00:00:00-04:00",
+        "Open": 752.6300048828125,
+        "High": 758.4000244140625,
+        "Low": 745.52001953125,
+        "Close": 751.4400024414062,
+        "Volume": 12193800
+      },
+      {
+        "Date": "2025-10-29 00:00:00-04:00",
+        "Open": 754.75,
+        "High": 759.1599731445312,
+        "Low": 742.510009765625,
+        "Close": 751.6699829101562,
+        "Volume": 26818600
+      },
+      {
+        "Date": "2025-10-30 00:00:00-04:00",
+        "Open": 669.1500244140625,
+        "High": 680.9600219726562,
+        "Low": 650.1699829101562,
+        "Close": 666.469970703125,
+        "Volume": 88440100
+      },
+      {
+        "Date": "2025-10-31 00:00:00-04:00",
+        "Open": 674.510009765625,
+        "High": 674.8900146484375,
+        "Low": 645.5700073242188,
+        "Close": 648.3499755859375,
+        "Volume": 56953200
+      },
+      {
+        "Date": "2025-11-03 00:00:00-05:00",
+        "Open": 656.0,
+        "High": 659.3300170898438,
+        "Low": 636.1799926757812,
+        "Close": 637.7100219726562,
+        "Volume": 33003600
+      },
+      {
+        "Date": "2025-11-04 00:00:00-05:00",
+        "Open": 628.0399780273438,
+        "High": 641.739990234375,
+        "Low": 626.010009765625,
+        "Close": 627.3200073242188,
+        "Volume": 27356600
+      },
+      {
+        "Date": "2025-11-05 00:00:00-05:00",
+        "Open": 632.3099975585938,
+        "High": 642.22998046875,
+        "Low": 626.5399780273438,
+        "Close": 635.9500122070312,
+        "Volume": 20219900
+      },
+      {
+        "Date": "2025-11-06 00:00:00-05:00",
+        "Open": 635.8499755859375,
+        "High": 636.0,
+        "Low": 618.0,
+        "Close": 618.9400024414062,
+        "Volume": 23543400
+      }
+    ],
+    "meta": {
+      "days": 10
+    }
+  },
+  "fundamentals": {
+    "income_statement": [
+      {
+        "date": "2024-12-31",
+        "symbol": "META",
+        "reportedCurrency": "USD",
+        "cik": "0001326801",
+        "filingDate": "2025-01-30",
+        "acceptedDate": "2025-01-29 20:00:50",
+        "fiscalYear": "2024",
+        "period": "FY",
+        "revenue": 164501000000,
+        "costOfRevenue": 30161000000,
+        "grossProfit": 134340000000,
+        "researchAndDevelopmentExpenses": 43873000000,
+        "generalAndAdministrativeExpenses": 9740000000,
+        "sellingAndMarketingExpenses": 11347000000,
+        "sellingGeneralAndAdministrativeExpenses": 21087000000,
+        "otherExpenses": 0,
+        "operatingExpenses": 64960000000,
+        "costAndExpenses": 95121000000,
+        "netInterestIncome": 1802000000,
+        "interestIncome": 2517000000,
+        "interestExpense": 715000000,
+        "depreciationAndAmortization": 15498000000,
+        "ebitda": 86876000000,
+        "ebit": 71378000000,
+        "nonOperatingIncomeExcludingInterest": -1998000000,
+        "operatingIncome": 69380000000,
+        "totalOtherIncomeExpensesNet": 1283000000,
+        "incomeBeforeTax": 70663000000,
+        "incomeTaxExpense": 8303000000,
+        "netIncomeFromContinuingOperations": 62360000000,
+        "netIncomeFromDiscontinuedOperations": 0,
+        "otherAdjustmentsToNetIncome": 0,
+        "netIncome": 62360000000,
+        "netIncomeDeductions": 0,
+        "bottomLineNetIncome": 62360000000,
+        "eps": 24.61,
+        "epsDiluted": 23.86,
+        "weightedAverageShsOut": 2534000000,
+        "weightedAverageShsOutDil": 2614000000
+      },
+      {
+        "date": "2023-12-31",
+        "symbol": "META",
+        "reportedCurrency": "USD",
+        "cik": "0001326801",
+        "filingDate": "2024-02-02",
+        "acceptedDate": "2024-02-01 19:39:02",
+        "fiscalYear": "2023",
+        "period": "FY",
+        "revenue": 134902000000,
+        "costOfRevenue": 25959000000,
+        "grossProfit": 108943000000,
+        "researchAndDevelopmentExpenses": 38483000000,
+        "generalAndAdministrativeExpenses": 11408000000,
+        "sellingAndMarketingExpenses": 12301000000,
+        "sellingGeneralAndAdministrativeExpenses": 23709000000,
+        "otherExpenses": 0,
+        "operatingExpenses": 62192000000,
+        "costAndExpenses": 88151000000,
+        "netInterestIncome": 1193000000,
+        "interestIncome": 1639000000,
+        "interestExpense": 446000000,
+        "depreciationAndAmortization": 11178000000,
+        "ebitda": 59052000000,
+        "ebit": 47874000000,
+        "nonOperatingIncomeExcludingInterest": -1123000000,
+        "operatingIncome": 46751000000,
+        "totalOtherIncomeExpensesNet": 677000000,
+        "incomeBeforeTax": 47428000000,
+        "incomeTaxExpense": 8330000000,
+        "netIncomeFromContinuingOperations": 39098000000,
+        "netIncomeFromDiscontinuedOperations": 0,
+        "otherAdjustmentsToNetIncome": 0,
+        "netIncome": 39098000000,
+        "netIncomeDeductions": 0,
+        "bottomLineNetIncome": 39098000000,
+        "eps": 15.19,
+        "epsDiluted": 14.87,
+        "weightedAverageShsOut": 2574000000,
+        "weightedAverageShsOutDil": 2629000000
+      }
+    ],
+    "key_metrics_ttm": [
+      {
+        "symbol": "META",
+        "marketCap": 1560055381834,
+        "enterpriseValueTTM": 1600928381834,
+        "evToSalesTTM": 8.450088314678265,
+        "evToOperatingCashFlowTTM": 14.882112609310798,
+        "evToFreeCashFlowTTM": 35.70233451158538,
+        "evToEBITDATTM": 15.651337724578882,
+        "netDebtToEBITDATTM": 0.3995913459188362,
+        "currentRatioTTM": 1.9784079225066291,
+        "incomeQualityTTM": 1.837992072170585,
+        "grahamNumberTTM": 200.8466593794897,
+        "grahamNetNetTTM": -20.80145013905443,
+        "taxBurdenTTM": 0.6956769799479383,
+        "interestBurdenTTM": 0.9941977263595755,
+        "workingCapitalTTM": 36160000000,
+        "investedCapitalTTM": 234960000000,
+        "returnOnAssetsTTM": 0.19262516291254722,
+        "operatingReturnOnAssetsTTM": 0.2736272695075745,
+        "returnOnTangibleAssetsTTM": 0.20704244285178608,
+        "returnOnEquityTTM": 0.30934379137475854,
+        "returnOnInvestedCapitalTTM": 0.21179434225716978,
+        "returnOnCapitalEmployedTTM": 0.30685386269793097,
+        "earningsYieldTTM": 0.03756919743816176,
+        "freeCashFlowYieldTTM": 0.028743210351471593,
+        "capexToOperatingCashFlowTTM": 0.5831613586926209,
+        "capexToDepreciationTTM": 3.551259552787999,
+        "capexToRevenueTTM": 0.3311199902880337,
+        "salesGeneralAndAdministrativeToRevenueTTM": 0.0486495616419557,
+        "researchAndDevelopementToRevenueTTM": 0.2766643618340837,
+        "stockBasedCompensationToRevenueTTM": 0.09922568181698221,
+        "intangiblesToTotalAssetsTTM": 0.06963441766169481,
+        "averageReceivablesTTM": 16929000000,
+        "averagePayablesTTM": 9034500000,
+        "averageInventoryTTM": 0,
+        "daysOfSalesOutstandingTTM": 33.32368294652613,
+        "daysOfPayablesOutstandingTTM": 83.44875102615222,
+        "daysOfInventoryOutstandingTTM": 0,
+        "operatingCycleTTM": 33.32368294652613,
+        "cashConversionCycleTTM": -50.1250680796261,
+        "freeCashFlowToEquityTTM": 3968000000,
+        "freeCashFlowToFirmTTM": 13949577397.154434,
+        "tangibleAssetValueTTM": 172908000000,
+        "netCurrentAssetValueTTM": -36660000000
+      }
+    ]
+  },
+  "news": [
+    {
+      "title": "Stock-Split Watch: 2 AI Stocks That Look Ready to Split",
+      "link": "https://www.fool.com/investing/2025/11/07/stock-split-watch-ai-stocks-look-ready-to-split/?.tsrc=rss",
+      "published": "Fri, 07 Nov 2025 09:48:00 +0000",
+      "summary": "Stock splits have come alive again. Here's a look at which two AI stocks might be next."
+    },
+    {
+      "title": "1 Surefire Artificial Intelligence (AI) Stock to Buy on the Dip",
+      "link": "https://www.fool.com/investing/2025/11/07/1-surefire-artificial-intelligence-ai-stock-to-buy/?.tsrc=rss",
+      "published": "Fri, 07 Nov 2025 09:45:00 +0000",
+      "summary": "The recent drop makes the stock highly attractive, relative to its growth potential."
+    },
+    {
+      "title": "My Advice? Don't Get Distracted by Oracle Stock's Latest Slump.",
+      "link": "https://www.fool.com/investing/2025/11/07/buy-dip-oracle-growth-stock-sell-off/?.tsrc=rss",
+      "published": "Fri, 07 Nov 2025 09:25:00 +0000",
+      "summary": "Oracle is rapidly expanding its cloud infrastructure."
+    },
+    {
+      "title": "Most popular stocks and funds investors bought in October",
+      "link": "https://uk.finance.yahoo.com/news/most-popular-stocks-funds-investing-october-060052754.html?.tsrc=rss",
+      "published": "Fri, 07 Nov 2025 06:00:52 +0000",
+      "summary": "An easing of US-China trade tensions and strong company earnings boosted markets, despite AI bubble fears."
+    },
+    {
+      "title": "3 Cash-Producing Stocks with Warning Signs",
+      "link": "https://finance.yahoo.com/news/3-cash-producing-stocks-warning-044637603.html?.tsrc=rss",
+      "published": "Fri, 07 Nov 2025 04:46:37 +0000",
+      "summary": "A company that generates cash isn\u2019t automatically a winner. Some businesses stockpile cash but fail to reinvest wisely, limiting their ability to expand."
+    },
+    {
+      "title": "Jensen Huang Once Said He Would Have Followed Mark Zuckerberg's Playbook For A 'Head Start' In Life If He'd Known Success Would Take So Long",
+      "link": "https://finance.yahoo.com/news/jensen-huang-once-said-followed-043106916.html?.tsrc=rss",
+      "published": "Fri, 07 Nov 2025 04:31:06 +0000",
+      "summary": "At SIGGRAPH 2024, Nvidia Corporation (NASDAQ:NVDA) CEO Jensen Huang shared a humorous insight into the long road to success, joking that he might have followed Meta Platforms, Inc. (NASDAQ:META) CEO Mark Zuckerberg's early college-dropout approach if he had known how long building a tech empire would take. CEOs Reflect On Decades Of Innovation During a wide-ranging discussion on the future of generative AI, Zuckerberg praised Huang for his role in powering the AI revolution. \"There is a lot of n"
+    },
+    {
+      "title": "Fluor and NuScale Announce Agreement Regarding Stake Monetization",
+      "link": "https://finance.yahoo.com/news/fluor-nuscale-announce-agreement-regarding-213000742.html?.tsrc=rss",
+      "published": "Thu, 06 Nov 2025 21:30:00 +0000",
+      "summary": "IRVING, Texas & CORVALLIS, Ore., November 06, 2025--Fluor and NuScale Power announced that they have reached an agreement regarding the conversion and monetization of Fluor\u2019s remaining stake in NuScale."
+    },
+    {
+      "title": "Meta estimates that it earns 10% of its revenue from scams, report says",
+      "link": "https://finance.yahoo.com/news/meta-estimates-earns-10-revenue-212051323.html?.tsrc=rss",
+      "published": "Thu, 06 Nov 2025 21:20:51 +0000",
+      "summary": "These fraudulent ads purport to offer a product or service that isn't actually real, and may be intended to solicit payments from less savvy users."
+    },
+    {
+      "title": "NuScale Power Reports Third Quarter 2025 Results",
+      "link": "https://finance.yahoo.com/news/nuscale-power-reports-third-quarter-211500940.html?.tsrc=rss",
+      "published": "Thu, 06 Nov 2025 21:15:00 +0000",
+      "summary": "CORVALLIS, Ore., November 06, 2025--NuScale Power announced results for the third quarter ended September 30, 2025."
+    }
+  ]
+}

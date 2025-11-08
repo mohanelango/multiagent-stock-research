@@ -1,0 +1,10 @@
+[project]
+name = "multiagent-stock-research"
+version = "0.1.0"
+description = "LangGraph multi-agent stock research (free-API, showcase-ready)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

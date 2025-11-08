@@ -1,0 +1,360 @@
+{
+  "symbol": "TSLA",
+  "prices": {
+    "symbol": "TSLA",
+    "data": [
+      {
+        "Date": "2025-10-10 00:00:00-04:00",
+        "Open": 436.5400085449219,
+        "High": 443.1300048828125,
+        "Low": 411.45001220703125,
+        "Close": 413.489990234375,
+        "Volume": 112107900
+      },
+      {
+        "Date": "2025-10-13 00:00:00-04:00",
+        "Open": 423.5299987792969,
+        "High": 436.8900146484375,
+        "Low": 419.70001220703125,
+        "Close": 435.8999938964844,
+        "Volume": 79552800
+      },
+      {
+        "Date": "2025-10-14 00:00:00-04:00",
+        "Open": 426.7900085449219,
+        "High": 434.20001220703125,
+        "Low": 417.8599853515625,
+        "Close": 429.239990234375,
+        "Volume": 72669400
+      },
+      {
+        "Date": "2025-10-15 00:00:00-04:00",
+        "Open": 434.8999938964844,
+        "High": 440.510009765625,
+        "Low": 426.3299865722656,
+        "Close": 435.1499938964844,
+        "Volume": 71558200
+      },
+      {
+        "Date": "2025-10-16 00:00:00-04:00",
+        "Open": 434.7300109863281,
+        "High": 439.3500061035156,
+        "Low": 421.30999755859375,
+        "Close": 428.75,
+        "Volume": 77189900
+      },
+      {
+        "Date": "2025-10-17 00:00:00-04:00",
+        "Open": 425.5,
+        "High": 441.4599914550781,
+        "Low": 423.6000061035156,
+        "Close": 439.30999755859375,
+        "Volume": 89331600
+      },
+      {
+        "Date": "2025-10-20 00:00:00-04:00",
+        "Open": 443.8699951171875,
+        "High": 449.79998779296875,
+        "Low": 440.6099853515625,
+        "Close": 447.42999267578125,
+        "Volume": 63719000
+      },
+      {
+        "Date": "2025-10-21 00:00:00-04:00",
+        "Open": 445.760009765625,
+        "High": 449.29998779296875,
+        "Low": 442.04998779296875,
+        "Close": 442.6000061035156,
+        "Volume": 54412200
+      },
+      {
+        "Date": "2025-10-22 00:00:00-04:00",
+        "Open": 443.45001220703125,
+        "High": 445.5400085449219,
+        "Low": 429.0,
+        "Close": 438.9700012207031,
+        "Volume": 84023500
+      },
+      {
+        "Date": "2025-10-23 00:00:00-04:00",
+        "Open": 420.0,
+        "High": 449.3999938964844,
+        "Low": 413.8999938964844,
+        "Close": 448.9800109863281,
+        "Volume": 126709800
+      },
+      {
+        "Date": "2025-10-24 00:00:00-04:00",
+        "Open": 446.8299865722656,
+        "High": 451.67999267578125,
+        "Low": 430.1700134277344,
+        "Close": 433.7200012207031,
+        "Volume": 94727800
+      },
+      {
+        "Date": "2025-10-27 00:00:00-04:00",
+        "Open": 439.9800109863281,
+        "High": 460.1600036621094,
+        "Low": 438.69000244140625,
+        "Close": 452.4200134277344,
+        "Volume": 105867500
+      },
+      {
+        "Date": "2025-10-28 00:00:00-04:00",
+        "Open": 454.7799987792969,
+        "High": 467.0,
+        "Low": 451.6000061035156,
+        "Close": 460.54998779296875,
+        "Volume": 80185700
+      },
+      {
+        "Date": "2025-10-29 00:00:00-04:00",
+        "Open": 462.5,
+        "High": 465.70001220703125,
+        "Low": 452.6499938964844,
+        "Close": 461.510009765625,
+        "Volume": 67983500
+      },
+      {
+        "Date": "2025-10-30 00:00:00-04:00",
+        "Open": 451.04998779296875,
+        "High": 455.05999755859375,
+        "Low": 439.6099853515625,
+        "Close": 440.1000061035156,
+        "Volume": 72447900
+      },
+      {
+        "Date": "2025-10-31 00:00:00-04:00",
+        "Open": 446.75,
+        "High": 458.0,
+        "Low": 443.69000244140625,
+        "Close": 456.55999755859375,
+        "Volume": 83135800
+      },
+      {
+        "Date": "2025-11-03 00:00:00-05:00",
+        "Open": 455.989990234375,
+        "High": 474.07000732421875,
+        "Low": 453.79998779296875,
+        "Close": 468.3699951171875,
+        "Volume": 84595200
+      },
+      {
+        "Date": "2025-11-04 00:00:00-05:00",
+        "Open": 454.4599914550781,
+        "High": 460.2200012207031,
+        "Low": 443.6000061035156,
+        "Close": 444.260009765625,
+        "Volume": 87756600
+      },
+      {
+        "Date": "2025-11-05 00:00:00-05:00",
+        "Open": 452.04998779296875,
+        "High": 466.3299865722656,
+        "Low": 440.7099914550781,
+        "Close": 462.07000732421875,
+        "Volume": 85573000
+      },
+      {
+        "Date": "2025-11-06 00:00:00-05:00",
+        "Open": 461.9599914550781,
+        "High": 467.45001220703125,
+        "Low": 435.0899963378906,
+        "Close": 445.9100036621094,
+        "Volume": 108086700
+      }
+    ],
+    "meta": {
+      "days": 20
+    }
+  },
+  "fundamentals": {
+    "income_statement": [
+      {
+        "date": "2024-12-31",
+        "symbol": "TSLA",
+        "reportedCurrency": "USD",
+        "cik": "0001318605",
+        "filingDate": "2025-01-30",
+        "acceptedDate": "2025-01-29 20:42:33",
+        "fiscalYear": "2024",
+        "period": "FY",
+        "revenue": 97690000000,
+        "costOfRevenue": 80240000000,
+        "grossProfit": 17450000000,
+        "researchAndDevelopmentExpenses": 4540000000,
+        "generalAndAdministrativeExpenses": 5150000000,
+        "sellingAndMarketingExpenses": 0,
+        "sellingGeneralAndAdministrativeExpenses": 5150000000,
+        "otherExpenses": 684000000,
+        "operatingExpenses": 10374000000,
+        "costAndExpenses": 90614000000,
+        "netInterestIncome": 1219000000,
+        "interestIncome": 1569000000,
+        "interestExpense": 350000000,
+        "depreciationAndAmortization": 5368000000,
+        "ebitda": 14708000000,
+        "ebit": 9340000000,
+        "nonOperatingIncomeExcludingInterest": -2264000000,
+        "operatingIncome": 7076000000,
+        "totalOtherIncomeExpensesNet": 1914000000,
+        "incomeBeforeTax": 8990000000,
+        "incomeTaxExpense": 1837000000,
+        "netIncomeFromContinuingOperations": 7153000000,
+        "netIncomeFromDiscontinuedOperations": 0,
+        "otherAdjustmentsToNetIncome": 39000000,
+        "netIncome": 7130000000,
+        "netIncomeDeductions": 0,
+        "bottomLineNetIncome": 7130000000,
+        "eps": 2.23,
+        "epsDiluted": 2.04,
+        "weightedAverageShsOut": 3197000000,
+        "weightedAverageShsOutDil": 3498000000
+      },
+      {
+        "date": "2023-12-31",
+        "symbol": "TSLA",
+        "reportedCurrency": "USD",
+        "cik": "0001318605",
+        "filingDate": "2024-01-29",
+        "acceptedDate": "2024-01-26 21:00:20",
+        "fiscalYear": "2023",
+        "period": "FY",
+        "revenue": 96773000000,
+        "costOfRevenue": 79113000000,
+        "grossProfit": 17660000000,
+        "researchAndDevelopmentExpenses": 3969000000,
+        "generalAndAdministrativeExpenses": 4800000000,
+        "sellingAndMarketingExpenses": 0,
+        "sellingGeneralAndAdministrativeExpenses": 4800000000,
+        "otherExpenses": 0,
+        "operatingExpenses": 8769000000,
+        "costAndExpenses": 87882000000,
+        "netInterestIncome": 910000000,
+        "interestIncome": 1066000000,
+        "interestExpense": 156000000,
+        "depreciationAndAmortization": 4667000000,
+        "ebitda": 14796000000,
+        "ebit": 10129000000,
+        "nonOperatingIncomeExcludingInterest": -1238000000,
+        "operatingIncome": 8891000000,
+        "totalOtherIncomeExpensesNet": 1082000000,
+        "incomeBeforeTax": 9973000000,
+        "incomeTaxExpense": -5001000000,
+        "netIncomeFromContinuingOperations": 14974000000,
+        "netIncomeFromDiscontinuedOperations": 0,
+        "otherAdjustmentsToNetIncome": 2000000,
+        "netIncome": 14999000000,
+        "netIncomeDeductions": 0,
+        "bottomLineNetIncome": 14999000000,
+        "eps": 4.73,
+        "epsDiluted": 4.31,
+        "weightedAverageShsOut": 3173500000,
+        "weightedAverageShsOutDil": 3482750000
+      }
+    ],
+    "key_metrics_ttm": [
+      {
+        "symbol": "TSLA",
+        "marketCap": 1435960208628,
+        "enterpriseValueTTM": 1425373208628,
+        "evToSalesTTM": 14.904616697457989,
+        "evToOperatingCashFlowTTM": 90.51137977063753,
+        "evToFreeCashFlowTTM": 208.57085288674276,
+        "evToEBITDATTM": 107.87657675228941,
+        "netDebtToEBITDATTM": -0.8012563384545524,
+        "currentRatioTTM": 2.0662511984659635,
+        "incomeQualityTTM": 2.954042393547177,
+        "grahamNumberTTM": 30.29026704675393,
+        "grahamNetNetTTM": -0.5288968081809731,
+        "taxBurdenTTM": 0.7737141191898587,
+        "interestBurdenTTM": 0.9516084303937882,
+        "workingCapitalTTM": 33363000000,
+        "investedCapitalTTM": 88633000000,
+        "returnOnAssetsTTM": 0.03970538752009571,
+        "operatingReturnOnAssetsTTM": 0.03453271419966299,
+        "returnOnTangibleAssetsTTM": 0.039820918355868526,
+        "returnOnEquityTTM": 0.06967360997211744,
+        "returnOnInvestedCapitalTTM": 0.033707417634324256,
+        "returnOnCapitalEmployedTTM": 0.04420908780321148,
+        "earningsYieldTTM": 0.003690186737834408,
+        "freeCashFlowYieldTTM": 0.004759184801178858,
+        "capexToOperatingCashFlowTTM": 0.5660401320802642,
+        "capexToDepreciationTTM": 1.4854190968171972,
+        "capexToRevenueTTM": 0.09321050265075863,
+        "salesGeneralAndAdministrativeToRevenueTTM": 0.026810828897974547,
+        "researchAndDevelopementToRevenueTTM": 0.06173601162778539,
+        "stockBasedCompensationToRevenueTTM": 0.025618771762885198,
+        "intangiblesToTotalAssetsTTM": 0.002901259954387408,
+        "averageReceivablesTTM": 4270500000,
+        "averagePayablesTTM": 13015500000,
+        "averageInventoryTTM": 13423000000,
+        "daysOfSalesOutstandingTTM": 17.94981857726935,
+        "daysOfPayablesOutstandingTTM": 58.95166878756189,
+        "daysOfInventoryOutstandingTTM": 56.45453514596379,
+        "operatingCycleTTM": 74.40435372323314,
+        "cashConversionCycleTTM": 15.45268493567125,
+        "freeCashFlowToEquityTTM": 17421000000,
+        "freeCashFlowToFirmTTM": 451094127.9323921,
+        "tangibleAssetValueTTM": 80328000000,
+        "netCurrentAssetValueTTM": 11634000000
+      }
+    ]
+  },
+  "news": [
+    {
+      "title": "Elon Musk\u2019s $1 Trillion Pay Vote Could Be a Game Changer for Tesla (TSLA)",
+      "link": "https://finance.yahoo.com/news/elon-musk-1-trillion-pay-101823347.html?.tsrc=rss",
+      "published": "Fri, 07 Nov 2025 10:18:23 +0000",
+      "summary": "At Tesla\u2019s annual shareholder meeting on November 6, 2025, investors voted on Elon Musk\u2019s proposed $1 trillion stock compensation package amid a backdrop of heightened investor activism and public debate, as major institutions publicly took opposing sides on the proposal. This high-profile governance event occurred as Tesla faced increased competition, declining demand in key global markets, and renewed focus on leadership and long-term strategy. We\u2019ll examine how the polarizing shareholder..."
+    },
+    {
+      "title": "Elon Musk's $1 trillion Tesla pay plan wins shareholder approval",
+      "link": "https://finance.yahoo.com/video/elon-musks-1-trillion-tesla-092713118.html?.tsrc=rss",
+      "published": "Fri, 07 Nov 2025 09:38:37 +0000",
+      "summary": "<p>STORY: UPSOT</p><p>\".... approved!\"\u00a0</p><p>Tesla CEO Elon Musk won shareholder approval on Thursday for the largest corporate pay package in history.</p><p>That was after investors endorsed his plan of morphing the EV maker into an AI and robotics juggernaut.</p><p>:: File</p><p>The vote was crucial for Tesla's future and its valuation, which hangs on Musk's vision, even though his far-right political rhetoric has hurt the Tesla brand this year.</p><p>Musk, already the world's richest person, could get as much as $1 trillion in stock over the next decade, netting $878 billion after required payments.</p><p>Musk bounded to the stage of the company's annual meeting in Austin, Texas, accompanied by dancing robots.</p><p>Goals for Musk over the next decade include the company delivering 20 million vehicles, having 1 million robotaxis in operation, selling 1 million robots and earning as much as $400 billion in core profit.</p><p>\"As far as I can see, the only option is to go build some very big chip fab.\"</p><p>But for him to get paid, Tesla's stock value has to rise in tandem, first to $2 trillion from the current $1.5 trillion, and all the way to $8.5 trillion.</p><p>Achieving each step, which includes an operational goal and a valuation milestone, awards Musk 1% of stock.</p><p>If Musk hits all of them, he would be eligible for 12% in stock, or about $1 trillion.</p><p>Some major investors had opposed the plan, saying the pay could decrease shareholder value.</p><p>Tesla's board had said Musk could quit if the pay package was not approved.</p><p>The vote allays investor concern that Musk's focus would turn to running his other companies, including rocket maker SpaceX and xAI.</p><p>Musk has said he was more interested in the higher voting stake he would get in Tesla as part of the pay package, rather than the money.\u00a0</p><p>That's as he gears up to sell a \"robot army.\"</p>"
+    },
+    {
+      "title": "Trending tickers: Tesla, Opendoor, Airbnb, ITV and IAG",
+      "link": "https://uk.finance.yahoo.com/news/trending-tickers-tesla-opendoor-airbnb-itv-and-iag-091245828.html?.tsrc=rss",
+      "published": "Fri, 07 Nov 2025 09:12:45 +0000",
+      "summary": "The latest investor updates on stocks that are trending on Friday"
+    },
+    {
+      "title": "FTSE 100 LIVE: Markets mixed as Musk has $1tn Tesla pay deal approved",
+      "link": "https://uk.finance.yahoo.com/news/ftse-100-live-markets-musk-tesla-pay-deal-approved-085238156.html?.tsrc=rss",
+      "published": "Fri, 07 Nov 2025 08:52:38 +0000",
+      "summary": "The deal was approved by 75% of voters at the EV maker's AGM"
+    },
+    {
+      "title": "\ud83c\udfa7 Tesla Shareholders Approve Musk\u2019s $1 Trillion Pay Package",
+      "link": "https://finance.yahoo.com/m/b7cdc257-f7d3-3a6c-907d-efccb18941b8/%F0%9F%8E%A7-tesla-shareholders-approve.html?.tsrc=rss",
+      "published": "Fri, 07 Nov 2025 08:15:02 +0000",
+      "summary": "Tesla shareholders approved a record-setting pay package for Chief Executive Elon Musk.   Brokerage Charles Schwab agreed to buy Forge Global, a platform that lets investors buy shares in private companies."
+    },
+    {
+      "title": "Musk expects Tesla's Full Self-Driving software to win full China approval in early 2026",
+      "link": "https://finance.yahoo.com/news/musk-expects-teslas-full-self-081307007.html?.tsrc=rss",
+      "published": "Fri, 07 Nov 2025 08:13:07 +0000",
+      "summary": "\"We have partial approval in China, and hopefully we'll have a full \u200capproval in China around February or March or so,\" Musk told the company's annual general meeting on Thursday.  China's industry ministry did not immediately respond to a Reuters request for comment."
+    },
+    {
+      "title": "IndustrialMind.ai Raises $1.2 M Pre-Seed to Bring the AI Engineer to Manufacturing",
+      "link": "https://finance.yahoo.com/news/industrialmind-ai-raises-1-2-070800919.html?.tsrc=rss",
+      "published": "Fri, 07 Nov 2025 07:08:00 +0000",
+      "summary": "SAN FRANCISCO, November 07, 2025--IndustrialMind.ai, an AI company founded by former Tesla manufacturing AI leaders, announced a $1.2 M pre-seed round to advance its mission of helping every factory become best-in-class. Investors in the round include Antler, TSVC, Plug and Play, and an angel investor. The funding will accelerate development and customer deployment of IndustrialMind.ai\u2019s \"AI Engineer,\" with capabilities ranging from drawing-to-process automation to real-time monitoring and root-"
+    },
+    {
+      "title": "Nvidia CEO says no 'active discussions' on selling Blackwell chip to China",
+      "link": "https://finance.yahoo.com/news/nvidia-ceo-says-company-not-065134967.html?.tsrc=rss",
+      "published": "Fri, 07 Nov 2025 06:51:34 +0000",
+      "summary": "Taipei (Reuters) -Nvidia CEO Jensen Huang said on Friday that there were \"no active discussions\" about selling the company's state-of-the-art Blackwell \u200bchips to China.  Blackwell is Nvidia's current flagship artificial intelligence chip that the Trump administration has so \u200cfar prevented from being sold to China, for fear it would aid the Chinese military and domestic AI industry.  While there was speculation last week \u200cthat talks between U.S. President Donald Trump and Chinese President Xi Jinping in South Korea could end with a deal to allow a scaled-down version of the Blackwell to be sold in China, so far there have been no signs of an agreement."
+    },
+    {
+      "title": "Most popular stocks and funds investors bought in October",
+      "link": "https://uk.finance.yahoo.com/news/most-popular-stocks-funds-investing-october-060052754.html?.tsrc=rss",
+      "published": "Fri, 07 Nov 2025 06:00:52 +0000",
+      "summary": "An easing of US-China trade tensions and strong company earnings boosted markets, despite AI bubble fears."
+    }
+  ]
+}
