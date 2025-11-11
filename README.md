@@ -5,7 +5,14 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![FastAPI](https://img.shields.io/badge/FastAPI-ready-brightgreen.svg)](https://fastapi.tiangolo.com)
 [![Works with GPT-5](https://img.shields.io/badge/LLM-GPT--5-black.svg)](https://platform.openai.com)
-
+![AIEngineering](https://img.shields.io/badge/Discipline-AI_Engineering-purple)
+![LangChain](https://img.shields.io/badge/Framework-LangChain-orange)
+![LLM](https://img.shields.io/badge/Orchestrator-Langgraph-red)
+![LLM](https://img.shields.io/badge/Model-LLM-black)
+![LLM](https://img.shields.io/badge/Data-Agent-red)
+![LLM](https://img.shields.io/badge/Analyst-Agent-purple)
+![LLM](https://img.shields.io/badge/Compliance-Agent-Green)
+![LLM](https://img.shields.io/badge/Supervisor-Agent-blue)
 ---
 
 ## Why This Project Exists
@@ -32,7 +39,7 @@ Whether you're a developer, quant researcher, analyst, or AI enthusiast — this
 | **Charts + Stats**             | Auto-generates return stats + matplotlib price chart |
 | **Live News Feed Integration** | Fetches RSS news headlines related to your stock symbol |
 | **PDF Report Generation**      | Produces clean markdown AND PDF research output |
-| ️ **Free Data Sources**        |yfinance + FMP "demo" endpoints + public RSS feeds |
+| ️**Free Data Sources**        |yfinance + FMP "demo" endpoints + public RSS feeds |
 | **FastAPI Endpoint**           | `/analyze` route returns report paths + JSON response |
 | **Error Handling**             | Skips unknown symbols, logs edge cases, continues pipeline |
 | **Human-In-Loop (Optional)** | Approve generated reports before publishing |
@@ -65,9 +72,40 @@ source .venv/bin/activate   # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 cp .env.example .env
 ```
+Edit `.env` and add your FMP_API_KEY from [https://site.financialmodelingprep.com/](FMP).  
+Optionally tune `configs/settings.yaml` to select your preferred LLM provider (OpenAI,Gemini), max_news, strict_mode.
 
-Edit `.env` to select your preferred LLM provider (OpenAI / Ollama / HF).  
-Optionally tune `configs/settings.yaml` for chunk size, retrieval `k`, or model parameters.
+    ⚠️ Important: PDF export requires:
+         1. pandoc (document conversion)
+         2. wkhtmltopdf (HTML-to-PDF engine)
+         3. pypandoc (Python binding to Pandoc) (already available in requirement.txt. So no need to install separately)
+
+    (If you don’t have Chocolatey, install from https://chocolatey.org/install
+    first — it’s one line. Once Done follow the below installation via chocolatey.)
+
+🔹 Windows (via Chocolatey)
+```bash
+# Install Pandoc
+choco install pandoc -y
+
+# Install wkhtmltopdf
+choco install wkhtmltopdf -y
+```
+🔹 macOS (via Homebrew)
+```bash
+# Install Pandoc
+brew install pandoc
+
+# Install wkhtmltopdf
+brew install wkhtmltopdf
+```
+🔹 Linux (Debian/Ubuntu)
+```bash
+sudo apt update
+sudo apt install python3-pip pandoc wkhtmltopdf -y
+
+```
+
 
 ---
 
@@ -86,36 +124,25 @@ Every time you run a stock analysis, four distinct agents collaborate:
 They communicate via a LangGraph state machine and are orchestrated end-to-end through CLI or API.
 
 ---
-## Architecture Diagram (Mermaid)
+## Architecture Overview
 
-graph TD
+![Architecture Example](docs/Multiagent.svg)
+This architecture diagram shows how a stock symbol request flows through a LangGraph-powered multi-agent pipeline — from data collection, AI analysis, and compliance filtering to final report generation and artifact export.
+For a deeper explanation, see [`docs/architecture.md`](docs/architecture.md)
 
-A[User Input] --> B[LangGraph Orchestrator]
-B --> C[Data Agent]
-C --> D[Analyst Agent]
-D --> E[Compliance Agent]
-E --> F[Supervisor Agent]
-F -->|Outputs| G[Markdown Report]
-F -->|Outputs| H[JSON Data]
-F -->|Outputs| I[PDF Export]
 ---
 ### Usage (CLI)
 ```python
-python -m src.cli --symbol AAPL --days 30 --outdir artifacts
+python -m src.cli --symbol AAPL --days 10 --outdir artifacts
 ```
-### Outputs:
-```bash
-== Outputs ==
-report: artifacts/AAPL/AAPL_2025-10-25_report.md
-plot: artifacts/AAPL/AAPL_chart.png
-raw: artifacts/AAPL/AAPL_raw.json
-pdf: artifacts/AAPL/AAPL_2025-10-25_report.pdf
-```
+### Sample CLI Output:
+![CLI Example](docs/Screenshots/cli.png)
+
 ### Auto-created folder: artifacts/AAPL/
 
-    AAPL_2025-10-25_report.md → Full report (Markdown)
+    AAPL_2025-11-09_report.md → Full report (Markdown)
     
-    AAPL_2025-10-25_report.pdf → Exported PDF
+    AAPL_2025-11-09_report.pdf → Exported PDF
     
     AAPL_raw.json → Raw collected data
     
@@ -127,27 +154,22 @@ pdf: artifacts/AAPL/AAPL_2025-10-25_report.pdf
 uvicorn src.api:app --reload --port 8000
 
 ```
-Example call:
+### Example call:
 ```
 curl -X POST http://127.0.0.1:8000/analyze \
 -H "Content-Type: application/json" \
 -d '{"symbol":"META","days":10}'
 ```
-Response:
-```json
-{
-  "symbol": "META",
-  "report": "artifacts/META/META_2025-10-25_report.md",
-  "pdf": "artifacts/META/META_2025-10-25_report.pdf",
-  "plot": "artifacts/META/META_chart.png",
-  "raw": "artifacts/META/META_raw.json"
-}
+### Sample API Output:
+![CLI Example](docs/screenshots/api.png):
 
-```
+### Sample Chart Output:
+![CLI Example](artifacts/META/META_chart.png)
+
+
 ## Contributing
 PRs are welcome! Whether you're fixing a bug, improving PDF formatting, or adding a new tool — open a PR and let's build better agent workflows together
 
 ---
 ## License
-MIT License © 2025
-Feel free to use, modify, and distribute this for personal or enterprise use.
+Distributed under the [MIT License](LICENSE).

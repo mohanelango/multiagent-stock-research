@@ -3849,3 +3849,65 @@ ValueError: Strict mode abort: missing critical data: income_statement, key_metr
 2025-11-07 16:27:30 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for META -> artifacts\META\META_2025-11-07_report.md
 2025-11-07 16:27:31 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for META -> artifacts\META\META_2025-11-07_report.pdf
 2025-11-07 16:27:31 [INFO] __main__: CLI execution finished successfully for META
+2025-11-09 13:32:41 [INFO] __main__: CLI called with symbol=AAPL days=10 outdir=artifacts
+2025-11-09 13:32:41 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=10) ===
+2025-11-09 13:32:43 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-09 13:32:44 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-09 13:32:44 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-09 13:32:44 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-09 13:32:44 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-09 13:32:44 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-09 13:32:44 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2025-11-09 13:32:44 [INFO] src.agents.data_agent: Fetching data for AAPL (last 10 days)
+2025-11-09 13:32:44 [INFO] src.tools.price_tool: Fetched 10 records for AAPL
+2025-11-09 13:32:45 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2025-11-09 13:32:47 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2025-11-09 13:32:49 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2025-11-09 13:32:49 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 10 price rows, 9 news items
+2025-11-09 13:32:49 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2025-11-09 13:32:49 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2025-11-09 13:32:49 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2025-11-09 13:33:51 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2025-11-09 13:33:51 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2025-11-09 13:33:51 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2025-11-09 13:33:51 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-09 13:34:17 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-09 13:34:17 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2025-11-09 13:34:17 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2025-11-09 13:34:18 [INFO] src.tools.plot_tool: Saved price chart to artifacts\AAPL\AAPL_chart.png
+2025-11-09 13:34:18 [INFO] src.tools.storage_tool: Saved JSON: artifacts\AAPL\AAPL_raw.json
+2025-11-09 13:34:18 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\AAPL\AAPL_2025-11-09_report.md
+2025-11-09 13:34:18 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> artifacts\AAPL\AAPL_2025-11-09_report.md
+2025-11-09 13:34:20 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> artifacts\AAPL\AAPL_2025-11-09_report.pdf
+2025-11-09 13:34:20 [INFO] __main__: CLI execution finished successfully for AAPL
+2025-11-09 13:42:37 [INFO] src.api: POST /analyze called with symbol=META, days=5
+2025-11-09 13:42:37 [INFO] src.graph.orchestrator: === Starting pipeline for META (days=5) ===
+2025-11-09 13:42:37 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-09 13:42:38 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-09 13:42:38 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-09 13:42:38 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-09 13:42:38 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-09 13:42:38 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-09 13:42:38 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for META
+2025-11-09 13:42:38 [INFO] src.agents.data_agent: Fetching data for META (last 5 days)
+2025-11-09 13:42:38 [INFO] src.tools.price_tool: Fetched 5 records for META
+2025-11-09 13:42:40 [INFO] src.tools.fundamentals_tool: Fetched income statement for META (2 records)
+2025-11-09 13:42:41 [INFO] src.tools.fundamentals_tool: Fetched key metrics for META
+2025-11-09 13:42:43 [INFO] src.tools.news_tool: Total news items for META: 9
+2025-11-09 13:42:43 [INFO] src.agents.data_agent: Data fetch complete for META: 5 price rows, 9 news items
+2025-11-09 13:42:43 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for META
+2025-11-09 13:42:43 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for META
+2025-11-09 13:42:43 [INFO] src.agents.analyst_agent: Generating analyst note for META
+2025-11-09 13:43:25 [INFO] src.agents.analyst_agent: Analyst note completed for META
+2025-11-09 13:43:25 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for META
+2025-11-09 13:43:25 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for META
+2025-11-09 13:43:25 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-09 13:44:02 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-09 13:44:02 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for META
+2025-11-09 13:44:02 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for META
+2025-11-09 13:44:03 [INFO] src.tools.plot_tool: Saved price chart to artifacts\META\META_chart.png
+2025-11-09 13:44:03 [INFO] src.tools.storage_tool: Saved JSON: artifacts\META\META_raw.json
+2025-11-09 13:44:03 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\META\META_2025-11-09_report.md
+2025-11-09 13:44:03 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for META -> artifacts\META\META_2025-11-09_report.md
+2025-11-09 13:44:04 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for META -> artifacts\META\META_2025-11-09_report.pdf
+2025-11-09 13:44:04 [INFO] src.api: Report successfully generated for META

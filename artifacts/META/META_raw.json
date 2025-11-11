@@ -4,54 +4,6 @@
     "symbol": "META",
     "data": [
       {
-        "Date": "2025-10-24 00:00:00-04:00",
-        "Open": 736.7899780273438,
-        "High": 741.2100219726562,
-        "Low": 731.1500244140625,
-        "Close": 738.3599853515625,
-        "Volume": 9151300
-      },
-      {
-        "Date": "2025-10-27 00:00:00-04:00",
-        "Open": 749.72998046875,
-        "High": 755.75,
-        "Low": 748.010009765625,
-        "Close": 750.8200073242188,
-        "Volume": 11321100
-      },
-      {
-        "Date": "2025-10-28 00:00:00-04:00",
-        "Open": 752.6300048828125,
-        "High": 758.4000244140625,
-        "Low": 745.52001953125,
-        "Close": 751.4400024414062,
-        "Volume": 12193800
-      },
-      {
-        "Date": "2025-10-29 00:00:00-04:00",
-        "Open": 754.75,
-        "High": 759.1599731445312,
-        "Low": 742.510009765625,
-        "Close": 751.6699829101562,
-        "Volume": 26818600
-      },
-      {
-        "Date": "2025-10-30 00:00:00-04:00",
-        "Open": 669.1500244140625,
-        "High": 680.9600219726562,
-        "Low": 650.1699829101562,
-        "Close": 666.469970703125,
-        "Volume": 88440100
-      },
-      {
-        "Date": "2025-10-31 00:00:00-04:00",
-        "Open": 674.510009765625,
-        "High": 674.8900146484375,
-        "Low": 645.5700073242188,
-        "Close": 648.3499755859375,
-        "Volume": 56953200
-      },
-      {
         "Date": "2025-11-03 00:00:00-05:00",
         "Open": 656.0,
         "High": 659.3300170898438,
@@ -81,11 +33,19 @@
         "High": 636.0,
         "Low": 618.0,
         "Close": 618.9400024414062,
-        "Volume": 23543400
+        "Volume": 23628800
+      },
+      {
+        "Date": "2025-11-07 00:00:00-05:00",
+        "Open": 616.489990234375,
+        "High": 622.1300048828125,
+        "Low": 601.2000122070312,
+        "Close": 621.7100219726562,
+        "Volume": 29868200
       }
     ],
     "meta": {
-      "days": 10
+      "days": 5
     }
   },
   "fundamentals": {
@@ -176,12 +136,12 @@
     "key_metrics_ttm": [
       {
         "symbol": "META",
-        "marketCap": 1560055381834,
-        "enterpriseValueTTM": 1600928381834,
-        "evToSalesTTM": 8.450088314678265,
-        "evToOperatingCashFlowTTM": 14.882112609310798,
-        "evToFreeCashFlowTTM": 35.70233451158538,
-        "evToEBITDATTM": 15.651337724578882,
+        "marketCap": 1567037324860,
+        "enterpriseValueTTM": 1607910324860,
+        "evToSalesTTM": 8.486940703484168,
+        "evToOperatingCashFlowTTM": 14.947016238682208,
+        "evToFreeCashFlowTTM": 35.85803895675832,
+        "evToEBITDATTM": 15.71959608611065,
         "netDebtToEBITDATTM": 0.3995913459188362,
         "currentRatioTTM": 1.9784079225066291,
         "incomeQualityTTM": 1.837992072170585,
@@ -197,8 +157,8 @@
         "returnOnEquityTTM": 0.30934379137475854,
         "returnOnInvestedCapitalTTM": 0.21179434225716978,
         "returnOnCapitalEmployedTTM": 0.30685386269793097,
-        "earningsYieldTTM": 0.03756919743816176,
-        "freeCashFlowYieldTTM": 0.028743210351471593,
+        "earningsYieldTTM": 0.03740180962567088,
+        "freeCashFlowYieldTTM": 0.02861514482688287,
         "capexToOperatingCashFlowTTM": 0.5831613586926209,
         "capexToDepreciationTTM": 3.551259552787999,
         "capexToRevenueTTM": 0.3311199902880337,
@@ -223,58 +183,58 @@
   },
   "news": [
     {
-      "title": "Stock-Split Watch: 2 AI Stocks That Look Ready to Split",
-      "link": "https://www.fool.com/investing/2025/11/07/stock-split-watch-ai-stocks-look-ready-to-split/?.tsrc=rss",
-      "published": "Fri, 07 Nov 2025 09:48:00 +0000",
-      "summary": "Stock splits have come alive again. Here's a look at which two AI stocks might be next."
+      "title": "Trump\u2019s Tax Cuts Are Exposing Companies to Biden\u2019s Tax Hike",
+      "link": "https://finance.yahoo.com/m/320e99c0-5893-3420-b692-c7fbd001b742/trump%E2%80%99s-tax-cuts-are-exposing.html?.tsrc=rss",
+      "published": "Sun, 09 Nov 2025 02:00:00 +0000",
+      "summary": "Democrats\u2019 older alternative minimum tax claws back billions of dollars in savings from the newer GOP law."
     },
     {
-      "title": "1 Surefire Artificial Intelligence (AI) Stock to Buy on the Dip",
-      "link": "https://www.fool.com/investing/2025/11/07/1-surefire-artificial-intelligence-ai-stock-to-buy/?.tsrc=rss",
-      "published": "Fri, 07 Nov 2025 09:45:00 +0000",
-      "summary": "The recent drop makes the stock highly attractive, relative to its growth potential."
+      "title": "Is Wall Street losing faith in AI?",
+      "link": "https://finance.yahoo.com/news/wall-street-losing-faith-ai-205300697.html?.tsrc=rss",
+      "published": "Sat, 08 Nov 2025 20:53:00 +0000",
+      "summary": "A rough week for tech stocks might signal a loss of investor confidence in artificial intelligence."
     },
     {
-      "title": "My Advice? Don't Get Distracted by Oracle Stock's Latest Slump.",
-      "link": "https://www.fool.com/investing/2025/11/07/buy-dip-oracle-growth-stock-sell-off/?.tsrc=rss",
-      "published": "Fri, 07 Nov 2025 09:25:00 +0000",
-      "summary": "Oracle is rapidly expanding its cloud infrastructure."
+      "title": "Did Meta\u2019s $29 Billion Bond Issuance Just Redefine the AI Investment Narrative for META?",
+      "link": "https://finance.yahoo.com/news/did-meta-29-billion-bond-191418041.html?.tsrc=rss",
+      "published": "Sat, 08 Nov 2025 19:14:18 +0000",
+      "summary": "In late October 2025, Meta Platforms completed multiple fixed-income offerings totaling over US$29 billion to finance the company's major AI initiatives and infrastructure expansion, including new data centers and increased renewable energy procurement for its U.S. operations. This large-scale capital raising and leadership changes in Meta's AI division underscore an intensifying commitment to artificial intelligence and sustainability that could reshape the company's long-term growth..."
     },
     {
-      "title": "Most popular stocks and funds investors bought in October",
-      "link": "https://uk.finance.yahoo.com/news/most-popular-stocks-funds-investing-october-060052754.html?.tsrc=rss",
-      "published": "Fri, 07 Nov 2025 06:00:52 +0000",
-      "summary": "An easing of US-China trade tensions and strong company earnings boosted markets, despite AI bubble fears."
+      "title": "How startups can lure good talent\u00a0fairly without big tech bank accounts",
+      "link": "https://finance.yahoo.com/news/startups-lure-good-talent-fairly-140000556.html?.tsrc=rss",
+      "published": "Sat, 08 Nov 2025 14:00:00 +0000",
+      "summary": "Three industry insiders walk through how startups can set up an employee equity strategy that remains fair as a company grows."
     },
     {
-      "title": "3 Cash-Producing Stocks with Warning Signs",
-      "link": "https://finance.yahoo.com/news/3-cash-producing-stocks-warning-044637603.html?.tsrc=rss",
-      "published": "Fri, 07 Nov 2025 04:46:37 +0000",
-      "summary": "A company that generates cash isn\u2019t automatically a winner. Some businesses stockpile cash but fail to reinvest wisely, limiting their ability to expand."
+      "title": "The Weekend: Markets tank as AI bubble fears grow, while Musk celebrates record pay day",
+      "link": "https://uk.finance.yahoo.com/news/markets-ai-bubble-musk-pay-tech-stocks-weekend-135521279.html?.tsrc=rss",
+      "published": "Sat, 08 Nov 2025 13:55:21 +0000",
+      "summary": "Key moments from the last seven days, plus a glimpse at the week ahead."
     },
     {
-      "title": "Jensen Huang Once Said He Would Have Followed Mark Zuckerberg's Playbook For A 'Head Start' In Life If He'd Known Success Would Take So Long",
-      "link": "https://finance.yahoo.com/news/jensen-huang-once-said-followed-043106916.html?.tsrc=rss",
-      "published": "Fri, 07 Nov 2025 04:31:06 +0000",
-      "summary": "At SIGGRAPH 2024, Nvidia Corporation (NASDAQ:NVDA) CEO Jensen Huang shared a humorous insight into the long road to success, joking that he might have followed Meta Platforms, Inc. (NASDAQ:META) CEO Mark Zuckerberg's early college-dropout approach if he had known how long building a tech empire would take. CEOs Reflect On Decades Of Innovation During a wide-ranging discussion on the future of generative AI, Zuckerberg praised Huang for his role in powering the AI revolution. \"There is a lot of n"
+      "title": "Today's AI boom is 'very different' from the 90s dot-com bubble",
+      "link": "https://finance.yahoo.com/video/todays-ai-boom-very-different-130030753.html?.tsrc=rss",
+      "published": "Sat, 08 Nov 2025 13:00:30 +0000",
+      "summary": "BMO Private Wealth chief market strategist, Carol Schleif, joins Morning Brief with Yahoo Finance Senior Reporter Allie Canal to discuss whether markets (^DJI, ^GSPC, ^IXIC) are seeing an artificial intelligence (AI) bubble and to share her thoughts on Big Tech companies funding their AI projects with debt. To watch more expert insights and analysis on the latest market action, check out more Morning Brief."
     },
     {
-      "title": "Fluor and NuScale Announce Agreement Regarding Stake Monetization",
-      "link": "https://finance.yahoo.com/news/fluor-nuscale-announce-agreement-regarding-213000742.html?.tsrc=rss",
-      "published": "Thu, 06 Nov 2025 21:30:00 +0000",
-      "summary": "IRVING, Texas & CORVALLIS, Ore., November 06, 2025--Fluor and NuScale Power announced that they have reached an agreement regarding the conversion and monetization of Fluor\u2019s remaining stake in NuScale."
+      "title": "Prediction: These Stocks Could Deliver Market-Beating Returns Over the Next Decade",
+      "link": "https://www.fool.com/investing/2025/11/08/these-stocks-could-deliver-market-beating-returns/?.tsrc=rss",
+      "published": "Sat, 08 Nov 2025 13:00:00 +0000",
+      "summary": "Alphabet, Meta, and Arm could easily outperform the S&amp;P 500."
     },
     {
-      "title": "Meta estimates that it earns 10% of its revenue from scams, report says",
-      "link": "https://finance.yahoo.com/news/meta-estimates-earns-10-revenue-212051323.html?.tsrc=rss",
-      "published": "Thu, 06 Nov 2025 21:20:51 +0000",
-      "summary": "These fraudulent ads purport to offer a product or service that isn't actually real, and may be intended to solicit payments from less savvy users."
+      "title": "5 Top Artificial Intelligence Stocks to Buy in November",
+      "link": "https://www.fool.com/investing/2025/11/08/5-top-artificial-intelligence-stocks-to-buy-in-nov/?.tsrc=rss",
+      "published": "Sat, 08 Nov 2025 11:30:00 +0000",
+      "summary": "Multiple stocks have plenty of room to run before the end of the year."
     },
     {
-      "title": "NuScale Power Reports Third Quarter 2025 Results",
-      "link": "https://finance.yahoo.com/news/nuscale-power-reports-third-quarter-211500940.html?.tsrc=rss",
-      "published": "Thu, 06 Nov 2025 21:15:00 +0000",
-      "summary": "CORVALLIS, Ore., November 06, 2025--NuScale Power announced results for the third quarter ended September 30, 2025."
+      "title": "Meta gives $75K to Chamber Foundation to support Aiken Innovation Corridor",
+      "link": "https://www.postandcourier.com/aikenstandard/news/local/meta-aiken-chamber-innovation-corridor/article_df1758cd-500a-4f10-976c-d65fc5f7f2f7.html?.tsrc=rss",
+      "published": "Sat, 08 Nov 2025 10:48:00 +0000",
+      "summary": "Nov. 8\u2014AIKEN \u2014 Meta announced a $75,000 contribution to the Aiken Chamber of Commerce Foundation Nov. 7 in support of Aiken becoming a hub for high-tech innovation in research, manufacturing and entrepreneurship. Meta is building an $800 million data center in Sage Mill Industrial Park in the Graniteville/Vaucluse area. Laura Warren, Meta's community development regional manager for South ..."
     }
   ]
 }

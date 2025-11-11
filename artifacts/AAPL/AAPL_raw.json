@@ -4,22 +4,6 @@
     "symbol": "AAPL",
     "data": [
       {
-        "Date": "2025-10-23 00:00:00-04:00",
-        "Open": 259.94000244140625,
-        "High": 260.6199951171875,
-        "Low": 258.010009765625,
-        "Close": 259.5799865722656,
-        "Volume": 32754900
-      },
-      {
-        "Date": "2025-10-24 00:00:00-04:00",
-        "Open": 261.19000244140625,
-        "High": 264.1300048828125,
-        "Low": 259.17999267578125,
-        "Close": 262.82000732421875,
-        "Volume": 38253700
-      },
-      {
         "Date": "2025-10-27 00:00:00-04:00",
         "Open": 264.8800048828125,
         "High": 269.1199951171875,
@@ -81,7 +65,23 @@
         "High": 271.70001220703125,
         "Low": 266.92999267578125,
         "Close": 270.1400146484375,
-        "Volume": 43631900
+        "Volume": 43683100
+      },
+      {
+        "Date": "2025-11-06 00:00:00-05:00",
+        "Open": 267.8900146484375,
+        "High": 273.3999938964844,
+        "Low": 267.8900146484375,
+        "Close": 269.7699890136719,
+        "Volume": 51204000
+      },
+      {
+        "Date": "2025-11-07 00:00:00-05:00",
+        "Open": 269.79998779296875,
+        "High": 272.2900085449219,
+        "Low": 266.7699890136719,
+        "Close": 268.4700012207031,
+        "Volume": 48203600
       }
     ],
     "meta": {
@@ -176,12 +176,12 @@
     "key_metrics_ttm": [
       {
         "symbol": "AAPL",
-        "marketCap": 3991696696000,
-        "enterpriseValueTTM": 3963741696000,
-        "evToSalesTTM": 9.524539050992285,
-        "evToOperatingCashFlowTTM": 35.554992698372835,
-        "evToFreeCashFlowTTM": 40.13224757256978,
-        "evToEBITDATTM": 27.444603128223946,
+        "marketCap": 3967020108000,
+        "enterpriseValueTTM": 3939065108000,
+        "evToSalesTTM": 9.465243278442719,
+        "evToOperatingCashFlowTTM": 35.333642274089094,
+        "evToFreeCashFlowTTM": 39.88240108538277,
+        "evToEBITDATTM": 27.27374457684505,
         "netDebtToEBITDATTM": -0.193557991234326,
         "currentRatioTTM": 0.8932929222186667,
         "incomeQualityTTM": 0.995286135166503,
@@ -197,8 +197,8 @@
         "returnOnEquityTTM": 1.6404691029851675,
         "returnOnInvestedCapitalTTM": 0.5569792592477901,
         "returnOnCapitalEmployedTTM": 0.6872062393471412,
-        "earningsYieldTTM": 0.02773768973235393,
-        "freeCashFlowYieldTTM": 0.024743112396032607,
+        "earningsYieldTTM": 0.027910230209327258,
+        "freeCashFlowYieldTTM": 0.02489702530139028,
         "capexToOperatingCashFlowTTM": 0.11405428679069267,
         "capexToDepreciationTTM": 1.0869379381090785,
         "capexToRevenueTTM": 0.030553079216937677,
@@ -223,58 +223,58 @@
   },
   "news": [
     {
-      "title": "Trump Tariffs Are on the Block, Axing Them Would Have Unexpected Market Consequences. And 5 Other Things to Know Today.",
-      "link": "https://finance.yahoo.com/m/3733db26-0d2c-338c-a878-4ea8a51d8cc6/trump-tariffs-are-on-the.html?.tsrc=rss",
-      "published": "Thu, 06 Nov 2025 11:51:00 +0000",
-      "summary": "Hope for and end to the government shutdown as it enters Day 37, Robinhood\u2019s revenue doubles, and more news to start your day."
+      "title": "Earnings To Watch: Jamf (JAMF) Reports Q3 Results Tomorrow",
+      "link": "https://finance.yahoo.com/news/earnings-watch-jamf-jamf-reports-030422175.html?.tsrc=rss",
+      "published": "Sun, 09 Nov 2025 03:04:22 +0000",
+      "summary": "Apple device management company Jamf (NASDAQ:JAMF) will be reporting earnings this Monday afternoon. Here\u2019s what you need to know."
     },
     {
-      "title": "Arm Beats Earnings. The Stock Is Rising.",
-      "link": "https://finance.yahoo.com/m/3cf9c798-efe7-3388-880b-2e1889123eed/arm-beats-earnings.-the-stock.html?.tsrc=rss",
-      "published": "Thu, 06 Nov 2025 11:45:00 +0000",
-      "summary": "The chip designer is generating higher royalty rates and is making progress in the cloud-server processor market."
+      "title": "Apple Is Berkshire Hathaway's Largest Holding by Value. But Is the California-Based Company Still a Strong Play for Long-Term Growth?",
+      "link": "https://www.fool.com/investing/2025/11/08/apple-is-berkshire-hathaways-largest-holding-by-va/?.tsrc=rss",
+      "published": "Sat, 08 Nov 2025 18:41:00 +0000",
+      "summary": "Buffett and his team's confidence in this stock isn't misplaced."
     },
     {
-      "title": "AppLovin Reports Strong Earnings. The Stock Is Up.",
-      "link": "https://finance.yahoo.com/m/7095ea3a-8844-38c5-9b12-5c4f0e8a7d8e/applovin-reports-strong.html?.tsrc=rss",
-      "published": "Thu, 06 Nov 2025 11:37:00 +0000",
-      "summary": "AppLovin  reported strong third-quarter earnings results Wednesday afternoon.  Earnings per share were $2.45, above Wall Street\u2019s consensus estimate of $2.38, and up from $1.29 last year.  Its profit margin for the third quarter was a little soft at 59.5%, against a Wall Street consensus of 62.1%."
+      "title": "Prediction: This Supercharged Growth Stock Will Join Nvidia, Apple, Microsoft, and Alphabet in the $3 Trillion Club Before 2028",
+      "link": "https://www.fool.com/investing/2025/11/08/prediction-supercharged-growth-stock-3-trillion/?.tsrc=rss",
+      "published": "Sat, 08 Nov 2025 18:02:00 +0000",
+      "summary": "This category-leading semiconductor and infrastructure software specialist is experiencing robust growth due to artificial intelligence (AI). There could be much more to come."
     },
     {
-      "title": "\u2018Jenga Tower\u2019 US Economy Teeters as Middle Class Pulls Back Spending",
-      "link": "https://finance.yahoo.com/news/jenga-tower-us-economy-teeters-110000726.html?.tsrc=rss",
-      "published": "Thu, 06 Nov 2025 11:00:00 +0000",
-      "summary": "This dichotomy between the haves and have-nots isn\u2019t new, but the economic strain is now bleeding from the lowest earners to the middle class, creating an even starker divide that some economists say makes the economy more susceptible to a downturn.  The richest 10% of households are fueling nearly half of total US spending, thanks to a stock market surge that has boosted wealth and in turn propelled economic output this year.  Meanwhile, lower-income families are pulling back in the face of tight budgets, still-high living costs and a raft of corporate layoffs."
+      "title": "How Analysts See Globalstar\u2019s Story Changing Amid Sale Talks and New Spectrum Opportunities",
+      "link": "https://finance.yahoo.com/news/analysts-see-globalstar-story-changing-161240961.html?.tsrc=rss",
+      "published": "Sat, 08 Nov 2025 16:12:40 +0000",
+      "summary": "Globalstar's fair value estimate remains steady at $60.00 per share. This reflects analysts' continued confidence in the company's long-term prospects. While the discount rate has edged slightly higher, consistent revenue growth projections reinforce a generally positive outlook for the stock. Stay tuned to discover how you can keep track of future updates as the Globalstar story develops further. Analyst Price Targets don't always capture the full story. Head over to our Company Report to..."
     },
     {
-      "title": "Meet the Super Semiconductor Stock Crushing Nvidia and Broadcom Right Now",
-      "link": "https://www.fool.com/investing/2025/11/06/meet-semiconductor-stock-crushing-nvidia-broadcom/?.tsrc=rss",
-      "published": "Thu, 06 Nov 2025 10:45:00 +0000",
-      "summary": "The incredible value created by artificial intelligence is starting to reach every corner of the semiconductor industry."
+      "title": "Why Apple Stock Might Be Spared If an AI Bubble Bursts",
+      "link": "https://247wallst.com/investing/2025/11/08/why-apple-stock-might-be-spared-if-an-ai-bubble-bursts/?.tsrc=rss",
+      "published": "Sat, 08 Nov 2025 15:11:47 +0000",
+      "summary": "With stocks wobbling in the past week over potential AI valuation worries, investors might have noticed that much of the Magnificent Seven has been increasingly choppy while Apple (NASDAQ:AAPL) has acted like a steady rock, holding its ground at around $270 per share. While the positive initial post-earnings reaction has faded, I do think that ... Why Apple Stock Might Be Spared If an AI Bubble Bursts"
     },
     {
-      "title": "Pound near seven-month lows ahead of UK interest rate decision",
-      "link": "https://uk.finance.yahoo.com/news/pound-interest-rates-gold-price-oil-latest-091705244.html?.tsrc=rss",
-      "published": "Thu, 06 Nov 2025 09:17:05 +0000",
-      "summary": "Traders are cautious as the city awaits the Bank of England\u2019s decision on interest rates."
+      "title": "Every payment method Costco accepts: From EBT to Apple Pay",
+      "link": "https://www.thestreet.com/retail/what-payment-methods-does-costco-accept?.tsrc=rss",
+      "published": "Sat, 08 Nov 2025 15:08:00 +0000",
+      "summary": "Costco is America\u2019s favorite warehouse club, boasting almost twice as many members as its next-biggest rival, Sam\u2019s Club, despite its more expensive membership fees. Another important distinction between the retailers is the payment methods each one accepts. For instance, while you can use any ..."
     },
     {
-      "title": "Duolingo: Speaking Growth Fluently, Despite the AI Noise",
-      "link": "https://finance.yahoo.com/news/duolingo-speaking-growth-fluently-despite-085418923.html?.tsrc=rss",
-      "published": "Thu, 06 Nov 2025 08:54:18 +0000",
-      "summary": "Duolingo is a strong growth story, as AI fears seem overstated and its vast user base, brand, and monetization potential point to significant upside."
+      "title": "As Warren Buffett Waves Goodbye \u2013 5 Dividend Stocks That Never Leave Berkshire Hathaway",
+      "link": "https://247wallst.com/investing/2025/11/08/as-warren-buffett-waves-goodbye-5-dividend-stocks-that-never-leave-berkshire-hathaway/?.tsrc=rss",
+      "published": "Sat, 08 Nov 2025 13:31:06 +0000",
+      "summary": "If any investor has stood the test of time, it\u2019s Warren Buffett, and with good reason. For years, the \u201cOracle of Omaha\u201d has had a rock star-like presence in the investing world, and his annual Berkshire Hathaway shareholders meeting draws thousands of loyal fans who are investors. They were stunned at this year\u2019s meeting when ... As Warren Buffett Waves Goodbye \u2013 5 Dividend Stocks That Never Leave Berkshire Hathaway"
     },
     {
-      "title": "FTSE 100 LIVE: Stocks slide as Bank of England holds interest rates at 4% in narrow vote",
-      "link": "https://uk.finance.yahoo.com/news/ftse-100-live-blog-bank-of-england-tricky-interest-rate-decision-085335430.html?.tsrc=rss",
-      "published": "Thu, 06 Nov 2025 08:53:35 +0000",
-      "summary": "Policymakers were split 5-4 on the decision, though, showing that the decision was narrow, with governor Andrew Bailey having the decisive vote."
+      "title": "Today's AI boom is 'very different' from the 90s dot-com bubble",
+      "link": "https://finance.yahoo.com/video/todays-ai-boom-very-different-130030753.html?.tsrc=rss",
+      "published": "Sat, 08 Nov 2025 13:00:30 +0000",
+      "summary": "BMO Private Wealth chief market strategist, Carol Schleif, joins Morning Brief with Yahoo Finance Senior Reporter Allie Canal to discuss whether markets (^DJI, ^GSPC, ^IXIC) are seeing an artificial intelligence (AI) bubble and to share her thoughts on Big Tech companies funding their AI projects with debt. To watch more expert insights and analysis on the latest market action, check out more Morning Brief."
     },
     {
-      "title": "Zacks Earnings Trends Highlights: Nvidia, Amazon, Alphabet, Microsoft and Meta, Apple and Tesla",
-      "link": "https://finance.yahoo.com/news/zacks-earnings-trends-highlights-nvidia-082600915.html?.tsrc=rss",
-      "published": "Thu, 06 Nov 2025 08:26:00 +0000",
-      "summary": "Nvidia, Amazon, Alphabet, Microsoft and Meta, Apple and Tesla have been highlighted in this Earnings Trends article."
+      "title": "Apple\u2019s iPhone Air Is a Marketing Win and a Sales Flop",
+      "link": "https://finance.yahoo.com/m/2f8e782a-74d8-322b-b083-b1343ad96688/apple%E2%80%99s-iphone-air-is-a.html?.tsrc=rss",
+      "published": "Sat, 08 Nov 2025 12:00:00 +0000",
+      "summary": "Just one in 10 iPhone 17 buyers in the U.S. opted for the Air in the early weeks of sales, a consumer survey found, with some dissatisfied with its camera, sound quality, battery and price."
     }
   ]
 }

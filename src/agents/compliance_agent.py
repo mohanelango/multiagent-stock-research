@@ -10,7 +10,6 @@ class ComplianceAgent:
     def __init__(self, llm: ChatOpenAI, forbidden: List[str], disclosure: List[str]):
         self.llm = llm
         self.forbidden = forbidden
-        # self.disclosure = disclosure
         self.prompt = ChatPromptTemplate.from_messages([
             ("system", "You are a compliance officer ensuring neutral tone and lawful phrasing."),
             ("user", """Analyst Note:
@@ -30,5 +29,4 @@ class ComplianceAgent:
             # "disclosure": self.disclosure
         })
         logger.info("Compliance check done.")
-        print("------>>>>>>", out.content)
         return out.content
