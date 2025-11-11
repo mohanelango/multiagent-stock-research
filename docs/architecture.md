@@ -20,21 +20,12 @@ This project uses multiple specialized AI agents working in sequence and orchest
 
 ```mermaid
 flowchart TD
-    subgraph INPUT["🧠 User Input"]
-        A[Symbol + Days]
-    end
-    subgraph AGENTS["🧩 Multi-Agent Pipeline"]
-        B[Data Agent\n(yfinance + FMP + RSS)]
-        C[Analyst Agent\n(GPT-5 Narrative)]
-        D[Compliance Agent\n(Phrasing + Disclosures)]
-        E[Supervisor Agent\n(Quality Review)]
-        F[Publisher\n(Markdown + Plot + PDF)]
-    end
-    subgraph OUTPUT["📦 Artifacts"]
-        G[raw.json\n.md\n.pdf\nchart.png]
-    end
-
-    A --> B --> C --> D --> E --> F --> G
+    A[User Input: Symbol + Days] --> B[Data Agent\n(yfinance + FMP + RSS)]
+    B -->|bundle| C[Analyst Agent\n(GPT-5 Narrative)]
+    C --> D[Compliance Agent\n(Phrasing + Disclosures)]
+    D --> E[Supervisor Agent\n(Quality Review)]
+    E --> F[Publisher\n(Markdown + Plot + PDF)]
+    F --> G[Artifacts Folder\n(raw.json, .md, .pdf, chart.png)]
 
 ```
 ---
