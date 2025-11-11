@@ -20,12 +20,13 @@ This project uses multiple specialized AI agents working in sequence and orchest
 
 ```mermaid
 flowchart TD
-    A[User Input: Symbol + Days] --> B["Data Agent\n yfinance + FMP + RSS"]
-    B --> C["Analyst Agent\n GPT-5 Narrative"]
-    C --> D["Compliance Agent\n Phrasing & Disclosures"]
-    D --> E["Supervisor Agent\n Quality Review"]
-    E --> F["Publisher\n Markdown + Plot + PDF"]
-    F --> G["Artifacts Folder\n raw.json, .md, .pdf, chart.png"]
+    A["User Input: Symbol + Days"] --> B["Data Agent<br/>yfinance + FMP + RSS"]
+    B --> C["Analyst Agent<br/>GPT-5 Narrative"]
+    C --> D["Compliance Agent<br/>Phrasing & Disclosures"]
+    D --> E["Supervisor Agent<br/>Quality Review"]
+    E --> F["Publisher<br/>Markdown + Plot + PDF"]
+    F --> G["Artifacts Folder<br/>raw.json, .md, .pdf, chart.png"]
+
 
 
 ```
