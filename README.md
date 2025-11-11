@@ -1,18 +1,18 @@
 # Multi-Agent Stock Market Research (Powered by LangChain + LangGraph)
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
-[![LangChain](https://img.shields.io/badge/langchain-0.2.0-purple.svg)](https://github.com/langchain-ai/langchain)
+[![LangChain](https://img.shields.io/badge/langchain-0.3.27-purple.svg)](https://github.com/langchain-ai/langchain)
+![LLM](https://img.shields.io/badge/Orchestrator-Langgraph-red)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![FastAPI](https://img.shields.io/badge/FastAPI-ready-brightgreen.svg)](https://fastapi.tiangolo.com)
 [![Works with GPT-5](https://img.shields.io/badge/LLM-GPT--5-black.svg)](https://platform.openai.com)
 ![AIEngineering](https://img.shields.io/badge/Discipline-AI_Engineering-purple)
 ![LangChain](https://img.shields.io/badge/Framework-LangChain-orange)
-![LLM](https://img.shields.io/badge/Orchestrator-Langgraph-red)
 ![LLM](https://img.shields.io/badge/Model-LLM-black)
-![LLM](https://img.shields.io/badge/Data-Agent-red)
-![LLM](https://img.shields.io/badge/Analyst-Agent-purple)
-![LLM](https://img.shields.io/badge/Compliance-Agent-Green)
-![LLM](https://img.shields.io/badge/Supervisor-Agent-blue)
+![LLM](https://img.shields.io/badge/Data-Agent-blue)
+![LLM](https://img.shields.io/badge/Analyst-Agent-lightgreen)
+![LLM](https://img.shields.io/badge/Compliance-Agent-red)
+![LLM](https://img.shields.io/badge/Supervisor-Agent-orange)
 ---
 
 ## Why This Project Exists
@@ -127,6 +127,7 @@ They communicate via a LangGraph state machine and are orchestrated end-to-end t
 ## Architecture Overview
 
 ![Architecture Example](docs/Multiagent.svg)
+
 This architecture diagram shows how a stock symbol request flows through a LangGraph-powered multi-agent pipeline — from data collection, AI analysis, and compliance filtering to final report generation and artifact export.
 For a deeper explanation, see [`docs/architecture.md`](docs/architecture.md)
 
@@ -152,7 +153,6 @@ python -m src.cli --symbol AAPL --days 10 --outdir artifacts
 ### Start the server:
 ```bash
 uvicorn src.api:app --reload --port 8000
-
 ```
 ### Example call:
 ```
@@ -161,14 +161,27 @@ curl -X POST http://127.0.0.1:8000/analyze \
 -d '{"symbol":"META","days":10}'
 ```
 ### Sample API Output:
-![CLI Example](docs/screenshots/api.png):
-
+![CLI Example](docs/screenshots/api.png)
+---
 ### Sample Chart Output:
 ![CLI Example](artifacts/META/META_chart.png)
+---
 
+## Tests & Quality Assurance
 
+This repository uses pytest for unit and integration testing.
+Mock-based tests validate the behavior of each Agent independently (DataAgent, AnalystAgent, ComplianceAgent, SupervisorAgent).
+### Run All Tests
+```bash
+pytest -v --disable-warnings
+```
+### Run a Single Test File
+```bash
+pytest tests/test_analyst_agent.py -v
+```
+---
 ## Contributing
-PRs are welcome! Whether you're fixing a bug, improving PDF formatting, or adding a new tool — open a PR and let's build better agent workflows together
+PRs are welcome! Whether you're fixing a bug, improving PDF formatting, or adding a new tool — open a PR and let's build better agent workflows together.
 
 ---
 ## License

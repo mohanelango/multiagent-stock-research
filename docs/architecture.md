@@ -26,9 +26,6 @@ flowchart TD
     D --> E["Supervisor Agent<br/>Quality Review"]
     E --> F["Publisher<br/>Markdown + Plot + PDF"]
     F --> G["Artifacts Folder<br/>raw.json, .md, .pdf, chart.png"]
-
-
-
 ```
 ---
 ### Module Breakdown

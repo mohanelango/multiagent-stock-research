@@ -3911,3 +3911,109 @@ ValueError: Strict mode abort: missing critical data: income_statement, key_metr
 2025-11-09 13:44:03 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for META -> artifacts\META\META_2025-11-09_report.md
 2025-11-09 13:44:04 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for META -> artifacts\META\META_2025-11-09_report.pdf
 2025-11-09 13:44:04 [INFO] src.api: Report successfully generated for META
+2025-11-11 11:56:04 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=6
+2025-11-11 11:56:04 [INFO] src.agents.data_agent: Fetching data for AAPL (last 7 days)
+2025-11-11 11:56:04 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 1 price rows, 1 news items
+2025-11-11 12:03:57 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-11 12:03:57 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2025-11-11 12:03:57 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2025-11-11 12:12:18 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-11 12:12:18 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2025-11-11 12:12:18 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2025-11-11 12:13:09 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-11 12:13:09 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2025-11-11 12:13:09 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2025-11-11 12:16:15 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-11 12:16:15 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2025-11-11 12:16:15 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2025-11-11 12:21:36 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-11 12:21:36 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2025-11-11 12:21:36 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2025-11-11 12:29:05 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-11 12:29:05 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2025-11-11 12:29:05 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2025-11-11 12:38:12 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-11 12:38:12 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2025-11-11 12:38:12 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2025-11-11 12:42:24 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-11 12:42:24 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2025-11-11 12:42:24 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2025-11-11 12:43:17 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-11 12:43:17 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2025-11-11 12:43:17 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2025-11-11 13:08:35 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-11 13:08:35 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2025-11-11 13:08:35 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2025-11-11 13:13:34 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-11 13:13:34 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-11 13:13:34 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-11 13:14:40 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-11 13:14:40 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-11 13:14:40 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-11 13:43:54 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-11 13:43:54 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-11 13:43:54 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-11 13:51:02 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-11 13:51:02 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2025-11-11 13:51:02 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2025-11-11 13:52:12 [INFO] src.tools.price_tool: Fetched 5 records for AAPL
+2025-11-11 13:53:02 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=7) ===
+2025-11-11 13:53:03 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-11 13:53:03 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-11 13:53:03 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-11 13:53:03 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-11 13:53:03 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-11 13:53:03 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-11 13:53:03 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2025-11-11 13:53:03 [INFO] src.agents.data_agent: Fetching data for AAPL (last 7 days)
+2025-11-11 13:53:04 [INFO] src.tools.price_tool: Fetched 7 records for AAPL
+2025-11-11 13:53:05 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2025-11-11 13:53:06 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2025-11-11 13:53:09 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2025-11-11 13:53:09 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 7 price rows, 9 news items
+2025-11-11 13:53:09 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2025-11-11 13:53:09 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2025-11-11 13:53:09 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2025-11-11 13:53:54 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2025-11-11 13:53:54 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2025-11-11 13:53:54 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2025-11-11 13:53:54 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-11 13:54:25 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-11 13:54:25 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2025-11-11 13:54:25 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2025-11-11 13:54:26 [INFO] src.tools.plot_tool: Saved price chart to C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-0/test_pipeline_smoke0\AAPL\AAPL_chart.png
+2025-11-11 13:54:26 [INFO] src.tools.storage_tool: Saved JSON: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-0/test_pipeline_smoke0\AAPL\AAPL_raw.json
+2025-11-11 13:54:26 [INFO] src.tools.storage_tool: Saved Markdown: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-0/test_pipeline_smoke0\AAPL\AAPL_2025-11-11_report.md
+2025-11-11 13:54:26 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-0/test_pipeline_smoke0\AAPL\AAPL_2025-11-11_report.md
+2025-11-11 13:54:28 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-0/test_pipeline_smoke0\AAPL\AAPL_2025-11-11_report.pdf
+2025-11-11 13:55:31 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2025-11-11 13:55:31 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=5) ===
+2025-11-11 13:55:32 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-11 13:55:32 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-11 13:55:32 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-11 13:55:32 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-11 13:55:32 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-11 13:55:32 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-11 13:55:32 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2025-11-11 13:55:32 [INFO] src.agents.data_agent: Fetching data for AAPL (last 5 days)
+2025-11-11 13:55:32 [INFO] src.tools.price_tool: Fetched 5 records for AAPL
+2025-11-11 13:55:33 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2025-11-11 13:55:34 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2025-11-11 13:55:37 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2025-11-11 13:55:37 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 5 price rows, 9 news items
+2025-11-11 13:55:37 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2025-11-11 13:55:37 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2025-11-11 13:55:37 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2025-11-11 13:56:22 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2025-11-11 13:56:22 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2025-11-11 13:56:22 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2025-11-11 13:56:22 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-11 13:56:45 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-11 13:56:45 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2025-11-11 13:56:45 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2025-11-11 13:56:46 [INFO] src.tools.plot_tool: Saved price chart to C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-1/test_analyze_endpoint0\AAPL\AAPL_chart.png
+2025-11-11 13:56:46 [INFO] src.tools.storage_tool: Saved JSON: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-1/test_analyze_endpoint0\AAPL\AAPL_raw.json
+2025-11-11 13:56:46 [INFO] src.tools.storage_tool: Saved Markdown: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-1/test_analyze_endpoint0\AAPL\AAPL_2025-11-11_report.md
+2025-11-11 13:56:46 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-1/test_analyze_endpoint0\AAPL\AAPL_2025-11-11_report.md
+2025-11-11 13:56:47 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-1/test_analyze_endpoint0\AAPL\AAPL_2025-11-11_report.pdf
+2025-11-11 13:56:47 [INFO] src.api: Report successfully generated for AAPL
