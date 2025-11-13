@@ -4,22 +4,6 @@
     "symbol": "META",
     "data": [
       {
-        "Date": "2025-11-03 00:00:00-05:00",
-        "Open": 656.0,
-        "High": 659.3300170898438,
-        "Low": 636.1799926757812,
-        "Close": 637.7100219726562,
-        "Volume": 33003600
-      },
-      {
-        "Date": "2025-11-04 00:00:00-05:00",
-        "Open": 628.0399780273438,
-        "High": 641.739990234375,
-        "Low": 626.010009765625,
-        "Close": 627.3200073242188,
-        "Volume": 27356600
-      },
-      {
         "Date": "2025-11-05 00:00:00-05:00",
         "Open": 632.3099975585938,
         "High": 642.22998046875,
@@ -41,7 +25,23 @@
         "High": 622.1300048828125,
         "Low": 601.2000122070312,
         "Close": 621.7100219726562,
-        "Volume": 29868200
+        "Volume": 29946800
+      },
+      {
+        "Date": "2025-11-10 00:00:00-05:00",
+        "Open": 631.0900268554688,
+        "High": 635.0,
+        "Low": 618.1099853515625,
+        "Close": 631.760009765625,
+        "Volume": 19245000
+      },
+      {
+        "Date": "2025-11-11 00:00:00-05:00",
+        "Open": 628.0,
+        "High": 629.5599975585938,
+        "Low": 619.3900146484375,
+        "Close": 627.0800170898438,
+        "Volume": 13254900
       }
     ],
     "meta": {
@@ -136,12 +136,12 @@
     "key_metrics_ttm": [
       {
         "symbol": "META",
-        "marketCap": 1567037324860,
-        "enterpriseValueTTM": 1607910324860,
-        "evToSalesTTM": 8.486940703484168,
-        "evToOperatingCashFlowTTM": 14.947016238682208,
-        "evToFreeCashFlowTTM": 35.85803895675832,
-        "evToEBITDATTM": 15.71959608611065,
+        "marketCap": 1580572492558,
+        "enterpriseValueTTM": 1621445492558,
+        "evToSalesTTM": 8.5583826016352,
+        "evToOperatingCashFlowTTM": 15.072838163106326,
+        "evToFreeCashFlowTTM": 36.15988699087888,
+        "evToEBITDATTM": 15.85192148130261,
         "netDebtToEBITDATTM": 0.3995913459188362,
         "currentRatioTTM": 1.9784079225066291,
         "incomeQualityTTM": 1.837992072170585,
@@ -157,8 +157,8 @@
         "returnOnEquityTTM": 0.30934379137475854,
         "returnOnInvestedCapitalTTM": 0.21179434225716978,
         "returnOnCapitalEmployedTTM": 0.30685386269793097,
-        "earningsYieldTTM": 0.03740180962567088,
-        "freeCashFlowYieldTTM": 0.02861514482688287,
+        "earningsYieldTTM": 0.0370815192038908,
+        "freeCashFlowYieldTTM": 0.028370100208076683,
         "capexToOperatingCashFlowTTM": 0.5831613586926209,
         "capexToDepreciationTTM": 3.551259552787999,
         "capexToRevenueTTM": 0.3311199902880337,
@@ -183,58 +183,58 @@
   },
   "news": [
     {
-      "title": "Trump\u2019s Tax Cuts Are Exposing Companies to Biden\u2019s Tax Hike",
-      "link": "https://finance.yahoo.com/m/320e99c0-5893-3420-b692-c7fbd001b742/trump%E2%80%99s-tax-cuts-are-exposing.html?.tsrc=rss",
-      "published": "Sun, 09 Nov 2025 02:00:00 +0000",
-      "summary": "Democrats\u2019 older alternative minimum tax claws back billions of dollars in savings from the newer GOP law."
+      "title": "Pinterest Down 16.6% in 6 Months: Should it Be in Your Portfolio?",
+      "link": "https://finance.yahoo.com/news/pinterest-down-16-6-6-120200171.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 12:02:00 +0000",
+      "summary": "PINS' 16.6% slide contrasts with industry gains, as rising costs, stiff competition and bearish revisions cloud its outlook."
     },
     {
-      "title": "Is Wall Street losing faith in AI?",
-      "link": "https://finance.yahoo.com/news/wall-street-losing-faith-ai-205300697.html?.tsrc=rss",
-      "published": "Sat, 08 Nov 2025 20:53:00 +0000",
-      "summary": "A rough week for tech stocks might signal a loss of investor confidence in artificial intelligence."
+      "title": "S&P 500 May Break 7,000 Barrier Before Year-End, Wells Fargo Predicts",
+      "link": "https://finance.yahoo.com/news/p-500-may-break-7-120049178.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 12:00:49 +0000",
+      "summary": "Wells Fargo Predicts Risk-On Rally as S&amp;P 500 Eyes Record Close"
     },
     {
-      "title": "Did Meta\u2019s $29 Billion Bond Issuance Just Redefine the AI Investment Narrative for META?",
-      "link": "https://finance.yahoo.com/news/did-meta-29-billion-bond-191418041.html?.tsrc=rss",
-      "published": "Sat, 08 Nov 2025 19:14:18 +0000",
-      "summary": "In late October 2025, Meta Platforms completed multiple fixed-income offerings totaling over US$29 billion to finance the company's major AI initiatives and infrastructure expansion, including new data centers and increased renewable energy procurement for its U.S. operations. This large-scale capital raising and leadership changes in Meta's AI division underscore an intensifying commitment to artificial intelligence and sustainability that could reshape the company's long-term growth..."
+      "title": "Innoviz Reports Third Quarter 2025 Results",
+      "link": "https://finance.yahoo.com/news/innoviz-reports-third-quarter-2025-120000252.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 12:00:00 +0000",
+      "summary": "Innoviz Technologies Ltd. (NASDAQ: INVZ) (the \"Company\" or \"Innoviz\"), a leading Tier-1 direct supplier of high performance, automotive-grade LiDAR sensor platforms and complementary software stack, today provided commercial and strategic updates on its business, reported its financial results for the quarter ended September 30, 2025 and reiterated its full year commercial and financial targets."
     },
     {
-      "title": "How startups can lure good talent\u00a0fairly without big tech bank accounts",
-      "link": "https://finance.yahoo.com/news/startups-lure-good-talent-fairly-140000556.html?.tsrc=rss",
-      "published": "Sat, 08 Nov 2025 14:00:00 +0000",
-      "summary": "Three industry insiders walk through how startups can set up an employee equity strategy that remains fair as a company grows."
+      "title": "The $400 Billion AI Boom That Just Supercharged This Apple Supplier's Stock",
+      "link": "https://finance.yahoo.com/news/400-billion-ai-boom-just-115043770.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 11:50:43 +0000",
+      "summary": "Hon Hai's Nvidia-powered server surge is rewriting the playbook--just as tech giants double down on AI spending."
     },
     {
-      "title": "The Weekend: Markets tank as AI bubble fears grow, while Musk celebrates record pay day",
-      "link": "https://uk.finance.yahoo.com/news/markets-ai-bubble-musk-pay-tech-stocks-weekend-135521279.html?.tsrc=rss",
-      "published": "Sat, 08 Nov 2025 13:55:21 +0000",
-      "summary": "Key moments from the last seven days, plus a glimpse at the week ahead."
+      "title": "How buying the dip & selling the rip is fueling investor gains",
+      "link": "https://finance.yahoo.com/video/buying-dip-selling-rip-fueling-113005363.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 11:30:05 +0000",
+      "summary": "Charles Schwab clients were net buyers of equities in October despite many believing the market is overvalued. Charles Schwab head trading and derivatives strategist Joe Mazzola joins Market Domination Overtime to discuss the current market dynamics. To watch more expert insights and analysis on the latest market action, check out more Market Domination Overtime."
     },
     {
-      "title": "Today's AI boom is 'very different' from the 90s dot-com bubble",
-      "link": "https://finance.yahoo.com/video/todays-ai-boom-very-different-130030753.html?.tsrc=rss",
-      "published": "Sat, 08 Nov 2025 13:00:30 +0000",
-      "summary": "BMO Private Wealth chief market strategist, Carol Schleif, joins Morning Brief with Yahoo Finance Senior Reporter Allie Canal to discuss whether markets (^DJI, ^GSPC, ^IXIC) are seeing an artificial intelligence (AI) bubble and to share her thoughts on Big Tech companies funding their AI projects with debt. To watch more expert insights and analysis on the latest market action, check out more Morning Brief."
+      "title": "Investors Now See Some Companies as Safer Bets Than Governments",
+      "link": "https://finance.yahoo.com/news/investors-now-see-companies-safer-110012648.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 11:00:12 +0000",
+      "summary": "In corporate boardrooms since the pandemic era, executives have dealt with the rise in interest rates by keeping budgets lean and reducing overall indebtedness.  Meanwhile, governments in rich countries continue to spend, with the average debt-to-output ratio across the Group of Seven industrialized nations set to keep rising until the end of this decade at least.  The result: Investors demand lower yields for bonds issued by Microsoft Corp., Airbus SE, L\u2019Oreal SA, and Siemens AG than they do for their countries of origin."
     },
     {
-      "title": "Prediction: These Stocks Could Deliver Market-Beating Returns Over the Next Decade",
-      "link": "https://www.fool.com/investing/2025/11/08/these-stocks-could-deliver-market-beating-returns/?.tsrc=rss",
-      "published": "Sat, 08 Nov 2025 13:00:00 +0000",
-      "summary": "Alphabet, Meta, and Arm could easily outperform the S&amp;P 500."
+      "title": "The AI Boom Is Looking More and More Fragile",
+      "link": "https://finance.yahoo.com/m/4303359f-6b86-376d-87ea-0a9edfeac7aa/the-ai-boom-is-looking-more.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 10:30:00 +0000",
+      "summary": "Perfect isn\u2019t good enough, and any sign of weakness is a disaster: Justified or not, that\u2019s the current mood in the markets about the AI boom.  Generative artificial-intelligence services require massive data centers and state-of-the-art chips and server racks that don\u2019t come together quickly.  Nvidia  lost 7% last week and slipped another 3% on Tuesday\u2014leaving it well shy of its $5 trillion market-cap milestone last month."
     },
     {
-      "title": "5 Top Artificial Intelligence Stocks to Buy in November",
-      "link": "https://www.fool.com/investing/2025/11/08/5-top-artificial-intelligence-stocks-to-buy-in-nov/?.tsrc=rss",
-      "published": "Sat, 08 Nov 2025 11:30:00 +0000",
-      "summary": "Multiple stocks have plenty of room to run before the end of the year."
+      "title": "Prediction: This Dividend-Paying Value Stock Will Join Berkshire Hathaway in the $1 Trillion Club Before Walmart",
+      "link": "https://www.fool.com/investing/2025/11/12/buy-dividend-value-stock-jpmorgan-chase-berkshire/?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 08:05:00 +0000",
+      "summary": "The $1 trillion club is growing due to record earnings and investor enthusiasm."
     },
     {
-      "title": "Meta gives $75K to Chamber Foundation to support Aiken Innovation Corridor",
-      "link": "https://www.postandcourier.com/aikenstandard/news/local/meta-aiken-chamber-innovation-corridor/article_df1758cd-500a-4f10-976c-d65fc5f7f2f7.html?.tsrc=rss",
-      "published": "Sat, 08 Nov 2025 10:48:00 +0000",
-      "summary": "Nov. 8\u2014AIKEN \u2014 Meta announced a $75,000 contribution to the Aiken Chamber of Commerce Foundation Nov. 7 in support of Aiken becoming a hub for high-tech innovation in research, manufacturing and entrepreneurship. Meta is building an $800 million data center in Sage Mill Industrial Park in the Graniteville/Vaucluse area. Laura Warren, Meta's community development regional manager for South ..."
+      "title": "Big Tech starts complying with Australia's teen social media ban",
+      "link": "https://finance.yahoo.com/video/big-tech-starts-complying-australias-073722210.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 07:37:22 +0000",
+      "summary": "<p>STORY: Australian teenagers are set to lose their social media accounts, with a ban on young users set to kick in from December 10.\u00a0</p><p>Over the coming days, online platforms like TikTok, Snapchat, Meta and Instagram will notify more than a million teen account holders in the country.\u00a0</p><p>Users under the age of 16 must choose an option:\u00a0</p><p>Download data, freeze their profiles, or lose everything under the world-first ban on kids using social media.</p><p>Based on information from insiders, the big platforms plan to deactivate accounts for users under the age of 16.</p><p>Australia's other 20 million social media users should face no big changes.</p><p>The move puts the nation out front in shielding young people from online risks.</p><p>Earlier this year, platforms had warned of total chaos, fearing that they could lose users and face $32 million fines for breaking the rules.</p><p>They said required age checks would mean constant logins, invade privacy and often be wrong or easy to dodge.</p><p>But now, firms will use existing software that guesses ages from user habits, instead of asking for birth dates all the time.</p><p>They will generally only push people to special age-check apps if someone complains about being blocked by mistake.</p><p>The setup might hit snags at first.</p><p>Age-check apps which are being deployed at scale for the first time can make mistakes.</p><p>La Trobe University AI professor Daswin De Silva explains:</p><p>\"One of the challenges with age verification also is this band between 15, 16, 17, how do you distinguish 15 from 16 to 17. So a lot of the technological methods of age verification will fail in that narrow band and there might be false positives where certain individuals who are over 16, slightly over 16 will be banned from these platforms because their content was classified as relevant to under an 16 sort of target demographic.\"</p><p>\"It's probably going to be service distortion, service failure for a couple of days or weeks maybe until the platforms figure this out, and we'll see a lot of articles on media and maybe on social media itself of false positives.\"</p><p>Meta, Snapchat, TikTok and Google declined to comment.</p><p>The law states that such platforms must take \"reasonable steps\" to block minors.</p><p>If the rollout goes smoothly, it could guide the world in cutting kids' exposure to harms like bullying or weight issues from screens.</p><p>The UK and France added age gates for porn earlier this year.\u00a0</p><p>Then in November, Denmark said it would ban under-15s from social media.</p>"
     }
   ]
 }

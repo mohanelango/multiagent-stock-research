@@ -30,7 +30,7 @@ def _llm_from_cfg(cfg: Dict[str, Any]) -> ChatOpenAI:
     prov = cfg["llm"]["provider"]
     model = cfg["llm"]["model"]
     temperature = cfg["llm"].get("temperature", 1.0)
-    max_tokens = cfg["llm"].get("max_tokens", 1500)
+    max_tokens = cfg["llm"].get("max_tokens", 3500)
 
     # Force safe defaults for GPT-5 or GPT-4o models
     if any(tag in model for tag in ["gpt-5", "gpt-4o"]) and temperature != 1.0:
@@ -183,19 +183,19 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
         max_ret = float(stats.get("max") or 0.0)
 
         # ----------------------------------------------------------------------
-        #  Save price chart
-        # ----------------------------------------------------------------------
-        plot_path = save_price_plot(dates, closes, os.path.join(outdir, f"{symbol}_chart.png"))
-        logger.debug("[Node: Publish] Chart saved for %s -> %s", symbol, plot_path)
-
-        # ----------------------------------------------------------------------
         #  Fundamentals extraction
         # ----------------------------------------------------------------------
         fundamentals = bundle.get("fundamentals", {})
         inc_list = fundamentals.get("income_statement", [])
         met_list = fundamentals.get("key_metrics_ttm", [])
         inc, met = (inc_list[0], met_list[0]) if inc_list and met_list else ({}, {})
+        reported_currency = inc.get("reportedCurrency")
 
+        # ----------------------------------------------------------------------
+        #  Save price chart
+        # ----------------------------------------------------------------------
+        plot_path = save_price_plot(dates, closes, reported_currency, os.path.join(outdir, f"{symbol}_chart.png"))
+        logger.debug("[Node: Publish] Chart saved for %s -> %s", symbol, plot_path)
         # ----------------------------------------------------------------------
         #  News aggregation (clean alignment + safe escaping)
         # ----------------------------------------------------------------------
@@ -216,32 +216,13 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
         else:
             news_summary = "No significant news headlines found in this period."
 
-        # ----------------------------------------------------------------------
-        #  Analyst commentary (from previous node)
-        # ----------------------------------------------------------------------
-        # analyst_summary = (
-        #     state.get("final_note", "No commentary generated.")
-        # )
-        # analyst_summary_wo_final_note = analyst_summary.replace("Final Note:", "").strip()
-        # summary_wo_next_line_space = "".join(analyst_summary_wo_final_note.split('\n'))
-        # summary_text = re.sub(r'(?<=[a-z0-9])([.?!])(?=[A-Z])', r'\1 ', summary_wo_next_line_space)
-        # sentences = re.split(r'(?<=[.!?]) +', summary_text)
-        # bullet_points = [f"- {s.strip()}" for s in sentences if s.strip()]
-        # safe_analyst_summary = "\n".join(bullet_points)
-        # import re
-
         raw = state.get("final_note", "")
-        # .replace("Final Note:", "").strip()
-
         # Remove line breaks inside sentences
         text = " ".join(raw.split())
-
         # Fix cases like "...risk.- Positioning..." → "...risk. Positioning..."
         text = re.sub(r"\.-\s*", ". ", text)
-
         # Split by sentence endings
         sentences = re.split(r'(?<=[.!?])\s+(?=[A-Z])', text)
-
         # Build hyphen-prefixed lines
         safe_analyst_summary = "\n".join(f"- {s.strip()}" for s in sentences if s.strip())
 
@@ -270,12 +251,12 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
 {stats_block}- News Items Processed: {len(news_items)}
 
 ## 2. Fundamental Highlights
-- Fiscal Year: {safe_num(inc.get('calendarYear'))}.
-- Revenue: {safe_num(inc.get('revenue'))}.
-- Net Income: {safe_num(inc.get('netIncome'))}.
-- EPS (Diluted): {safe_num(inc.get('epsdiluted'))}.
-- Return on Equity (TTM): {safe_num(met.get('returnOnEquityTTM'))}.
-- Free Cash Flow Yield (TTM): {safe_num(met.get('freeCashFlowYieldTTM'))}.
+- Fiscal Year: {int(inc.get('fiscalYear')) if inc.get('fiscalYear') else "N/A"}.
+- Revenue: {safe_num(inc.get('revenue'), reported_currency)}.
+- Net Income: {safe_num(inc.get('netIncome'), reported_currency)}.
+- EPS (Diluted): {safe_num(inc.get('epsDiluted'), reported_currency)}.
+- Return on Equity (TTM): {safe_num(met.get('returnOnEquityTTM'), reported_currency)}.
+- Free Cash Flow Yield (TTM): {safe_num(met.get('freeCashFlowYieldTTM'), reported_currency)}.
 
     ## 3. Recent News Headlines
     {news_summary}
@@ -460,4 +441,3 @@ def run_pipeline(symbol: str, days: int, outdir: str, human: bool = False) -> Di
         "raw": os.path.join(outdir, f"{symbol_uppercase}_raw.json"),
         "pdf": result.get("pdf_path"),
     }
-

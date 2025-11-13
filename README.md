@@ -1,4 +1,4 @@
-# Multi-Agent Stock Market Research (Powered by LangChain + LangGraph)
+# Multi Agent Stock Research (Powered by LangChain + LangGraph)
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![LangChain](https://img.shields.io/badge/langchain-0.3.27-purple.svg)](https://github.com/langchain-ai/langchain)
@@ -21,11 +21,11 @@ The world of financial research has evolved — analysts now rely on automation,
 This project demonstrates a **Minimal-production-ready multi-agent research system** built using **LangChain + LangGraph**, designed to automate:
 
 -  Historical stock price analysis  
--  Fundamental data fetching  
--  News tracking  
--  Analyst-style report generation  
--  Compliance filtering  
--  PDF + Markdown Research Reports with charts  
+-  Fundamental data fetching
+-  News tracking
+-  Analyst-style report generation
+-  Compliance filtering
+-  PDF + Markdown Research Reports with charts
 
 Whether you're a developer, quant researcher, analyst, or AI enthusiast — this repo shows how to build **real-world LLM-enabled workflows** that generate institutional-quality research without requiring paid API data feeds.
 
@@ -59,6 +59,16 @@ Whether you're a developer, quant researcher, analyst, or AI enthusiast — this
 | Code Quality | Black, Ruff, Pytest |
 | PDF Rendering | Pandoc + wkhtmltopdf |
 | Python | 3.10+ |
+
+---
+# Agent Responsibilities Matrix
+| Agent                        | Primary Function                                                      | Input Dependencies           | Output Artifacts                                  | Tools Used                                        |
+| ---------------------------- | --------------------------------------------------------------------- | ---------------------------- | ------------------------------------------------- | ------------------------------------------------- |
+| **DataAgent**                | Fetches historical price data, key financial metrics, and recent news | Stock symbol, days           | `raw_data.json`, `prices`, `fundamentals`, `news` | yFinance, FMP API, RSS Parser                     |
+| **AnalystAgent**             | Interprets data and writes narrative summary                          | DataAgent output             | Analyst Note (text)                               | GPT-5 (ChatOpenAI), LangChain PromptTemplate      |
+| **ComplianceAgent**          | Validates phrasing and enforces neutral tone                          | Analyst Note                 | Compliant Final Note                              | LLM Compliance Filter, Rule-based Keyword Scanner |
+| **SupervisorAgent**          | Merges all content, generates formatted Markdown & PDF report         | Compliant Note, Data Summary | `.md`, `.pdf`, `.png` artifacts                   | pypandoc, wkhtmltopdf, matplotlib                 |
+| **Orchestrator (LangGraph)** | Directs data flow and ensures orderly execution                       | All agents                   | End-to-end automated workflow                     | LangGraph + FastAPI integration                   |
 
 ---
 
@@ -105,10 +115,25 @@ sudo apt update
 sudo apt install python3-pip pandoc wkhtmltopdf -y
 
 ```
+---
+## ⚠️ API Quota & Strict Mode Behavior
 
+Free Version of FinancialModelingPrep (FMP) demo API, which is subject to daily request limits.
+When these limits are exceeded, API calls return a 402 Payment Required error.
+In strict mode (default), the pipeline will abort gracefully and log a message such as:
+
+```bash
+Strict mode abort: missing critical data: income_statement, key_metrics_ttm for AAPL
+Possible causes: free FMP quota exhausted, invalid API key, or unavailable ticker.
+```
+To continue testing even when quotas are reached:
+```yaml
+Strict Mode:
+  strict_mode: false
+```
+Or set paid version of FMP_API_KEY in .env for uninterrupted data pulls.
 
 ---
-
 ## How It Works
 
 Every time you run a stock analysis, four distinct agents collaborate:
@@ -132,22 +157,38 @@ This architecture diagram shows how a stock symbol request flows through a LangG
 For a deeper explanation, see [`docs/architecture.md`](docs/architecture.md)
 
 ---
+# PDF Rendering and CSS Configuration
+
+The report generator uses a clean CSS-driven template to ensure every exported PDF looks professional and consistent.
+The file pdf.css governs typography, margins, and visual hierarchy — applied automatically during pypandoc → wkhtmltopdf conversion.
+
+Example snippet:
+
+
+```css
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  margin: 2cm;
+}
+h1 {
+  font-size: 20pt;
+  border-bottom: 2px solid #333;
+}
+ul { list-style-type: disc; margin-left: 1.2em; }
+img { display: block; margin: 0 auto; }
+
+```
+This configuration produces clean, publication-ready PDFs with proper spacing, modern fonts, and uniform sectioning — essential for compliance-grade financial reports.
+
+---
 ### Usage (CLI)
 ```python
 python -m src.cli --symbol AAPL --days 10 --outdir artifacts
 ```
 ### Sample CLI Output:
 ![CLI Example](docs/Screenshots/cli.png)
-
-### Auto-created folder: artifacts/AAPL/
-
-    AAPL_2025-11-09_report.md → Full report (Markdown)
-    
-    AAPL_2025-11-09_report.pdf → Exported PDF
-    
-    AAPL_raw.json → Raw collected data
-    
-    AAPL_chart.png → Price returns chart
 ---
 ## REST API (FastAPI)
 ### Start the server:
@@ -161,12 +202,33 @@ curl -X POST http://127.0.0.1:8000/analyze \
 -d '{"symbol":"META","days":10}'
 ```
 ### Sample API Output:
-![CLI Example](docs/screenshots/api.png)
+![API Example](docs/Screenshots/api.png)
 ---
 ### Sample Chart Output:
 ![CLI Example](artifacts/META/META_chart.png)
 ---
+## Results
 
+The system has been tested on multiple tickers (AAPL, MSFT, META) across 7–30 day ranges, consistently generating complete reports that include:
+
+1. Snapshots.
+2. Fundamental Highlights
+3. Recent News Headlines
+4. Analyst Commentary
+5. Methodology
+5. Execution Metadata
+6. Price chart and statistics.
+7. Exported .pdf and .json artifacts
+
+Each run executes with a live OpenAI API key, making it practical for near-real-time research report automation and  produces a complete report folder under artifacts / SYMBOL, containing:
+
+```bash
+AAPL_2025-11-09_report.md
+AAPL_2025-11-09_report.pdf
+AAPL_chart.png
+AAPL_raw.json
+```
+---
 ## Tests & Quality Assurance
 
 This repository uses pytest for unit and integration testing.

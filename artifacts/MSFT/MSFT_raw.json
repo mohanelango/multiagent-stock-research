@@ -1,0 +1,280 @@
+{
+  "symbol": "MSFT",
+  "prices": {
+    "symbol": "MSFT",
+    "data": [
+      {
+        "Date": "2025-10-30 00:00:00-04:00",
+        "Open": 530.47998046875,
+        "High": 534.969970703125,
+        "Low": 522.1199951171875,
+        "Close": 525.760009765625,
+        "Volume": 41023100
+      },
+      {
+        "Date": "2025-10-31 00:00:00-04:00",
+        "Open": 528.8800048828125,
+        "High": 529.3200073242188,
+        "Low": 515.0999755859375,
+        "Close": 517.8099975585938,
+        "Volume": 34006400
+      },
+      {
+        "Date": "2025-11-03 00:00:00-05:00",
+        "Open": 519.8099975585938,
+        "High": 524.9600219726562,
+        "Low": 514.5900268554688,
+        "Close": 517.030029296875,
+        "Volume": 22374700
+      },
+      {
+        "Date": "2025-11-04 00:00:00-05:00",
+        "Open": 511.760009765625,
+        "High": 515.5499877929688,
+        "Low": 507.8399963378906,
+        "Close": 514.3300170898438,
+        "Volume": 20958700
+      },
+      {
+        "Date": "2025-11-05 00:00:00-05:00",
+        "Open": 513.2999877929688,
+        "High": 514.8300170898438,
+        "Low": 506.5799865722656,
+        "Close": 507.1600036621094,
+        "Volume": 23024300
+      },
+      {
+        "Date": "2025-11-06 00:00:00-05:00",
+        "Open": 505.6600036621094,
+        "High": 505.70001220703125,
+        "Low": 495.80999755859375,
+        "Close": 497.1000061035156,
+        "Volume": 27406500
+      },
+      {
+        "Date": "2025-11-07 00:00:00-05:00",
+        "Open": 496.95001220703125,
+        "High": 499.3800048828125,
+        "Low": 493.25,
+        "Close": 496.82000732421875,
+        "Volume": 24019800
+      },
+      {
+        "Date": "2025-11-10 00:00:00-05:00",
+        "Open": 500.0400085449219,
+        "High": 506.8500061035156,
+        "Low": 498.79998779296875,
+        "Close": 506.0,
+        "Volume": 26101500
+      },
+      {
+        "Date": "2025-11-11 00:00:00-05:00",
+        "Open": 504.79998779296875,
+        "High": 509.6000061035156,
+        "Low": 502.3500061035156,
+        "Close": 508.67999267578125,
+        "Volume": 17963600
+      },
+      {
+        "Date": "2025-11-12 00:00:00-05:00",
+        "Open": 509.05999755859375,
+        "High": 509.25,
+        "Low": 499.75,
+        "Close": 500.3583068847656,
+        "Volume": 6441708
+      }
+    ],
+    "meta": {
+      "days": 10
+    }
+  },
+  "fundamentals": {
+    "income_statement": [
+      {
+        "date": "2025-06-30",
+        "symbol": "MSFT",
+        "reportedCurrency": "USD",
+        "cik": "0000789019",
+        "filingDate": "2025-07-30",
+        "acceptedDate": "2025-07-30 16:11:40",
+        "fiscalYear": "2025",
+        "period": "FY",
+        "revenue": 281724000000,
+        "costOfRevenue": 87831000000,
+        "grossProfit": 193893000000,
+        "researchAndDevelopmentExpenses": 32488000000,
+        "generalAndAdministrativeExpenses": 7223000000,
+        "sellingAndMarketingExpenses": 25654000000,
+        "sellingGeneralAndAdministrativeExpenses": 32877000000,
+        "otherExpenses": 0,
+        "operatingExpenses": 65365000000,
+        "costAndExpenses": 153196000000,
+        "netInterestIncome": 262000000,
+        "interestIncome": 2647000000,
+        "interestExpense": 2385000000,
+        "depreciationAndAmortization": 34153000000,
+        "ebitda": 160165000000,
+        "ebit": 126012000000,
+        "nonOperatingIncomeExcludingInterest": 2516000000,
+        "operatingIncome": 128528000000,
+        "totalOtherIncomeExpensesNet": -4901000000,
+        "incomeBeforeTax": 123627000000,
+        "incomeTaxExpense": 21795000000,
+        "netIncomeFromContinuingOperations": 101832000000,
+        "netIncomeFromDiscontinuedOperations": 0,
+        "otherAdjustmentsToNetIncome": 0,
+        "netIncome": 101832000000,
+        "netIncomeDeductions": 0,
+        "bottomLineNetIncome": 101832000000,
+        "eps": 13.7,
+        "epsDiluted": 13.64,
+        "weightedAverageShsOut": 7433000000,
+        "weightedAverageShsOutDil": 7465000000
+      },
+      {
+        "date": "2024-06-30",
+        "symbol": "MSFT",
+        "reportedCurrency": "USD",
+        "cik": "0000789019",
+        "filingDate": "2024-07-30",
+        "acceptedDate": "2024-07-30 16:06:22",
+        "fiscalYear": "2024",
+        "period": "FY",
+        "revenue": 245122000000,
+        "costOfRevenue": 74114000000,
+        "grossProfit": 171008000000,
+        "researchAndDevelopmentExpenses": 29510000000,
+        "generalAndAdministrativeExpenses": 7609000000,
+        "sellingAndMarketingExpenses": 24456000000,
+        "sellingGeneralAndAdministrativeExpenses": 32065000000,
+        "otherExpenses": 0,
+        "operatingExpenses": 61575000000,
+        "costAndExpenses": 135689000000,
+        "netInterestIncome": 222000000,
+        "interestIncome": 3157000000,
+        "interestExpense": 2935000000,
+        "depreciationAndAmortization": 22287000000,
+        "ebitda": 133009000000,
+        "ebit": 110722000000,
+        "nonOperatingIncomeExcludingInterest": -1289000000,
+        "operatingIncome": 109433000000,
+        "totalOtherIncomeExpensesNet": -1646000000,
+        "incomeBeforeTax": 107787000000,
+        "incomeTaxExpense": 19651000000,
+        "netIncomeFromContinuingOperations": 88136000000,
+        "netIncomeFromDiscontinuedOperations": 0,
+        "otherAdjustmentsToNetIncome": 0,
+        "netIncome": 88136000000,
+        "netIncomeDeductions": 0,
+        "bottomLineNetIncome": 88136000000,
+        "eps": 11.86,
+        "epsDiluted": 11.8,
+        "weightedAverageShsOut": 7431000000,
+        "weightedAverageShsOutDil": 7469000000
+      }
+    ],
+    "key_metrics_ttm": [
+      {
+        "symbol": "MSFT",
+        "marketCap": 3719125030951.0005,
+        "enterpriseValueTTM": 3750832030951.0005,
+        "evToSalesTTM": 12.766095431605926,
+        "evToOperatingCashFlowTTM": 25.509096436666468,
+        "evToFreeCashFlowTTM": 48.07711179551893,
+        "evToEBITDATTM": 22.06488597014548,
+        "netDebtToEBITDATTM": 0.1865216393809084,
+        "currentRatioTTM": 1.4005303860855136,
+        "incomeQualityTTM": 1.4015460576483147,
+        "grahamNumberTTM": 124.5484939860578,
+        "grahamNetNetTTM": -17.627808421902326,
+        "taxBurdenTTM": 0.8218143648313084,
+        "interestBurdenTTM": 0.9807851874615857,
+        "workingCapitalTTM": 54070000000,
+        "investedCapitalTTM": 450455000000,
+        "returnOnAssetsTTM": 0.1648649880333338,
+        "operatingReturnOnAssetsTTM": 0.2165715806059486,
+        "returnOnTangibleAssetsTTM": 0.21167915612427313,
+        "returnOnEquityTTM": 0.31525435697645854,
+        "returnOnInvestedCapitalTTM": 0.21939872642481756,
+        "returnOnCapitalEmployedTTM": 0.27113921273349223,
+        "earningsYieldTTM": 0.02820882258769037,
+        "freeCashFlowYieldTTM": 0.020977245817425674,
+        "capexToOperatingCashFlowTTM": 0.4694128768558002,
+        "capexToDepreciationTTM": 1.7328713815872059,
+        "capexToRevenueTTM": 0.2349189277497175,
+        "salesGeneralAndAdministrativeToRevenueTTM": 0.025036417845424964,
+        "researchAndDevelopementToRevenueTTM": 0.11262303786094509,
+        "stockBasedCompensationToRevenueTTM": 0.0412678855867017,
+        "intangiblesToTotalAssetsTTM": 0.22115624867408082,
+        "averageReceivablesTTM": 61399500000,
+        "averagePayablesTTM": 30152000000,
+        "averageInventoryTTM": 1034000000,
+        "daysOfSalesOutstandingTTM": 65.70973956135215,
+        "daysOfPayablesOutstandingTTM": 129.57450286025608,
+        "daysOfInventoryOutstandingTTM": 4.4941432852083905,
+        "operatingCycleTTM": 70.20388284656055,
+        "cashConversionCycleTTM": -59.37062001369553,
+        "freeCashFlowToEquityTTM": 46310000000,
+        "freeCashFlowToFirmTTM": 73619357726.44312,
+        "tangibleAssetValueTTM": 222343000000,
+        "netCurrentAssetValueTTM": -84209000000
+      }
+    ]
+  },
+  "news": [
+    {
+      "title": "Microsoft Expands Danish Quantum Facility With Second Global Lab",
+      "link": "https://finance.yahoo.com/news/microsoft-expands-danish-quantum-facility-151842376.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 15:18:42 +0000",
+      "summary": "New Lyngby site becomes company's largest quantum research hub worldwide."
+    },
+    {
+      "title": "Anthropic Will Spend $50 Billion to Build US Data Centers",
+      "link": "https://finance.yahoo.com/video/anthropic-spend-50-billion-build-151705727.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 15:17:05 +0000",
+      "summary": "Anthropic PBC will spend $50 billion to build custom data centers in the US. They'll start coming online in 2026 according to the company. OpenAI, Meta Platforms Inc., Google, Microsoft Corp., Nvidia Corp. and other leading tech companies plan to collectively spend hundreds of billions of dollars on data centers to support AI. Bloomberg's Ed Ludlow reports."
+    },
+    {
+      "title": "Nasdaq Loses Early Gains",
+      "link": "https://finance.yahoo.com/m/45e60972-12d3-3dbe-a1f0-6591352e48e4/nasdaq-loses-early-gains.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 15:01:59 +0000",
+      "summary": "The Nasdaq Composite\u2019s early gain didn\u2019t last long. The tech-heavy index was down 0.3% after opening higher. The S&amp;P 500 was up just 0.1%. The Dow was up 400 points, or 0.8%. Riskier stocks were still rebounding, but some of the S&amp;P and Nasdaq\u2019s heaviest hitters were mixed."
+    },
+    {
+      "title": "Arm Stock Delivered a Smashing Quarter. It Wasn't Enough.",
+      "link": "https://www.fool.com/investing/2025/11/12/arm-delivered-a-smashing-quarter-it-wasnt-enough/?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 14:53:00 +0000",
+      "summary": "Arm showed off accelerating growth in its recent report, but the stock still fell."
+    },
+    {
+      "title": "Investors Now See Some Corporate Bonds as Safer Bets Than Government Debt",
+      "link": "https://finance.yahoo.com/news/investors-now-see-companies-safer-110012648.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 14:21:57 +0000",
+      "summary": "In corporate boardrooms since the pandemic era, executives have dealt with the rise in interest rates by keeping budgets lean and reducing overall indebtedness.  Meanwhile, governments in rich countries continue to spend, with the average debt-to-output ratio across the Group of Seven industrialized nations set to keep rising until the end of this decade at least.  The result: Investors demand lower yields for bonds issued by Microsoft Corp., Airbus SE, L\u2019Oreal SA, and Siemens AG than they do for their countries of origin."
+    },
+    {
+      "title": "Microsoft announces more than $10bn in AI investment in Portugal",
+      "link": "https://www.investmentmonitor.ai/news/microsoft-investment-portugal/?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 14:20:29 +0000",
+      "summary": "The investment will see Microsoft, in collaboration with Nscale, Nvidia and Portugal\u2019s Start Campus, install 12,600 next-generation NVIDIA GPUs in Sines."
+    },
+    {
+      "title": "eMazzanti Technologies Offers Complimentary Azure Master Classes for Business Leaders",
+      "link": "https://finance.yahoo.com/news/emazzanti-technologies-offers-complimentary-azure-140500307.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 14:05:00 +0000",
+      "summary": "eMazzanti Technologies, a leading Managed Services Provider and Microsoft Solution Partner with more than 20 years of customer success, is pleased to announce a series of complimentary 60-minute Azure Master Classes for business leaders evaluating cloud adoption or seeking to optimize their existing Microsoft Azure environments."
+    },
+    {
+      "title": "Marc Brown, Former Microsoft CVP, Joins Syncro Board of Directors Amid Strategic ITSM Initiatives and Accelerated Growth",
+      "link": "https://finance.yahoo.com/news/marc-brown-former-microsoft-cvp-140300535.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 14:03:00 +0000",
+      "summary": "TAMPA, Fla., November 12, 2025--Marc Brown, former Microsoft CVP, joins the Syncro Board of Directors amid strategic ITSM initiatives and accelerated growth."
+    },
+    {
+      "title": "Nokod Security Unveils Adaptive Agent Security for Real-Time Protection Across the Agent Development Lifecycle",
+      "link": "https://finance.yahoo.com/news/nokod-security-unveils-adaptive-agent-140200667.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 14:02:00 +0000",
+      "summary": "New solution delivers end-to-end runtime visibility, risk detection and security controls for AI agents built by no-coders and citizen developersNEW YORK and TEL AVIV, Israel, Nov. 12, 2025 (GLOBE NEWSWIRE) -- Nokod Security, the leading security platform for AI-assisted Citizen Application Development Platforms (CADP), today announced the launch of Adaptive Agent Security, a comprehensive solution that delivers real-time visibility, governance, and protection from threats across the Agent Devel"
+    }
+  ]
+}

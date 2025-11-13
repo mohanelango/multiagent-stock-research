@@ -4017,3 +4017,548 @@ ValueError: Strict mode abort: missing critical data: income_statement, key_metr
 2025-11-11 13:56:46 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-1/test_analyze_endpoint0\AAPL\AAPL_2025-11-11_report.md
 2025-11-11 13:56:47 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-1/test_analyze_endpoint0\AAPL\AAPL_2025-11-11_report.pdf
 2025-11-11 13:56:47 [INFO] src.api: Report successfully generated for AAPL
+2025-11-12 12:34:51 [INFO] __main__: CLI called with symbol=META days=30 outdir=artifacts
+2025-11-12 12:34:51 [INFO] src.graph.orchestrator: === Starting pipeline for META (days=30) ===
+2025-11-12 12:34:53 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 12:34:53 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 12:34:53 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 12:34:53 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 12:34:53 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 12:34:53 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 12:34:53 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for META
+2025-11-12 12:34:53 [INFO] src.agents.data_agent: Fetching data for META (last 30 days)
+2025-11-12 12:34:54 [INFO] src.tools.price_tool: Fetched 30 records for META
+2025-11-12 12:34:55 [INFO] src.tools.fundamentals_tool: Fetched income statement for META (2 records)
+2025-11-12 12:34:57 [INFO] src.tools.fundamentals_tool: Fetched key metrics for META
+2025-11-12 12:34:59 [INFO] src.tools.news_tool: Total news items for META: 9
+2025-11-12 12:34:59 [INFO] src.agents.data_agent: Data fetch complete for META: 30 price rows, 9 news items
+2025-11-12 12:34:59 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for META
+2025-11-12 12:34:59 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for META
+2025-11-12 12:34:59 [INFO] src.agents.analyst_agent: Generating analyst note for META
+2025-11-12 12:35:35 [INFO] src.agents.analyst_agent: Analyst note completed for META
+2025-11-12 12:35:35 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for META
+2025-11-12 12:35:35 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for META
+2025-11-12 12:35:35 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-12 12:36:10 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-12 12:36:10 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for META
+2025-11-12 12:36:10 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for META
+2025-11-12 12:36:11 [INFO] src.tools.plot_tool: Saved price chart to artifacts\META\META_chart.png
+2025-11-12 12:36:11 [INFO] src.tools.storage_tool: Saved JSON: artifacts\META\META_raw.json
+2025-11-12 12:36:11 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\META\META_2025-11-12_report.md
+2025-11-12 12:36:11 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for META -> artifacts\META\META_2025-11-12_report.md
+2025-11-12 12:36:13 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for META -> artifacts\META\META_2025-11-12_report.pdf
+2025-11-12 12:41:09 [INFO] __main__: CLI called with symbol=META days=30 outdir=artifacts
+2025-11-12 12:41:09 [INFO] src.graph.orchestrator: === Starting pipeline for META (days=30) ===
+2025-11-12 12:41:11 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 12:41:11 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 12:41:11 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 12:41:11 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 12:41:11 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 12:41:11 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 12:41:11 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for META
+2025-11-12 12:41:11 [INFO] src.agents.data_agent: Fetching data for META (last 30 days)
+2025-11-12 12:41:11 [INFO] src.tools.price_tool: Fetched 30 records for META
+2025-11-12 12:41:13 [INFO] src.tools.fundamentals_tool: Fetched income statement for META (2 records)
+2025-11-12 12:41:14 [INFO] src.tools.fundamentals_tool: Fetched key metrics for META
+2025-11-12 12:41:16 [INFO] src.tools.news_tool: Total news items for META: 9
+2025-11-12 12:41:16 [INFO] src.agents.data_agent: Data fetch complete for META: 30 price rows, 9 news items
+2025-11-12 12:41:16 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for META
+2025-11-12 12:41:16 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for META
+2025-11-12 12:41:16 [INFO] src.agents.analyst_agent: Generating analyst note for META
+2025-11-12 12:42:00 [INFO] src.agents.analyst_agent: Analyst note completed for META
+2025-11-12 12:42:00 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for META
+2025-11-12 12:42:00 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for META
+2025-11-12 12:42:00 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-12 12:42:22 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-12 12:42:22 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for META
+2025-11-12 12:42:22 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for META
+2025-11-12 12:42:23 [INFO] src.tools.plot_tool: Saved price chart to artifacts\META\META_chart.png
+2025-11-12 12:42:23 [INFO] src.tools.storage_tool: Saved JSON: artifacts\META\META_raw.json
+2025-11-12 12:42:23 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\META\META_2025-11-12_report.md
+2025-11-12 12:42:23 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for META -> artifacts\META\META_2025-11-12_report.md
+2025-11-12 12:42:24 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for META -> artifacts\META\META_2025-11-12_report.pdf
+2025-11-12 12:49:09 [INFO] src.graph.orchestrator: Human-in-loop approved report for META
+2025-11-12 12:49:09 [INFO] __main__: CLI execution finished successfully for META
+2025-11-12 12:58:12 [INFO] __main__: CLI called with symbol=GOOG days=10 outdir=artifacts
+2025-11-12 12:58:12 [INFO] src.graph.orchestrator: === Starting pipeline for GOOG (days=10) ===
+2025-11-12 12:58:14 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 12:58:14 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 12:58:14 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 12:58:14 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 12:58:14 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 12:58:14 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 12:58:14 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for GOOG
+2025-11-12 12:58:14 [INFO] src.agents.data_agent: Fetching data for GOOG (last 10 days)
+2025-11-12 12:58:15 [INFO] src.tools.price_tool: Fetched 10 records for GOOG
+2025-11-12 12:58:16 [ERROR] src.tools.fundamentals_tool: Error fetching income statement for GOOG: Payment Required (quota/tier limit) (status=402)
+2025-11-12 12:58:17 [ERROR] src.tools.fundamentals_tool: Error fetching key metrics for GOOG: Payment Required (quota/tier limit) (status=402)
+2025-11-12 12:58:19 [INFO] src.tools.news_tool: Total news items for GOOG: 9
+2025-11-12 12:58:19 [INFO] src.agents.data_agent: Data fetch complete for GOOG: 10 price rows, 9 news items
+2025-11-12 12:58:19 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for GOOG
+2025-11-12 12:58:19 [ERROR] src.graph.orchestrator: Strict mode abort: missing critical data: income_statement, key_metrics_ttm for GOOG. Possible causes: free FMP quota exhausted, invalid API key, or endpoint not available for this ticker.
+2025-11-12 12:58:19 [ERROR] src.graph.orchestrator: Pipeline failed for GOOG: Strict mode abort: missing critical data: income_statement, key_metrics_ttm for GOOG. Possible causes: free FMP quota exhausted, invalid API key, or endpoint not available for this ticker.
+2025-11-12 13:01:23 [INFO] __main__: CLI called with symbol=AAPL days=10 outdir=artifacts
+2025-11-12 13:01:23 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=10) ===
+2025-11-12 13:01:25 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 13:01:25 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 13:01:25 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 13:01:25 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 13:01:25 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 13:01:25 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 13:01:25 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2025-11-12 13:01:25 [INFO] src.agents.data_agent: Fetching data for AAPL (last 10 days)
+2025-11-12 13:01:25 [INFO] src.tools.price_tool: Fetched 10 records for AAPL
+2025-11-12 13:01:27 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2025-11-12 13:01:28 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2025-11-12 13:01:30 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2025-11-12 13:01:30 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 10 price rows, 9 news items
+2025-11-12 13:01:30 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2025-11-12 13:01:30 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2025-11-12 13:01:30 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2025-11-12 13:02:10 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2025-11-12 13:02:10 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2025-11-12 13:02:10 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2025-11-12 13:02:10 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-12 13:02:41 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-12 13:02:41 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2025-11-12 13:02:41 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2025-11-12 13:02:41 [INFO] src.tools.plot_tool: Saved price chart to artifacts\AAPL\AAPL_chart.png
+2025-11-12 13:02:41 [INFO] src.tools.storage_tool: Saved JSON: artifacts\AAPL\AAPL_raw.json
+2025-11-12 13:02:41 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\AAPL\AAPL_2025-11-12_report.md
+2025-11-12 13:02:41 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> artifacts\AAPL\AAPL_2025-11-12_report.md
+2025-11-12 13:02:43 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> artifacts\AAPL\AAPL_2025-11-12_report.pdf
+2025-11-12 13:02:43 [INFO] __main__: CLI execution finished successfully for AAPL
+2025-11-12 13:03:01 [INFO] __main__: CLI called with symbol=MSFT days=10 outdir=artifacts
+2025-11-12 13:03:01 [INFO] src.graph.orchestrator: === Starting pipeline for MSFT (days=10) ===
+2025-11-12 13:03:04 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 13:03:04 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 13:03:04 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 13:03:04 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 13:03:04 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 13:03:04 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 13:03:04 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for MSFT
+2025-11-12 13:03:04 [INFO] src.agents.data_agent: Fetching data for MSFT (last 10 days)
+2025-11-12 13:03:05 [INFO] src.tools.price_tool: Fetched 10 records for MSFT
+2025-11-12 13:03:06 [INFO] src.tools.fundamentals_tool: Fetched income statement for MSFT (2 records)
+2025-11-12 13:03:07 [INFO] src.tools.fundamentals_tool: Fetched key metrics for MSFT
+2025-11-12 13:03:09 [INFO] src.tools.news_tool: Total news items for MSFT: 9
+2025-11-12 13:03:09 [INFO] src.agents.data_agent: Data fetch complete for MSFT: 10 price rows, 9 news items
+2025-11-12 13:03:09 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for MSFT
+2025-11-12 13:03:09 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for MSFT
+2025-11-12 13:03:09 [INFO] src.agents.analyst_agent: Generating analyst note for MSFT
+2025-11-12 13:03:54 [INFO] src.agents.analyst_agent: Analyst note completed for MSFT
+2025-11-12 13:03:54 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for MSFT
+2025-11-12 13:03:54 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for MSFT
+2025-11-12 13:03:54 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-12 13:04:20 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-12 13:04:20 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for MSFT
+2025-11-12 13:04:20 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for MSFT
+2025-11-12 13:04:20 [INFO] src.tools.plot_tool: Saved price chart to artifacts\MSFT\MSFT_chart.png
+2025-11-12 13:04:20 [INFO] src.tools.storage_tool: Saved JSON: artifacts\MSFT\MSFT_raw.json
+2025-11-12 13:04:20 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 13:04:20 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 13:04:21 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.pdf
+2025-11-12 13:04:21 [INFO] __main__: CLI execution finished successfully for MSFT
+2025-11-12 16:21:41 [INFO] __main__: CLI called with symbol=MSFT days=10 outdir=artifacts
+2025-11-12 16:21:41 [INFO] src.graph.orchestrator: === Starting pipeline for MSFT (days=10) ===
+2025-11-12 16:21:42 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 16:21:43 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 16:21:43 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 16:21:43 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 16:21:43 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 16:21:43 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 16:21:43 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for MSFT
+2025-11-12 16:21:43 [INFO] src.agents.data_agent: Fetching data for MSFT (last 10 days)
+2025-11-12 16:21:48 [INFO] src.tools.price_tool: Fetched 10 records for MSFT
+2025-11-12 16:21:50 [INFO] src.tools.fundamentals_tool: Fetched income statement for MSFT (2 records)
+2025-11-12 16:21:51 [INFO] src.tools.fundamentals_tool: Fetched key metrics for MSFT
+2025-11-12 16:21:52 [INFO] src.tools.news_tool: Total news items for MSFT: 9
+2025-11-12 16:21:52 [INFO] src.agents.data_agent: Data fetch complete for MSFT: 10 price rows, 9 news items
+2025-11-12 16:21:52 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for MSFT
+2025-11-12 16:21:52 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for MSFT
+2025-11-12 16:21:52 [INFO] src.agents.analyst_agent: Generating analyst note for MSFT
+2025-11-12 16:22:30 [INFO] src.agents.analyst_agent: Analyst note completed for MSFT
+2025-11-12 16:22:30 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for MSFT
+2025-11-12 16:22:30 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for MSFT
+2025-11-12 16:22:30 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-12 16:23:08 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-12 16:23:08 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for MSFT
+2025-11-12 16:23:08 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for MSFT
+2025-11-12 16:23:09 [INFO] src.tools.plot_tool: Saved price chart to artifacts\MSFT\MSFT_chart.png
+2025-11-12 16:23:09 [INFO] src.tools.storage_tool: Saved JSON: artifacts\MSFT\MSFT_raw.json
+2025-11-12 16:23:09 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 16:23:09 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 16:23:12 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.pdf
+2025-11-12 16:23:12 [INFO] __main__: CLI execution finished successfully for MSFT
+2025-11-12 17:23:06 [INFO] __main__: CLI called with symbol=MSFT days=10 outdir=artifacts
+2025-11-12 17:23:06 [INFO] src.graph.orchestrator: === Starting pipeline for MSFT (days=10) ===
+2025-11-12 17:23:08 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 17:23:08 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 17:23:08 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 17:23:08 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 17:23:08 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 17:23:08 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 17:23:08 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for MSFT
+2025-11-12 17:23:08 [INFO] src.agents.data_agent: Fetching data for MSFT (last 10 days)
+2025-11-12 17:23:09 [INFO] src.tools.price_tool: Fetched 10 records for MSFT
+2025-11-12 17:23:10 [INFO] src.tools.fundamentals_tool: Fetched income statement for MSFT (2 records)
+2025-11-12 17:23:11 [INFO] src.tools.fundamentals_tool: Fetched key metrics for MSFT
+2025-11-12 17:23:14 [INFO] src.tools.news_tool: Total news items for MSFT: 9
+2025-11-12 17:23:14 [INFO] src.agents.data_agent: Data fetch complete for MSFT: 10 price rows, 9 news items
+2025-11-12 17:23:14 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for MSFT
+2025-11-12 17:23:14 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for MSFT
+2025-11-12 17:23:14 [INFO] src.agents.analyst_agent: Generating analyst note for MSFT
+2025-11-12 17:23:37 [INFO] src.agents.analyst_agent: Analyst note completed for MSFT
+2025-11-12 17:23:37 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for MSFT
+2025-11-12 17:23:37 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for MSFT
+2025-11-12 17:23:37 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-12 17:23:53 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-12 17:23:53 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for MSFT
+2025-11-12 17:23:53 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for MSFT
+2025-11-12 17:23:53 [INFO] src.tools.plot_tool: Saved price chart to artifacts\MSFT\MSFT_chart.png
+2025-11-12 17:23:53 [INFO] src.tools.storage_tool: Saved JSON: artifacts\MSFT\MSFT_raw.json
+2025-11-12 17:23:53 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 17:23:53 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 17:23:54 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.pdf
+2025-11-12 17:23:54 [INFO] __main__: CLI execution finished successfully for MSFT
+2025-11-12 18:17:57 [INFO] __main__: CLI called with symbol=AAPL days=10 outdir=artifacts
+2025-11-12 18:17:57 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=10) ===
+2025-11-12 18:17:59 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 18:18:00 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 18:18:00 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 18:18:00 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 18:18:00 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 18:18:00 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 18:18:00 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2025-11-12 18:18:00 [INFO] src.agents.data_agent: Fetching data for AAPL (last 10 days)
+2025-11-12 18:18:00 [INFO] src.tools.price_tool: Fetched 10 records for AAPL
+2025-11-12 18:18:02 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2025-11-12 18:18:03 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2025-11-12 18:18:05 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2025-11-12 18:18:05 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 10 price rows, 9 news items
+2025-11-12 18:18:05 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2025-11-12 18:18:05 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2025-11-12 18:18:05 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2025-11-12 18:19:01 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2025-11-12 18:19:01 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2025-11-12 18:19:01 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2025-11-12 18:19:01 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-12 18:19:28 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-12 18:19:28 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2025-11-12 18:19:28 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2025-11-12 18:19:28 [INFO] src.tools.plot_tool: Saved price chart to artifacts\AAPL\AAPL_chart.png
+2025-11-12 18:19:28 [INFO] src.tools.storage_tool: Saved JSON: artifacts\AAPL\AAPL_raw.json
+2025-11-12 18:19:28 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\AAPL\AAPL_2025-11-12_report.md
+2025-11-12 18:19:28 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> artifacts\AAPL\AAPL_2025-11-12_report.md
+2025-11-12 18:19:29 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> artifacts\AAPL\AAPL_2025-11-12_report.pdf
+2025-11-12 18:19:29 [INFO] __main__: CLI execution finished successfully for AAPL
+2025-11-12 18:33:15 [INFO] __main__: CLI called with symbol=META days=5 outdir=artifacts
+2025-11-12 18:33:15 [INFO] src.graph.orchestrator: === Starting pipeline for META (days=5) ===
+2025-11-12 18:33:17 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 18:33:18 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 18:33:18 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 18:33:18 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 18:33:18 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 18:33:18 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 18:33:18 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for META
+2025-11-12 18:33:18 [INFO] src.agents.data_agent: Fetching data for META (last 5 days)
+2025-11-12 18:33:18 [INFO] src.tools.price_tool: Fetched 5 records for META
+2025-11-12 18:33:21 [INFO] src.tools.fundamentals_tool: Fetched income statement for META (2 records)
+2025-11-12 18:33:22 [INFO] src.tools.fundamentals_tool: Fetched key metrics for META
+2025-11-12 18:33:25 [INFO] src.tools.news_tool: Total news items for META: 9
+2025-11-12 18:33:25 [INFO] src.agents.data_agent: Data fetch complete for META: 5 price rows, 9 news items
+2025-11-12 18:33:25 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for META
+2025-11-12 18:33:25 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for META
+2025-11-12 18:33:25 [INFO] src.agents.analyst_agent: Generating analyst note for META
+2025-11-12 18:34:19 [INFO] src.agents.analyst_agent: Analyst note completed for META
+2025-11-12 18:34:19 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for META
+2025-11-12 18:34:19 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for META
+2025-11-12 18:34:19 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-12 18:34:55 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-12 18:34:55 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for META
+2025-11-12 18:34:55 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for META
+2025-11-12 18:34:55 [INFO] src.tools.plot_tool: Saved price chart to artifacts\META\META_chart.png
+2025-11-12 18:34:55 [INFO] src.tools.storage_tool: Saved JSON: artifacts\META\META_raw.json
+2025-11-12 18:34:55 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\META\META_2025-11-12_report.md
+2025-11-12 18:34:55 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for META -> artifacts\META\META_2025-11-12_report.md
+2025-11-12 18:34:56 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for META -> artifacts\META\META_2025-11-12_report.pdf
+2025-11-12 18:34:56 [INFO] __main__: CLI execution finished successfully for META
+2025-11-12 19:22:04 [INFO] __main__: CLI called with symbol=META days=5 outdir=artifacts
+2025-11-12 19:22:04 [INFO] src.graph.orchestrator: === Starting pipeline for META (days=5) ===
+2025-11-12 19:22:06 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 19:22:06 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 19:22:06 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 19:22:06 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 19:22:06 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 19:22:06 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 19:22:06 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for META
+2025-11-12 19:22:06 [INFO] src.agents.data_agent: Fetching data for META (last 5 days)
+2025-11-12 19:22:06 [INFO] src.tools.price_tool: Fetched 5 records for META
+2025-11-12 19:22:08 [INFO] src.tools.fundamentals_tool: Fetched income statement for META (2 records)
+2025-11-12 19:22:09 [INFO] src.tools.fundamentals_tool: Fetched key metrics for META
+2025-11-12 19:22:10 [INFO] src.tools.news_tool: Total news items for META: 9
+2025-11-12 19:22:10 [INFO] src.agents.data_agent: Data fetch complete for META: 5 price rows, 9 news items
+2025-11-12 19:22:10 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for META
+2025-11-12 19:22:10 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for META
+2025-11-12 19:22:10 [INFO] src.agents.analyst_agent: Generating analyst note for META
+2025-11-12 19:23:05 [INFO] src.agents.analyst_agent: Analyst note completed for META
+2025-11-12 19:23:05 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for META
+2025-11-12 19:23:05 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for META
+2025-11-12 19:23:05 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-12 19:23:20 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-12 19:23:20 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for META
+2025-11-12 19:23:20 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for META
+2025-11-12 19:23:21 [INFO] src.tools.plot_tool: Saved price chart to artifacts\META\META_chart.png
+2025-11-12 19:23:21 [INFO] src.tools.storage_tool: Saved JSON: artifacts\META\META_raw.json
+2025-11-12 19:23:21 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\META\META_2025-11-12_report.md
+2025-11-12 19:23:21 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for META -> artifacts\META\META_2025-11-12_report.md
+2025-11-12 19:23:22 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for META -> artifacts\META\META_2025-11-12_report.pdf
+2025-11-12 19:23:22 [INFO] __main__: CLI execution finished successfully for META
+2025-11-12 19:25:20 [INFO] __main__: CLI called with symbol=MSFT days=10 outdir=artifacts
+2025-11-12 19:25:20 [INFO] src.graph.orchestrator: === Starting pipeline for MSFT (days=10) ===
+2025-11-12 19:25:21 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 19:25:22 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 19:25:22 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 19:25:22 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 19:25:22 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 19:25:22 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 19:25:22 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for MSFT
+2025-11-12 19:25:22 [INFO] src.agents.data_agent: Fetching data for MSFT (last 10 days)
+2025-11-12 19:25:22 [INFO] src.tools.price_tool: Fetched 10 records for MSFT
+2025-11-12 19:25:23 [INFO] src.tools.fundamentals_tool: Fetched income statement for MSFT (2 records)
+2025-11-12 19:25:24 [INFO] src.tools.fundamentals_tool: Fetched key metrics for MSFT
+2025-11-12 19:25:26 [INFO] src.tools.news_tool: Total news items for MSFT: 9
+2025-11-12 19:25:26 [INFO] src.agents.data_agent: Data fetch complete for MSFT: 10 price rows, 9 news items
+2025-11-12 19:25:26 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for MSFT
+2025-11-12 19:25:26 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for MSFT
+2025-11-12 19:25:26 [INFO] src.agents.analyst_agent: Generating analyst note for MSFT
+2025-11-12 19:26:03 [INFO] src.agents.analyst_agent: Analyst note completed for MSFT
+2025-11-12 19:26:03 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for MSFT
+2025-11-12 19:26:03 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for MSFT
+2025-11-12 19:26:03 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-12 19:26:24 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-12 19:26:24 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for MSFT
+2025-11-12 19:26:24 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for MSFT
+2025-11-12 19:26:25 [INFO] src.tools.plot_tool: Saved price chart to artifacts\MSFT\MSFT_chart.png
+2025-11-12 19:26:25 [INFO] src.tools.storage_tool: Saved JSON: artifacts\MSFT\MSFT_raw.json
+2025-11-12 19:26:25 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 19:26:25 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 19:26:26 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.pdf
+2025-11-12 19:26:26 [INFO] __main__: CLI execution finished successfully for MSFT
+2025-11-12 19:27:48 [INFO] __main__: CLI called with symbol=MSFT days=10 outdir=artifacts
+2025-11-12 19:27:48 [INFO] src.graph.orchestrator: === Starting pipeline for MSFT (days=10) ===
+2025-11-12 19:27:51 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 19:27:51 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 19:27:51 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 19:27:51 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 19:27:51 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 19:27:51 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 19:27:51 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for MSFT
+2025-11-12 19:27:51 [INFO] src.agents.data_agent: Fetching data for MSFT (last 10 days)
+2025-11-12 19:27:52 [INFO] src.tools.price_tool: Fetched 10 records for MSFT
+2025-11-12 19:27:54 [INFO] src.tools.fundamentals_tool: Fetched income statement for MSFT (2 records)
+2025-11-12 19:27:55 [INFO] src.tools.fundamentals_tool: Fetched key metrics for MSFT
+2025-11-12 19:27:58 [INFO] src.tools.news_tool: Total news items for MSFT: 9
+2025-11-12 19:27:58 [INFO] src.agents.data_agent: Data fetch complete for MSFT: 10 price rows, 9 news items
+2025-11-12 19:27:58 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for MSFT
+2025-11-12 19:27:58 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for MSFT
+2025-11-12 19:27:58 [INFO] src.agents.analyst_agent: Generating analyst note for MSFT
+2025-11-12 19:28:47 [INFO] src.agents.analyst_agent: Analyst note completed for MSFT
+2025-11-12 19:28:47 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for MSFT
+2025-11-12 19:28:47 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for MSFT
+2025-11-12 19:28:47 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-12 19:29:15 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-12 19:29:15 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for MSFT
+2025-11-12 19:29:15 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for MSFT
+2025-11-12 19:29:15 [INFO] src.tools.plot_tool: Saved price chart to artifacts\MSFT\MSFT_chart.png
+2025-11-12 19:29:15 [INFO] src.tools.storage_tool: Saved JSON: artifacts\MSFT\MSFT_raw.json
+2025-11-12 19:29:15 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 19:29:15 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 19:29:17 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.pdf
+2025-11-12 19:29:17 [INFO] __main__: CLI execution finished successfully for MSFT
+2025-11-12 19:31:12 [INFO] __main__: CLI called with symbol=MSFT days=10 outdir=artifacts
+2025-11-12 19:31:12 [INFO] src.graph.orchestrator: === Starting pipeline for MSFT (days=10) ===
+2025-11-12 19:31:13 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 19:31:13 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 19:31:13 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 19:31:13 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 19:31:13 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 19:31:13 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 19:31:13 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for MSFT
+2025-11-12 19:31:13 [INFO] src.agents.data_agent: Fetching data for MSFT (last 10 days)
+2025-11-12 19:31:13 [INFO] src.tools.price_tool: Fetched 10 records for MSFT
+2025-11-12 19:31:15 [INFO] src.tools.fundamentals_tool: Fetched income statement for MSFT (2 records)
+2025-11-12 19:31:17 [INFO] src.tools.fundamentals_tool: Fetched key metrics for MSFT
+2025-11-12 19:31:18 [INFO] src.tools.news_tool: Total news items for MSFT: 9
+2025-11-12 19:31:18 [INFO] src.agents.data_agent: Data fetch complete for MSFT: 10 price rows, 9 news items
+2025-11-12 19:31:18 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for MSFT
+2025-11-12 19:31:18 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for MSFT
+2025-11-12 19:31:18 [INFO] src.agents.analyst_agent: Generating analyst note for MSFT
+2025-11-12 19:32:04 [INFO] src.agents.analyst_agent: Analyst note completed for MSFT
+2025-11-12 19:32:04 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for MSFT
+2025-11-12 19:32:04 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for MSFT
+2025-11-12 19:32:04 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-12 19:32:49 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-12 19:32:49 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for MSFT
+2025-11-12 19:32:49 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for MSFT
+2025-11-12 19:32:50 [INFO] src.tools.plot_tool: Saved price chart to artifacts\MSFT\MSFT_chart.png
+2025-11-12 19:32:50 [INFO] src.tools.storage_tool: Saved JSON: artifacts\MSFT\MSFT_raw.json
+2025-11-12 19:32:50 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 19:32:50 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 19:32:51 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.pdf
+2025-11-12 19:32:51 [INFO] __main__: CLI execution finished successfully for MSFT
+2025-11-12 20:02:34 [INFO] __main__: CLI called with symbol=MSFT days=10 outdir=artifacts
+2025-11-12 20:02:34 [INFO] src.graph.orchestrator: === Starting pipeline for MSFT (days=10) ===
+2025-11-12 20:02:36 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 20:02:36 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 20:02:36 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 20:02:36 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 20:02:36 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 20:02:36 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 20:02:36 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for MSFT
+2025-11-12 20:02:36 [INFO] src.agents.data_agent: Fetching data for MSFT (last 10 days)
+2025-11-12 20:02:36 [INFO] src.tools.price_tool: Fetched 10 records for MSFT
+2025-11-12 20:02:38 [INFO] src.tools.fundamentals_tool: Fetched income statement for MSFT (2 records)
+2025-11-12 20:02:40 [INFO] src.tools.fundamentals_tool: Fetched key metrics for MSFT
+2025-11-12 20:02:42 [INFO] src.tools.news_tool: Total news items for MSFT: 9
+2025-11-12 20:02:42 [INFO] src.agents.data_agent: Data fetch complete for MSFT: 10 price rows, 9 news items
+2025-11-12 20:02:42 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for MSFT
+2025-11-12 20:02:42 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for MSFT
+2025-11-12 20:02:42 [INFO] src.agents.analyst_agent: Generating analyst note for MSFT
+2025-11-12 20:03:15 [INFO] src.agents.analyst_agent: Analyst note completed for MSFT
+2025-11-12 20:03:15 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for MSFT
+2025-11-12 20:03:15 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for MSFT
+2025-11-12 20:03:15 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-12 20:03:35 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-12 20:03:35 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for MSFT
+2025-11-12 20:03:35 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for MSFT
+2025-11-12 20:03:35 [INFO] src.tools.plot_tool: Saved price chart to artifacts\MSFT\MSFT_chart.png
+2025-11-12 20:03:35 [INFO] src.tools.storage_tool: Saved JSON: artifacts\MSFT\MSFT_raw.json
+2025-11-12 20:03:35 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 20:03:35 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 20:03:36 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.pdf
+2025-11-12 20:03:36 [INFO] __main__: CLI execution finished successfully for MSFT
+2025-11-12 20:25:53 [INFO] __main__: CLI called with symbol=MSFT days=10 outdir=artifacts
+2025-11-12 20:25:53 [INFO] src.graph.orchestrator: === Starting pipeline for MSFT (days=10) ===
+2025-11-12 20:25:55 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 20:25:56 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 20:25:56 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 20:25:56 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 20:25:56 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 20:25:56 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 20:25:56 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for MSFT
+2025-11-12 20:25:56 [INFO] src.agents.data_agent: Fetching data for MSFT (last 10 days)
+2025-11-12 20:25:56 [INFO] src.tools.price_tool: Fetched 10 records for MSFT
+2025-11-12 20:25:57 [INFO] src.tools.fundamentals_tool: Fetched income statement for MSFT (2 records)
+2025-11-12 20:25:58 [INFO] src.tools.fundamentals_tool: Fetched key metrics for MSFT
+2025-11-12 20:26:01 [INFO] src.tools.news_tool: Total news items for MSFT: 9
+2025-11-12 20:26:01 [INFO] src.agents.data_agent: Data fetch complete for MSFT: 10 price rows, 9 news items
+2025-11-12 20:26:01 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for MSFT
+2025-11-12 20:26:01 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for MSFT
+2025-11-12 20:26:01 [INFO] src.agents.analyst_agent: Generating analyst note for MSFT
+2025-11-12 20:27:49 [INFO] src.agents.analyst_agent: Analyst note completed for MSFT
+2025-11-12 20:27:49 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for MSFT
+2025-11-12 20:27:49 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for MSFT
+2025-11-12 20:27:49 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-12 20:28:38 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-12 20:28:38 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for MSFT
+2025-11-12 20:28:38 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for MSFT
+2025-11-12 20:28:39 [INFO] src.tools.plot_tool: Saved price chart to artifacts\MSFT\MSFT_chart.png
+2025-11-12 20:28:39 [INFO] src.tools.storage_tool: Saved JSON: artifacts\MSFT\MSFT_raw.json
+2025-11-12 20:28:39 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 20:28:39 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 20:28:40 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.pdf
+2025-11-12 20:28:40 [INFO] __main__: CLI execution finished successfully for MSFT
+2025-11-12 20:44:51 [INFO] __main__: CLI called with symbol=MSFT days=10 outdir=artifacts
+2025-11-12 20:44:51 [INFO] src.graph.orchestrator: === Starting pipeline for MSFT (days=10) ===
+2025-11-12 20:44:53 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 20:44:53 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 20:44:53 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 20:44:53 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 20:44:53 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 20:44:53 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 20:44:53 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for MSFT
+2025-11-12 20:44:53 [INFO] src.agents.data_agent: Fetching data for MSFT (last 10 days)
+2025-11-12 20:44:58 [INFO] src.tools.price_tool: Fetched 9 records for MSFT
+2025-11-12 20:45:00 [INFO] src.tools.fundamentals_tool: Fetched income statement for MSFT (2 records)
+2025-11-12 20:45:01 [INFO] src.tools.fundamentals_tool: Fetched key metrics for MSFT
+2025-11-12 20:45:03 [INFO] src.tools.news_tool: Total news items for MSFT: 9
+2025-11-12 20:45:03 [INFO] src.agents.data_agent: Data fetch complete for MSFT: 9 price rows, 9 news items
+2025-11-12 20:45:03 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for MSFT
+2025-11-12 20:45:03 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for MSFT
+2025-11-12 20:45:03 [INFO] src.agents.analyst_agent: Generating analyst note for MSFT
+2025-11-12 20:46:14 [INFO] src.agents.analyst_agent: Analyst note completed for MSFT
+2025-11-12 20:46:14 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for MSFT
+2025-11-12 20:46:14 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for MSFT
+2025-11-12 20:46:14 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-12 20:46:45 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-12 20:46:45 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for MSFT
+2025-11-12 20:46:45 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for MSFT
+2025-11-12 20:46:46 [INFO] src.tools.plot_tool: Saved price chart to artifacts\MSFT\MSFT_chart.png
+2025-11-12 20:46:46 [INFO] src.tools.storage_tool: Saved JSON: artifacts\MSFT\MSFT_raw.json
+2025-11-12 20:46:46 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 20:46:46 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 20:46:48 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.pdf
+2025-11-12 20:46:48 [INFO] __main__: CLI execution finished successfully for MSFT
+2025-11-12 21:53:29 [INFO] __main__: CLI called with symbol=MSFT days=10 outdir=artifacts
+2025-11-12 21:53:29 [INFO] src.graph.orchestrator: === Starting pipeline for MSFT (days=10) ===
+2025-11-12 21:53:31 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 21:53:31 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 21:53:31 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 21:53:31 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 21:53:31 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 21:53:31 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 21:53:31 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for MSFT
+2025-11-12 21:53:31 [INFO] src.agents.data_agent: Fetching data for MSFT (last 10 days)
+2025-11-12 21:53:31 [INFO] src.tools.price_tool: Fetched 10 records for MSFT
+2025-11-12 21:53:33 [INFO] src.tools.fundamentals_tool: Fetched income statement for MSFT (2 records)
+2025-11-12 21:53:34 [INFO] src.tools.fundamentals_tool: Fetched key metrics for MSFT
+2025-11-12 21:53:35 [INFO] src.tools.news_tool: Total news items for MSFT: 9
+2025-11-12 21:53:35 [INFO] src.agents.data_agent: Data fetch complete for MSFT: 10 price rows, 9 news items
+2025-11-12 21:53:35 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for MSFT
+2025-11-12 21:53:35 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for MSFT
+2025-11-12 21:53:35 [INFO] src.agents.analyst_agent: Generating analyst note for MSFT
+2025-11-12 21:55:26 [INFO] src.agents.analyst_agent: Analyst note completed for MSFT
+2025-11-12 21:55:26 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for MSFT
+2025-11-12 21:55:26 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for MSFT
+2025-11-12 21:55:26 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-12 21:56:09 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-12 21:56:09 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for MSFT
+2025-11-12 21:56:09 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for MSFT
+2025-11-12 21:56:09 [INFO] src.tools.plot_tool: Saved price chart to artifacts\MSFT\MSFT_chart.png
+2025-11-12 21:56:09 [INFO] src.tools.storage_tool: Saved JSON: artifacts\MSFT\MSFT_raw.json
+2025-11-12 21:56:09 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 21:56:09 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.md
+2025-11-12 21:56:10 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for MSFT -> artifacts\MSFT\MSFT_2025-11-12_report.pdf
+2025-11-12 21:56:10 [INFO] __main__: CLI execution finished successfully for MSFT
+2025-11-12 21:59:09 [INFO] __main__: CLI called with symbol=AAPL days=10 outdir=artifacts
+2025-11-12 21:59:09 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=10) ===
+2025-11-12 21:59:10 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2025-11-12 21:59:11 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2025-11-12 21:59:11 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2025-11-12 21:59:11 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2025-11-12 21:59:11 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2025-11-12 21:59:11 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2025-11-12 21:59:11 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2025-11-12 21:59:11 [INFO] src.agents.data_agent: Fetching data for AAPL (last 10 days)
+2025-11-12 21:59:11 [INFO] src.tools.price_tool: Fetched 10 records for AAPL
+2025-11-12 21:59:12 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2025-11-12 21:59:13 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2025-11-12 21:59:15 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2025-11-12 21:59:15 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 10 price rows, 9 news items
+2025-11-12 21:59:15 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2025-11-12 21:59:15 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2025-11-12 21:59:15 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2025-11-12 22:00:29 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2025-11-12 22:00:29 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2025-11-12 22:00:29 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2025-11-12 22:00:29 [INFO] src.agents.compliance_agent: Running compliance check.
+2025-11-12 22:01:00 [INFO] src.agents.compliance_agent: Compliance check done.
+2025-11-12 22:01:00 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2025-11-12 22:01:00 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2025-11-12 22:01:01 [INFO] src.tools.plot_tool: Saved price chart to artifacts\AAPL\AAPL_chart.png
+2025-11-12 22:01:01 [INFO] src.tools.storage_tool: Saved JSON: artifacts\AAPL\AAPL_raw.json
+2025-11-12 22:01:01 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\AAPL\AAPL_2025-11-12_report.md
+2025-11-12 22:01:01 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> artifacts\AAPL\AAPL_2025-11-12_report.md
+2025-11-12 22:01:02 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> artifacts\AAPL\AAPL_2025-11-12_report.pdf
+2025-11-12 22:01:02 [INFO] __main__: CLI execution finished successfully for AAPL

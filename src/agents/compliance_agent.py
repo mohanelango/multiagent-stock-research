@@ -25,8 +25,7 @@ class ComplianceAgent:
         chain = self.prompt | self.llm
         out = chain.invoke({
             "note": note,
-            "forbidden": self.forbidden,
-            # "disclosure": self.disclosure
+            "forbidden": self.forbidden
         })
         logger.info("Compliance check done.")
         return out.content

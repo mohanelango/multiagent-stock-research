@@ -4,84 +4,84 @@
     "symbol": "AAPL",
     "data": [
       {
-        "Date": "2025-10-27 00:00:00-04:00",
-        "Open": 264.8800048828125,
-        "High": 269.1199951171875,
-        "Low": 264.6499938964844,
-        "Close": 268.80999755859375,
-        "Volume": 44888200
-      },
-      {
-        "Date": "2025-10-28 00:00:00-04:00",
-        "Open": 268.989990234375,
-        "High": 269.8900146484375,
-        "Low": 268.1499938964844,
-        "Close": 269.0,
-        "Volume": 41534800
-      },
-      {
-        "Date": "2025-10-29 00:00:00-04:00",
-        "Open": 269.2799987792969,
-        "High": 271.4100036621094,
-        "Low": 267.1099853515625,
-        "Close": 269.70001220703125,
-        "Volume": 51086700
-      },
-      {
         "Date": "2025-10-30 00:00:00-04:00",
-        "Open": 271.989990234375,
-        "High": 274.1400146484375,
-        "Low": 268.4800109863281,
-        "Close": 271.3999938964844,
+        "Open": 271.72657092903916,
+        "High": 273.87451306817263,
+        "Low": 268.2199910571769,
+        "Close": 271.13714599609375,
         "Volume": 69886500
       },
       {
         "Date": "2025-10-31 00:00:00-04:00",
-        "Open": 276.989990234375,
-        "High": 277.32000732421875,
-        "Low": 269.1600036621094,
-        "Close": 270.3699951171875,
+        "Open": 276.721738255342,
+        "High": 277.05143573891627,
+        "Low": 268.89933466249033,
+        "Close": 270.108154296875,
         "Volume": 86167100
       },
       {
         "Date": "2025-11-03 00:00:00-05:00",
-        "Open": 270.4200134277344,
-        "High": 270.8500061035156,
-        "Low": 266.25,
-        "Close": 269.04998779296875,
+        "Open": 270.15812755648943,
+        "High": 270.5877038096653,
+        "Low": 265.9921525413924,
+        "Close": 268.7894287109375,
         "Volume": 50194600
       },
       {
         "Date": "2025-11-04 00:00:00-05:00",
-        "Open": 268.3299865722656,
-        "High": 271.489990234375,
-        "Low": 267.6199951171875,
-        "Close": 270.0400085449219,
+        "Open": 268.0701070960229,
+        "High": 271.22705027239556,
+        "Low": 267.36080327265466,
+        "Close": 269.7784729003906,
         "Volume": 49274800
       },
       {
         "Date": "2025-11-05 00:00:00-05:00",
-        "Open": 268.6099853515625,
-        "High": 271.70001220703125,
-        "Low": 266.92999267578125,
-        "Close": 270.1400146484375,
+        "Open": 268.3498399683747,
+        "High": 271.43687417180433,
+        "Low": 266.67147434431234,
+        "Close": 269.8783874511719,
         "Volume": 43683100
       },
       {
         "Date": "2025-11-06 00:00:00-05:00",
-        "Open": 267.8900146484375,
-        "High": 273.3999938964844,
-        "Low": 267.8900146484375,
-        "Close": 269.7699890136719,
+        "Open": 267.6305743388968,
+        "High": 273.1352174017799,
+        "Low": 267.6305743388968,
+        "Close": 269.50872802734375,
         "Volume": 51204000
       },
       {
         "Date": "2025-11-07 00:00:00-05:00",
-        "Open": 269.79998779296875,
-        "High": 272.2900085449219,
-        "Low": 266.7699890136719,
-        "Close": 268.4700012207031,
-        "Volume": 48203600
+        "Open": 269.5386899523433,
+        "High": 272.02629915101613,
+        "Low": 266.51162568814635,
+        "Close": 268.2099914550781,
+        "Volume": 48227400
+      },
+      {
+        "Date": "2025-11-10 00:00:00-05:00",
+        "Open": 268.9599914550781,
+        "High": 273.7300109863281,
+        "Low": 267.4599914550781,
+        "Close": 269.42999267578125,
+        "Volume": 41312400
+      },
+      {
+        "Date": "2025-11-11 00:00:00-05:00",
+        "Open": 269.80999755859375,
+        "High": 275.9100036621094,
+        "Low": 269.79998779296875,
+        "Close": 275.25,
+        "Volume": 46138500
+      },
+      {
+        "Date": "2025-11-12 00:00:00-05:00",
+        "Open": 275.07501220703125,
+        "High": 275.239990234375,
+        "Low": 271.8699951171875,
+        "Close": 274.489990234375,
+        "Volume": 18123162
       }
     ],
     "meta": {
@@ -176,12 +176,12 @@
     "key_metrics_ttm": [
       {
         "symbol": "AAPL",
-        "marketCap": 3967020108000,
-        "enterpriseValueTTM": 3939065108000,
-        "evToSalesTTM": 9.465243278442719,
-        "evToOperatingCashFlowTTM": 35.333642274089094,
-        "evToFreeCashFlowTTM": 39.88240108538277,
-        "evToEBITDATTM": 27.27374457684505,
+        "marketCap": 4055887253204.9995,
+        "enterpriseValueTTM": 4027932253204.9995,
+        "evToSalesTTM": 9.678783579444012,
+        "evToOperatingCashFlowTTM": 36.13078571612457,
+        "evToFreeCashFlowTTM": 40.7821666468051,
+        "evToEBITDATTM": 27.889052969354758,
         "netDebtToEBITDATTM": -0.193557991234326,
         "currentRatioTTM": 0.8932929222186667,
         "incomeQualityTTM": 0.995286135166503,
@@ -197,8 +197,8 @@
         "returnOnEquityTTM": 1.6404691029851675,
         "returnOnInvestedCapitalTTM": 0.5569792592477901,
         "returnOnCapitalEmployedTTM": 0.6872062393471412,
-        "earningsYieldTTM": 0.027910230209327258,
-        "freeCashFlowYieldTTM": 0.02489702530139028,
+        "earningsYieldTTM": 0.02729861196166672,
+        "freeCashFlowYieldTTM": 0.024351515176353436,
         "capexToOperatingCashFlowTTM": 0.11405428679069267,
         "capexToDepreciationTTM": 1.0869379381090785,
         "capexToRevenueTTM": 0.030553079216937677,
@@ -223,58 +223,58 @@
   },
   "news": [
     {
-      "title": "Earnings To Watch: Jamf (JAMF) Reports Q3 Results Tomorrow",
-      "link": "https://finance.yahoo.com/news/earnings-watch-jamf-jamf-reports-030422175.html?.tsrc=rss",
-      "published": "Sun, 09 Nov 2025 03:04:22 +0000",
-      "summary": "Apple device management company Jamf (NASDAQ:JAMF) will be reporting earnings this Monday afternoon. Here\u2019s what you need to know."
+      "title": "AAPL: Apple Supplier Foxconn Sees AI Surge Driving 2026 Growth",
+      "link": "https://finance.yahoo.com/news/aapl-apple-supplier-foxconn-sees-161133982.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 16:11:33 +0000",
+      "summary": "Foxconn Prepares Major OpenAI Announcement at Tech Day"
     },
     {
-      "title": "Apple Is Berkshire Hathaway's Largest Holding by Value. But Is the California-Based Company Still a Strong Play for Long-Term Growth?",
-      "link": "https://www.fool.com/investing/2025/11/08/apple-is-berkshire-hathaways-largest-holding-by-va/?.tsrc=rss",
-      "published": "Sat, 08 Nov 2025 18:41:00 +0000",
-      "summary": "Buffett and his team's confidence in this stock isn't misplaced."
+      "title": "Developer fee cuts not passed on to EU users, Apple says",
+      "link": "https://finance.yahoo.com/news/developer-fee-cuts-not-passed-160711788.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 16:07:11 +0000",
+      "summary": "BRUSSELS (Reuters) -Lower developer fees implemented by Apple to comply \u200bwith European Union tech regulations have not reduced prices for \u200cusers, the iPhone maker said on Wednesday, renewing its criticism of Europe'\u200cs efforts to rein in its market power.  Last year, in response to the bloc's Digital Markets Act, Apple allowed software developers to distribute their apps to users in the EU outside its App \u2060Store and opt out \u200cof its in-app payment system, which charges commissions of up to 30%.  The U.S. tech giant, however, said a study it commissioned from Analysis Group showed that \u200bapp developers have not passed on the cost savings to users."
     },
     {
-      "title": "Prediction: This Supercharged Growth Stock Will Join Nvidia, Apple, Microsoft, and Alphabet in the $3 Trillion Club Before 2028",
-      "link": "https://www.fool.com/investing/2025/11/08/prediction-supercharged-growth-stock-3-trillion/?.tsrc=rss",
-      "published": "Sat, 08 Nov 2025 18:02:00 +0000",
-      "summary": "This category-leading semiconductor and infrastructure software specialist is experiencing robust growth due to artificial intelligence (AI). There could be much more to come."
+      "title": "This Pandemic Darling Is Down 40% This Year. Now the Stock Is Rising Sharply.",
+      "link": "https://finance.yahoo.com/m/cbb87852-02a5-396f-afcc-e37a6029d134/this-pandemic-darling-is-down.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 15:06:00 +0000",
+      "summary": "A report the company is exploring a sale comes as it faces pressure from activist investor Starboard Value."
     },
     {
-      "title": "How Analysts See Globalstar\u2019s Story Changing Amid Sale Talks and New Spectrum Opportunities",
-      "link": "https://finance.yahoo.com/news/analysts-see-globalstar-story-changing-161240961.html?.tsrc=rss",
-      "published": "Sat, 08 Nov 2025 16:12:40 +0000",
-      "summary": "Globalstar's fair value estimate remains steady at $60.00 per share. This reflects analysts' continued confidence in the company's long-term prospects. While the discount rate has edged slightly higher, consistent revenue growth projections reinforce a generally positive outlook for the stock. Stay tuned to discover how you can keep track of future updates as the Globalstar story develops further. Analyst Price Targets don't always capture the full story. Head over to our Company Report to..."
+      "title": "Nasdaq Loses Early Gains",
+      "link": "https://finance.yahoo.com/m/45e60972-12d3-3dbe-a1f0-6591352e48e4/nasdaq-loses-early-gains.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 15:01:59 +0000",
+      "summary": "The Nasdaq Composite\u2019s early gain didn\u2019t last long. The tech-heavy index was down 0.3% after opening higher. The S&amp;P 500 was up just 0.1%. The Dow was up 400 points, or 0.8%. Riskier stocks were still rebounding, but some of the S&amp;P and Nasdaq\u2019s heaviest hitters were mixed."
     },
     {
-      "title": "Why Apple Stock Might Be Spared If an AI Bubble Bursts",
-      "link": "https://247wallst.com/investing/2025/11/08/why-apple-stock-might-be-spared-if-an-ai-bubble-bursts/?.tsrc=rss",
-      "published": "Sat, 08 Nov 2025 15:11:47 +0000",
-      "summary": "With stocks wobbling in the past week over potential AI valuation worries, investors might have noticed that much of the Magnificent Seven has been increasingly choppy while Apple (NASDAQ:AAPL) has acted like a steady rock, holding its ground at around $270 per share. While the positive initial post-earnings reaction has faded, I do think that ... Why Apple Stock Might Be Spared If an AI Bubble Bursts"
+      "title": "What Tesla Stock Would Look Like in 10 Years If Musk Hits Pay Targets",
+      "link": "https://finance.yahoo.com/m/b63dd1f9-7c44-3cb9-b4bf-0a8f8cc0ad5e/what-tesla-stock-would-look.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 15:01:00 +0000",
+      "summary": "If the CEO hits his performance goals and the company\u2019s earnings explode over the coming 10 years, what will the stock\u2019s price-to-earnings ratio be?"
     },
     {
-      "title": "Every payment method Costco accepts: From EBT to Apple Pay",
-      "link": "https://www.thestreet.com/retail/what-payment-methods-does-costco-accept?.tsrc=rss",
-      "published": "Sat, 08 Nov 2025 15:08:00 +0000",
-      "summary": "Costco is America\u2019s favorite warehouse club, boasting almost twice as many members as its next-biggest rival, Sam\u2019s Club, despite its more expensive membership fees. Another important distinction between the retailers is the payment methods each one accepts. For instance, while you can use any ..."
+      "title": "Whoop Is Considering Going Public in the Next Two Years, CEO Says",
+      "link": "https://finance.yahoo.com/news/whoop-considering-going-public-next-130009946.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 14:48:24 +0000",
+      "summary": "Founder and Chief Executive Officer\u00a0Will Ahmed said\u00a0the business is well-positioned for an IPO now that it\u2019s broadened its portfolio to include proprietary technology, hardware, software, analytics\u00a0and other items, such as\u00a0accessories and apparel.  While Ahmed has previously said Whoop is likely to go public, he hadn\u2019t shared\u00a0when that might happen."
     },
     {
-      "title": "As Warren Buffett Waves Goodbye \u2013 5 Dividend Stocks That Never Leave Berkshire Hathaway",
-      "link": "https://247wallst.com/investing/2025/11/08/as-warren-buffett-waves-goodbye-5-dividend-stocks-that-never-leave-berkshire-hathaway/?.tsrc=rss",
-      "published": "Sat, 08 Nov 2025 13:31:06 +0000",
-      "summary": "If any investor has stood the test of time, it\u2019s Warren Buffett, and with good reason. For years, the \u201cOracle of Omaha\u201d has had a rock star-like presence in the investing world, and his annual Berkshire Hathaway shareholders meeting draws thousands of loyal fans who are investors. They were stunned at this year\u2019s meeting when ... As Warren Buffett Waves Goodbye \u2013 5 Dividend Stocks That Never Leave Berkshire Hathaway"
+      "title": "Stock market today: Dow, S&P 500, Nasdaq diverge as Big Tech wobbles ahead of House shutdown vote",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-diverge-as-big-tech-wobbles-ahead-of-house-shutdown-vote-143510249.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 14:35:10 +0000",
+      "summary": "Investors awaited a key House vote that could end the longest government shutdown in US history."
     },
     {
-      "title": "Today's AI boom is 'very different' from the 90s dot-com bubble",
-      "link": "https://finance.yahoo.com/video/todays-ai-boom-very-different-130030753.html?.tsrc=rss",
-      "published": "Sat, 08 Nov 2025 13:00:30 +0000",
-      "summary": "BMO Private Wealth chief market strategist, Carol Schleif, joins Morning Brief with Yahoo Finance Senior Reporter Allie Canal to discuss whether markets (^DJI, ^GSPC, ^IXIC) are seeing an artificial intelligence (AI) bubble and to share her thoughts on Big Tech companies funding their AI projects with debt. To watch more expert insights and analysis on the latest market action, check out more Morning Brief."
+      "title": "If You'd Invested $500 in Nvidia Stock 1 Year Ago, Here's How Much You'd Have Today",
+      "link": "https://www.fool.com/investing/2025/11/12/if-invested-500-in-nvidia-stock-1-year-ago-today/?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 14:20:00 +0000",
+      "summary": "Nvidia has continued to beat the market, even after adding trillions to its market cap."
     },
     {
-      "title": "Apple\u2019s iPhone Air Is a Marketing Win and a Sales Flop",
-      "link": "https://finance.yahoo.com/m/2f8e782a-74d8-322b-b083-b1343ad96688/apple%E2%80%99s-iphone-air-is-a.html?.tsrc=rss",
-      "published": "Sat, 08 Nov 2025 12:00:00 +0000",
-      "summary": "Just one in 10 iPhone 17 buyers in the U.S. opted for the Air in the early weeks of sales, a consumer survey found, with some dissatisfied with its camera, sound quality, battery and price."
+      "title": "Why Nvidia Stock Is Rebounding Today After SoftBank Shed Its Stake in the Chip Maker",
+      "link": "https://finance.yahoo.com/m/b02a2c67-bf9b-3d30-b942-ed859a29b714/why-nvidia-stock-is.html?.tsrc=rss",
+      "published": "Wed, 12 Nov 2025 13:57:00 +0000",
+      "summary": "Nvidia  stock was rising Wednesday as Foxconn Technology Group said there was strong demand for artificial-intelligence hardware.  Nvidia shares were up 1.4% at $195.95 in premarket trading.  The stock fell 3% on Tuesday after Japan\u2019s  SoftBank Group  disclosed that it had sold a $5.83 billion stake in the chip maker."
     }
   ]
 }
