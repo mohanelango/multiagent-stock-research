@@ -13,7 +13,7 @@ def save_price_plot(dates: List[str], closes: List[float], reported_currency, ou
     os.makedirs(os.path.dirname(outpath), exist_ok=True)
     try:
         df = pd.DataFrame({"date": dates, "close": closes})
-        df["date"] = pd.to_datetime(df["date"])
+        df["date"] = pd.to_datetime(df["date"],utc=True)
         plt.figure(figsize=(8, 4))
         plt.plot(df["date"], df["close"])
         plt.title("Close Price")

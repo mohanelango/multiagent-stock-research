@@ -4,6 +4,30 @@
     "symbol": "META",
     "data": [
       {
+        "Date": "2025-10-31 00:00:00-04:00",
+        "Open": 674.510009765625,
+        "High": 674.8900146484375,
+        "Low": 645.5700073242188,
+        "Close": 648.3499755859375,
+        "Volume": 56953200
+      },
+      {
+        "Date": "2025-11-03 00:00:00-05:00",
+        "Open": 656.0,
+        "High": 659.3300170898438,
+        "Low": 636.1799926757812,
+        "Close": 637.7100219726562,
+        "Volume": 33003600
+      },
+      {
+        "Date": "2025-11-04 00:00:00-05:00",
+        "Open": 628.0399780273438,
+        "High": 641.739990234375,
+        "Low": 626.010009765625,
+        "Close": 627.3200073242188,
+        "Volume": 27356600
+      },
+      {
         "Date": "2025-11-05 00:00:00-05:00",
         "Open": 632.3099975585938,
         "High": 642.22998046875,
@@ -41,11 +65,27 @@
         "High": 629.5599975585938,
         "Low": 619.3900146484375,
         "Close": 627.0800170898438,
-        "Volume": 13254900
+        "Volume": 13302200
+      },
+      {
+        "Date": "2025-11-12 00:00:00-05:00",
+        "Open": 628.1300048828125,
+        "High": 628.989990234375,
+        "Low": 607.77001953125,
+        "Close": 609.010009765625,
+        "Volume": 24493300
+      },
+      {
+        "Date": "2025-11-13 00:00:00-05:00",
+        "Open": 613.0700073242188,
+        "High": 617.6500244140625,
+        "Low": 603.0,
+        "Close": 609.8900146484375,
+        "Volume": 20930100
       }
     ],
     "meta": {
-      "days": 5
+      "days": 10
     }
   },
   "fundamentals": {
@@ -136,13 +176,13 @@
     "key_metrics_ttm": [
       {
         "symbol": "META",
-        "marketCap": 1580572492558,
-        "enterpriseValueTTM": 1621445492558,
-        "evToSalesTTM": 8.5583826016352,
-        "evToOperatingCashFlowTTM": 15.072838163106326,
-        "evToFreeCashFlowTTM": 36.15988699087888,
-        "evToEBITDATTM": 15.85192148130261,
-        "netDebtToEBITDATTM": 0.3995913459188362,
+        "marketCap": 1537244659689,
+        "enterpriseValueTTM": 1555891659689,
+        "evToSalesTTM": 8.212373571253636,
+        "evToOperatingCashFlowTTM": 14.463454549324185,
+        "evToFreeCashFlowTTM": 34.69796970828037,
+        "evToEBITDATTM": 15.211040109583818,
+        "netDebtToEBITDATTM": 0.18230078113543266,
         "currentRatioTTM": 1.9784079225066291,
         "incomeQualityTTM": 1.837992072170585,
         "grahamNumberTTM": 200.8466593794897,
@@ -155,10 +195,10 @@
         "operatingReturnOnAssetsTTM": 0.2736272695075745,
         "returnOnTangibleAssetsTTM": 0.20704244285178608,
         "returnOnEquityTTM": 0.30934379137475854,
-        "returnOnInvestedCapitalTTM": 0.21179434225716978,
+        "returnOnInvestedCapitalTTM": 0.21347116848705594,
         "returnOnCapitalEmployedTTM": 0.30685386269793097,
-        "earningsYieldTTM": 0.0370815192038908,
-        "freeCashFlowYieldTTM": 0.028370100208076683,
+        "earningsYieldTTM": 0.038126677044017517,
+        "freeCashFlowYieldTTM": 0.029169722410401337,
         "capexToOperatingCashFlowTTM": 0.5831613586926209,
         "capexToDepreciationTTM": 3.551259552787999,
         "capexToRevenueTTM": 0.3311199902880337,
@@ -174,7 +214,7 @@
         "daysOfInventoryOutstandingTTM": 0,
         "operatingCycleTTM": 33.32368294652613,
         "cashConversionCycleTTM": -50.1250680796261,
-        "freeCashFlowToEquityTTM": 3968000000,
+        "freeCashFlowToEquityTTM": 26194000000,
         "freeCashFlowToFirmTTM": 13949577397.154434,
         "tangibleAssetValueTTM": 172908000000,
         "netCurrentAssetValueTTM": -36660000000
@@ -183,58 +223,58 @@
   },
   "news": [
     {
-      "title": "Pinterest Down 16.6% in 6 Months: Should it Be in Your Portfolio?",
-      "link": "https://finance.yahoo.com/news/pinterest-down-16-6-6-120200171.html?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 12:02:00 +0000",
-      "summary": "PINS' 16.6% slide contrasts with industry gains, as rising costs, stiff competition and bearish revisions cloud its outlook."
+      "title": "Amazon, Microsoft back effort to restrict Nvidia's exports to China, WSJ reports",
+      "link": "https://finance.yahoo.com/news/amazon-microsoft-back-effort-restrict-025831694.html?.tsrc=rss",
+      "published": "Fri, 14 Nov 2025 02:58:31 +0000",
+      "summary": "(Reuters) -Amazon is joining Microsoft in backing legislation to further curb chipmaker Nvidia's ability to export chips to China, the Wall Street Journal reported on Thursday, citing people familiar"
     },
     {
-      "title": "S&P 500 May Break 7,000 Barrier Before Year-End, Wells Fargo Predicts",
-      "link": "https://finance.yahoo.com/news/p-500-may-break-7-120049178.html?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 12:00:49 +0000",
-      "summary": "Wells Fargo Predicts Risk-On Rally as S&amp;P 500 Eyes Record Close"
+      "title": "Luxembourg Minister's Bitcoin Prediction Just Came True: \"As Michael Saylor Says,...\"",
+      "link": "https://finance.yahoo.com/news/luxembourg-ministers-bitcoin-prediction-just-024607237.html?.tsrc=rss",
+      "published": "Fri, 14 Nov 2025 02:46:07 +0000",
+      "summary": "Bitcoin (CRYPTO: BTC) gained a powerful boost in Europe as Luxembourg's finance minister openly backed the asset for long-term sovereign allocation, while the Czech National Bank initiated its first digital-asset pilot. Minister Says Bitcoin Adoption ..."
     },
     {
-      "title": "Innoviz Reports Third Quarter 2025 Results",
-      "link": "https://finance.yahoo.com/news/innoviz-reports-third-quarter-2025-120000252.html?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 12:00:00 +0000",
-      "summary": "Innoviz Technologies Ltd. (NASDAQ: INVZ) (the \"Company\" or \"Innoviz\"), a leading Tier-1 direct supplier of high performance, automotive-grade LiDAR sensor platforms and complementary software stack, today provided commercial and strategic updates on its business, reported its financial results for the quarter ended September 30, 2025 and reiterated its full year commercial and financial targets."
+      "title": "End Of An Era? YouTube Change Looms Amid Crypto Creator Uproar: 'It's TikTok Time I Guess'",
+      "link": "https://finance.yahoo.com/news/end-era-youtube-change-looms-000045807.html?.tsrc=rss",
+      "published": "Fri, 14 Nov 2025 00:00:45 +0000",
+      "summary": "YouTube announced a significant expansion of its online gambling content restrictions late last month, sparking immediate concern among cryptocurrency and gaming content creators who feared their livelihoods were about to disappear overnight. Crypto ..."
     },
     {
-      "title": "The $400 Billion AI Boom That Just Supercharged This Apple Supplier's Stock",
-      "link": "https://finance.yahoo.com/news/400-billion-ai-boom-just-115043770.html?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 11:50:43 +0000",
-      "summary": "Hon Hai's Nvidia-powered server surge is rewriting the playbook--just as tech giants double down on AI spending."
+      "title": "With Layoffs Spreading Across Industries, These Careers Are Still 'Doing Fine Right Now'\u2014And Some Are Surprisingly Easy To Get Into",
+      "link": "https://finance.yahoo.com/news/layoffs-spreading-across-industries-careers-233117569.html?.tsrc=rss",
+      "published": "Thu, 13 Nov 2025 23:31:17 +0000",
+      "summary": "Despite the wave of layoffs and hiring freezes hitting major sectors like tech, not every career path is suffering. A Reddit thread asking people what fields are \u201cdoing fine right now\u201d received hundreds of replies; many of them from people currently working and thriving in those industries. Strong Demand Remains In Trades, Healthcare And Accounting Accountants were among the most confident responders. One person wrote, \u201cI\u2019m an accountant and I\u2019m doing fine. I was able to cold-quit a job in July"
     },
     {
-      "title": "How buying the dip & selling the rip is fueling investor gains",
-      "link": "https://finance.yahoo.com/video/buying-dip-selling-rip-fueling-113005363.html?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 11:30:05 +0000",
-      "summary": "Charles Schwab clients were net buyers of equities in October despite many believing the market is overvalued. Charles Schwab head trading and derivatives strategist Joe Mazzola joins Market Domination Overtime to discuss the current market dynamics. To watch more expert insights and analysis on the latest market action, check out more Market Domination Overtime."
+      "title": "Mira Murati's Thinking Machines seeks $50 billion valuation in funding talks, Bloomberg News reports",
+      "link": "https://finance.yahoo.com/news/mira-muratis-thinking-machines-seeks-212328387.html?.tsrc=rss",
+      "published": "Thu, 13 Nov 2025 21:23:28 +0000",
+      "summary": "Some sources told Bloomberg that Thinking Machines \u200dis looking at a valuation of about $50 billion, while others said it could rise to \u200bcloser to $55 billion or $60 \u200cbillion.  Thinking Machines did not immediately respond to a Reuters request for comment.  The development follows a \u2060Wall Street Journal report last \u200bmonth that said Andrew \u200bTulloch, co-founder of Thinking Machines, left the AI company to \u200djoin Meta \u2060Platforms."
     },
     {
-      "title": "Investors Now See Some Companies as Safer Bets Than Governments",
-      "link": "https://finance.yahoo.com/news/investors-now-see-companies-safer-110012648.html?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 11:00:12 +0000",
-      "summary": "In corporate boardrooms since the pandemic era, executives have dealt with the rise in interest rates by keeping budgets lean and reducing overall indebtedness.  Meanwhile, governments in rich countries continue to spend, with the average debt-to-output ratio across the Group of Seven industrialized nations set to keep rising until the end of this decade at least.  The result: Investors demand lower yields for bonds issued by Microsoft Corp., Airbus SE, L\u2019Oreal SA, and Siemens AG than they do for their countries of origin."
+      "title": "Oracle Stock Is a Bet on OpenAI\u2014and Investors Are Cashing In Their Chips",
+      "link": "https://finance.yahoo.com/m/99025ee1-a462-3fe7-a218-29cda40e66a6/oracle-stock-is-a-bet-on.html?.tsrc=rss",
+      "published": "Thu, 13 Nov 2025 20:33:00 +0000",
+      "summary": "Oracle  stock has given back all the gains from the cloud computing group\u2019s \u201c  Nvidia  Moment\u201d as investors grow increasingly cautious over investments linked to the artificial intelligence boom.  When Oracle reported earnings in September, the results included a massive revenue forecast.  One of its biggest commitments is a reported $300 billion agreement to buy computing power for Oracle, and that deal represented around 65% of its so-called \u201cRPO\u201d forecast that sent the stock soaring in early September."
     },
     {
-      "title": "The AI Boom Is Looking More and More Fragile",
-      "link": "https://finance.yahoo.com/m/4303359f-6b86-376d-87ea-0a9edfeac7aa/the-ai-boom-is-looking-more.html?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 10:30:00 +0000",
-      "summary": "Perfect isn\u2019t good enough, and any sign of weakness is a disaster: Justified or not, that\u2019s the current mood in the markets about the AI boom.  Generative artificial-intelligence services require massive data centers and state-of-the-art chips and server racks that don\u2019t come together quickly.  Nvidia  lost 7% last week and slipped another 3% on Tuesday\u2014leaving it well shy of its $5 trillion market-cap milestone last month."
+      "title": "2 \"Magnificent Seven\" Stocks to Buy Before They Soar at Least 20%, According to Select Wall Street Analysts",
+      "link": "https://www.fool.com/investing/2025/11/13/2-magnificent-seven-stocks-to-buy-before-they-soar/?.tsrc=rss",
+      "published": "Thu, 13 Nov 2025 20:29:00 +0000",
+      "summary": "Meta Platforms and Amazon already sport massive market caps, but that doesn't mean they can't keep growing."
     },
     {
-      "title": "Prediction: This Dividend-Paying Value Stock Will Join Berkshire Hathaway in the $1 Trillion Club Before Walmart",
-      "link": "https://www.fool.com/investing/2025/11/12/buy-dividend-value-stock-jpmorgan-chase-berkshire/?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 08:05:00 +0000",
-      "summary": "The $1 trillion club is growing due to record earnings and investor enthusiasm."
+      "title": "Meta Platforms Is Giving HubSpot Stock a Giant AI Boost. Will It Help Save HUBS?",
+      "link": "https://www.barchart.com/story/news/36108921/meta-platforms-is-giving-hubspot-stock-a-giant-ai-boost-will-it-help-save-hubs?.tsrc=rss",
+      "published": "Thu, 13 Nov 2025 20:26:53 +0000",
+      "summary": "HubSpot's AI-driven automation attempts have so far not helped HUBS stock; Meta's head of business AI joining the board could help save the company."
     },
     {
-      "title": "Big Tech starts complying with Australia's teen social media ban",
-      "link": "https://finance.yahoo.com/video/big-tech-starts-complying-australias-073722210.html?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 07:37:22 +0000",
-      "summary": "<p>STORY: Australian teenagers are set to lose their social media accounts, with a ban on young users set to kick in from December 10.\u00a0</p><p>Over the coming days, online platforms like TikTok, Snapchat, Meta and Instagram will notify more than a million teen account holders in the country.\u00a0</p><p>Users under the age of 16 must choose an option:\u00a0</p><p>Download data, freeze their profiles, or lose everything under the world-first ban on kids using social media.</p><p>Based on information from insiders, the big platforms plan to deactivate accounts for users under the age of 16.</p><p>Australia's other 20 million social media users should face no big changes.</p><p>The move puts the nation out front in shielding young people from online risks.</p><p>Earlier this year, platforms had warned of total chaos, fearing that they could lose users and face $32 million fines for breaking the rules.</p><p>They said required age checks would mean constant logins, invade privacy and often be wrong or easy to dodge.</p><p>But now, firms will use existing software that guesses ages from user habits, instead of asking for birth dates all the time.</p><p>They will generally only push people to special age-check apps if someone complains about being blocked by mistake.</p><p>The setup might hit snags at first.</p><p>Age-check apps which are being deployed at scale for the first time can make mistakes.</p><p>La Trobe University AI professor Daswin De Silva explains:</p><p>\"One of the challenges with age verification also is this band between 15, 16, 17, how do you distinguish 15 from 16 to 17. So a lot of the technological methods of age verification will fail in that narrow band and there might be false positives where certain individuals who are over 16, slightly over 16 will be banned from these platforms because their content was classified as relevant to under an 16 sort of target demographic.\"</p><p>\"It's probably going to be service distortion, service failure for a couple of days or weeks maybe until the platforms figure this out, and we'll see a lot of articles on media and maybe on social media itself of false positives.\"</p><p>Meta, Snapchat, TikTok and Google declined to comment.</p><p>The law states that such platforms must take \"reasonable steps\" to block minors.</p><p>If the rollout goes smoothly, it could guide the world in cutting kids' exposure to harms like bullying or weight issues from screens.</p><p>The UK and France added age gates for porn earlier this year.\u00a0</p><p>Then in November, Denmark said it would ban under-15s from social media.</p>"
+      "title": "CEO Lisa Su Says that \u2018Insatiable\u2019 Demand Is Powering AMD. Should You Buy Its Stock Here?",
+      "link": "https://www.barchart.com/story/news/36108526/ceo-lisa-su-says-that-insatiable-demand-is-powering-amd-should-you-buy-its-stock-here?.tsrc=rss",
+      "published": "Thu, 13 Nov 2025 20:01:20 +0000",
+      "summary": "AMD stock has more than doubled in the past year and remains a top investment due to its widening AI moat."
     }
   ]
 }

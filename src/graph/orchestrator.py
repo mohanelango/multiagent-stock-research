@@ -154,7 +154,7 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
         logger.info("[Node: Compliance] Completed for %s", state["symbol"])
         return state
 
-    def node_enrich_and_publish(state: dict):
+    def node_supervise(state: dict):
         """Combine all collected insights into a unified Markdown report with fundamentals, news, commentary,
         and metadata, and automatically export it to PDF."""
 
@@ -216,15 +216,25 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
         else:
             news_summary = "No significant news headlines found in this period."
 
-        raw = state.get("final_note", "")
-        # Remove line breaks inside sentences
-        text = " ".join(raw.split())
-        # Fix cases like "...risk.- Positioning..." → "...risk. Positioning..."
-        text = re.sub(r"\.-\s*", ". ", text)
-        # Split by sentence endings
-        sentences = re.split(r'(?<=[.!?])\s+(?=[A-Z])', text)
-        # Build hyphen-prefixed lines
-        safe_analyst_summary = "\n".join(f"- {s.strip()}" for s in sentences if s.strip())
+        # ----------------------------------------------------------------------
+        # Use SupervisorAgent to refine & stitch final commentary
+        # ----------------------------------------------------------------------
+        try:
+            supervisor_input_summary = f"""
+            Prices: {len(price_rows)} rows
+            Fundamentals available: {bool(inc_list and met_list)}
+            News items: {len(news_items)}
+            """
+
+            supervisor_text = supervisor.run(
+                symbol=symbol,
+                data_summary=supervisor_input_summary,
+                final_note=state.get("final_note", "")
+            ).strip()
+
+        except Exception as e:
+            logger.warning("SupervisorAgent failed for %s, falling back to raw compliant text. (%s)", symbol, e)
+            supervisor_text = state.get("final_note", "").strip()
 
         # ----------------------------------------------------------------------
         # Construct snapshot text safely
@@ -243,9 +253,9 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
         # Create unified Markdown content
         # ----------------------------------------------------------------------
         report_md = f"""
-    # {symbol}: {state['days']}-Session Market Snapshot
+    
 
-## 1. Snapshot
+## 1. Market Overview
 - Symbol: {symbol}
 - Data Coverage: {len(price_rows)} rows ({max(len(price_rows) - 1, 0)} returns)
 {stats_block}- News Items Processed: {len(news_items)}
@@ -255,14 +265,12 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
 - Revenue: {safe_num(inc.get('revenue'), reported_currency)}.
 - Net Income: {safe_num(inc.get('netIncome'), reported_currency)}.
 - EPS (Diluted): {safe_num(inc.get('epsDiluted'), reported_currency)}.
-- Return on Equity (TTM): {safe_num(met.get('returnOnEquityTTM'), reported_currency)}.
-- Free Cash Flow Yield (TTM): {safe_num(met.get('freeCashFlowYieldTTM'), reported_currency)}.
 
     ## 3. Recent News Headlines
     {news_summary}
 
 ## 4. Analyst Commentary
-{safe_analyst_summary}
+{supervisor_text}
 
 ## 5. Methodology
 - Prices sourced via yfinance.
@@ -327,7 +335,7 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
                 extra_args=[
                     "--standalone",
                     "--pdf-engine=wkhtmltopdf",
-                    f"--metadata=title:{symbol} Stock Market Report",
+                    f"--metadata=title:{symbol} Stock Market Report - {state['days']}-Session",
                     f"--css={css_path}",
                     f"--resource-path={outdir}",
                     f"--resource-path={os.path.dirname(plot_path)}"
@@ -344,13 +352,13 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
     g.add_node("collect_data", node_collect_data)
     g.add_node("analyze", node_analyze)
     g.add_node("compliance", node_compliance)
-    g.add_node("enrich_and_publish", node_enrich_and_publish)
+    g.add_node("supervisor", node_supervise)
 
     g.add_edge(START, "collect_data")
     g.add_edge("collect_data", "analyze")
     g.add_edge("analyze", "compliance")
-    g.add_edge("compliance", "enrich_and_publish")
-    g.add_edge("enrich_and_publish", END)
+    g.add_edge("compliance", "supervisor")
+    g.add_edge("supervisor", END)
 
     logger.info("LangGraph pipeline successfully built.")
     return g.compile()

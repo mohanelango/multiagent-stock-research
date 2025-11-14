@@ -4,14 +4,6 @@
     "symbol": "AAPL",
     "data": [
       {
-        "Date": "2025-10-30 00:00:00-04:00",
-        "Open": 271.72657092903916,
-        "High": 273.87451306817263,
-        "Low": 268.2199910571769,
-        "Close": 271.13714599609375,
-        "Volume": 69886500
-      },
-      {
         "Date": "2025-10-31 00:00:00-04:00",
         "Open": 276.721738255342,
         "High": 277.05143573891627,
@@ -73,15 +65,23 @@
         "High": 275.9100036621094,
         "Low": 269.79998779296875,
         "Close": 275.25,
-        "Volume": 46138500
+        "Volume": 46208300
       },
       {
         "Date": "2025-11-12 00:00:00-05:00",
-        "Open": 275.07501220703125,
-        "High": 275.239990234375,
-        "Low": 271.8699951171875,
-        "Close": 274.489990234375,
-        "Volume": 18123162
+        "Open": 275.0,
+        "High": 275.7300109863281,
+        "Low": 271.70001220703125,
+        "Close": 273.4700012207031,
+        "Volume": 48398000
+      },
+      {
+        "Date": "2025-11-13 00:00:00-05:00",
+        "Open": 274.1099853515625,
+        "High": 276.70001220703125,
+        "Low": 272.0899963378906,
+        "Close": 272.95001220703125,
+        "Volume": 49565800
       }
     ],
     "meta": {
@@ -176,29 +176,29 @@
     "key_metrics_ttm": [
       {
         "symbol": "AAPL",
-        "marketCap": 4055887253204.9995,
-        "enterpriseValueTTM": 4027932253204.9995,
-        "evToSalesTTM": 9.678783579444012,
-        "evToOperatingCashFlowTTM": 36.13078571612457,
-        "evToFreeCashFlowTTM": 40.7821666468051,
-        "evToEBITDATTM": 27.889052969354758,
-        "netDebtToEBITDATTM": -0.193557991234326,
+        "marketCap": 4033205551350,
+        "enterpriseValueTTM": 4112043551350,
+        "evToSalesTTM": 9.880895978599629,
+        "evToOperatingCashFlowTTM": 36.88526893444682,
+        "evToFreeCashFlowTTM": 41.63378002116091,
+        "evToEBITDATTM": 28.334494755211026,
+        "netDebtToEBITDATTM": 0.5432420327304048,
         "currentRatioTTM": 0.8932929222186667,
         "incomeQualityTTM": 0.995286135166503,
         "grahamNumberTTM": 28.8371936709443,
         "grahamNetNetTTM": -11.588738000468274,
         "taxBurdenTTM": 0.8438999766441395,
-        "interestBurdenTTM": 1,
+        "interestBurdenTTM": 0.9947686750058085,
         "workingCapitalTTM": -17674000000,
-        "investedCapitalTTM": 32160000000,
+        "investedCapitalTTM": 43365000000,
         "returnOnAssetsTTM": 0.3117962593356549,
         "operatingReturnOnAssetsTTM": 0.38524124991313613,
         "returnOnTangibleAssetsTTM": 0.3117962593356549,
         "returnOnEquityTTM": 1.6404691029851675,
-        "returnOnInvestedCapitalTTM": 0.5569792592477901,
+        "returnOnInvestedCapitalTTM": 0.5196842110031786,
         "returnOnCapitalEmployedTTM": 0.6872062393471412,
-        "earningsYieldTTM": 0.02729861196166672,
-        "freeCashFlowYieldTTM": 0.024351515176353436,
+        "earningsYieldTTM": 0.027452132274402238,
+        "freeCashFlowYieldTTM": 0.024488461781210377,
         "capexToOperatingCashFlowTTM": 0.11405428679069267,
         "capexToDepreciationTTM": 1.0869379381090785,
         "capexToRevenueTTM": 0.030553079216937677,
@@ -214,8 +214,8 @@
         "daysOfInventoryOutstandingTTM": 9.445465242577843,
         "operatingCycleTTM": 73.43345306459864,
         "cashConversionCycleTTM": -41.967071917298554,
-        "freeCashFlowToEquityTTM": 126722000000,
-        "freeCashFlowToFirmTTM": 110038000000,
+        "freeCashFlowToEquityTTM": 19929000000,
+        "freeCashFlowToFirmTTM": 110627042183.6976,
         "tangibleAssetValueTTM": 73733000000,
         "netCurrentAssetValueTTM": -137551000000
       }
@@ -223,58 +223,58 @@
   },
   "news": [
     {
-      "title": "AAPL: Apple Supplier Foxconn Sees AI Surge Driving 2026 Growth",
-      "link": "https://finance.yahoo.com/news/aapl-apple-supplier-foxconn-sees-161133982.html?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 16:11:33 +0000",
-      "summary": "Foxconn Prepares Major OpenAI Announcement at Tech Day"
+      "title": "Apple (AAPL) Forecasts Best Holiday Quarter Ever With Double-Digit iPhone and Services Growth",
+      "link": "https://finance.yahoo.com/news/apple-aapl-forecasts-best-holiday-042012419.html?.tsrc=rss",
+      "published": "Fri, 14 Nov 2025 04:20:12 +0000",
+      "summary": "Apple Inc. (NASDAQ:AAPL) ranks among the best long-term stocks to buy according to D. E. Shaw. Following Apple Inc. (NASDAQ:AAPL) \u2018s quarterly results, UBS maintained its Neutral rating and increased its price target from $220 to $280 for the company\u2019s shares on October 31. Despite facing more difficult year-over-year comparisons, the tech giant\u2019s earnings exceeded [\u2026]"
     },
     {
-      "title": "Developer fee cuts not passed on to EU users, Apple says",
-      "link": "https://finance.yahoo.com/news/developer-fee-cuts-not-passed-160711788.html?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 16:07:11 +0000",
-      "summary": "BRUSSELS (Reuters) -Lower developer fees implemented by Apple to comply \u200bwith European Union tech regulations have not reduced prices for \u200cusers, the iPhone maker said on Wednesday, renewing its criticism of Europe'\u200cs efforts to rein in its market power.  Last year, in response to the bloc's Digital Markets Act, Apple allowed software developers to distribute their apps to users in the EU outside its App \u2060Store and opt out \u200cof its in-app payment system, which charges commissions of up to 30%.  The U.S. tech giant, however, said a study it commissioned from Analysis Group showed that \u200bapp developers have not passed on the cost savings to users."
+      "title": "Berkshire Without Buffett: What\u2019s Next for the Company and the Stock",
+      "link": "https://finance.yahoo.com/m/991dfba7-a309-35d1-8b45-f108220b919f/berkshire-without-buffett%3A.html?.tsrc=rss",
+      "published": "Thu, 13 Nov 2025 23:31:00 +0000",
+      "summary": "As the legendary investor prepares to step down as CEO, here\u2019s what his designated successor, Greg Abel, should do to bring Berkshire into the 21st century."
     },
     {
-      "title": "This Pandemic Darling Is Down 40% This Year. Now the Stock Is Rising Sharply.",
-      "link": "https://finance.yahoo.com/m/cbb87852-02a5-396f-afcc-e37a6029d134/this-pandemic-darling-is-down.html?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 15:06:00 +0000",
-      "summary": "A report the company is exploring a sale comes as it faces pressure from activist investor Starboard Value."
+      "title": "Berkshire May Have Sold Apple, Bank of America Stock in Third Quarter",
+      "link": "https://finance.yahoo.com/m/007311d4-1218-31d6-acbc-42e51c127464/berkshire-may-have-sold.html?.tsrc=rss",
+      "published": "Thu, 13 Nov 2025 22:05:00 +0000",
+      "summary": "Berkshire Hathaway  sold $12 billion of stocks in the third quarter, and  Apple  and  Bank of America  lead the list of potential sale candidates.  Berkshire likely will release its quarterly 13-F report late Friday detailing its equity holdings of U.S.-listed securities as of Sept. 30.  Friday is the deadline for 13-F filings, and Berkshire typically waits until the final day to file."
     },
     {
-      "title": "Nasdaq Loses Early Gains",
-      "link": "https://finance.yahoo.com/m/45e60972-12d3-3dbe-a1f0-6591352e48e4/nasdaq-loses-early-gains.html?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 15:01:59 +0000",
-      "summary": "The Nasdaq Composite\u2019s early gain didn\u2019t last long. The tech-heavy index was down 0.3% after opening higher. The S&amp;P 500 was up just 0.1%. The Dow was up 400 points, or 0.8%. Riskier stocks were still rebounding, but some of the S&amp;P and Nasdaq\u2019s heaviest hitters were mixed."
+      "title": "Apple\u2019s MLS Streaming Shift May Alter Revenue-Share Plans",
+      "link": "https://www.sportico.com/leagues/soccer/2025/mls-season-pass-apple-tv-subscribers-price-revenue-change-1234876763/?.tsrc=rss",
+      "published": "Thu, 13 Nov 2025 21:45:07 +0000",
+      "summary": "When Apple and MLS announced their 10-year streaming tie-up in 2022, there were two key financial components: a $250 million annual guarantee from Apple, plus the opportunity for MLS to get a share of additional revenue if the new Season Pass subscription product achieved a certain level of success. But starting next season, MLS Season \u2026"
     },
     {
-      "title": "What Tesla Stock Would Look Like in 10 Years If Musk Hits Pay Targets",
-      "link": "https://finance.yahoo.com/m/b63dd1f9-7c44-3cb9-b4bf-0a8f8cc0ad5e/what-tesla-stock-would-look.html?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 15:01:00 +0000",
-      "summary": "If the CEO hits his performance goals and the company\u2019s earnings explode over the coming 10 years, what will the stock\u2019s price-to-earnings ratio be?"
+      "title": "Tesla Stock Drops Below $400. Retail Investors Keep Buying.",
+      "link": "https://finance.yahoo.com/m/e49e7235-4e97-3c54-a5f7-312a51b8231c/tesla-stock-drops-below-%24400..html?.tsrc=rss",
+      "published": "Thu, 13 Nov 2025 21:21:00 +0000",
+      "summary": "Despite recent declines, shares remain very popular with retail investors.  The selling made Tesla shares one of the worst performers in the  according to Dow Jones Market Data.  Tesla stock hasn\u2019t closed below $400 since mid-September."
     },
     {
-      "title": "Whoop Is Considering Going Public in the Next Two Years, CEO Says",
-      "link": "https://finance.yahoo.com/news/whoop-considering-going-public-next-130009946.html?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 14:48:24 +0000",
-      "summary": "Founder and Chief Executive Officer\u00a0Will Ahmed said\u00a0the business is well-positioned for an IPO now that it\u2019s broadened its portfolio to include proprietary technology, hardware, software, analytics\u00a0and other items, such as\u00a0accessories and apparel.  While Ahmed has previously said Whoop is likely to go public, he hadn\u2019t shared\u00a0when that might happen."
+      "title": "Apple Stock Outperforms Big Tech Peers During Selloff",
+      "link": "https://finance.yahoo.com/m/ac2ce672-bc23-347d-904a-8d26980e71b6/apple-stock-outperforms-big.html?.tsrc=rss",
+      "published": "Thu, 13 Nov 2025 21:13:00 +0000",
+      "summary": "Apple  stock was down slightly on Wednesday, but still performing better than most of its Magnificent Seven peers as Wall Street rotates its investments out of tech names that are spending big on artificial intelligence.  The stock market took a hit on Thursday as investors turned their focus from the government shutdown to concerns that the Federal Reserve wouldn\u2019t be cutting interest rates again in December.  On top of those concerns, there was a continued decline in tech stocks as investors worry about hefty AI spending and high valuations."
     },
     {
-      "title": "Stock market today: Dow, S&P 500, Nasdaq diverge as Big Tech wobbles ahead of House shutdown vote",
-      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-diverge-as-big-tech-wobbles-ahead-of-house-shutdown-vote-143510249.html?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 14:35:10 +0000",
-      "summary": "Investors awaited a key House vote that could end the longest government shutdown in US history."
+      "title": "AI-Fueled Apple Partner Engineers New Buy Point. Then This Happens.",
+      "link": "https://finance.yahoo.com/m/0911a7e0-9862-3b90-b352-6fa718d55903/ai-fueled-apple-partner.html?.tsrc=rss",
+      "published": "Thu, 13 Nov 2025 21:01:45 +0000",
+      "summary": "Partnering with top brands like Apple, Amazon and Tesla, Jabil stock targets a breakout but hits resistance."
     },
     {
-      "title": "If You'd Invested $500 in Nvidia Stock 1 Year Ago, Here's How Much You'd Have Today",
-      "link": "https://www.fool.com/investing/2025/11/12/if-invested-500-in-nvidia-stock-1-year-ago-today/?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 14:20:00 +0000",
-      "summary": "Nvidia has continued to beat the market, even after adding trillions to its market cap."
+      "title": "Apple lowers App Store commissions for 'mini apps'",
+      "link": "https://finance.yahoo.com/news/apple-lowers-app-store-commissions-202900773.html?.tsrc=rss",
+      "published": "Thu, 13 Nov 2025 20:29:00 +0000",
+      "summary": "SAN FRANCISCO (Reuters) -Apple on Thursday said it would lower commissions for \"mini apps\" on iPhones \u200band other devices.  Under the program announced Thursday, that rate will come down to 15% \u200cfor developers of mini apps - often game titles and other apps that are offered inside a larger \"host app\" - if they adopt certain Apple technologies such as its method for declaring an age range of the user.  Mini apps are \u2060most common in China, \u200cwhere popular apps like Tencent Holdings and Alipay host scores of game titles or other services inside their primary application."
     },
     {
-      "title": "Why Nvidia Stock Is Rebounding Today After SoftBank Shed Its Stake in the Chip Maker",
-      "link": "https://finance.yahoo.com/m/b02a2c67-bf9b-3d30-b942-ed859a29b714/why-nvidia-stock-is.html?.tsrc=rss",
-      "published": "Wed, 12 Nov 2025 13:57:00 +0000",
-      "summary": "Nvidia  stock was rising Wednesday as Foxconn Technology Group said there was strong demand for artificial-intelligence hardware.  Nvidia shares were up 1.4% at $195.95 in premarket trading.  The stock fell 3% on Tuesday after Japan\u2019s  SoftBank Group  disclosed that it had sold a $5.83 billion stake in the chip maker."
+      "title": "How to build a winning portfolio like a pro",
+      "link": "https://finance.yahoo.com/video/build-winning-portfolio-pro-195310992.html?.tsrc=rss",
+      "published": "Thu, 13 Nov 2025 19:53:10 +0000",
+      "summary": "Worried this AI-fueled rally is a bubble waiting to pop? On Trading Pit, Stocks in Translation host Jared Blikre and Trader Talk host Kenny Polcari break down how pros really manage risk, from matching your timeframe and goals to using the S&amp;P 500 (^GSPC) as a core benchmark. They walk through sector rotations in healthcare and utilities, show why charts flagged Lululemon (LULU) and Palantir (PLTR) as \u201cpriced for perfection,\u201d and explain the volatility trade-off in names like IonQ (IONQ) versus broader tech ETFs. You\u2019ll learn how to avoid accidental overexposure to giants like Apple (AAPL), use basic technicals and P/E ratios, and keep emotions in check as you build a portfolio that can survive the next round of market turbulence. For full interviews, highlights, and key insights, check out more from\u00a0Yahoo Finance Invest."
     }
   ]
 }
