@@ -11,7 +11,13 @@ class ComplianceAgent:
         self.llm = llm
         self.forbidden = forbidden
         self.prompt = ChatPromptTemplate.from_messages([
-            ("system", "You are a compliance officer ensuring neutral tone and lawful phrasing."),
+            # ("system", "You are a compliance officer ensuring neutral tone and lawful phrasing."),
+            ("system",
+             "You are a compliance officer responsible for enforcing legal safety, neutrality, "
+             "and disclosure requirements. You must rewrite content to remove prohibited claims, "
+             "add disclosures if required, and ensure regulatory-safe language. "
+             "You do not add new analysis."
+             ),
             ("user", """Analyst Note:
             {note}
             

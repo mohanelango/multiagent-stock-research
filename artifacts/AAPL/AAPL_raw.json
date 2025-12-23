@@ -4,84 +4,84 @@
     "symbol": "AAPL",
     "data": [
       {
-        "Date": "2025-10-31 00:00:00-04:00",
-        "Open": 276.721738255342,
-        "High": 277.05143573891627,
-        "Low": 268.89933466249033,
-        "Close": 270.108154296875,
-        "Volume": 86167100
+        "Date": "2025-12-10 00:00:00-05:00",
+        "Open": 277.75,
+        "High": 279.75,
+        "Low": 276.44000244140625,
+        "Close": 278.7799987792969,
+        "Volume": 33038300
       },
       {
-        "Date": "2025-11-03 00:00:00-05:00",
-        "Open": 270.15812755648943,
-        "High": 270.5877038096653,
-        "Low": 265.9921525413924,
-        "Close": 268.7894287109375,
-        "Volume": 50194600
+        "Date": "2025-12-11 00:00:00-05:00",
+        "Open": 279.1000061035156,
+        "High": 279.5899963378906,
+        "Low": 273.80999755859375,
+        "Close": 278.0299987792969,
+        "Volume": 33248000
       },
       {
-        "Date": "2025-11-04 00:00:00-05:00",
-        "Open": 268.0701070960229,
-        "High": 271.22705027239556,
-        "Low": 267.36080327265466,
-        "Close": 269.7784729003906,
-        "Volume": 49274800
+        "Date": "2025-12-12 00:00:00-05:00",
+        "Open": 277.8999938964844,
+        "High": 279.2200012207031,
+        "Low": 276.82000732421875,
+        "Close": 278.2799987792969,
+        "Volume": 39532900
       },
       {
-        "Date": "2025-11-05 00:00:00-05:00",
-        "Open": 268.3498399683747,
-        "High": 271.43687417180433,
-        "Low": 266.67147434431234,
-        "Close": 269.8783874511719,
-        "Volume": 43683100
+        "Date": "2025-12-15 00:00:00-05:00",
+        "Open": 280.1499938964844,
+        "High": 280.1499938964844,
+        "Low": 272.8399963378906,
+        "Close": 274.1099853515625,
+        "Volume": 50409100
       },
       {
-        "Date": "2025-11-06 00:00:00-05:00",
-        "Open": 267.6305743388968,
-        "High": 273.1352174017799,
-        "Low": 267.6305743388968,
-        "Close": 269.50872802734375,
-        "Volume": 51204000
+        "Date": "2025-12-16 00:00:00-05:00",
+        "Open": 272.82000732421875,
+        "High": 275.5,
+        "Low": 271.7900085449219,
+        "Close": 274.6099853515625,
+        "Volume": 37648600
       },
       {
-        "Date": "2025-11-07 00:00:00-05:00",
-        "Open": 269.5386899523433,
-        "High": 272.02629915101613,
-        "Low": 266.51162568814635,
-        "Close": 268.2099914550781,
-        "Volume": 48227400
+        "Date": "2025-12-17 00:00:00-05:00",
+        "Open": 275.010009765625,
+        "High": 276.1600036621094,
+        "Low": 271.6400146484375,
+        "Close": 271.8399963378906,
+        "Volume": 50138700
       },
       {
-        "Date": "2025-11-10 00:00:00-05:00",
-        "Open": 268.9599914550781,
-        "High": 273.7300109863281,
-        "Low": 267.4599914550781,
-        "Close": 269.42999267578125,
-        "Volume": 41312400
+        "Date": "2025-12-18 00:00:00-05:00",
+        "Open": 273.6099853515625,
+        "High": 273.6300048828125,
+        "Low": 266.95001220703125,
+        "Close": 272.19000244140625,
+        "Volume": 51630700
       },
       {
-        "Date": "2025-11-11 00:00:00-05:00",
-        "Open": 269.80999755859375,
-        "High": 275.9100036621094,
-        "Low": 269.79998779296875,
-        "Close": 275.25,
-        "Volume": 46208300
+        "Date": "2025-12-19 00:00:00-05:00",
+        "Open": 272.1499938964844,
+        "High": 274.6000061035156,
+        "Low": 269.8999938964844,
+        "Close": 273.6700134277344,
+        "Volume": 144632000
       },
       {
-        "Date": "2025-11-12 00:00:00-05:00",
-        "Open": 275.0,
-        "High": 275.7300109863281,
-        "Low": 271.70001220703125,
-        "Close": 273.4700012207031,
-        "Volume": 48398000
+        "Date": "2025-12-22 00:00:00-05:00",
+        "Open": 272.8599853515625,
+        "High": 273.8800048828125,
+        "Low": 270.510009765625,
+        "Close": 270.9700012207031,
+        "Volume": 36492700
       },
       {
-        "Date": "2025-11-13 00:00:00-05:00",
-        "Open": 274.1099853515625,
-        "High": 276.70001220703125,
-        "Low": 272.0899963378906,
-        "Close": 272.95001220703125,
-        "Volume": 49565800
+        "Date": "2025-12-23 00:00:00-05:00",
+        "Open": 270.8399963378906,
+        "High": 271.92999267578125,
+        "Low": 269.55999755859375,
+        "Close": 271.0,
+        "Volume": 7378968
       }
     ],
     "meta": {
@@ -176,12 +176,12 @@
     "key_metrics_ttm": [
       {
         "symbol": "AAPL",
-        "marketCap": 4033205551350,
-        "enterpriseValueTTM": 4112043551350,
-        "evToSalesTTM": 9.880895978599629,
-        "evToOperatingCashFlowTTM": 36.88526893444682,
-        "evToFreeCashFlowTTM": 41.63378002116091,
-        "evToEBITDATTM": 28.334494755211026,
+        "marketCap": 4004539426530,
+        "enterpriseValueTTM": 4083377426530,
+        "evToSalesTTM": 9.81201368347827,
+        "evToOperatingCashFlowTTM": 36.62813213370769,
+        "evToFreeCashFlowTTM": 41.34354011491692,
+        "evToEBITDATTM": 28.13696762466839,
         "netDebtToEBITDATTM": 0.5432420327304048,
         "currentRatioTTM": 0.8932929222186667,
         "incomeQualityTTM": 0.995286135166503,
@@ -197,8 +197,8 @@
         "returnOnEquityTTM": 1.6404691029851675,
         "returnOnInvestedCapitalTTM": 0.5196842110031786,
         "returnOnCapitalEmployedTTM": 0.6872062393471412,
-        "earningsYieldTTM": 0.027452132274402238,
-        "freeCashFlowYieldTTM": 0.024488461781210377,
+        "earningsYieldTTM": 0.027648645822287335,
+        "freeCashFlowYieldTTM": 0.02466376016819074,
         "capexToOperatingCashFlowTTM": 0.11405428679069267,
         "capexToDepreciationTTM": 1.0869379381090785,
         "capexToRevenueTTM": 0.030553079216937677,
@@ -223,58 +223,58 @@
   },
   "news": [
     {
-      "title": "Apple (AAPL) Forecasts Best Holiday Quarter Ever With Double-Digit iPhone and Services Growth",
-      "link": "https://finance.yahoo.com/news/apple-aapl-forecasts-best-holiday-042012419.html?.tsrc=rss",
-      "published": "Fri, 14 Nov 2025 04:20:12 +0000",
-      "summary": "Apple Inc. (NASDAQ:AAPL) ranks among the best long-term stocks to buy according to D. E. Shaw. Following Apple Inc. (NASDAQ:AAPL) \u2018s quarterly results, UBS maintained its Neutral rating and increased its price target from $220 to $280 for the company\u2019s shares on October 31. Despite facing more difficult year-over-year comparisons, the tech giant\u2019s earnings exceeded [\u2026]"
+      "title": "Apple iPhone 17 Wait Times Fall as Supply Meets Demand",
+      "link": "https://finance.yahoo.com/news/apple-iphone-17-wait-times-153135991.html?.tsrc=rss",
+      "published": "Tue, 23 Dec 2025 15:31:35 +0000",
+      "summary": "J.P. Morgan says balanced inventory points to steady revenue momentum."
     },
     {
-      "title": "Berkshire Without Buffett: What\u2019s Next for the Company and the Stock",
-      "link": "https://finance.yahoo.com/m/991dfba7-a309-35d1-8b45-f108220b919f/berkshire-without-buffett%3A.html?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 23:31:00 +0000",
-      "summary": "As the legendary investor prepares to step down as CEO, here\u2019s what his designated successor, Greg Abel, should do to bring Berkshire into the 21st century."
+      "title": "Google started the year behind in the AI race. It ended 2025 on top.",
+      "link": "https://finance.yahoo.com/news/google-started-the-year-behind-in-the-ai-race-it-ended-2025-on-top-150352574.html?.tsrc=rss",
+      "published": "Tue, 23 Dec 2025 15:03:52 +0000",
+      "summary": "Google's AI bounced back in a big way in 2025."
     },
     {
-      "title": "Berkshire May Have Sold Apple, Bank of America Stock in Third Quarter",
-      "link": "https://finance.yahoo.com/m/007311d4-1218-31d6-acbc-42e51c127464/berkshire-may-have-sold.html?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 22:05:00 +0000",
-      "summary": "Berkshire Hathaway  sold $12 billion of stocks in the third quarter, and  Apple  and  Bank of America  lead the list of potential sale candidates.  Berkshire likely will release its quarterly 13-F report late Friday detailing its equity holdings of U.S.-listed securities as of Sept. 30.  Friday is the deadline for 13-F filings, and Berkshire typically waits until the final day to file."
+      "title": "Jamf Named a Leader in Three IDC MarketScape Reports for Unified Endpoint Management",
+      "link": "https://finance.yahoo.com/news/jamf-named-leader-three-idc-141500161.html?.tsrc=rss",
+      "published": "Tue, 23 Dec 2025 14:15:00 +0000",
+      "summary": "MINNEAPOLIS, December 23, 2025--Jamf, (NASDAQ: JAMF), the standard in managing and securing Apple at work, today announced its inclusion in multiple IDC MarketScape Reports evaluating Unified Endpoint Management (UEM) software vendors."
     },
     {
-      "title": "Apple\u2019s MLS Streaming Shift May Alter Revenue-Share Plans",
-      "link": "https://www.sportico.com/leagues/soccer/2025/mls-season-pass-apple-tv-subscribers-price-revenue-change-1234876763/?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 21:45:07 +0000",
-      "summary": "When Apple and MLS announced their 10-year streaming tie-up in 2022, there were two key financial components: a $250 million annual guarantee from Apple, plus the opportunity for MLS to get a share of additional revenue if the new Season Pass subscription product achieved a certain level of success. But starting next season, MLS Season \u2026"
+      "title": "Buffett\u2019s $24 Billion Selling Spree: The 6 Stocks Berkshire Hathaway Dumped",
+      "link": "https://247wallst.com/investing/2025/12/23/buffetts-24-billion-selling-spree-the-6-stocks-berkshire-hathaway-dumped/?.tsrc=rss",
+      "published": "Tue, 23 Dec 2025 14:02:07 +0000",
+      "summary": "Investors began to notice that Warren Buffett began being more conservative with the stock market three years ago, and that streak has continued even as the S&amp;P 500 hit new peaks and beyond. He sold Apple (NASDAQ:AAPL), Bank of America (NYSE:BAC), VeriSign (NASDAQ:VRSN), DaVita (NYSE:DVA), D.R. Horton (NYSE:DHI), and Nucor (NYSE:NUE) as of Q3 2025. ... Buffett\u2019s $24 Billion Selling Spree: The 6 Stocks Berkshire Hathaway Dumped"
     },
     {
-      "title": "Tesla Stock Drops Below $400. Retail Investors Keep Buying.",
-      "link": "https://finance.yahoo.com/m/e49e7235-4e97-3c54-a5f7-312a51b8231c/tesla-stock-drops-below-%24400..html?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 21:21:00 +0000",
-      "summary": "Despite recent declines, shares remain very popular with retail investors.  The selling made Tesla shares one of the worst performers in the  according to Dow Jones Market Data.  Tesla stock hasn\u2019t closed below $400 since mid-September."
+      "title": "Why Oura CEO doesn't think OpenAI's device will kill the iPhone",
+      "link": "https://finance.yahoo.com/news/why-oura-ceo-doesnt-think-openais-device-will-kill-the-iphone-131855342.html?.tsrc=rss",
+      "published": "Tue, 23 Dec 2025 13:18:55 +0000",
+      "summary": "Long live the iPhone, says Oura CEO Tom Hale."
     },
     {
-      "title": "Apple Stock Outperforms Big Tech Peers During Selloff",
-      "link": "https://finance.yahoo.com/m/ac2ce672-bc23-347d-904a-8d26980e71b6/apple-stock-outperforms-big.html?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 21:13:00 +0000",
-      "summary": "Apple  stock was down slightly on Wednesday, but still performing better than most of its Magnificent Seven peers as Wall Street rotates its investments out of tech names that are spending big on artificial intelligence.  The stock market took a hit on Thursday as investors turned their focus from the government shutdown to concerns that the Federal Reserve wouldn\u2019t be cutting interest rates again in December.  On top of those concerns, there was a continued decline in tech stocks as investors worry about hefty AI spending and high valuations."
+      "title": "Here\u2019s Why Apple (AAPL) is on the Detractors List of Parnassus Core Equity Fund",
+      "link": "https://finance.yahoo.com/news/why-apple-aapl-detractors-list-131420888.html?.tsrc=rss",
+      "published": "Tue, 23 Dec 2025 13:14:20 +0000",
+      "summary": "Parnassus Investments, an investment management company, released the \u201cParnassus Core Equity Fund\u201d third-quarter 2025 investor letter. A copy of the letter can be downloaded here. The S&amp;P 500 Index surged in the third quarter, driven by investor optimism that grew on expectations of monetary easing, strong consumer demand, and solid corporate earnings. The Fund (Investor [\u2026]"
     },
     {
-      "title": "AI-Fueled Apple Partner Engineers New Buy Point. Then This Happens.",
-      "link": "https://finance.yahoo.com/m/0911a7e0-9862-3b90-b352-6fa718d55903/ai-fueled-apple-partner.html?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 21:01:45 +0000",
-      "summary": "Partnering with top brands like Apple, Amazon and Tesla, Jabil stock targets a breakout but hits resistance."
+      "title": "DealFlow Discovery Conference Announces Keynote Fireside Chat and Book Signing with Venture Capital Pioneer Alan Patricof",
+      "link": "https://finance.yahoo.com/news/dealflow-discovery-conference-announces-keynote-130000695.html?.tsrc=rss",
+      "published": "Tue, 23 Dec 2025 13:00:00 +0000",
+      "summary": "A look at venture capital's evolution through the career of one of its longest-tenured investors ATLANTIC CITY, NJ / ACCESS Newswire / December 23, 2025 / DealFlow Events today announced that Alan Patricof, a venture capital pioneer whose career spans ..."
     },
     {
-      "title": "Apple lowers App Store commissions for 'mini apps'",
-      "link": "https://finance.yahoo.com/news/apple-lowers-app-store-commissions-202900773.html?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 20:29:00 +0000",
-      "summary": "SAN FRANCISCO (Reuters) -Apple on Thursday said it would lower commissions for \"mini apps\" on iPhones \u200band other devices.  Under the program announced Thursday, that rate will come down to 15% \u200cfor developers of mini apps - often game titles and other apps that are offered inside a larger \"host app\" - if they adopt certain Apple technologies such as its method for declaring an age range of the user.  Mini apps are \u2060most common in China, \u200cwhere popular apps like Tencent Holdings and Alipay host scores of game titles or other services inside their primary application."
+      "title": "Italy fines Ryanair $300 mn for abuse of dominant position",
+      "link": "https://finance.yahoo.com/news/italy-fines-ryanair-300-mn-121916221.html?.tsrc=rss",
+      "published": "Tue, 23 Dec 2025 12:19:16 +0000",
+      "summary": "Italy's competition authority said on Tuesday it had fined low-cost airline Ryanair more than 255 million euros ($300 million) for allegedly abusing its dominant position to block travel agencies' access to its services.The move comes a day after the antitrust body fined US tech giant Apple 98 million euros, accusing it of abusing its dominant position in the mobile app market."
     },
     {
-      "title": "How to build a winning portfolio like a pro",
-      "link": "https://finance.yahoo.com/video/build-winning-portfolio-pro-195310992.html?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 19:53:10 +0000",
-      "summary": "Worried this AI-fueled rally is a bubble waiting to pop? On Trading Pit, Stocks in Translation host Jared Blikre and Trader Talk host Kenny Polcari break down how pros really manage risk, from matching your timeframe and goals to using the S&amp;P 500 (^GSPC) as a core benchmark. They walk through sector rotations in healthcare and utilities, show why charts flagged Lululemon (LULU) and Palantir (PLTR) as \u201cpriced for perfection,\u201d and explain the volatility trade-off in names like IonQ (IONQ) versus broader tech ETFs. You\u2019ll learn how to avoid accidental overexposure to giants like Apple (AAPL), use basic technicals and P/E ratios, and keep emotions in check as you build a portfolio that can survive the next round of market turbulence. For full interviews, highlights, and key insights, check out more from\u00a0Yahoo Finance Invest."
+      "title": "Nvidia vs Alphabet: Which Stock Will Outperform in 2026?",
+      "link": "https://www.fool.com/investing/2025/12/23/nvidia-vs-alphabet-which-stock-outperform-2026/?.tsrc=rss",
+      "published": "Tue, 23 Dec 2025 10:55:00 +0000",
+      "summary": "Both stocks had strong 2025 performances."
     }
   ]
 }

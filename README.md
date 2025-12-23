@@ -71,6 +71,29 @@ Whether you're a developer, quant researcher, analyst, or AI enthusiast — this
 | **Orchestrator (LangGraph)** | Directs data flow and ensures orderly execution                       | All agents                   | End-to-end automated workflow                     | LangGraph + FastAPI integration                   |
 
 ---
+## Agent Responsibility Model
+
+Each agent in this system has a clearly defined, non-overlapping role:
+
+- **DataAgent**
+  - Collects raw market data, fundamentals, and news
+  - Produces structured JSON only (no interpretation)
+
+- **AnalystAgent**
+  - Interprets price action, fundamentals, and news
+  - Produces narrative investment analysis
+
+- **ComplianceAgent**
+  - Enforces neutral tone and regulatory-safe phrasing
+  - Removes prohibited language and injects disclosures
+  - Does not generate new analysis
+
+- **SupervisorAgent**
+  - Acts as Editor-in-Chief
+  - Decides final report structure
+  - Removes incomplete or low-quality sections
+  - Produces the final institutional-grade research note
+---
 
 ## Installation
 
@@ -184,7 +207,7 @@ This configuration produces clean, publication-ready PDFs with proper spacing, m
 
 ---
 ### Usage (CLI)
-```python
+```bash
 python -m src.cli --symbol AAPL --days 10 --outdir artifacts
 ```
 ### Sample CLI Output:
