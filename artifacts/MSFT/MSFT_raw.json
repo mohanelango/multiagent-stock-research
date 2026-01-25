@@ -4,88 +4,48 @@
     "symbol": "MSFT",
     "data": [
       {
-        "Date": "2025-10-31 00:00:00-04:00",
-        "Open": 528.8800048828125,
-        "High": 529.3200073242188,
-        "Low": 515.0999755859375,
-        "Close": 517.8099975585938,
-        "Volume": 34006400
+        "Date": "2026-01-16 00:00:00-05:00",
+        "Open": 457.8299865722656,
+        "High": 463.19000244140625,
+        "Low": 456.4800109863281,
+        "Close": 459.8599853515625,
+        "Volume": 34246700
       },
       {
-        "Date": "2025-11-03 00:00:00-05:00",
-        "Open": 519.8099975585938,
-        "High": 524.9600219726562,
-        "Low": 514.5900268554688,
-        "Close": 517.030029296875,
-        "Volume": 22374700
+        "Date": "2026-01-20 00:00:00-05:00",
+        "Open": 451.2200012207031,
+        "High": 456.79998779296875,
+        "Low": 449.2799987792969,
+        "Close": 454.5199890136719,
+        "Volume": 26130000
       },
       {
-        "Date": "2025-11-04 00:00:00-05:00",
-        "Open": 511.760009765625,
-        "High": 515.5499877929688,
-        "Low": 507.8399963378906,
-        "Close": 514.3300170898438,
-        "Volume": 20958700
+        "Date": "2026-01-21 00:00:00-05:00",
+        "Open": 452.6000061035156,
+        "High": 452.69000244140625,
+        "Low": 438.67999267578125,
+        "Close": 444.1099853515625,
+        "Volume": 37980500
       },
       {
-        "Date": "2025-11-05 00:00:00-05:00",
-        "Open": 513.2999877929688,
-        "High": 514.8300170898438,
-        "Low": 506.5799865722656,
-        "Close": 507.1600036621094,
-        "Volume": 23024300
+        "Date": "2026-01-22 00:00:00-05:00",
+        "Open": 447.6199951171875,
+        "High": 452.8399963378906,
+        "Low": 444.70001220703125,
+        "Close": 451.1400146484375,
+        "Volume": 25349400
       },
       {
-        "Date": "2025-11-06 00:00:00-05:00",
-        "Open": 505.6600036621094,
-        "High": 505.70001220703125,
-        "Low": 495.80999755859375,
-        "Close": 497.1000061035156,
-        "Volume": 27406500
-      },
-      {
-        "Date": "2025-11-07 00:00:00-05:00",
-        "Open": 496.95001220703125,
-        "High": 499.3800048828125,
-        "Low": 493.25,
-        "Close": 496.82000732421875,
-        "Volume": 24019800
-      },
-      {
-        "Date": "2025-11-10 00:00:00-05:00",
-        "Open": 500.0400085449219,
-        "High": 506.8500061035156,
-        "Low": 498.79998779296875,
-        "Close": 506.0,
-        "Volume": 26101500
-      },
-      {
-        "Date": "2025-11-11 00:00:00-05:00",
-        "Open": 504.79998779296875,
-        "High": 509.6000061035156,
-        "Low": 502.3500061035156,
-        "Close": 508.67999267578125,
-        "Volume": 17980000
-      },
-      {
-        "Date": "2025-11-12 00:00:00-05:00",
-        "Open": 509.3599853515625,
-        "High": 511.6700134277344,
-        "Low": 499.1199951171875,
-        "Close": 511.1400146484375,
-        "Volume": 26574900
-      },
-      {
-        "Date": "2025-11-13 00:00:00-05:00",
-        "Open": 510.30999755859375,
-        "High": 513.5,
-        "Low": 501.2900085449219,
-        "Close": 503.2900085449219,
-        "Volume": 25254700
+        "Date": "2026-01-23 00:00:00-05:00",
+        "Open": 451.8699951171875,
+        "High": 471.1000061035156,
+        "Low": 450.5299987792969,
+        "Close": 465.95001220703125,
+        "Volume": 37962400
       }
     ],
     "meta": {
-      "days": 10
+      "days": 5
     }
   },
   "fundamentals": {
@@ -176,12 +136,12 @@
     "key_metrics_ttm": [
       {
         "symbol": "MSFT",
-        "marketCap": 3740959497208.9995,
-        "enterpriseValueTTM": 3772666497208.9995,
-        "evToSalesTTM": 12.84040984442092,
-        "evToOperatingCashFlowTTM": 25.657590824264307,
-        "evToFreeCashFlowTTM": 48.35697985322429,
-        "evToEBITDATTM": 22.193330806978015,
+        "marketCap": 3463484014546,
+        "enterpriseValueTTM": 3495191014546,
+        "evToSalesTTM": 11.896011784903271,
+        "evToOperatingCashFlowTTM": 23.77050316273914,
+        "evToFreeCashFlowTTM": 44.80037702739146,
+        "evToEBITDATTM": 20.56103566980605,
         "netDebtToEBITDATTM": 0.1865216393809084,
         "currentRatioTTM": 1.4005303860855136,
         "incomeQualityTTM": 1.4015460576483147,
@@ -197,8 +157,8 @@
         "returnOnEquityTTM": 0.31525435697645854,
         "returnOnInvestedCapitalTTM": 0.21939872642481756,
         "returnOnCapitalEmployedTTM": 0.27113921273349223,
-        "earningsYieldTTM": 0.028044179109076965,
-        "freeCashFlowYieldTTM": 0.020854810125104477,
+        "earningsYieldTTM": 0.030291565412184453,
+        "freeCashFlowYieldTTM": 0.02252558397045947,
         "capexToOperatingCashFlowTTM": 0.4694128768558002,
         "capexToDepreciationTTM": 1.7328713815872059,
         "capexToRevenueTTM": 0.2349189277497175,
@@ -219,62 +179,64 @@
         "tangibleAssetValueTTM": 222343000000,
         "netCurrentAssetValueTTM": -84209000000
       }
-    ]
+    ],
+    "__errors__": []
   },
   "news": [
     {
-      "title": "Top Analyst Says Oracle's 'Irresponsible' AI Bet Differs From 'Healthy' Microsoft And Google Demand: A 'Bad Business' With 'Very Low Margins'",
-      "link": "https://finance.yahoo.com/news/top-analyst-says-oracles-irresponsible-044525643.html?.tsrc=rss",
-      "published": "Fri, 14 Nov 2025 04:45:25 +0000",
-      "summary": "A prominent technology analyst has slammed Oracle Corp.'s (NYSE:ORCL) high-profile AI strategy, labeling it \u201cbad behavior\u201d and an \u201cirresponsible investment\u201d that relies on speculative demand, unlike the \u201chealthy\u201d and established customer-driven AI ..."
+      "title": "Should You Buy Microsoft Stock Before Earnings?",
+      "link": "https://www.fool.com/investing/2026/01/24/should-you-buy-microsoft-stock-before-earnings/?.tsrc=rss",
+      "published": "Sun, 25 Jan 2026 05:09:00 +0000",
+      "summary": "Microsoft's stock is up just 1% over the past year."
     },
     {
-      "title": "Microsoft (MSFT) Beats Q1 Estimates as Azure\u2019s AI-Driven Cloud Growth Surges Past Expectations",
-      "link": "https://finance.yahoo.com/news/microsoft-msft-beats-q1-estimates-042014452.html?.tsrc=rss",
-      "published": "Fri, 14 Nov 2025 04:20:14 +0000",
-      "summary": "Microsoft Corporation (NASDAQ:MSFT) ranks among the best long-term stocks to buy according to D. E. Shaw. Microsoft Corporation (NASDAQ:MSFT) announced better-than-expected fiscal first-quarter earnings on October 29. The company\u2019s cloud sector beat forecasts, driven by Azure\u2019s robust AI-fueled demand. However, the current quarter\u2019s revenue projection fell short of expectations around the midpoint. The company\u2019s results [\u2026]"
+      "title": "Dow Jones Futures: Trump Threatens 100% Canada Tariff, Government Shutdown Risks Spike; Earnings Wave Looms",
+      "link": "https://finance.yahoo.com/m/9c67d261-2ec7-3404-8375-4ecea0e235f3/dow-jones-futures%3A-trump.html?.tsrc=rss",
+      "published": "Sun, 25 Jan 2026 03:02:15 +0000",
+      "summary": "President Donald Trump threatened a 100% tariff on Canada. Government shutdown risks soared. Tesla, Microsoft, Meta, Apple learnings loom."
     },
     {
-      "title": "Amazon, Microsoft back effort to restrict Nvidia's exports to China, WSJ reports",
-      "link": "https://finance.yahoo.com/news/amazon-microsoft-back-effort-restrict-025831694.html?.tsrc=rss",
-      "published": "Fri, 14 Nov 2025 02:58:31 +0000",
-      "summary": "(Reuters) -Amazon is joining Microsoft in backing legislation to further curb chipmaker Nvidia's ability to export chips to China, the Wall Street Journal reported on Thursday, citing people familiar"
+      "title": "Microsoft Stock Is Down More Than 10% In 3 Months. Time to Buy the Dip?",
+      "link": "https://www.fool.com/investing/2026/01/24/microsoft-stock-is-down-time-to-buy/?.tsrc=rss",
+      "published": "Sat, 24 Jan 2026 22:41:00 +0000",
+      "summary": "The tech giant's cloud backlog is growing quickly, but can these catalysts live up to the software giant's huge AI-driven spending?"
     },
     {
-      "title": "Microsoft quietly unveils a project of staggering size",
-      "link": "https://www.thestreet.com/investing/microsoft-quietly-unveils-a-project-of-staggering-size?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 23:32:56 +0000",
-      "summary": "Microsoft\u2019s (MSFT) newest project seems more like something out of a science fiction movie than your typical tech infrastructure. Its robust new AI \u201csuperfactory\u201d vision layers together hyperscaler data centers and cutting-edge networking fabric, integrating hundreds of thousands of advanced ..."
+      "title": "AI teams up with humans: How work will change",
+      "link": "https://www.thestreet.com/economy/ai-teams-up-with-humans-how-work-will-change?.tsrc=rss",
+      "published": "Sat, 24 Jan 2026 21:38:00 +0000",
+      "summary": "Savior or scourge. It's all in the AI of the beholder. Many people have called artificial intelligence the biggest technological innovation of all time, with some comparing it to the likes of fire, electricity, and the internet. Microsoft (MSFT) co-founder Bill Gates said the development of AI is ..."
     },
     {
-      "title": "Apple Stock Outperforms Big Tech Peers During Selloff",
-      "link": "https://finance.yahoo.com/m/ac2ce672-bc23-347d-904a-8d26980e71b6/apple-stock-outperforms-big.html?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 21:13:00 +0000",
-      "summary": "Apple  stock was down slightly on Wednesday, but still performing better than most of its Magnificent Seven peers as Wall Street rotates its investments out of tech names that are spending big on artificial intelligence.  The stock market took a hit on Thursday as investors turned their focus from the government shutdown to concerns that the Federal Reserve wouldn\u2019t be cutting interest rates again in December.  On top of those concerns, there was a continued decline in tech stocks as investors worry about hefty AI spending and high valuations."
+      "title": "Bill Gates Issues Warning on AI Investment Hype, Urges Caution",
+      "link": "https://www.investopedia.com/bill-gates-issues-warning-on-ai-investment-hype-urges-caution-11890826?.tsrc=rss",
+      "published": "Sat, 24 Jan 2026 20:25:00 +0000",
+      "summary": "Bill Gates on Wednesday warned the AI industry will be \"hypercompetitive,\" and that \"a reasonable percentage\" of today's pricey tech stocks will lose a lot of their value."
     },
     {
-      "title": "CoreWeave Stock Dives 8% Amid Tech Selloff",
-      "link": "https://finance.yahoo.com/m/942d3279-43f4-374e-ad9e-a87eaeb84d6a/coreweave-stock-dives-8%25-amid.html?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 21:10:26 +0000",
-      "summary": "Cloud-computing company CoreWeave was among the most battered stocks in today\u2019s tech selloff.  Shares of the company sank 8.3% on Thursday, one of the biggest drops among artificial intelligence stocks including Nvidia, Broadcom and Palantir Technologies."
+      "title": "Tech CEOs boast and bicker about AI at Davos",
+      "link": "https://finance.yahoo.com/news/tech-ceos-boast-bicker-ai-200046915.html?.tsrc=rss",
+      "published": "Sat, 24 Jan 2026 20:00:46 +0000",
+      "summary": "There were times at this week\u2019s meeting of the World Economic Forum when Davos seemed transformed into a high-powered tech conference."
     },
     {
-      "title": "WidePoint Reports Third Quarter 2025 Financial Results",
-      "link": "https://finance.yahoo.com/news/widepoint-reports-third-quarter-2025-210500269.html?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 21:05:00 +0000",
-      "summary": "FAIRFAX, VIRGINIA / ACCESS Newswire / November 13, 2025 / WidePoint Corporation (NYSE American:WYY), a federally certified provider of Trusted Mobility Management (TM2) solutions, reported results for the third quarter ended September 30, 2025. Third ..."
+      "title": "2 Quantum Computing Stocks to Buy in Early 2026",
+      "link": "https://www.fool.com/investing/2026/01/24/2-quantum-computing-stocks-to-buy-in-early-2026/?.tsrc=rss",
+      "published": "Sat, 24 Jan 2026 19:40:00 +0000",
+      "summary": "If you want to get quantum computing exposure, skipping the pure plays and focusing on the diversified tech giants could be a smart strategy."
     },
     {
-      "title": "IonQ to Showcase Quantum Integration at SuperCompute 2025",
-      "link": "https://finance.yahoo.com/news/ionq-showcase-quantum-integration-supercompute-210500810.html?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 21:05:00 +0000",
-      "summary": "COLLEGE PARK, Md., November 13, 2025--IonQ (NYSE: IONQ), the world\u2019s leading quantum company, today announced its participation at SuperCompute 2025 (SC25), the premier international conference for high-performance computing (HPC), taking place November 16\u201321 at the America\u2019s Center Convention Complex in St. Louis, Missouri."
+      "title": "Remote Job Market Still Strong Despite Return-To-Office Mandates",
+      "link": "https://finance.yahoo.com/news/remote-job-market-still-strong-190000732.html?.tsrc=rss",
+      "published": "Sat, 24 Jan 2026 19:00:00 +0000",
+      "summary": "High-profile return-to-office mandates at companies like JPMorgan Chase and Microsoft dominated headlines in 2025, but a new job report shows that remote work continues to play an important role in the modern labor market."
     },
     {
-      "title": "AI Anxiety Reaches Fever Pitch. Why It\u2019s Still Not Time to Worry.",
-      "link": "https://finance.yahoo.com/m/0b75fe99-9722-3cfc-847f-1ccf86105ec0/ai-anxiety-reaches-fever.html?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 20:41:00 +0000",
-      "summary": "Major reactions to relatively minor events show that shareholders are getting antsy as AI investment grows. Why the AI trade still has legs."
+      "title": "Billionaire Investor Doubles Down On AI, Boosts Stakes In Microsoft And Meta Despite 2025 Tech Volatility",
+      "link": "https://finance.yahoo.com/news/billionaire-investor-doubles-down-ai-183116847.html?.tsrc=rss",
+      "published": "Sat, 24 Jan 2026 18:31:16 +0000",
+      "summary": "Activist investor Dan Loeb\u2019s Third Point LLC made major changes in its portfolio in the third quarter of 2025. Let\u2019s look at the performance of some Magnificent Seven stocks in the second half of 2025 held by Dan Loeb. Strength in AI Drives Microsoft Growth As of Sept. 30, 2025,Third Point increased its stake in Microsoft Corporation (NASDAQ:MSFT) by 175% to 1.1 million shares. Microsoft witnessed strong earnings acceleration over the last couple of quarters, driven by Cloud and AI growth. Conse"
     }
-  ]
+  ],
+  "__errors__": []
 }

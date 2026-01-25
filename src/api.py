@@ -22,15 +22,24 @@ class RunRequest(BaseModel):
     outdir: str = "artifacts"
 
 
-@app.get("/", tags=["health"])
-def root():
-    logger.debug("Health check endpoint hit.")
-    return {"message": "Multi-Agent Research API is running 🚀"}
+@app.get("/health", tags=["health"])
+def health():
+    """
+    Lightweight health endpoint for UIs and monitoring.
+    Does not call external services.
+    """
+    return {"status": "ok", "service": "multiagent-stock-research"}
+
 
 
 @app.post("/analyze", tags=["analysis"])
 def analyze_stock(req: RunRequest):
-    symbol_uppercase = req.symbol.upper()
+    symbol_uppercase = req.symbol.strip().upper()
+    if not symbol_uppercase.replace("-", "").replace(".", "").isalnum():
+        return JSONResponse(status_code=400, content={"status": "error", "reason": "Invalid symbol format."})
+
+    if req.days < 5 or req.days > 15:
+        return JSONResponse(status_code=400, content={"status": "error", "reason": "Days must be between 5 and 15."})
 
     # Pre-check: Validate ticker using yfinance before pipeline execution
     try:
@@ -90,5 +99,10 @@ def analyze_stock(req: RunRequest):
         logger.exception("Error generating report for %s", req.symbol)
         return JSONResponse(
             status_code=500,
-            content={"status": "error", "reason": f"Internal server error: {str(e)}"}
+            content={
+                "status": "error",
+                "reason": "Internal server error while generating report.",
+                "suggested_action": "Check server logs for details."
+            }
         )
+

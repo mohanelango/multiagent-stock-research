@@ -3,11 +3,11 @@ project:
   version: "0.1.0"
 
 orchestration:
-  timeout_sec: 90
+  timeout_sec: 170
   max_news: 9
-  price_days_default: 30
+  price_days_default: 5
 
-Strict Mode:
+StrictMode:
   strict_mode: true
 
 llm:
@@ -24,6 +24,12 @@ compliance:
     - "guaranteed returns"
     - "cannot go down"
     - "inside information"
+    - "guaranteed returns"
+    - "cannot go down"
+    - "inside information"
+    - "sure shot"
+    - "risk free"
+    - "100% profit"
   disclosure:
     - "This report is for informational purposes only and not investment advice."
     - "Data sources: yfinance (free), FinancialModelingPrep (demo), public RSS feeds."

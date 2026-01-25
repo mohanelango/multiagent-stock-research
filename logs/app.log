@@ -5054,3 +5054,2190 @@ openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded you
 2025-12-23 21:12:45 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> artifacts\AAPL\AAPL_2025-12-23_report.md
 2025-12-23 21:12:48 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> artifacts\AAPL\AAPL_2025-12-23_report.pdf
 2025-12-23 21:12:48 [INFO] __main__: CLI execution finished successfully for AAPL
+2026-01-18 12:08:47 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2026-01-18 12:08:47 [INFO] src.api: Report successfully generated for AAPL
+2026-01-18 12:16:05 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2026-01-18 12:16:05 [INFO] src.api: Report successfully generated for AAPL
+2026-01-18 12:17:32 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2026-01-18 12:17:32 [INFO] src.api: Report successfully generated for AAPL
+2026-01-18 12:17:32 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 12:17:33 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=5
+2026-01-18 12:17:33 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 12:17:33 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 2 forbidden terms.
+2026-01-18 12:17:33 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 12:17:33 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 12:17:33 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 12:17:33 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 12:17:33 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 12:17:33 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 12:17:33 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 12:17:33 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 12:17:33 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 12:17:34 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-4\test_e2e_workflow_creates_arti0\artifacts\AAPL_chart.png
+2026-01-18 12:17:34 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 12:18:42 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 12:18:42 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-4\test_e2e_workflow_creates_arti0\artifacts\AAPL_raw.json
+2026-01-18 12:18:42 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-4\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.md
+2026-01-18 12:18:42 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-4\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.md
+2026-01-18 12:18:42 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-4\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.pdf
+2026-01-18 12:18:42 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 12:18:42 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 1 forbidden terms.
+2026-01-18 12:18:42 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 12:18:42 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 12:18:42 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 12:18:42 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 12:18:42 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 12:18:42 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 12:18:42 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 12:18:42 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 12:18:42 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=5
+2026-01-18 12:18:42 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 12:18:42 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 2 forbidden terms.
+2026-01-18 12:18:42 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 12:18:42 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 12:18:42 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 12:18:42 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 12:18:42 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 12:18:42 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 12:18:42 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 12:18:42 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 12:18:42 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 12:18:43 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-4\test_build_graph_executes_node0\AAPL_chart.png
+2026-01-18 12:18:43 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 12:19:46 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 12:19:46 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-4\test_build_graph_executes_node0\AAPL_raw.json
+2026-01-18 12:19:46 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-4\test_build_graph_executes_node0\AAPL_2026-01-18_report.md
+2026-01-18 12:19:46 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-4\test_build_graph_executes_node0\AAPL_2026-01-18_report.md
+2026-01-18 12:19:47 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-4\test_build_graph_executes_node0\AAPL_2026-01-18_report.pdf
+2026-01-18 12:20:25 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2026-01-18 12:20:25 [INFO] src.api: Report successfully generated for AAPL
+2026-01-18 12:20:25 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 12:20:26 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=5
+2026-01-18 12:20:26 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 12:20:26 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 2 forbidden terms.
+2026-01-18 12:20:26 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 12:20:26 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 12:20:26 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 12:20:26 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 12:20:26 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 12:20:26 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 12:20:26 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 12:20:26 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 12:20:26 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 12:20:26 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-5\test_e2e_workflow_creates_arti0\artifacts\AAPL_chart.png
+2026-01-18 12:20:26 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 12:21:27 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 12:21:27 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-5\test_e2e_workflow_creates_arti0\artifacts\AAPL_raw.json
+2026-01-18 12:21:27 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-5\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.md
+2026-01-18 12:21:27 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-5\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.md
+2026-01-18 12:21:27 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-5\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.pdf
+2026-01-18 12:21:27 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 12:21:27 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 1 forbidden terms.
+2026-01-18 12:21:27 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 12:21:27 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 12:21:27 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 12:21:27 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 12:21:27 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 12:21:27 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 12:21:27 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 12:21:27 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 12:21:27 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=5
+2026-01-18 12:21:27 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 12:21:27 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 2 forbidden terms.
+2026-01-18 12:21:27 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 12:21:27 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 12:21:27 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 12:21:27 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 12:21:27 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 12:21:27 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 12:21:27 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 12:21:27 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 12:21:27 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 12:21:27 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-5\test_build_graph_executes_node0\AAPL_chart.png
+2026-01-18 12:21:27 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 12:22:19 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 12:22:19 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-5\test_build_graph_executes_node0\AAPL_raw.json
+2026-01-18 12:22:19 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-5\test_build_graph_executes_node0\AAPL_2026-01-18_report.md
+2026-01-18 12:22:19 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-5\test_build_graph_executes_node0\AAPL_2026-01-18_report.md
+2026-01-18 12:22:19 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-5\test_build_graph_executes_node0\AAPL_2026-01-18_report.pdf
+2026-01-18 12:27:21 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2026-01-18 12:27:21 [INFO] src.api: Report successfully generated for AAPL
+2026-01-18 12:27:35 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2026-01-18 12:27:35 [INFO] src.api: Report successfully generated for AAPL
+2026-01-18 12:27:35 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 12:27:35 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=5
+2026-01-18 12:27:35 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 12:27:35 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 2 forbidden terms.
+2026-01-18 12:27:35 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 12:27:35 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 12:27:35 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 12:27:35 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 12:27:35 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 12:27:35 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 12:27:35 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 12:27:35 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 12:27:35 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 12:27:36 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-7\test_e2e_workflow_creates_arti0\artifacts\AAPL_chart.png
+2026-01-18 12:27:36 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 12:28:30 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 12:28:30 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-7\test_e2e_workflow_creates_arti0\artifacts\AAPL_raw.json
+2026-01-18 12:28:30 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-7\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.md
+2026-01-18 12:28:30 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-7\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.md
+2026-01-18 12:28:30 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-7\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.pdf
+2026-01-18 12:28:30 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 12:28:30 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 1 forbidden terms.
+2026-01-18 12:28:30 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 12:28:30 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 12:28:30 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 12:28:30 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 12:28:30 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 12:28:30 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 12:28:30 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 12:28:30 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 12:28:30 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=5
+2026-01-18 12:28:30 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 12:28:30 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 2 forbidden terms.
+2026-01-18 12:28:30 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 12:28:30 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 12:28:30 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 12:28:30 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 12:28:30 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 12:28:30 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 12:28:30 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 12:28:30 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 12:28:30 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 12:28:30 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-7\test_build_graph_executes_node0\AAPL_chart.png
+2026-01-18 12:28:30 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 12:29:32 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 12:29:32 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-7\test_build_graph_executes_node0\AAPL_raw.json
+2026-01-18 12:29:32 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-7\test_build_graph_executes_node0\AAPL_2026-01-18_report.md
+2026-01-18 12:29:32 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-7\test_build_graph_executes_node0\AAPL_2026-01-18_report.md
+2026-01-18 12:29:32 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-7\test_build_graph_executes_node0\AAPL_2026-01-18_report.pdf
+2026-01-18 12:29:34 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2026-01-18 12:29:34 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=5) ===
+2026-01-18 12:29:34 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 12:29:34 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 12:29:34 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 12:29:34 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2026-01-18 12:29:34 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 12:29:34 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 12:29:34 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 12:29:34 [INFO] src.agents.data_agent: Fetching data for AAPL (last 5 days)
+2026-01-18 12:29:39 [INFO] src.tools.price_tool: Fetched 5 records for AAPL
+2026-01-18 12:29:41 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2026-01-18 12:29:43 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2026-01-18 12:29:47 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2026-01-18 12:29:47 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 5 price rows, 9 news items
+2026-01-18 12:29:47 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 12:29:47 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 12:29:47 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 12:30:22 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 12:30:22 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 12:30:22 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 12:30:22 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 12:30:54 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 12:30:54 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 12:30:54 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 12:30:54 [INFO] src.tools.plot_tool: Saved price chart to C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-7/test_analyze_endpoint0\AAPL\AAPL_chart.png
+2026-01-18 12:30:54 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 12:31:57 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 12:31:57 [INFO] src.tools.storage_tool: Saved JSON: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-7/test_analyze_endpoint0\AAPL\AAPL_raw.json
+2026-01-18 12:31:57 [INFO] src.tools.storage_tool: Saved Markdown: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-7/test_analyze_endpoint0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 12:31:57 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-7/test_analyze_endpoint0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 12:32:00 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-7/test_analyze_endpoint0\AAPL\AAPL_2026-01-18_report.pdf
+2026-01-18 12:32:00 [INFO] src.api: Report successfully generated for AAPL
+2026-01-18 12:32:00 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=7) ===
+2026-01-18 12:32:01 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 12:32:01 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 12:32:01 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 12:32:01 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2026-01-18 12:32:01 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 12:32:01 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 12:32:01 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 12:32:01 [INFO] src.agents.data_agent: Fetching data for AAPL (last 7 days)
+2026-01-18 12:32:02 [INFO] src.tools.price_tool: Fetched 7 records for AAPL
+2026-01-18 12:32:03 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2026-01-18 12:32:05 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2026-01-18 12:32:07 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2026-01-18 12:32:07 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 7 price rows, 9 news items
+2026-01-18 12:32:07 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 12:32:07 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 12:32:07 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 12:32:50 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 12:32:50 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 12:32:50 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 12:32:50 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 12:33:32 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 12:33:32 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 12:33:32 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 12:33:55 [INFO] src.tools.plot_tool: Saved price chart to C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-7/test_pipeline_smoke0\AAPL\AAPL_chart.png
+2026-01-18 12:33:55 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 12:34:30 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 12:34:30 [INFO] src.tools.storage_tool: Saved JSON: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-7/test_pipeline_smoke0\AAPL\AAPL_raw.json
+2026-01-18 12:34:30 [INFO] src.tools.storage_tool: Saved Markdown: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-7/test_pipeline_smoke0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 12:34:30 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-7/test_pipeline_smoke0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 12:34:31 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-7/test_pipeline_smoke0\AAPL\AAPL_2026-01-18_report.pdf
+2026-01-18 12:40:29 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2026-01-18 12:40:29 [INFO] src.api: Report successfully generated for AAPL
+2026-01-18 12:40:29 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 12:40:30 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=5
+2026-01-18 12:40:30 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 12:40:30 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 2 forbidden terms.
+2026-01-18 12:40:30 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 12:40:30 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 12:40:30 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 12:40:30 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 12:40:30 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 12:40:30 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 12:40:30 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 12:40:30 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 12:40:30 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 12:40:30 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-8\test_e2e_workflow_creates_arti0\artifacts\AAPL_chart.png
+2026-01-18 12:40:30 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 12:41:28 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 12:41:28 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-8\test_e2e_workflow_creates_arti0\artifacts\AAPL_raw.json
+2026-01-18 12:41:28 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-8\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.md
+2026-01-18 12:41:28 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-8\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.md
+2026-01-18 12:41:28 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-8\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.pdf
+2026-01-18 12:41:28 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 12:41:28 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 1 forbidden terms.
+2026-01-18 12:41:28 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 12:41:28 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 12:41:28 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 12:41:28 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 12:41:28 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 12:41:28 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 12:41:28 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 12:41:28 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 12:41:28 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=5
+2026-01-18 12:41:28 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 12:41:28 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 2 forbidden terms.
+2026-01-18 12:41:28 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 12:41:28 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 12:41:28 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 12:41:28 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 12:41:28 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 12:41:28 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 12:41:28 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 12:41:28 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 12:41:28 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 12:41:28 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-8\test_build_graph_executes_node0\AAPL_chart.png
+2026-01-18 12:41:28 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 12:42:11 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 12:42:11 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-8\test_build_graph_executes_node0\AAPL_raw.json
+2026-01-18 12:42:11 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-8\test_build_graph_executes_node0\AAPL_2026-01-18_report.md
+2026-01-18 12:42:11 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-8\test_build_graph_executes_node0\AAPL_2026-01-18_report.md
+2026-01-18 12:42:11 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-8\test_build_graph_executes_node0\AAPL_2026-01-18_report.pdf
+2026-01-18 12:42:12 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2026-01-18 12:42:12 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=5) ===
+2026-01-18 12:42:12 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 12:42:12 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 12:42:12 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 12:42:12 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2026-01-18 12:42:12 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 12:42:12 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 12:42:12 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 12:42:12 [INFO] src.agents.data_agent: Fetching data for AAPL (last 5 days)
+2026-01-18 12:42:13 [INFO] src.tools.price_tool: Fetched 5 records for AAPL
+2026-01-18 12:42:14 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2026-01-18 12:42:15 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2026-01-18 12:42:18 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2026-01-18 12:42:18 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 5 price rows, 9 news items
+2026-01-18 12:42:18 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 12:42:18 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 12:42:18 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 12:43:15 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 12:43:15 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 12:43:15 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 12:43:15 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 12:43:29 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 12:43:29 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 12:43:29 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 12:43:30 [INFO] src.tools.plot_tool: Saved price chart to C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-8/test_analyze_endpoint0\AAPL\AAPL_chart.png
+2026-01-18 12:43:30 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 12:44:23 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 12:44:23 [INFO] src.tools.storage_tool: Saved JSON: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-8/test_analyze_endpoint0\AAPL\AAPL_raw.json
+2026-01-18 12:44:23 [INFO] src.tools.storage_tool: Saved Markdown: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-8/test_analyze_endpoint0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 12:44:23 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-8/test_analyze_endpoint0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 12:44:24 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-8/test_analyze_endpoint0\AAPL\AAPL_2026-01-18_report.pdf
+2026-01-18 12:44:24 [INFO] src.api: Report successfully generated for AAPL
+2026-01-18 12:44:24 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=7) ===
+2026-01-18 12:44:25 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 12:44:25 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 12:44:25 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 12:44:25 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2026-01-18 12:44:25 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 12:44:25 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 12:44:25 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 12:44:25 [INFO] src.agents.data_agent: Fetching data for AAPL (last 7 days)
+2026-01-18 12:44:25 [INFO] src.tools.price_tool: Fetched 7 records for AAPL
+2026-01-18 12:44:27 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2026-01-18 12:44:28 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2026-01-18 12:44:31 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2026-01-18 12:44:31 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 7 price rows, 9 news items
+2026-01-18 12:44:31 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 12:44:31 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 12:44:31 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 12:45:18 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 12:45:18 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 12:45:18 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 12:45:18 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 12:45:54 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 12:45:54 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 12:45:54 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 12:46:16 [INFO] src.tools.plot_tool: Saved price chart to C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-8/test_pipeline_smoke0\AAPL\AAPL_chart.png
+2026-01-18 12:46:16 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 12:46:57 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 12:46:57 [INFO] src.tools.storage_tool: Saved JSON: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-8/test_pipeline_smoke0\AAPL\AAPL_raw.json
+2026-01-18 12:46:57 [INFO] src.tools.storage_tool: Saved Markdown: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-8/test_pipeline_smoke0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 12:46:57 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-8/test_pipeline_smoke0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 12:46:58 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-8/test_pipeline_smoke0\AAPL\AAPL_2026-01-18_report.pdf
+2026-01-18 13:06:56 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2026-01-18 13:06:56 [INFO] src.api: Report successfully generated for AAPL
+2026-01-18 13:06:56 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 13:06:57 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=5
+2026-01-18 13:06:57 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 13:06:57 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 2 forbidden terms.
+2026-01-18 13:06:57 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 13:06:57 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 13:06:57 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 13:06:57 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 13:06:57 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 13:06:57 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 13:06:57 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 13:06:57 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 13:06:57 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 13:06:57 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-9\test_e2e_workflow_creates_arti0\artifacts\AAPL_chart.png
+2026-01-18 13:06:57 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 13:08:03 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2026-01-18 13:08:03 [INFO] src.api: Report successfully generated for AAPL
+2026-01-18 13:08:03 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 13:08:04 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=5
+2026-01-18 13:08:04 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 13:08:04 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 2 forbidden terms.
+2026-01-18 13:08:04 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 13:08:04 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 13:08:04 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 13:08:04 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 13:08:04 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 13:08:04 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 13:08:04 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 13:08:04 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 13:08:04 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 13:08:04 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-10\test_e2e_workflow_creates_arti0\artifacts\AAPL_chart.png
+2026-01-18 13:08:04 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 13:08:58 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 13:08:58 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-10\test_e2e_workflow_creates_arti0\artifacts\AAPL_raw.json
+2026-01-18 13:08:58 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-10\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.md
+2026-01-18 13:08:58 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-10\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.md
+2026-01-18 13:08:58 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-10\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.pdf
+2026-01-18 13:08:58 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 13:08:58 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 1 forbidden terms.
+2026-01-18 13:08:58 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 13:08:58 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 13:08:58 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 13:08:58 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 13:08:58 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 13:08:58 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 13:08:58 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 13:08:58 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 13:08:58 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=5
+2026-01-18 13:08:58 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 13:08:58 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 2 forbidden terms.
+2026-01-18 13:08:58 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 13:08:58 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 13:08:58 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 13:08:58 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 13:08:58 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 13:08:58 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 13:08:58 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 13:08:58 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 13:08:58 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 13:08:58 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-10\test_build_graph_executes_node0\AAPL_chart.png
+2026-01-18 13:08:58 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 13:09:52 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 13:09:52 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-10\test_build_graph_executes_node0\AAPL_raw.json
+2026-01-18 13:09:52 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-10\test_build_graph_executes_node0\AAPL_2026-01-18_report.md
+2026-01-18 13:09:52 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-10\test_build_graph_executes_node0\AAPL_2026-01-18_report.md
+2026-01-18 13:09:52 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-10\test_build_graph_executes_node0\AAPL_2026-01-18_report.pdf
+2026-01-18 13:09:55 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2026-01-18 13:09:55 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=5) ===
+2026-01-18 13:09:56 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 13:09:56 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 13:09:56 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 13:09:56 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2026-01-18 13:09:56 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 13:09:56 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 13:09:56 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 13:09:56 [INFO] src.agents.data_agent: Fetching data for AAPL (last 5 days)
+2026-01-18 13:09:56 [INFO] src.tools.price_tool: Fetched 5 records for AAPL
+2026-01-18 13:09:58 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2026-01-18 13:09:59 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2026-01-18 13:10:02 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2026-01-18 13:10:02 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 5 price rows, 9 news items
+2026-01-18 13:10:02 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 13:10:02 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 13:10:02 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 13:10:46 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 13:10:46 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 13:10:46 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 13:10:46 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 13:11:26 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 13:11:26 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 13:11:26 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 13:11:26 [INFO] src.tools.plot_tool: Saved price chart to C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-10/test_analyze_endpoint0\AAPL\AAPL_chart.png
+2026-01-18 13:11:26 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 13:12:08 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 13:12:08 [INFO] src.tools.storage_tool: Saved JSON: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-10/test_analyze_endpoint0\AAPL\AAPL_raw.json
+2026-01-18 13:12:08 [INFO] src.tools.storage_tool: Saved Markdown: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-10/test_analyze_endpoint0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 13:12:08 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-10/test_analyze_endpoint0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 13:12:08 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-10/test_analyze_endpoint0\AAPL\AAPL_2026-01-18_report.pdf
+2026-01-18 13:12:08 [INFO] src.api: Report successfully generated for AAPL
+2026-01-18 13:12:08 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=7) ===
+2026-01-18 13:12:10 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 13:12:10 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 13:12:10 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 13:12:10 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2026-01-18 13:12:10 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 13:12:10 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 13:12:10 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 13:12:10 [INFO] src.agents.data_agent: Fetching data for AAPL (last 7 days)
+2026-01-18 13:12:10 [INFO] src.tools.price_tool: Fetched 7 records for AAPL
+2026-01-18 13:12:12 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2026-01-18 13:12:13 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2026-01-18 13:12:16 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2026-01-18 13:12:16 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 7 price rows, 9 news items
+2026-01-18 13:12:16 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 13:12:16 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 13:12:16 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 13:12:58 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 13:12:58 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 13:12:58 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 13:12:58 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 13:13:18 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 13:13:18 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 13:13:18 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 13:13:19 [INFO] src.tools.plot_tool: Saved price chart to C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-10/test_pipeline_smoke0\AAPL\AAPL_chart.png
+2026-01-18 13:13:19 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 13:14:00 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 13:14:00 [INFO] src.tools.storage_tool: Saved JSON: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-10/test_pipeline_smoke0\AAPL\AAPL_raw.json
+2026-01-18 13:14:00 [INFO] src.tools.storage_tool: Saved Markdown: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-10/test_pipeline_smoke0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 13:14:00 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-10/test_pipeline_smoke0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 13:14:00 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-10/test_pipeline_smoke0\AAPL\AAPL_2026-01-18_report.pdf
+2026-01-18 13:14:00 [INFO] src.tools.price_tool: Fetched 5 records for AAPL
+2026-01-18 13:14:00 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 13:14:00 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 13:14:00 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 13:14:00 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 1 forbidden terms.
+2026-01-18 13:14:00 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 13:14:00 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 13:14:00 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=3
+2026-01-18 13:14:00 [INFO] src.agents.data_agent: Fetching data for AAPL (last 5 days)
+2026-01-18 13:14:00 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 1 price rows, 1 news items
+2026-01-18 13:14:00 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 13:14:00 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 13:14:00 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 13:14:00 [ERROR] src.tools.fundamentals_tool: Error fetching income statement for AAPL: Payment Required (quota/tier limit) (status=402)
+2026-01-18 13:14:00 [ERROR] src.tools.fundamentals_tool: Error fetching key metrics for AAPL: Payment Required (quota/tier limit) (status=402)
+2026-01-18 14:02:12 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2026-01-18 14:02:12 [INFO] src.api: Report successfully generated for AAPL
+2026-01-18 14:02:12 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 14:02:13 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=5
+2026-01-18 14:02:13 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 14:02:13 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 2 forbidden terms.
+2026-01-18 14:02:13 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 14:02:13 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 14:02:13 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 14:02:13 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 14:02:13 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 14:02:13 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 14:02:13 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 14:02:13 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 14:02:13 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 14:02:13 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-11\test_e2e_workflow_creates_arti0\artifacts\AAPL_chart.png
+2026-01-18 14:02:13 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 14:02:37 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 14:02:37 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-11\test_e2e_workflow_creates_arti0\artifacts\AAPL_raw.json
+2026-01-18 14:02:37 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-11\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.md
+2026-01-18 14:02:37 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-11\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.md
+2026-01-18 14:02:37 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-11\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.pdf
+2026-01-18 14:02:37 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 14:02:37 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 1 forbidden terms.
+2026-01-18 14:02:37 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 14:02:37 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 14:02:37 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 14:02:37 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 14:02:37 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 14:02:37 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 14:02:37 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 14:02:37 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 14:02:37 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=5
+2026-01-18 14:02:37 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 14:02:37 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 2 forbidden terms.
+2026-01-18 14:02:37 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 14:02:37 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 14:02:37 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 14:02:37 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 14:02:37 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 14:02:37 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 14:02:37 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 14:02:37 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 14:02:37 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 14:02:38 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-11\test_build_graph_executes_node0\AAPL_chart.png
+2026-01-18 14:02:38 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 14:03:00 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 14:03:00 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-11\test_build_graph_executes_node0\AAPL_raw.json
+2026-01-18 14:03:00 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-11\test_build_graph_executes_node0\AAPL_2026-01-18_report.md
+2026-01-18 14:03:00 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-11\test_build_graph_executes_node0\AAPL_2026-01-18_report.md
+2026-01-18 14:03:00 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-11\test_build_graph_executes_node0\AAPL_2026-01-18_report.pdf
+2026-01-18 14:03:06 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2026-01-18 14:03:06 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=5) ===
+2026-01-18 14:03:07 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 14:03:07 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 14:03:07 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 14:03:07 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2026-01-18 14:03:07 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 14:03:07 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 14:03:07 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 14:03:07 [INFO] src.agents.data_agent: Fetching data for AAPL (last 5 days)
+2026-01-18 14:03:08 [INFO] src.tools.price_tool: Fetched 5 records for AAPL
+2026-01-18 14:03:10 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2026-01-18 14:03:11 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2026-01-18 14:03:14 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2026-01-18 14:03:14 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 5 price rows, 9 news items
+2026-01-18 14:03:14 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 14:03:14 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 14:03:14 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 14:03:41 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 14:03:41 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 14:03:41 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 14:03:41 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 14:03:58 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 14:03:58 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 14:03:58 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 14:03:59 [INFO] src.tools.plot_tool: Saved price chart to C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-11/test_analyze_endpoint0\AAPL\AAPL_chart.png
+2026-01-18 14:03:59 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 14:04:34 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 14:04:34 [INFO] src.tools.storage_tool: Saved JSON: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-11/test_analyze_endpoint0\AAPL\AAPL_raw.json
+2026-01-18 14:04:34 [INFO] src.tools.storage_tool: Saved Markdown: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-11/test_analyze_endpoint0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 14:04:34 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-11/test_analyze_endpoint0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 14:04:34 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-11/test_analyze_endpoint0\AAPL\AAPL_2026-01-18_report.pdf
+2026-01-18 14:04:34 [INFO] src.api: Report successfully generated for AAPL
+2026-01-18 14:04:34 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=7) ===
+2026-01-18 14:04:35 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 14:04:35 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 14:04:35 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 14:04:35 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2026-01-18 14:04:35 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 14:04:35 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 14:04:36 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 14:04:36 [INFO] src.agents.data_agent: Fetching data for AAPL (last 7 days)
+2026-01-18 14:04:36 [INFO] src.tools.price_tool: Fetched 7 records for AAPL
+2026-01-18 14:04:37 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2026-01-18 14:04:39 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2026-01-18 14:04:43 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2026-01-18 14:04:43 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 7 price rows, 9 news items
+2026-01-18 14:04:43 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 14:04:43 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 14:04:43 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 14:05:03 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 14:05:03 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 14:05:03 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 14:05:03 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 14:05:16 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 14:05:16 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 14:05:16 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 14:05:16 [INFO] src.tools.plot_tool: Saved price chart to C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-11/test_pipeline_smoke0\AAPL\AAPL_chart.png
+2026-01-18 14:05:16 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 14:05:44 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 14:05:44 [INFO] src.tools.storage_tool: Saved JSON: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-11/test_pipeline_smoke0\AAPL\AAPL_raw.json
+2026-01-18 14:05:44 [INFO] src.tools.storage_tool: Saved Markdown: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-11/test_pipeline_smoke0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 14:05:44 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-11/test_pipeline_smoke0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 14:05:44 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-11/test_pipeline_smoke0\AAPL\AAPL_2026-01-18_report.pdf
+2026-01-18 14:05:45 [INFO] src.tools.price_tool: Fetched 5 records for AAPL
+2026-01-18 14:05:45 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 14:05:45 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 14:05:45 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 14:05:45 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 1 forbidden terms.
+2026-01-18 14:05:45 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 14:05:45 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 14:05:45 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=3
+2026-01-18 14:05:45 [INFO] src.agents.data_agent: Fetching data for AAPL (last 5 days)
+2026-01-18 14:05:45 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 1 price rows, 1 news items
+2026-01-18 14:05:45 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 14:05:45 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 14:05:45 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 14:05:45 [ERROR] src.tools.fundamentals_tool: Error fetching income statement for AAPL: Payment Required (quota/tier limit) (status=402)
+2026-01-18 14:05:45 [ERROR] src.tools.fundamentals_tool: Error fetching key metrics for AAPL: Payment Required (quota/tier limit) (status=402)
+2026-01-18 14:09:55 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2026-01-18 14:09:55 [INFO] src.api: Report successfully generated for AAPL
+2026-01-18 14:09:55 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 14:09:56 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=5
+2026-01-18 14:09:56 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 14:09:56 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 2 forbidden terms.
+2026-01-18 14:09:56 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 14:09:56 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 14:09:56 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 14:09:56 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 14:09:56 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 14:09:56 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 14:09:56 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 14:09:56 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 14:09:56 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 14:09:56 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-12\test_e2e_workflow_creates_arti0\artifacts\AAPL_chart.png
+2026-01-18 14:09:56 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 14:10:24 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 14:10:24 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-12\test_e2e_workflow_creates_arti0\artifacts\AAPL_raw.json
+2026-01-18 14:10:24 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-12\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.md
+2026-01-18 14:10:24 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-12\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.md
+2026-01-18 14:10:24 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-12\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-18_report.pdf
+2026-01-18 14:10:24 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 14:10:24 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 1 forbidden terms.
+2026-01-18 14:10:24 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 14:10:24 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 14:10:24 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 14:10:24 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 14:10:24 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 14:10:24 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 14:10:24 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 14:10:24 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 14:10:24 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=5
+2026-01-18 14:10:24 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 14:10:24 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 2 forbidden terms.
+2026-01-18 14:10:24 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 14:10:24 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 14:10:24 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 14:10:24 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 14:10:24 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 14:10:24 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 14:10:24 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 14:10:24 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 14:10:24 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 14:10:24 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-12\test_build_graph_executes_node0\AAPL_chart.png
+2026-01-18 14:10:24 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 14:11:07 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 14:11:08 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-12\test_build_graph_executes_node0\AAPL_raw.json
+2026-01-18 14:11:08 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-12\test_build_graph_executes_node0\AAPL_2026-01-18_report.md
+2026-01-18 14:11:08 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-12\test_build_graph_executes_node0\AAPL_2026-01-18_report.md
+2026-01-18 14:11:08 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-12\test_build_graph_executes_node0\AAPL_2026-01-18_report.pdf
+2026-01-18 14:11:08 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2026-01-18 14:11:08 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=5) ===
+2026-01-18 14:11:09 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 14:11:09 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 14:11:09 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 14:11:09 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2026-01-18 14:11:09 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 14:11:09 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 14:11:09 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 14:11:09 [INFO] src.agents.data_agent: Fetching data for AAPL (last 5 days)
+2026-01-18 14:11:09 [INFO] src.tools.price_tool: Fetched 5 records for AAPL
+2026-01-18 14:11:11 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2026-01-18 14:11:12 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2026-01-18 14:11:15 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2026-01-18 14:11:15 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 5 price rows, 9 news items
+2026-01-18 14:11:15 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 14:11:15 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 14:11:15 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 14:11:45 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 14:11:45 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 14:11:45 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 14:11:45 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 14:12:10 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 14:12:10 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 14:12:10 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 14:12:10 [INFO] src.tools.plot_tool: Saved price chart to C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-12/test_analyze_endpoint0\AAPL\AAPL_chart.png
+2026-01-18 14:12:10 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 14:12:42 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 14:12:42 [INFO] src.tools.storage_tool: Saved JSON: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-12/test_analyze_endpoint0\AAPL\AAPL_raw.json
+2026-01-18 14:12:42 [INFO] src.tools.storage_tool: Saved Markdown: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-12/test_analyze_endpoint0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 14:12:42 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-12/test_analyze_endpoint0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 14:12:42 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-12/test_analyze_endpoint0\AAPL\AAPL_2026-01-18_report.pdf
+2026-01-18 14:12:42 [INFO] src.api: Report successfully generated for AAPL
+2026-01-18 14:12:42 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=7) ===
+2026-01-18 14:12:44 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 14:12:44 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 14:12:44 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 14:12:44 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2026-01-18 14:12:44 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 14:12:44 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 14:12:44 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 14:12:44 [INFO] src.agents.data_agent: Fetching data for AAPL (last 7 days)
+2026-01-18 14:12:44 [INFO] src.tools.price_tool: Fetched 7 records for AAPL
+2026-01-18 14:12:46 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2026-01-18 14:12:47 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2026-01-18 14:12:50 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2026-01-18 14:12:50 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 7 price rows, 9 news items
+2026-01-18 14:12:50 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 14:12:50 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 14:12:50 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 14:13:14 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 14:13:14 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 14:13:14 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 14:13:14 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 14:13:36 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 14:13:36 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 14:13:36 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 14:13:36 [INFO] src.tools.plot_tool: Saved price chart to C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-12/test_pipeline_smoke0\AAPL\AAPL_chart.png
+2026-01-18 14:13:36 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 14:14:08 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 14:14:08 [INFO] src.tools.storage_tool: Saved JSON: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-12/test_pipeline_smoke0\AAPL\AAPL_raw.json
+2026-01-18 14:14:08 [INFO] src.tools.storage_tool: Saved Markdown: C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-12/test_pipeline_smoke0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 14:14:08 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-12/test_pipeline_smoke0\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 14:14:08 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> C:/Users/HP/AppData/Local/Temp/pytest-of-HP/pytest-12/test_pipeline_smoke0\AAPL\AAPL_2026-01-18_report.pdf
+2026-01-18 14:14:08 [INFO] src.tools.price_tool: Fetched 5 records for AAPL
+2026-01-18 14:14:08 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 14:14:08 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 14:14:08 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 14:14:08 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 1 forbidden terms.
+2026-01-18 14:14:08 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 14:14:08 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 14:14:08 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=3
+2026-01-18 14:14:08 [INFO] src.agents.data_agent: Fetching data for AAPL (last 5 days)
+2026-01-18 14:14:08 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 1 price rows, 1 news items
+2026-01-18 14:14:08 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 14:14:08 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 14:14:08 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 14:14:08 [ERROR] src.tools.fundamentals_tool: Error fetching income statement for AAPL: Payment Required (quota/tier limit) (status=402)
+2026-01-18 14:14:08 [ERROR] src.tools.fundamentals_tool: Error fetching key metrics for AAPL: Payment Required (quota/tier limit) (status=402)
+2026-01-18 14:14:08 [INFO] src.tools.news_tool: Total news items for AAPL: 0
+2026-01-18 14:14:08 [INFO] src.tools.price_tool: Fetched 5 records for AAPL
+2026-01-18 14:14:08 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-12\test_save_json_and_markdown0\artifacts\x.json
+2026-01-18 14:14:08 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-12\test_save_json_and_markdown0\artifacts\x.md
+2026-01-18 14:17:54 [INFO] __main__: CLI called with symbol= AAPL days=10 outdir=artifacts
+2026-01-18 14:17:54 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=10) ===
+2026-01-18 14:17:56 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 14:17:56 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 14:17:56 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 14:17:56 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 3 forbidden terms.
+2026-01-18 14:17:56 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 14:17:56 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 14:17:56 [INFO] src.graph.orchestrator: [Node: Collect Data] Starting data collection for AAPL
+2026-01-18 14:17:56 [INFO] src.agents.data_agent: Fetching data for AAPL (last 10 days)
+2026-01-18 14:17:56 [INFO] src.tools.price_tool: Fetched 10 records for AAPL
+2026-01-18 14:17:58 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2026-01-18 14:18:00 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2026-01-18 14:18:02 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2026-01-18 14:18:02 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 10 price rows, 9 news items
+2026-01-18 14:18:02 [INFO] src.graph.orchestrator: [Node: Collect Data] Completed for AAPL
+2026-01-18 14:18:02 [INFO] src.graph.orchestrator: [Node: Analyze] Generating analyst note for AAPL
+2026-01-18 14:18:02 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 14:18:29 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 14:18:29 [INFO] src.graph.orchestrator: [Node: Analyze] Completed for AAPL
+2026-01-18 14:18:29 [INFO] src.graph.orchestrator: [Node: Compliance] Checking compliance for AAPL
+2026-01-18 14:18:29 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 14:18:51 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 14:18:51 [INFO] src.graph.orchestrator: [Node: Compliance] Completed for AAPL
+2026-01-18 14:18:51 [INFO] src.graph.orchestrator: [Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 14:18:51 [INFO] src.tools.plot_tool: Saved price chart to artifacts\AAPL\AAPL_chart.png
+2026-01-18 14:18:51 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 14:19:21 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 14:19:21 [INFO] src.tools.storage_tool: Saved JSON: artifacts\AAPL\AAPL_raw.json
+2026-01-18 14:19:21 [INFO] src.tools.storage_tool: Saved Markdown: artifacts\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 14:19:21 [INFO] src.graph.orchestrator: [Node: Publish] Unified report ready for AAPL -> artifacts\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 14:19:22 [INFO] src.graph.orchestrator: [Node: Publish] PDF version created for AAPL -> artifacts\AAPL\AAPL_2026-01-18_report.pdf
+2026-01-18 14:19:22 [INFO] __main__: CLI execution finished successfully for AAPL
+2026-01-18 15:46:21 [INFO] __main__: CLI called with symbol= META days=5 outdir=artifacts
+2026-01-18 15:46:21 [INFO] src.graph.orchestrator: Run ID: 47a730be
+2026-01-18 15:46:21 [INFO] src.graph.orchestrator: === Starting pipeline for META (days=5) ===
+2026-01-18 15:46:24 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 15:46:24 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 15:46:24 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 15:46:24 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 9 forbidden terms.
+2026-01-18 15:46:24 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 15:46:24 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 15:46:24 [INFO] src.graph.orchestrator: [Run:47a730be][Node: Collect Data] Starting data collection for META
+2026-01-18 15:46:24 [INFO] src.agents.data_agent: Fetching data for META (last 5 days)
+2026-01-18 15:46:25 [INFO] src.tools.price_tool: Fetched 5 records for META
+2026-01-18 15:46:27 [INFO] src.tools.fundamentals_tool: Fetched income statement for META (2 records)
+2026-01-18 15:46:28 [INFO] src.tools.fundamentals_tool: Fetched key metrics for META
+2026-01-18 15:46:31 [INFO] src.tools.news_tool: Total news items for META: 9
+2026-01-18 15:46:31 [INFO] src.agents.data_agent: Data fetch complete for META: 5 price rows, 9 news items
+2026-01-18 15:46:31 [INFO] src.graph.orchestrator: [Run:47a730be][Node: Collect Data] Completed for META
+2026-01-18 15:46:31 [INFO] src.graph.orchestrator: [Run:47a730be][Node: Analyze] Generating analyst note for META
+2026-01-18 15:46:31 [INFO] src.agents.analyst_agent: Generating analyst note for META
+2026-01-18 15:47:09 [INFO] src.agents.analyst_agent: Analyst note completed for META
+2026-01-18 15:47:09 [INFO] src.graph.orchestrator: [Run:47a730be][Node: Analyze] Completed for META
+2026-01-18 15:47:09 [INFO] src.graph.orchestrator: [Run:47a730be][Node: Compliance] Checking compliance for META
+2026-01-18 15:47:09 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 15:47:25 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 15:47:25 [INFO] src.graph.orchestrator: [Run:47a730be][Node: Compliance] Completed for META
+2026-01-18 15:47:25 [INFO] src.graph.orchestrator: [Run:47a730be][Node: Publish] Enriching and publishing unified report for META
+2026-01-18 15:47:26 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_chart.png
+2026-01-18 15:47:26 [INFO] src.agents.supervisor_agent: Composing final report for META
+2026-01-18 15:47:53 [INFO] src.agents.supervisor_agent: Final report created for META
+2026-01-18 15:47:53 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_raw.json
+2026-01-18 15:47:53 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_2026-01-18_report.md
+2026-01-18 15:47:53 [INFO] src.graph.orchestrator: [Run:47a730be][Node: Publish] Unified report ready for META -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_2026-01-18_report.md
+2026-01-18 15:47:54 [INFO] src.graph.orchestrator: [Run:47a730be][Node: Publish] PDF version created for META -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_2026-01-18_report.pdf
+2026-01-18 15:47:54 [INFO] __main__: CLI execution finished successfully for META
+2026-01-18 17:22:16 [INFO] src.api: POST /analyze called with symbol=MSFT, days=5
+2026-01-18 17:22:16 [INFO] src.graph.orchestrator: Run ID: 78bfdc54
+2026-01-18 17:22:16 [INFO] src.graph.orchestrator: === Starting pipeline for MSFT (days=5) ===
+2026-01-18 17:22:16 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 17:22:17 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 17:22:17 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 17:22:17 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 9 forbidden terms.
+2026-01-18 17:22:17 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 17:22:17 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 17:22:17 [INFO] src.graph.orchestrator: [Run:78bfdc54][Node: Collect Data] Starting data collection for MSFT
+2026-01-18 17:22:17 [INFO] src.agents.data_agent: Fetching data for MSFT (last 5 days)
+2026-01-18 17:22:20 [INFO] src.tools.price_tool: Fetched 5 records for MSFT
+2026-01-18 17:22:21 [INFO] src.tools.fundamentals_tool: Fetched income statement for MSFT (2 records)
+2026-01-18 17:22:23 [INFO] src.tools.fundamentals_tool: Fetched key metrics for MSFT
+2026-01-18 17:22:28 [INFO] src.tools.news_tool: Total news items for MSFT: 9
+2026-01-18 17:22:28 [INFO] src.agents.data_agent: Data fetch complete for MSFT: 5 price rows, 9 news items
+2026-01-18 17:22:28 [INFO] src.graph.orchestrator: [Run:78bfdc54][Node: Collect Data] Completed for MSFT
+2026-01-18 17:22:28 [INFO] src.graph.orchestrator: [Run:78bfdc54][Node: Analyze] Generating analyst note for MSFT
+2026-01-18 17:22:28 [INFO] src.agents.analyst_agent: Generating analyst note for MSFT
+2026-01-18 17:23:10 [INFO] src.agents.analyst_agent: Analyst note completed for MSFT
+2026-01-18 17:23:10 [INFO] src.graph.orchestrator: [Run:78bfdc54][Node: Analyze] Completed for MSFT
+2026-01-18 17:23:10 [INFO] src.graph.orchestrator: [Run:78bfdc54][Node: Compliance] Checking compliance for MSFT
+2026-01-18 17:23:10 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 17:23:46 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 17:23:46 [INFO] src.graph.orchestrator: [Run:78bfdc54][Node: Compliance] Completed for MSFT
+2026-01-18 17:23:46 [INFO] src.graph.orchestrator: [Run:78bfdc54][Node: Publish] Enriching and publishing unified report for MSFT
+2026-01-18 17:23:46 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_chart.png
+2026-01-18 17:23:46 [INFO] src.agents.supervisor_agent: Composing final report for MSFT
+2026-01-18 17:24:29 [INFO] src.agents.supervisor_agent: Final report created for MSFT
+2026-01-18 17:24:29 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_raw.json
+2026-01-18 17:24:29 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-18_report.md
+2026-01-18 17:24:29 [INFO] src.graph.orchestrator: [Run:78bfdc54][Node: Publish] Unified report ready for MSFT -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-18_report.md
+2026-01-18 17:24:32 [INFO] src.graph.orchestrator: [Run:78bfdc54][Node: Publish] PDF version created for MSFT -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-18_report.pdf
+2026-01-18 17:24:32 [INFO] src.api: Report successfully generated for MSFT
+2026-01-18 17:35:57 [INFO] src.api: POST /analyze called with symbol=MSFT, days=5
+2026-01-18 17:35:57 [INFO] src.graph.orchestrator: Run ID: bc4a0a77
+2026-01-18 17:35:57 [INFO] src.graph.orchestrator: === Starting pipeline for MSFT (days=5) ===
+2026-01-18 17:35:57 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 17:35:58 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 17:35:58 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 17:35:58 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 9 forbidden terms.
+2026-01-18 17:35:58 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 17:35:58 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 17:35:58 [INFO] src.graph.orchestrator: [Run:bc4a0a77][Node: Collect Data] Starting data collection for MSFT
+2026-01-18 17:35:58 [INFO] src.agents.data_agent: Fetching data for MSFT (last 5 days)
+2026-01-18 17:35:58 [INFO] src.tools.price_tool: Fetched 5 records for MSFT
+2026-01-18 17:36:01 [INFO] src.tools.fundamentals_tool: Fetched income statement for MSFT (2 records)
+2026-01-18 17:36:05 [INFO] src.tools.fundamentals_tool: Fetched key metrics for MSFT
+2026-01-18 17:36:09 [INFO] src.tools.news_tool: Total news items for MSFT: 9
+2026-01-18 17:36:09 [INFO] src.agents.data_agent: Data fetch complete for MSFT: 5 price rows, 9 news items
+2026-01-18 17:36:09 [INFO] src.graph.orchestrator: [Run:bc4a0a77][Node: Collect Data] Completed for MSFT
+2026-01-18 17:36:09 [INFO] src.graph.orchestrator: [Run:bc4a0a77][Node: Analyze] Generating analyst note for MSFT
+2026-01-18 17:36:09 [INFO] src.agents.analyst_agent: Generating analyst note for MSFT
+2026-01-18 17:37:09 [INFO] src.agents.analyst_agent: Analyst note completed for MSFT
+2026-01-18 17:37:09 [INFO] src.graph.orchestrator: [Run:bc4a0a77][Node: Analyze] Completed for MSFT
+2026-01-18 17:37:09 [INFO] src.graph.orchestrator: [Run:bc4a0a77][Node: Compliance] Checking compliance for MSFT
+2026-01-18 17:37:09 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 17:37:47 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 17:37:47 [INFO] src.graph.orchestrator: [Run:bc4a0a77][Node: Compliance] Completed for MSFT
+2026-01-18 17:37:47 [INFO] src.graph.orchestrator: [Run:bc4a0a77][Node: Publish] Enriching and publishing unified report for MSFT
+2026-01-18 17:37:47 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_chart.png
+2026-01-18 17:37:47 [INFO] src.agents.supervisor_agent: Composing final report for MSFT
+2026-01-18 17:38:38 [INFO] src.agents.supervisor_agent: Final report created for MSFT
+2026-01-18 17:38:38 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_raw.json
+2026-01-18 17:38:38 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-18_report.md
+2026-01-18 17:38:38 [INFO] src.graph.orchestrator: [Run:bc4a0a77][Node: Publish] Unified report ready for MSFT -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-18_report.md
+2026-01-18 17:38:40 [INFO] src.graph.orchestrator: [Run:bc4a0a77][Node: Publish] PDF version created for MSFT -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-18_report.pdf
+2026-01-18 17:38:40 [INFO] src.api: Report successfully generated for MSFT
+2026-01-18 17:45:30 [INFO] src.api: POST /analyze called with symbol=MSFT, days=5
+2026-01-18 18:11:13 [INFO] src.api: POST /analyze called with symbol=AAPL, days=5
+2026-01-18 18:11:13 [INFO] src.graph.orchestrator: Run ID: 6c904ba4
+2026-01-18 18:11:13 [INFO] src.graph.orchestrator: === Starting pipeline for AAPL (days=5) ===
+2026-01-18 18:11:13 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 18:11:14 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 18:11:14 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 18:11:14 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 9 forbidden terms.
+2026-01-18 18:11:14 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 18:11:14 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 18:11:14 [INFO] src.graph.orchestrator: [Run:6c904ba4][Node: Collect Data] Starting data collection for AAPL
+2026-01-18 18:11:14 [INFO] src.agents.data_agent: Fetching data for AAPL (last 5 days)
+2026-01-18 18:11:15 [INFO] src.tools.price_tool: Fetched 5 records for AAPL
+2026-01-18 18:11:19 [INFO] src.tools.fundamentals_tool: Fetched income statement for AAPL (2 records)
+2026-01-18 18:11:21 [INFO] src.tools.fundamentals_tool: Fetched key metrics for AAPL
+2026-01-18 18:11:24 [INFO] src.tools.news_tool: Total news items for AAPL: 9
+2026-01-18 18:11:24 [INFO] src.agents.data_agent: Data fetch complete for AAPL: 5 price rows, 9 news items
+2026-01-18 18:11:24 [INFO] src.graph.orchestrator: [Run:6c904ba4][Node: Collect Data] Completed for AAPL
+2026-01-18 18:11:24 [INFO] src.graph.orchestrator: [Run:6c904ba4][Node: Analyze] Generating analyst note for AAPL
+2026-01-18 18:11:24 [INFO] src.agents.analyst_agent: Generating analyst note for AAPL
+2026-01-18 18:12:13 [INFO] src.agents.analyst_agent: Analyst note completed for AAPL
+2026-01-18 18:12:13 [INFO] src.graph.orchestrator: [Run:6c904ba4][Node: Analyze] Completed for AAPL
+2026-01-18 18:12:13 [INFO] src.graph.orchestrator: [Run:6c904ba4][Node: Compliance] Checking compliance for AAPL
+2026-01-18 18:12:13 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 18:12:46 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 18:12:46 [INFO] src.graph.orchestrator: [Run:6c904ba4][Node: Compliance] Completed for AAPL
+2026-01-18 18:12:46 [INFO] src.graph.orchestrator: [Run:6c904ba4][Node: Publish] Enriching and publishing unified report for AAPL
+2026-01-18 18:12:46 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\AAPL\AAPL_chart.png
+2026-01-18 18:12:46 [INFO] src.agents.supervisor_agent: Composing final report for AAPL
+2026-01-18 18:13:39 [INFO] src.agents.supervisor_agent: Final report created for AAPL
+2026-01-18 18:13:39 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\AAPL\AAPL_raw.json
+2026-01-18 18:13:39 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 18:13:39 [INFO] src.graph.orchestrator: [Run:6c904ba4][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\AAPL\AAPL_2026-01-18_report.md
+2026-01-18 18:13:41 [INFO] src.graph.orchestrator: [Run:6c904ba4][Node: Publish] PDF version created for AAPL -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\AAPL\AAPL_2026-01-18_report.pdf
+2026-01-18 18:13:41 [INFO] src.api: Report successfully generated for AAPL
+2026-01-18 18:23:42 [INFO] src.api: POST /analyze called with symbol=MSFT, days=5
+2026-01-18 18:23:42 [INFO] src.graph.orchestrator: Run ID: 6f4b48c9
+2026-01-18 18:23:42 [INFO] src.graph.orchestrator: === Starting pipeline for MSFT (days=5) ===
+2026-01-18 18:23:43 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 18:23:44 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 18:23:44 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 18:23:44 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 9 forbidden terms.
+2026-01-18 18:23:44 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 18:23:44 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 18:23:44 [INFO] src.graph.orchestrator: [Run:6f4b48c9][Node: Collect Data] Starting data collection for MSFT
+2026-01-18 18:23:44 [INFO] src.agents.data_agent: Fetching data for MSFT (last 5 days)
+2026-01-18 18:23:44 [INFO] src.tools.price_tool: Fetched 5 records for MSFT
+2026-01-18 18:23:47 [INFO] src.tools.fundamentals_tool: Fetched income statement for MSFT (2 records)
+2026-01-18 18:23:50 [INFO] src.tools.fundamentals_tool: Fetched key metrics for MSFT
+2026-01-18 18:23:54 [INFO] src.tools.news_tool: Total news items for MSFT: 9
+2026-01-18 18:23:54 [INFO] src.agents.data_agent: Data fetch complete for MSFT: 5 price rows, 9 news items
+2026-01-18 18:23:54 [INFO] src.graph.orchestrator: [Run:6f4b48c9][Node: Collect Data] Completed for MSFT
+2026-01-18 18:23:54 [INFO] src.graph.orchestrator: [Run:6f4b48c9][Node: Analyze] Generating analyst note for MSFT
+2026-01-18 18:23:54 [INFO] src.agents.analyst_agent: Generating analyst note for MSFT
+2026-01-18 18:24:34 [INFO] src.agents.analyst_agent: Analyst note completed for MSFT
+2026-01-18 18:24:34 [INFO] src.graph.orchestrator: [Run:6f4b48c9][Node: Analyze] Completed for MSFT
+2026-01-18 18:24:34 [INFO] src.graph.orchestrator: [Run:6f4b48c9][Node: Compliance] Checking compliance for MSFT
+2026-01-18 18:24:34 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 18:25:13 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 18:25:13 [INFO] src.graph.orchestrator: [Run:6f4b48c9][Node: Compliance] Completed for MSFT
+2026-01-18 18:25:13 [INFO] src.graph.orchestrator: [Run:6f4b48c9][Node: Publish] Enriching and publishing unified report for MSFT
+2026-01-18 18:25:13 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_chart.png
+2026-01-18 18:25:13 [INFO] src.agents.supervisor_agent: Composing final report for MSFT
+2026-01-18 18:26:02 [INFO] src.agents.supervisor_agent: Final report created for MSFT
+2026-01-18 18:26:02 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_raw.json
+2026-01-18 18:26:02 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-18_report.md
+2026-01-18 18:26:02 [INFO] src.graph.orchestrator: [Run:6f4b48c9][Node: Publish] Unified report ready for MSFT -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-18_report.md
+2026-01-18 18:26:04 [INFO] src.graph.orchestrator: [Run:6f4b48c9][Node: Publish] PDF version created for MSFT -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-18_report.pdf
+2026-01-18 18:26:04 [INFO] src.api: Report successfully generated for MSFT
+2026-01-18 18:26:26 [INFO] src.api: POST /analyze called with symbol=MSFT, days=5
+2026-01-18 18:26:26 [INFO] src.graph.orchestrator: Run ID: f78032c2
+2026-01-18 18:26:26 [INFO] src.graph.orchestrator: === Starting pipeline for MSFT (days=5) ===
+2026-01-18 18:26:29 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 18:26:30 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 18:26:30 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 18:26:30 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 9 forbidden terms.
+2026-01-18 18:26:30 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 18:26:30 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 18:26:30 [INFO] src.graph.orchestrator: [Run:f78032c2][Node: Collect Data] Starting data collection for MSFT
+2026-01-18 18:26:30 [INFO] src.agents.data_agent: Fetching data for MSFT (last 5 days)
+2026-01-18 18:26:30 [INFO] src.tools.price_tool: Fetched 5 records for MSFT
+2026-01-18 18:26:32 [INFO] src.tools.fundamentals_tool: Fetched income statement for MSFT (2 records)
+2026-01-18 18:26:34 [INFO] src.tools.fundamentals_tool: Fetched key metrics for MSFT
+2026-01-18 18:26:37 [INFO] src.tools.news_tool: Total news items for MSFT: 9
+2026-01-18 18:26:37 [INFO] src.agents.data_agent: Data fetch complete for MSFT: 5 price rows, 9 news items
+2026-01-18 18:26:37 [INFO] src.graph.orchestrator: [Run:f78032c2][Node: Collect Data] Completed for MSFT
+2026-01-18 18:26:37 [INFO] src.graph.orchestrator: [Run:f78032c2][Node: Analyze] Generating analyst note for MSFT
+2026-01-18 18:26:37 [INFO] src.agents.analyst_agent: Generating analyst note for MSFT
+2026-01-18 18:27:22 [INFO] src.agents.analyst_agent: Analyst note completed for MSFT
+2026-01-18 18:27:22 [INFO] src.graph.orchestrator: [Run:f78032c2][Node: Analyze] Completed for MSFT
+2026-01-18 18:27:22 [INFO] src.graph.orchestrator: [Run:f78032c2][Node: Compliance] Checking compliance for MSFT
+2026-01-18 18:27:22 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 18:27:34 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 18:27:34 [INFO] src.graph.orchestrator: [Run:f78032c2][Node: Compliance] Completed for MSFT
+2026-01-18 18:27:34 [INFO] src.graph.orchestrator: [Run:f78032c2][Node: Publish] Enriching and publishing unified report for MSFT
+2026-01-18 18:27:35 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_chart.png
+2026-01-18 18:27:35 [INFO] src.agents.supervisor_agent: Composing final report for MSFT
+2026-01-18 18:28:22 [INFO] src.agents.supervisor_agent: Final report created for MSFT
+2026-01-18 18:28:22 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_raw.json
+2026-01-18 18:28:22 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-18_report.md
+2026-01-18 18:28:22 [INFO] src.graph.orchestrator: [Run:f78032c2][Node: Publish] Unified report ready for MSFT -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-18_report.md
+2026-01-18 18:28:24 [INFO] src.graph.orchestrator: [Run:f78032c2][Node: Publish] PDF version created for MSFT -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-18_report.pdf
+2026-01-18 18:28:24 [INFO] src.api: Report successfully generated for MSFT
+2026-01-18 19:03:31 [ERROR] src.api: Symbol 'TCS' is invalid or has no current market data (possibly delisted). Please check the ticker or try another one.
+2026-01-18 19:04:18 [ERROR] src.api: Symbol 'TCS' is invalid or has no current market data (possibly delisted). Please check the ticker or try another one.
+2026-01-18 19:04:25 [INFO] src.api: POST /analyze called with symbol=META, days=15
+2026-01-18 19:04:25 [INFO] src.graph.orchestrator: Run ID: b07c0dc0
+2026-01-18 19:04:25 [INFO] src.graph.orchestrator: === Starting pipeline for META (days=15) ===
+2026-01-18 19:04:26 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 19:04:26 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 19:04:26 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 19:04:26 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 9 forbidden terms.
+2026-01-18 19:04:26 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 19:04:26 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 19:04:26 [INFO] src.graph.orchestrator: [Run:b07c0dc0][Node: Collect Data] Starting data collection for META
+2026-01-18 19:04:26 [INFO] src.agents.data_agent: Fetching data for META (last 15 days)
+2026-01-18 19:04:27 [INFO] src.tools.price_tool: Fetched 15 records for META
+2026-01-18 19:04:29 [INFO] src.tools.fundamentals_tool: Fetched income statement for META (2 records)
+2026-01-18 19:04:31 [INFO] src.tools.fundamentals_tool: Fetched key metrics for META
+2026-01-18 19:04:34 [INFO] src.tools.news_tool: Total news items for META: 9
+2026-01-18 19:04:34 [INFO] src.agents.data_agent: Data fetch complete for META: 15 price rows, 9 news items
+2026-01-18 19:04:34 [INFO] src.graph.orchestrator: [Run:b07c0dc0][Node: Collect Data] Completed for META
+2026-01-18 19:04:34 [INFO] src.graph.orchestrator: [Run:b07c0dc0][Node: Analyze] Generating analyst note for META
+2026-01-18 19:04:34 [INFO] src.agents.analyst_agent: Generating analyst note for META
+2026-01-18 19:04:58 [INFO] src.agents.analyst_agent: Analyst note completed for META
+2026-01-18 19:04:58 [INFO] src.graph.orchestrator: [Run:b07c0dc0][Node: Analyze] Completed for META
+2026-01-18 19:04:58 [INFO] src.graph.orchestrator: [Run:b07c0dc0][Node: Compliance] Checking compliance for META
+2026-01-18 19:04:58 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 19:05:18 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 19:05:18 [INFO] src.graph.orchestrator: [Run:b07c0dc0][Node: Compliance] Completed for META
+2026-01-18 19:05:18 [INFO] src.graph.orchestrator: [Run:b07c0dc0][Node: Publish] Enriching and publishing unified report for META
+2026-01-18 19:05:19 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_chart.png
+2026-01-18 19:05:19 [INFO] src.agents.supervisor_agent: Composing final report for META
+2026-01-18 19:05:55 [INFO] src.agents.supervisor_agent: Final report created for META
+2026-01-18 19:05:55 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_raw.json
+2026-01-18 19:05:55 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_2026-01-18_report.md
+2026-01-18 19:05:55 [INFO] src.graph.orchestrator: [Run:b07c0dc0][Node: Publish] Unified report ready for META -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_2026-01-18_report.md
+2026-01-18 19:05:56 [INFO] src.graph.orchestrator: [Run:b07c0dc0][Node: Publish] PDF version created for META -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_2026-01-18_report.pdf
+2026-01-18 19:05:56 [INFO] src.api: Report successfully generated for META
+2026-01-18 19:41:28 [INFO] src.api: POST /analyze called with symbol=MSFT, days=15
+2026-01-18 19:41:28 [INFO] src.graph.orchestrator: Run ID: 6e797740
+2026-01-18 19:41:28 [INFO] src.graph.orchestrator: === Starting pipeline for MSFT (days=15) ===
+2026-01-18 19:41:29 [INFO] src.graph.orchestrator: Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+2026-01-18 19:41:29 [INFO] src.agents.data_agent: Data-Agent initialized with max_news=9
+2026-01-18 19:41:29 [INFO] src.agents.analyst_agent: Analyst-Agent initialized.
+2026-01-18 19:41:29 [INFO] src.agents.compliance_agent: Compliance-Agent initialized with 9 forbidden terms.
+2026-01-18 19:41:29 [INFO] src.agents.supervisor_agent: Supervisor-Agent initialized.
+2026-01-18 19:41:29 [INFO] src.graph.orchestrator: LangGraph pipeline successfully built.
+2026-01-18 19:41:29 [INFO] src.graph.orchestrator: [Run:6e797740][Node: Collect Data] Starting data collection for MSFT
+2026-01-18 19:41:29 [INFO] src.agents.data_agent: Fetching data for MSFT (last 15 days)
+2026-01-18 19:41:29 [INFO] src.tools.price_tool: Fetched 15 records for MSFT
+2026-01-18 19:41:30 [INFO] src.tools.fundamentals_tool: Fetched income statement for MSFT (2 records)
+2026-01-18 19:41:32 [INFO] src.tools.fundamentals_tool: Fetched key metrics for MSFT
+2026-01-18 19:41:35 [INFO] src.tools.news_tool: Total news items for MSFT: 9
+2026-01-18 19:41:35 [INFO] src.agents.data_agent: Data fetch complete for MSFT: 15 price rows, 9 news items
+2026-01-18 19:41:35 [INFO] src.graph.orchestrator: [Run:6e797740][Node: Collect Data] Completed for MSFT
+2026-01-18 19:41:35 [INFO] src.graph.orchestrator: [Run:6e797740][Node: Analyze] Generating analyst note for MSFT
+2026-01-18 19:41:35 [INFO] src.agents.analyst_agent: Generating analyst note for MSFT
+2026-01-18 19:42:17 [INFO] src.agents.analyst_agent: Analyst note completed for MSFT
+2026-01-18 19:42:17 [INFO] src.graph.orchestrator: [Run:6e797740][Node: Analyze] Completed for MSFT
+2026-01-18 19:42:17 [INFO] src.graph.orchestrator: [Run:6e797740][Node: Compliance] Checking compliance for MSFT
+2026-01-18 19:42:17 [INFO] src.agents.compliance_agent: Running compliance check.
+2026-01-18 19:42:43 [INFO] src.agents.compliance_agent: Compliance check done.
+2026-01-18 19:42:43 [INFO] src.graph.orchestrator: [Run:6e797740][Node: Compliance] Completed for MSFT
+2026-01-18 19:42:43 [INFO] src.graph.orchestrator: [Run:6e797740][Node: Publish] Enriching and publishing unified report for MSFT
+2026-01-18 19:42:43 [INFO] src.tools.plot_tool: Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_chart.png
+2026-01-18 19:42:43 [INFO] src.agents.supervisor_agent: Composing final report for MSFT
+2026-01-18 19:43:26 [INFO] src.agents.supervisor_agent: Final report created for MSFT
+2026-01-18 19:43:26 [INFO] src.tools.storage_tool: Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_raw.json
+2026-01-18 19:43:26 [INFO] src.tools.storage_tool: Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-18_report.md
+2026-01-18 19:43:26 [INFO] src.graph.orchestrator: [Run:6e797740][Node: Publish] Unified report ready for MSFT -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-18_report.md
+2026-01-18 19:43:27 [INFO] src.graph.orchestrator: [Run:6e797740][Node: Publish] PDF version created for MSFT -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-18_report.pdf
+2026-01-18 19:43:27 [INFO] src.api: Report successfully generated for MSFT
+2026-01-18 19:54:53 [ERROR] src.api: Symbol 'MSF' is invalid or has no current market data (possibly delisted). Please check the ticker or try another one.
+CLI called with symbol= META days=5 outdir=artifacts
+Run ID: db396ec2
+=== Starting pipeline for META (days=5) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:db396ec2][Node: Collect Data] Starting data collection for META
+Fetching data for META (last 5 days)
+Fetched 5 records for META
+Fetched income statement for META (2 records)
+Fetched key metrics for META
+Retrying op=rss_http_get attempt=1/4 in 0.50s due to: Transient HTTP 429
+Retrying op=rss_http_get attempt=2/4 in 1.00s due to: Transient HTTP 429
+Retrying op=rss_http_get attempt=3/4 in 2.00s due to: Transient HTTP 429
+Retries exhausted op=rss_http_get after 4 attempts. Last error: Transient HTTP 429
+News fetch failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=META&region=US&lang=en-US (symbol=META): Transient HTTP 429
+Retrying op=rss_http_get attempt=1/4 in 0.50s due to: HTTP 404
+Retrying op=rss_http_get attempt=2/4 in 1.00s due to: HTTP 404
+Retrying op=rss_http_get attempt=3/4 in 2.00s due to: HTTP 404
+Retries exhausted op=rss_http_get after 4 attempts. Last error: HTTP 404
+News fetch failed for https://www.benzinga.com/feeds/pro/news/META (symbol=META): HTTP 404
+Total news items for META: 0
+Data fetch complete for META: 5 price rows, 0 news items
+[Run:db396ec2][Node: Collect Data] Completed for META
+Strict mode abort: missing critical data: news for META.
+Pipeline failed for META: Strict mode abort: missing critical data: news for META.
+CLI called with symbol= META days=5 outdir=artifacts
+Run ID: e4dc1a13
+=== Starting pipeline for META (days=5) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:e4dc1a13][Node: Collect Data] Starting data collection for META
+Fetching data for META (last 5 days)
+Fetched 5 records for META
+Fetched income statement for META (2 records)
+Fetched key metrics for META
+Retrying op=rss_http_get attempt=1/4 in 0.50s due to: Transient HTTP 429
+Retrying op=rss_http_get attempt=2/4 in 1.00s due to: Transient HTTP 429
+Retrying op=rss_http_get attempt=3/4 in 2.00s due to: Transient HTTP 429
+Retries exhausted op=rss_http_get after 4 attempts. Last error: Transient HTTP 429
+News fetch failed for https://feeds.finance.yahoo.com/rss/2.0/headline?s=META&region=US&lang=en-US (symbol=META): Transient HTTP 429
+News fetch failed for https://www.benzinga.com/feeds/pro/news/META (symbol=META): HTTP 404
+Total news items for META: 0
+Data fetch complete for META: 5 price rows, 0 news items
+[Run:e4dc1a13][Node: Collect Data] Completed for META
+Strict mode abort: missing critical data: news for META.
+Pipeline failed for META: Strict mode abort: missing critical data: news for META.
+CLI called with symbol= META days=5 outdir=artifacts
+Run ID: 10408f74
+=== Starting pipeline for META (days=5) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:10408f74][Node: Collect Data] Starting data collection for META
+Fetching data for META (last 5 days)
+Fetched 5 records for META
+Fetched income statement for META (2 records)
+Fetched key metrics for META
+Total news items for META: 9
+Data fetch complete for META: 5 price rows, 9 news items
+[Run:10408f74][Node: Collect Data] Completed for META
+[Run:10408f74][Node: Analyze] Generating analyst note for META
+Generating analyst note for META
+Retrying op=llm_analyst_invoke attempt=1/3 in 0.60s due to: Operation timed out after 25.0s
+Retrying op=llm_analyst_invoke attempt=2/3 in 1.20s due to: Operation timed out after 25.0s
+Retries exhausted op=llm_analyst_invoke after 3 attempts. Last error: Operation timed out after 25.0s
+META: AnalystAgent failed, using fallback note. (Operation timed out after 25.0s)
+[Run:10408f74][Node: Analyze] Completed for META
+[Run:10408f74][Node: Compliance] Checking compliance for META
+Running compliance check.
+Compliance check done.
+[Run:10408f74][Node: Compliance] Completed for META
+[Run:10408f74][Node: Publish] Enriching and publishing unified report for META
+Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_chart.png
+Composing final report for META
+Retrying op=llm_supervisor_invoke attempt=1/3 in 0.60s due to: Operation timed out after 30.0s
+Retrying op=llm_supervisor_invoke attempt=2/3 in 1.20s due to: Operation timed out after 30.0s
+Retries exhausted op=llm_supervisor_invoke after 3 attempts. Last error: Operation timed out after 30.0s
+SupervisorAgent failed for META, falling back to raw compliant text. (Operation timed out after 30.0s)
+Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_raw.json
+Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_2026-01-24_report.md
+[Run:10408f74][Node: Publish] Unified report ready for META -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_2026-01-24_report.md
+[Run:10408f74][Node: Publish] PDF version created for META -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_2026-01-24_report.pdf
+[Run:10408f74] Workflow timeout after 90s (symbol=META).
+CLI called with symbol= META days=5 outdir=artifacts
+Run ID: c5781221
+=== Starting pipeline for META (days=5) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:c5781221][Node: Collect Data] Starting data collection for META
+Fetching data for META (last 5 days)
+Fetched 5 records for META
+Fetched income statement for META (2 records)
+Fetched key metrics for META
+Total news items for META: 9
+Data fetch complete for META: 5 price rows, 9 news items
+[Run:c5781221][Node: Collect Data] Completed for META
+[Run:c5781221][Node: Analyze] Generating analyst note for META
+Generating analyst note for META
+Analyst note completed for META
+[Run:c5781221][Node: Analyze] Completed for META
+[Run:c5781221][Node: Compliance] Checking compliance for META
+Running compliance check.
+Compliance check done.
+[Run:c5781221][Node: Compliance] Completed for META
+[Run:c5781221][Node: Publish] Enriching and publishing unified report for META
+Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_chart.png
+Composing final report for META
+Final report created for META
+Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_raw.json
+Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_2026-01-24_report.md
+[Run:c5781221][Node: Publish] Unified report ready for META -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_2026-01-24_report.md
+[Run:c5781221][Node: Publish] PDF version created for META -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_2026-01-24_report.pdf
+[Run:c5781221] Workflow timeout after 120s (symbol=META).
+CLI called with symbol= META days=5 outdir=artifacts
+Run ID: 8abe7df1
+=== Starting pipeline for META (days=5) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:8abe7df1][Node: Collect Data] Starting data collection for META
+Fetching data for META (last 5 days)
+Fetched 5 records for META
+Fetched income statement for META (2 records)
+Fetched key metrics for META
+Total news items for META: 9
+Data fetch complete for META: 5 price rows, 9 news items
+[Run:8abe7df1][Node: Collect Data] Completed for META
+[Run:8abe7df1][Node: Analyze] Generating analyst note for META
+Generating analyst note for META
+Analyst note completed for META
+[Run:8abe7df1][Node: Analyze] Completed for META
+[Run:8abe7df1][Node: Compliance] Checking compliance for META
+Running compliance check.
+Compliance check done.
+[Run:8abe7df1][Node: Compliance] Completed for META
+[Run:8abe7df1][Node: Publish] Enriching and publishing unified report for META
+Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_chart.png
+Composing final report for META
+Final report created for META
+Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_raw.json
+Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_2026-01-24_report.md
+[Run:8abe7df1][Node: Publish] Unified report ready for META -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_2026-01-24_report.md
+[Run:8abe7df1][Node: Publish] PDF version created for META -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\META\META_2026-01-24_report.pdf
+CLI execution finished successfully for META
+CLI called with symbol= MSFT days=5 outdir=artifacts
+Run ID: 1d5c1b69
+=== Starting pipeline for MSFT (days=5) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:1d5c1b69][Node: Collect Data] Starting data collection for MSFT
+Fetching data for MSFT (last 5 days)
+Fetched 5 records for MSFT
+Fetched income statement for MSFT (2 records)
+Fetched key metrics for MSFT
+Total news items for MSFT: 9
+Data fetch complete for MSFT: 5 price rows, 9 news items
+[Run:1d5c1b69][Node: Collect Data] Completed for MSFT
+[Run:1d5c1b69][Node: Analyze] Generating analyst note for MSFT
+Generating analyst note for MSFT
+Analyst note completed for MSFT
+[Run:1d5c1b69][Node: Analyze] Completed for MSFT
+[Run:1d5c1b69][Node: Compliance] Checking compliance for MSFT
+Running compliance check.
+Compliance check done.
+[Run:1d5c1b69][Node: Compliance] Completed for MSFT
+[Run:1d5c1b69][Node: Publish] Enriching and publishing unified report for MSFT
+Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_chart.png
+Composing final report for MSFT
+Final report created for MSFT
+Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_raw.json
+Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-24_report.md
+[Run:1d5c1b69][Node: Publish] Unified report ready for MSFT -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-24_report.md
+[Run:1d5c1b69][Node: Publish] PDF version created for MSFT -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-24_report.pdf
+CLI execution finished successfully for MSFT
+POST /analyze called with symbol=MSFT, days=5
+Run ID: 7b59ecaf
+=== Starting pipeline for MSFT (days=5) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:7b59ecaf][Node: Collect Data] Starting data collection for MSFT
+Fetching data for MSFT (last 5 days)
+Fetched 5 records for MSFT
+Fetched income statement for MSFT (2 records)
+Fetched key metrics for MSFT
+Total news items for MSFT: 9
+Data fetch complete for MSFT: 5 price rows, 9 news items
+[Run:7b59ecaf][Node: Collect Data] Completed for MSFT
+[Run:7b59ecaf][Node: Analyze] Generating analyst note for MSFT
+Generating analyst note for MSFT
+Analyst note completed for MSFT
+[Run:7b59ecaf][Node: Analyze] Completed for MSFT
+[Run:7b59ecaf][Node: Compliance] Checking compliance for MSFT
+Running compliance check.
+Compliance check done.
+[Run:7b59ecaf][Node: Compliance] Completed for MSFT
+[Run:7b59ecaf][Node: Publish] Enriching and publishing unified report for MSFT
+Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_chart.png
+Composing final report for MSFT
+Final report created for MSFT
+Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_raw.json
+Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-25_report.md
+[Run:7b59ecaf][Node: Publish] Unified report ready for MSFT -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-25_report.md
+[Run:7b59ecaf][Node: Publish] PDF version created for MSFT -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\MSFT\MSFT_2026-01-25_report.pdf
+Report successfully generated for MSFT
+POST /analyze called with symbol=AAPL, days=10
+Run ID: 16cffd73
+=== Starting pipeline for AAPL (days=10) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:16cffd73][Node: Collect Data] Starting data collection for AAPL
+Fetching data for AAPL (last 10 days)
+Fetched 10 records for AAPL
+Fetched income statement for AAPL (2 records)
+Fetched key metrics for AAPL
+Total news items for AAPL: 9
+Data fetch complete for AAPL: 10 price rows, 9 news items
+[Run:16cffd73][Node: Collect Data] Completed for AAPL
+[Run:16cffd73][Node: Analyze] Generating analyst note for AAPL
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+[Run:16cffd73][Node: Analyze] Completed for AAPL
+[Run:16cffd73][Node: Compliance] Checking compliance for AAPL
+Running compliance check.
+Compliance check done.
+[Run:16cffd73][Node: Compliance] Completed for AAPL
+[Run:16cffd73][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\AAPL\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\AAPL\AAPL_raw.json
+Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\AAPL\AAPL_2026-01-25_report.md
+[Run:16cffd73][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\AAPL\AAPL_2026-01-25_report.md
+[Run:16cffd73][Node: Publish] PDF version created for AAPL -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\AAPL\AAPL_2026-01-25_report.pdf
+Report successfully generated for AAPL
+POST /analyze called with symbol=TSLA, days=10
+Run ID: 362378d3
+=== Starting pipeline for TSLA (days=10) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:362378d3][Node: Collect Data] Starting data collection for TSLA
+Fetching data for TSLA (last 10 days)
+Fetched 10 records for TSLA
+Fetched income statement for TSLA (2 records)
+Fetched key metrics for TSLA
+Total news items for TSLA: 9
+Data fetch complete for TSLA: 10 price rows, 9 news items
+[Run:362378d3][Node: Collect Data] Completed for TSLA
+[Run:362378d3][Node: Analyze] Generating analyst note for TSLA
+Generating analyst note for TSLA
+Analyst note completed for TSLA
+[Run:362378d3][Node: Analyze] Completed for TSLA
+[Run:362378d3][Node: Compliance] Checking compliance for TSLA
+Running compliance check.
+Compliance check done.
+[Run:362378d3][Node: Compliance] Completed for TSLA
+[Run:362378d3][Node: Publish] Enriching and publishing unified report for TSLA
+Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\TSLA\TSLA_chart.png
+Composing final report for TSLA
+Final report created for TSLA
+Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\TSLA\TSLA_raw.json
+Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\TSLA\TSLA_2026-01-25_report.md
+[Run:362378d3][Node: Publish] Unified report ready for TSLA -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\TSLA\TSLA_2026-01-25_report.md
+[Run:362378d3][Node: Publish] PDF version created for TSLA -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\TSLA\TSLA_2026-01-25_report.pdf
+Report successfully generated for TSLA
+POST /analyze called with symbol=AAPL, days=5
+Report successfully generated for AAPL
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=5
+Analyst-Agent initialized.
+Compliance-Agent initialized with 2 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:None][Node: Collect Data] Starting data collection for AAPL
+[Run:None][Node: Collect Data] Completed for AAPL
+[Run:None][Node: Analyze] Generating analyst note for AAPL
+[Run:None][Node: Analyze] Completed for AAPL
+[Run:None][Node: Compliance] Checking compliance for AAPL
+[Run:None][Node: Compliance] Completed for AAPL
+[Run:None][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-13\test_e2e_workflow_creates_arti0\artifacts\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-13\test_e2e_workflow_creates_arti0\artifacts\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-13\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-13\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-13\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.pdf
+Analyst-Agent initialized.
+Compliance-Agent initialized with 1 forbidden terms.
+Supervisor-Agent initialized.
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+Running compliance check.
+Compliance check done.
+Composing final report for AAPL
+Final report created for AAPL
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=5
+Analyst-Agent initialized.
+Compliance-Agent initialized with 2 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:None][Node: Collect Data] Starting data collection for AAPL
+[Run:None][Node: Collect Data] Completed for AAPL
+[Run:None][Node: Analyze] Generating analyst note for AAPL
+[Run:None][Node: Analyze] Completed for AAPL
+[Run:None][Node: Compliance] Checking compliance for AAPL
+[Run:None][Node: Compliance] Completed for AAPL
+[Run:None][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-13\test_build_graph_executes_node0\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-13\test_build_graph_executes_node0\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-13\test_build_graph_executes_node0\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-13\test_build_graph_executes_node0\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-13\test_build_graph_executes_node0\AAPL_2026-01-25_report.pdf
+POST /analyze called with symbol=AAPL, days=5
+Report successfully generated for AAPL
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=5
+Analyst-Agent initialized.
+Compliance-Agent initialized with 2 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:None][Node: Collect Data] Starting data collection for AAPL
+[Run:None][Node: Collect Data] Completed for AAPL
+[Run:None][Node: Analyze] Generating analyst note for AAPL
+[Run:None][Node: Analyze] Completed for AAPL
+[Run:None][Node: Compliance] Checking compliance for AAPL
+[Run:None][Node: Compliance] Completed for AAPL
+[Run:None][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-14\test_e2e_workflow_creates_arti0\artifacts\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-14\test_e2e_workflow_creates_arti0\artifacts\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-14\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-14\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-14\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.pdf
+Analyst-Agent initialized.
+Compliance-Agent initialized with 1 forbidden terms.
+Supervisor-Agent initialized.
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+Running compliance check.
+Compliance check done.
+Composing final report for AAPL
+Final report created for AAPL
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=5
+Analyst-Agent initialized.
+Compliance-Agent initialized with 2 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:None][Node: Collect Data] Starting data collection for AAPL
+[Run:None][Node: Collect Data] Completed for AAPL
+[Run:None][Node: Analyze] Generating analyst note for AAPL
+[Run:None][Node: Analyze] Completed for AAPL
+[Run:None][Node: Compliance] Checking compliance for AAPL
+[Run:None][Node: Compliance] Completed for AAPL
+[Run:None][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-14\test_build_graph_executes_node0\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-14\test_build_graph_executes_node0\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-14\test_build_graph_executes_node0\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-14\test_build_graph_executes_node0\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-14\test_build_graph_executes_node0\AAPL_2026-01-25_report.pdf
+POST /analyze called with symbol=AAPL, days=5
+Report successfully generated for AAPL
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=5
+Analyst-Agent initialized.
+Compliance-Agent initialized with 2 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:None][Node: Collect Data] Starting data collection for AAPL
+[Run:None][Node: Collect Data] Completed for AAPL
+[Run:None][Node: Analyze] Generating analyst note for AAPL
+[Run:None][Node: Analyze] Completed for AAPL
+[Run:None][Node: Compliance] Checking compliance for AAPL
+[Run:None][Node: Compliance] Completed for AAPL
+[Run:None][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_e2e_workflow_creates_arti0\artifacts\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_e2e_workflow_creates_arti0\artifacts\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.pdf
+Analyst-Agent initialized.
+Compliance-Agent initialized with 1 forbidden terms.
+Supervisor-Agent initialized.
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+Running compliance check.
+Compliance check done.
+Composing final report for AAPL
+Final report created for AAPL
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=5
+Analyst-Agent initialized.
+Compliance-Agent initialized with 2 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:None][Node: Collect Data] Starting data collection for AAPL
+[Run:None][Node: Collect Data] Completed for AAPL
+[Run:None][Node: Analyze] Generating analyst note for AAPL
+[Run:None][Node: Analyze] Completed for AAPL
+[Run:None][Node: Compliance] Checking compliance for AAPL
+[Run:None][Node: Compliance] Completed for AAPL
+[Run:None][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_build_graph_executes_node0\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_build_graph_executes_node0\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_build_graph_executes_node0\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_build_graph_executes_node0\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_build_graph_executes_node0\AAPL_2026-01-25_report.pdf
+POST /analyze called with symbol=AAPL, days=5
+Run ID: e978ee80
+=== Starting pipeline for AAPL (days=5) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:e978ee80][Node: Collect Data] Starting data collection for AAPL
+Fetching data for AAPL (last 5 days)
+Fetched 5 records for AAPL
+Fetched income statement for AAPL (2 records)
+Fetched key metrics for AAPL
+Total news items for AAPL: 9
+Data fetch complete for AAPL: 5 price rows, 9 news items
+[Run:e978ee80][Node: Collect Data] Completed for AAPL
+[Run:e978ee80][Node: Analyze] Generating analyst note for AAPL
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+[Run:e978ee80][Node: Analyze] Completed for AAPL
+[Run:e978ee80][Node: Compliance] Checking compliance for AAPL
+Running compliance check.
+Compliance check done.
+[Run:e978ee80][Node: Compliance] Completed for AAPL
+[Run:e978ee80][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_analyze_endpoint0\AAPL\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_analyze_endpoint0\AAPL\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_analyze_endpoint0\AAPL\AAPL_2026-01-25_report.md
+[Run:e978ee80][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_analyze_endpoint0\AAPL\AAPL_2026-01-25_report.md
+[Run:e978ee80][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_analyze_endpoint0\AAPL\AAPL_2026-01-25_report.pdf
+Report successfully generated for AAPL
+Run ID: 835324f8
+=== Starting pipeline for AAPL (days=7) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:835324f8][Node: Collect Data] Starting data collection for AAPL
+Fetching data for AAPL (last 7 days)
+Fetched 7 records for AAPL
+Fetched income statement for AAPL (2 records)
+Fetched key metrics for AAPL
+Total news items for AAPL: 9
+Data fetch complete for AAPL: 7 price rows, 9 news items
+[Run:835324f8][Node: Collect Data] Completed for AAPL
+[Run:835324f8][Node: Analyze] Generating analyst note for AAPL
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+[Run:835324f8][Node: Analyze] Completed for AAPL
+[Run:835324f8][Node: Compliance] Checking compliance for AAPL
+Running compliance check.
+Compliance check done.
+[Run:835324f8][Node: Compliance] Completed for AAPL
+[Run:835324f8][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_pipeline_smoke0\AAPL\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_pipeline_smoke0\AAPL\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.md
+[Run:835324f8][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.md
+[Run:835324f8][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.pdf
+Fetched 5 records for AAPL
+Analyst-Agent initialized.
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+Compliance-Agent initialized with 1 forbidden terms.
+Running compliance check.
+Compliance check done.
+Data-Agent initialized with max_news=3
+Fetching data for AAPL (last 5 days)
+Data fetch complete for AAPL: 1 price rows, 1 news items
+Supervisor-Agent initialized.
+Composing final report for AAPL
+Final report created for AAPL
+Error fetching income statement for AAPL: Payment Required (quota/tier limit) (status=402)
+Error fetching key metrics for AAPL: Payment Required (quota/tier limit) (status=402)
+Total news items for AAPL: 0
+Fetched 5 records for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_save_json_and_markdown0\artifacts\x.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-15\test_save_json_and_markdown0\artifacts\x.md
+POST /analyze called with symbol=AAPL, days=5
+Report successfully generated for AAPL
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=5
+Analyst-Agent initialized.
+Compliance-Agent initialized with 2 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:None][Node: Collect Data] Starting data collection for AAPL
+[Run:None][Node: Collect Data] Completed for AAPL
+[Run:None][Node: Analyze] Generating analyst note for AAPL
+[Run:None][Node: Analyze] Completed for AAPL
+[Run:None][Node: Compliance] Checking compliance for AAPL
+[Run:None][Node: Compliance] Completed for AAPL
+[Run:None][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_e2e_workflow_creates_arti0\artifacts\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_e2e_workflow_creates_arti0\artifacts\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.pdf
+Analyst-Agent initialized.
+Compliance-Agent initialized with 1 forbidden terms.
+Supervisor-Agent initialized.
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+Running compliance check.
+Compliance check done.
+Composing final report for AAPL
+Final report created for AAPL
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=5
+Analyst-Agent initialized.
+Compliance-Agent initialized with 2 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:None][Node: Collect Data] Starting data collection for AAPL
+[Run:None][Node: Collect Data] Completed for AAPL
+[Run:None][Node: Analyze] Generating analyst note for AAPL
+[Run:None][Node: Analyze] Completed for AAPL
+[Run:None][Node: Compliance] Checking compliance for AAPL
+[Run:None][Node: Compliance] Completed for AAPL
+[Run:None][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_build_graph_executes_node0\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_build_graph_executes_node0\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_build_graph_executes_node0\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_build_graph_executes_node0\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_build_graph_executes_node0\AAPL_2026-01-25_report.pdf
+POST /analyze called with symbol=AAPL, days=5
+Run ID: f3dc14f0
+=== Starting pipeline for AAPL (days=5) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:f3dc14f0][Node: Collect Data] Starting data collection for AAPL
+Fetching data for AAPL (last 5 days)
+Fetched 5 records for AAPL
+Fetched income statement for AAPL (2 records)
+Fetched key metrics for AAPL
+Total news items for AAPL: 9
+Data fetch complete for AAPL: 5 price rows, 9 news items
+[Run:f3dc14f0][Node: Collect Data] Completed for AAPL
+[Run:f3dc14f0][Node: Analyze] Generating analyst note for AAPL
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+[Run:f3dc14f0][Node: Analyze] Completed for AAPL
+[Run:f3dc14f0][Node: Compliance] Checking compliance for AAPL
+Running compliance check.
+Compliance check done.
+[Run:f3dc14f0][Node: Compliance] Completed for AAPL
+[Run:f3dc14f0][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_analyze_endpoint0\AAPL\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_analyze_endpoint0\AAPL\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_analyze_endpoint0\AAPL\AAPL_2026-01-25_report.md
+[Run:f3dc14f0][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_analyze_endpoint0\AAPL\AAPL_2026-01-25_report.md
+[Run:f3dc14f0][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_analyze_endpoint0\AAPL\AAPL_2026-01-25_report.pdf
+Report successfully generated for AAPL
+Run ID: 8a7d0570
+=== Starting pipeline for AAPL (days=7) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:8a7d0570][Node: Collect Data] Starting data collection for AAPL
+Fetching data for AAPL (last 7 days)
+Fetched 7 records for AAPL
+Fetched income statement for AAPL (2 records)
+Fetched key metrics for AAPL
+Total news items for AAPL: 9
+Data fetch complete for AAPL: 7 price rows, 9 news items
+[Run:8a7d0570][Node: Collect Data] Completed for AAPL
+[Run:8a7d0570][Node: Analyze] Generating analyst note for AAPL
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+[Run:8a7d0570][Node: Analyze] Completed for AAPL
+[Run:8a7d0570][Node: Compliance] Checking compliance for AAPL
+Running compliance check.
+Compliance check done.
+[Run:8a7d0570][Node: Compliance] Completed for AAPL
+[Run:8a7d0570][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_pipeline_smoke0\AAPL\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_pipeline_smoke0\AAPL\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.md
+[Run:8a7d0570][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.md
+[Run:8a7d0570][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.pdf
+Fetched 5 records for AAPL
+Analyst-Agent initialized.
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+Compliance-Agent initialized with 1 forbidden terms.
+Running compliance check.
+Compliance check done.
+Data-Agent initialized with max_news=3
+Fetching data for AAPL (last 5 days)
+Data fetch complete for AAPL: 1 price rows, 1 news items
+Supervisor-Agent initialized.
+Composing final report for AAPL
+Final report created for AAPL
+Error fetching income statement for AAPL: Payment Required (quota/tier limit) (status=402)
+Error fetching key metrics for AAPL: Payment Required (quota/tier limit) (status=402)
+Total news items for AAPL: 0
+Fetched 5 records for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_save_json_and_markdown0\artifacts\x.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-16\test_save_json_and_markdown0\artifacts\x.md
+POST /analyze called with symbol=AAPL, days=5
+Report successfully generated for AAPL
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=5
+Analyst-Agent initialized.
+Compliance-Agent initialized with 2 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:None][Node: Collect Data] Starting data collection for AAPL
+[Run:None][Node: Collect Data] Completed for AAPL
+[Run:None][Node: Analyze] Generating analyst note for AAPL
+[Run:None][Node: Analyze] Completed for AAPL
+[Run:None][Node: Compliance] Checking compliance for AAPL
+[Run:None][Node: Compliance] Completed for AAPL
+[Run:None][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_e2e_workflow_creates_arti0\artifacts\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_e2e_workflow_creates_arti0\artifacts\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.pdf
+Analyst-Agent initialized.
+Compliance-Agent initialized with 1 forbidden terms.
+Supervisor-Agent initialized.
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+Running compliance check.
+Compliance check done.
+Composing final report for AAPL
+Final report created for AAPL
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=5
+Analyst-Agent initialized.
+Compliance-Agent initialized with 2 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:None][Node: Collect Data] Starting data collection for AAPL
+[Run:None][Node: Collect Data] Completed for AAPL
+[Run:None][Node: Analyze] Generating analyst note for AAPL
+[Run:None][Node: Analyze] Completed for AAPL
+[Run:None][Node: Compliance] Checking compliance for AAPL
+[Run:None][Node: Compliance] Completed for AAPL
+[Run:None][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_build_graph_executes_node0\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_build_graph_executes_node0\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_build_graph_executes_node0\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_build_graph_executes_node0\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_build_graph_executes_node0\AAPL_2026-01-25_report.pdf
+POST /analyze called with symbol=AAPL, days=5
+Run ID: ddc84628
+=== Starting pipeline for AAPL (days=5) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:ddc84628][Node: Collect Data] Starting data collection for AAPL
+Fetching data for AAPL (last 5 days)
+Fetched 5 records for AAPL
+Fetched income statement for AAPL (2 records)
+Fetched key metrics for AAPL
+Total news items for AAPL: 9
+Data fetch complete for AAPL: 5 price rows, 9 news items
+[Run:ddc84628][Node: Collect Data] Completed for AAPL
+[Run:ddc84628][Node: Analyze] Generating analyst note for AAPL
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+[Run:ddc84628][Node: Analyze] Completed for AAPL
+[Run:ddc84628][Node: Compliance] Checking compliance for AAPL
+Running compliance check.
+Compliance check done.
+[Run:ddc84628][Node: Compliance] Completed for AAPL
+[Run:ddc84628][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_analyze_endpoint0\AAPL\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_analyze_endpoint0\AAPL\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_analyze_endpoint0\AAPL\AAPL_2026-01-25_report.md
+[Run:ddc84628][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_analyze_endpoint0\AAPL\AAPL_2026-01-25_report.md
+[Run:ddc84628][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_analyze_endpoint0\AAPL\AAPL_2026-01-25_report.pdf
+Report successfully generated for AAPL
+CLI called with symbol= MSFT days=5 outdir=artifacts
+CLI execution finished successfully for MSFT
+CLI called with symbol= META days=5 outdir=artifacts
+Run ID: cbc51911
+=== Starting pipeline for AAPL (days=7) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:cbc51911][Node: Collect Data] Starting data collection for AAPL
+Fetching data for AAPL (last 7 days)
+Fetched 7 records for AAPL
+Fetched income statement for AAPL (2 records)
+Fetched key metrics for AAPL
+Total news items for AAPL: 9
+Data fetch complete for AAPL: 7 price rows, 9 news items
+[Run:cbc51911][Node: Collect Data] Completed for AAPL
+[Run:cbc51911][Node: Analyze] Generating analyst note for AAPL
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+[Run:cbc51911][Node: Analyze] Completed for AAPL
+[Run:cbc51911][Node: Compliance] Checking compliance for AAPL
+Running compliance check.
+Compliance check done.
+[Run:cbc51911][Node: Compliance] Completed for AAPL
+[Run:cbc51911][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_pipeline_smoke0\AAPL\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_pipeline_smoke0\AAPL\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.md
+[Run:cbc51911][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.md
+[Run:cbc51911][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-17\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.pdf
+[Run:cbc51911] Workflow timeout after 170s (symbol=AAPL).
+Run ID: 351b82b3
+=== Starting pipeline for AAPL (days=7) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:351b82b3][Node: Collect Data] Starting data collection for AAPL
+Fetching data for AAPL (last 7 days)
+Fetched 7 records for AAPL
+Fetched income statement for AAPL (2 records)
+Run ID: 66b6120e
+=== Starting pipeline for AAPL (days=7) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:66b6120e][Node: Collect Data] Starting data collection for AAPL
+Fetching data for AAPL (last 7 days)
+Fetched 7 records for AAPL
+Fetched income statement for AAPL (2 records)
+Fetched key metrics for AAPL
+Total news items for AAPL: 9
+Data fetch complete for AAPL: 7 price rows, 9 news items
+[Run:66b6120e][Node: Collect Data] Completed for AAPL
+[Run:66b6120e][Node: Analyze] Generating analyst note for AAPL
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+[Run:66b6120e][Node: Analyze] Completed for AAPL
+[Run:66b6120e][Node: Compliance] Checking compliance for AAPL
+Running compliance check.
+Compliance check done.
+[Run:66b6120e][Node: Compliance] Completed for AAPL
+[Run:66b6120e][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-19\test_pipeline_smoke0\AAPL\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-19\test_pipeline_smoke0\AAPL\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-19\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.md
+[Run:66b6120e][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-19\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.md
+[Run:66b6120e][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-19\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.pdf
+Run ID: 7171eb23
+=== Starting pipeline for AAPL (days=3) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:7171eb23][Node: Collect Data] Starting data collection for AAPL
+Fetching data for AAPL (last 3 days)
+Fetched 3 records for AAPL
+Fetched income statement for AAPL (2 records)
+Fetched key metrics for AAPL
+Total news items for AAPL: 9
+Data fetch complete for AAPL: 3 price rows, 9 news items
+[Run:7171eb23][Node: Collect Data] Completed for AAPL
+[Run:7171eb23][Node: Analyze] Generating analyst note for AAPL
+Generating analyst note for AAPL
+Run ID: 8913171b
+=== Starting pipeline for AAPL (days=3) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:8913171b][Node: Collect Data] Starting data collection for AAPL
+Fetching data for AAPL (last 3 days)
+Fetched 3 records for AAPL
+Fetched income statement for AAPL (2 records)
+Fetched key metrics for AAPL
+Total news items for AAPL: 9
+Data fetch complete for AAPL: 3 price rows, 9 news items
+[Run:8913171b][Node: Collect Data] Completed for AAPL
+[Run:8913171b][Node: Analyze] Generating analyst note for AAPL
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+[Run:8913171b][Node: Analyze] Completed for AAPL
+[Run:8913171b][Node: Compliance] Checking compliance for AAPL
+Running compliance check.
+Compliance check done.
+[Run:8913171b][Node: Compliance] Completed for AAPL
+[Run:8913171b][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-21\test_pipeline_smoke0\AAPL\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-21\test_pipeline_smoke0\AAPL\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-21\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.md
+[Run:8913171b][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-21\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.md
+[Run:8913171b][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-21\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.pdf
+POST /analyze called with symbol=AAPL, days=5
+Report successfully generated for AAPL
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=5
+Analyst-Agent initialized.
+Compliance-Agent initialized with 2 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:None][Node: Collect Data] Starting data collection for AAPL
+[Run:None][Node: Collect Data] Completed for AAPL
+[Run:None][Node: Analyze] Generating analyst note for AAPL
+[Run:None][Node: Analyze] Completed for AAPL
+[Run:None][Node: Compliance] Checking compliance for AAPL
+[Run:None][Node: Compliance] Completed for AAPL
+[Run:None][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_e2e_workflow_creates_arti0\artifacts\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_e2e_workflow_creates_arti0\artifacts\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_e2e_workflow_creates_arti0\artifacts\AAPL_2026-01-25_report.pdf
+Analyst-Agent initialized.
+Compliance-Agent initialized with 1 forbidden terms.
+Supervisor-Agent initialized.
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+Running compliance check.
+Compliance check done.
+Composing final report for AAPL
+Final report created for AAPL
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=5
+Analyst-Agent initialized.
+Compliance-Agent initialized with 2 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:None][Node: Collect Data] Starting data collection for AAPL
+[Run:None][Node: Collect Data] Completed for AAPL
+[Run:None][Node: Analyze] Generating analyst note for AAPL
+[Run:None][Node: Analyze] Completed for AAPL
+[Run:None][Node: Compliance] Checking compliance for AAPL
+[Run:None][Node: Compliance] Completed for AAPL
+[Run:None][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_build_graph_executes_node0\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_build_graph_executes_node0\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_build_graph_executes_node0\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_build_graph_executes_node0\AAPL_2026-01-25_report.md
+[Run:None][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_build_graph_executes_node0\AAPL_2026-01-25_report.pdf
+POST /analyze called with symbol=AAPL, days=5
+Run ID: 31f716c1
+=== Starting pipeline for AAPL (days=5) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:31f716c1][Node: Collect Data] Starting data collection for AAPL
+Fetching data for AAPL (last 5 days)
+Fetched 5 records for AAPL
+Fetched income statement for AAPL (2 records)
+Fetched key metrics for AAPL
+Total news items for AAPL: 9
+Data fetch complete for AAPL: 5 price rows, 9 news items
+[Run:31f716c1][Node: Collect Data] Completed for AAPL
+[Run:31f716c1][Node: Analyze] Generating analyst note for AAPL
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+[Run:31f716c1][Node: Analyze] Completed for AAPL
+[Run:31f716c1][Node: Compliance] Checking compliance for AAPL
+Running compliance check.
+Compliance check done.
+[Run:31f716c1][Node: Compliance] Completed for AAPL
+[Run:31f716c1][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_analyze_endpoint0\AAPL\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_analyze_endpoint0\AAPL\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_analyze_endpoint0\AAPL\AAPL_2026-01-25_report.md
+[Run:31f716c1][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_analyze_endpoint0\AAPL\AAPL_2026-01-25_report.md
+[Run:31f716c1][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_analyze_endpoint0\AAPL\AAPL_2026-01-25_report.pdf
+Report successfully generated for AAPL
+CLI called with symbol= MSFT days=5 outdir=artifacts
+CLI execution finished successfully for MSFT
+CLI called with symbol= META days=5 outdir=artifacts
+Run ID: e8963329
+=== Starting pipeline for AAPL (days=3) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:e8963329][Node: Collect Data] Starting data collection for AAPL
+Fetching data for AAPL (last 3 days)
+Fetched 3 records for AAPL
+Fetched income statement for AAPL (2 records)
+Fetched key metrics for AAPL
+Total news items for AAPL: 9
+Data fetch complete for AAPL: 3 price rows, 9 news items
+[Run:e8963329][Node: Collect Data] Completed for AAPL
+[Run:e8963329][Node: Analyze] Generating analyst note for AAPL
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+[Run:e8963329][Node: Analyze] Completed for AAPL
+[Run:e8963329][Node: Compliance] Checking compliance for AAPL
+Running compliance check.
+Compliance check done.
+[Run:e8963329][Node: Compliance] Completed for AAPL
+[Run:e8963329][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_pipeline_smoke0\AAPL\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_pipeline_smoke0\AAPL\AAPL_raw.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.md
+[Run:e8963329][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.md
+[Run:e8963329][Node: Publish] PDF version created for AAPL -> C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_pipeline_smoke0\AAPL\AAPL_2026-01-25_report.pdf
+Fetched 5 records for AAPL
+Analyst-Agent initialized.
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+Compliance-Agent initialized with 1 forbidden terms.
+Running compliance check.
+Compliance check done.
+Data-Agent initialized with max_news=3
+Fetching data for AAPL (last 5 days)
+Data fetch complete for AAPL: 1 price rows, 1 news items
+Supervisor-Agent initialized.
+Composing final report for AAPL
+Final report created for AAPL
+Error fetching income statement for AAPL: Payment Required (quota/tier limit) (status=402)
+Error fetching key metrics for AAPL: Payment Required (quota/tier limit) (status=402)
+Total news items for AAPL: 0
+Fetched 5 records for AAPL
+Saved JSON: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_save_json_and_markdown0\artifacts\x.json
+Saved Markdown: C:\Users\HP\AppData\Local\Temp\pytest-of-HP\pytest-22\test_save_json_and_markdown0\artifacts\x.md
+CLI called with symbol= AAPL days=10 outdir=artifacts
+Run ID: 129f3b08
+=== Starting pipeline for AAPL (days=10) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:129f3b08][Node: Collect Data] Starting data collection for AAPL
+Fetching data for AAPL (last 10 days)
+Fetched 10 records for AAPL
+Fetched income statement for AAPL (2 records)
+Fetched key metrics for AAPL
+Total news items for AAPL: 9
+Data fetch complete for AAPL: 10 price rows, 9 news items
+[Run:129f3b08][Node: Collect Data] Completed for AAPL
+[Run:129f3b08][Node: Analyze] Generating analyst note for AAPL
+Generating analyst note for AAPL
+Analyst note completed for AAPL
+[Run:129f3b08][Node: Analyze] Completed for AAPL
+[Run:129f3b08][Node: Compliance] Checking compliance for AAPL
+Running compliance check.
+Compliance check done.
+[Run:129f3b08] Compliance redaction applied for AAPL
+[Run:129f3b08][Node: Compliance] Completed for AAPL
+[Run:129f3b08][Node: Publish] Enriching and publishing unified report for AAPL
+Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\AAPL\AAPL_chart.png
+Composing final report for AAPL
+Final report created for AAPL
+Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\AAPL\AAPL_raw.json
+Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\AAPL\AAPL_2026-01-25_report.md
+[Run:129f3b08][Node: Publish] Unified report ready for AAPL -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\AAPL\AAPL_2026-01-25_report.md
+[Run:129f3b08][Node: Publish] PDF version created for AAPL -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\AAPL\AAPL_2026-01-25_report.pdf
+CLI execution finished successfully for AAPL
+POST /analyze called with symbol=TSLA, days=5
+Run ID: d06f59cb
+=== Starting pipeline for TSLA (days=5) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:d06f59cb][Node: Collect Data] Starting data collection for TSLA
+Fetching data for TSLA (last 5 days)
+Fetched 5 records for TSLA
+Fetched income statement for TSLA (2 records)
+Fetched key metrics for TSLA
+Total news items for TSLA: 9
+Data fetch complete for TSLA: 5 price rows, 9 news items
+[Run:d06f59cb][Node: Collect Data] Completed for TSLA
+[Run:d06f59cb][Node: Analyze] Generating analyst note for TSLA
+Generating analyst note for TSLA
+Analyst note completed for TSLA
+[Run:d06f59cb][Node: Analyze] Completed for TSLA
+[Run:d06f59cb][Node: Compliance] Checking compliance for TSLA
+Running compliance check.
+Compliance check done.
+[Run:d06f59cb][Node: Compliance] Completed for TSLA
+[Run:d06f59cb][Node: Publish] Enriching and publishing unified report for TSLA
+Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\TSLA\TSLA_chart.png
+Composing final report for TSLA
+Final report created for TSLA
+Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\TSLA\TSLA_raw.json
+Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\TSLA\TSLA_2026-01-25_report.md
+[Run:d06f59cb][Node: Publish] Unified report ready for TSLA -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\TSLA\TSLA_2026-01-25_report.md
+[Run:d06f59cb][Node: Publish] PDF version created for TSLA -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\TSLA\TSLA_2026-01-25_report.pdf
+Report successfully generated for TSLA
+POST /analyze called with symbol=TSLA, days=5
+Run ID: 5d672c97
+=== Starting pipeline for TSLA (days=5) ===
+Initializing LLM: provider=openai, model=gpt-5, temperature=1.0
+Data-Agent initialized with max_news=9
+Analyst-Agent initialized.
+Compliance-Agent initialized with 9 forbidden terms.
+Supervisor-Agent initialized.
+LangGraph pipeline successfully built.
+[Run:5d672c97][Node: Collect Data] Starting data collection for TSLA
+Fetching data for TSLA (last 5 days)
+Fetched 5 records for TSLA
+Fetched income statement for TSLA (2 records)
+Fetched key metrics for TSLA
+Total news items for TSLA: 9
+Data fetch complete for TSLA: 5 price rows, 9 news items
+[Run:5d672c97][Node: Collect Data] Completed for TSLA
+[Run:5d672c97][Node: Analyze] Generating analyst note for TSLA
+Generating analyst note for TSLA
+Analyst note completed for TSLA
+[Run:5d672c97][Node: Analyze] Completed for TSLA
+[Run:5d672c97][Node: Compliance] Checking compliance for TSLA
+Running compliance check.
+TSLA: ComplianceAgent failed, using analyst note as fallback. (cannot schedule new futures after interpreter shutdown)
+[Run:5d672c97][Node: Compliance] Completed for TSLA
+[Run:5d672c97][Node: Publish] Enriching and publishing unified report for TSLA
+Saved price chart to C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\TSLA\TSLA_chart.png
+Composing final report for TSLA
+SupervisorAgent failed for TSLA, falling back to raw compliant text. (cannot schedule new futures after interpreter shutdown)
+Saved JSON: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\TSLA\TSLA_raw.json
+Saved Markdown: C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\TSLA\TSLA_2026-01-25_report.md
+[Run:5d672c97][Node: Publish] Unified report ready for TSLA -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\TSLA\TSLA_2026-01-25_report.md
+[Run:5d672c97][Node: Publish] PDF version created for TSLA -> C:\Users\HP\PycharmProjects\ai\multiagent-stock-research\artifacts\TSLA\TSLA_2026-01-25_report.pdf
+Report successfully generated for TSLA

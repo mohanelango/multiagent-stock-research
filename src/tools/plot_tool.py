@@ -1,6 +1,7 @@
 import os
 import pandas as pd
-import matplotlib.dates as mdates
+import matplotlib
+matplotlib.use(os.environ.get("MPLBACKEND", "Agg"))
 import matplotlib.pyplot as plt
 from typing import List
 from src.utils.logger import get_logger

@@ -9,3 +9,7 @@ __pycache__/
 *.pyc
 .env
 .pytest_cache
+logs/*
+.coveragerc
+.coverage
+.pytest_cache/*

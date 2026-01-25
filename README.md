@@ -232,7 +232,7 @@ curl -X POST http://127.0.0.1:8000/analyze \
 ---
 ## Results
 
-The system has been tested on multiple tickers (AAPL, MSFT, META) across 7–30 day ranges, consistently generating complete reports that include:
+The system has been tested on multiple tickers (AAPL, MSFT, META) across 7–10 day ranges, consistently generating complete reports that include:
 
 1. Snapshots.
 2. Fundamental Highlights
@@ -252,18 +252,84 @@ AAPL_chart.png
 AAPL_raw.json
 ```
 ---
-## Tests & Quality Assurance
 
-This repository uses pytest for unit and integration testing.
-Mock-based tests validate the behavior of each Agent independently (DataAgent, AnalystAgent, ComplianceAgent, SupervisorAgent).
-### Run All Tests
+## User Interface 
+### Interactive web application using Streamlit
+ - Streamlit frontend abstracts away backend complexity and calls FastAPI /analyze.
+### Clear user guidance
+- UI includes usage tips (example tickers, quota guidance, PDF export prerequisites).
+### Error messaging
+- Backend returns structured JSON errors (status=error, reason, optional suggested_action) surfaced to users.
+### Run UI
 ```bash
-pytest -v --disable-warnings
+streamlit run src/ui/streamlit_app.py
+
+```
+### Sample UI Output:
+![UI Example](docs/Screenshots/Ui.png)
+---
+## Resilience & Monitoring 
+
+### Retry logic with exponential backoff
+
+- Implemented via src/utils/resilience.py and used in:
+   - src/tools/fundamentals_tool.py (transient HTTP status retries)
+   - src/tools/price_tool.py (transient yfinance failures)
+### Timeout handling
+
+ - Per-attempt timeouts enforced in retry wrapper.
+ - Global workflow timeout enforced in orchestrator (ThreadPoolExecutor + fut.result(timeout=...)).
+### Loop limits / iteration caps
+- Orchestration graph is a finite DAG with fixed nodes (no unbounded loops by design).
+### Graceful handling of agent failures
+- AnalystAgent/ComplianceAgent failures fall back to safe defaults while preserving report generation.
+- SupervisorAgent failures fall back to compliant text.
+### Traceability
+- Run-level context (run_id/symbol) is logged for correlating failures, retries, and fallback events.
+---
+## Logging, Maintenance, and Operations
+
+- Logs are written to:
+  - Console output (developer visibility)
+  - Rotating file: logs/app.log (rotation enabled; UTF-8 encoding)
+
+- Each pipeline run logs a unique run_id to support debugging across retries/failures.
+
+- Recommended maintenance:
+  - Keep RSS sources current (some feeds may return 404/429; retries are applied, but replace dead feeds).
+  - If strict-mode is enabled, ensure your RSS sources and fundamentals provider are stable to avoid aborts.
+  -  For PDF export, keep pandoc and wkhtmltopdf installed and available in PATH.
+---
+## Tests & Quality Assurance
+### Comprehensive Testing Suite
+- Unit tests cover core tools and agent behavior (data fetchers, agent output handling, strict-mode failure paths).
+- Integration tests validate the orchestrator flow (agent-to-agent state passing, strict-mode abort, graceful degradation).
+- End-to-end smoke tests exercise complete workflows via CLI/API entrypoints using mocks (to avoid external API dependency).
+- Coverage reporting is enabled via pytest-cov for core modules.
+### Run tests + coverage
+```bash
+pytest -q --disable-warnings --maxfail=1
+pytest -q --cov=src --cov-report=term-missing
+
 ```
 ### Run a Single Test File
 ```bash
-pytest tests/test_analyst_agent.py -v
+pytest tests/unit/agents/test_analyst_agent.py -v
 ```
+---
+## Safety & Security Guardrails 
+
+#### Input validation / sanitization
+ - Central request validation via validate_request() (symbol, days, outdir).
+ - Ticker validity pre-check via yfinance before pipeline execution (rejects invalid/delisted symbols).
+#### Output filtering / content safety
+ - Neutrality enforcement via enforce_neutrality() and forbidden phrase filtering in the ComplianceAgent.
+ - ComplianceAgent explicitly rewrites to remove prohibited claims and ensure regulatory-safe language.
+#### Graceful error handling
+ - Strict-mode abort produces structured, user-facing errors with suggested actions.
+ - Non-strict mode proceeds with warnings and “N/A placeholders” where needed.
+#### Logging for compliance/debug
+ - Consistent structured logging across tools, agents, and orchestrator (including warnings/fallbacks).
 ---
 ## Contributing
 PRs are welcome! Whether you're fixing a bug, improving PDF formatting, or adding a new tool — open a PR and let's build better agent workflows together.

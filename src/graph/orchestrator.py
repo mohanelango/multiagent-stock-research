@@ -1,25 +1,90 @@
-import yfinance as yf
+# src/graph/orchestrator.py
+from __future__ import annotations
+
+import uuid
 import yaml
+import textwrap
+import re
+import os
+import concurrent.futures as cf
+from datetime import datetime
 from typing import Dict, Any
+
 from dotenv import load_dotenv
 from langgraph.graph import StateGraph, START, END
 from langchain_openai import ChatOpenAI
+
+from src.guardrails.inputs import validate_request
+from src.guardrails.outputs import enforce_neutrality
 from src.utils.helper import safe_num
+from src.utils.log_context import set_log_context
 from src.utils.logger import get_logger
 from src.tools.math_tool import basic_return_stats
 from src.tools.plot_tool import save_price_plot
 from src.tools.storage_tool import save_json, save_markdown, render_filename
+
 from src.agents.data_agent import DataAgent
 from src.agents.analyst_agent import AnalystAgent
 from src.agents.compliance_agent import ComplianceAgent
 from src.agents.supervisor_agent import SupervisorAgent
-import textwrap
-import pypandoc
-import re
-import os
-from datetime import datetime
 
 logger = get_logger(__name__)
+
+
+def _state_warn(state: dict, msg: str):
+    """Accumulate non-fatal warnings for inclusion in report + logs."""
+    logger.warning(msg)
+    state.setdefault("__warnings__", []).append(msg)
+
+
+def _bundle_error_summary(bundle: dict) -> list[str]:
+    """
+    Collect errors from DataAgent output if present.
+    Supports:
+      - bundle["__errors__"] list of dicts/strings
+      - bundle["prices"]["__error__"]
+      - bundle["fundamentals"]["__errors__"]
+      - news items with "__error__"
+    """
+    msgs: list[str] = []
+
+    for e in bundle.get("__errors__", []) or []:
+        if isinstance(e, dict):
+            where = e.get("where", "unknown")
+            message = e.get("message", "") or e.get("text", "")
+            msgs.append(f"{where}: {message}".strip())
+        else:
+            msgs.append(str(e))
+
+    p_err = (bundle.get("prices") or {}).get("__error__")
+    if p_err:
+        if isinstance(p_err, dict):
+            msgs.append(f"prices: {p_err.get('message', '')}".strip())
+        else:
+            msgs.append(f"prices: {p_err}")
+
+    f = bundle.get("fundamentals") or {}
+    for e in f.get("__errors__", []) or []:
+        if isinstance(e, dict):
+            msgs.append(f"{e.get('where', 'unknown')}: {e.get('message', '')}".strip())
+        else:
+            msgs.append(str(e))
+
+    news = bundle.get("news")
+    if isinstance(news, list):
+        for n in news:
+            if isinstance(n, dict) and n.get("__error__"):
+                src = n.get("source", "")
+                msgs.append(f"news: {n.get('__error__')}{' | ' + src if src else ''}")
+
+    out: list[str] = []
+    seen = set()
+    for m in msgs:
+        m = str(m).strip()
+        if m and m not in seen:
+            out.append(m)
+            seen.add(m)
+    return out
 
 
 def _llm_from_cfg(cfg: Dict[str, Any]) -> ChatOpenAI:
@@ -32,11 +97,11 @@ def _llm_from_cfg(cfg: Dict[str, Any]) -> ChatOpenAI:
     temperature = cfg["llm"].get("temperature", 1.0)
     max_tokens = cfg["llm"].get("max_tokens", 3500)
 
-    # Force safe defaults for GPT-5 or GPT-4o models
     if any(tag in model for tag in ["gpt-5", "gpt-4o"]) and temperature != 1.0:
         logger.warning(
-            "Model %s does not support custom temperature (%.1f). "
-            "Overriding to 1.0 for compatibility.", model, temperature
+            "Model %s does not support custom temperature (%.1f). Overriding to 1.0 for compatibility.",
+            model,
+            temperature,
         )
         temperature = 1.0
 
@@ -44,9 +109,6 @@ def _llm_from_cfg(cfg: Dict[str, Any]) -> ChatOpenAI:
     return ChatOpenAI(model=model, temperature=temperature, max_tokens=max_tokens)
 
 
-# ----------------------------------------------------------------------
-# BUILD LANGGRAPH PIPELINE
-# ----------------------------------------------------------------------
 def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
     """
     Builds the LangGraph orchestration pipeline connecting all 4 agents.
@@ -55,31 +117,28 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
     rss = cfg["news"]["sources"]
     max_news = cfg["orchestration"]["max_news"]
 
-    # Initialize agents
     data_agent = DataAgent(llm, rss_templates=rss, fmp_api_key=fmp_api_key or "demo", max_news=max_news)
     analyst = AnalystAgent(llm)
     compliance = ComplianceAgent(
         llm,
         forbidden=cfg["compliance"]["forbidden_phrases"],
-        disclosure=cfg["compliance"]["disclosure"]
+        disclosure=cfg["compliance"]["disclosure"],
     )
     supervisor = SupervisorAgent(llm)
 
-    # Define graph with plain dict state
     g = StateGraph(dict)
 
-    # ---------------- Nodes ----------------
     def node_collect_data(state: dict):
         symbol, days = state["symbol"], state["days"]
-        logger.info("[Node: Collect Data] Starting data collection for %s", symbol)
+        logger.info("[Run:%s][Node: Collect Data] Starting data collection for %s", state.get("run_id"), symbol)
+
         bundle = data_agent.run(symbol, days)
         state["bundle"] = bundle
-        logger.info("[Node: Collect Data] Completed for %s", symbol)
 
-        # ---------- STRICT MODE EARLY-ABORT ----------
-        strict = bool(cfg.get("strict_mode", True))
+        logger.info("[Run:%s][Node: Collect Data] Completed for %s", state.get("run_id"), symbol)
 
-        # Extract blocks
+        strict = bool(cfg.get("StrictMode", {}).get("strict_mode", True))
+
         prices_ok = bool(bundle.get("prices", {}).get("data"))
         fundamentals = bundle.get("fundamentals", {}) or {}
         inc_list = fundamentals.get("income_statement")
@@ -88,7 +147,7 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
         # Detect upstream API errors if fundamentals_tool exposed them
         inc_err = fundamentals.get("__error__") if isinstance(fundamentals,
                                                               dict) and "__error__" in fundamentals else None
-        # Some DataAgents merge per-endpoint dicts; handle that shape too:
+
         if isinstance(inc_list, dict) and "__error__" in inc_list:
             inc_err = inc_list["__error__"]
             inc_list = inc_list.get("income_statement", [])
@@ -99,22 +158,26 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
         else:
             met_err = None
 
-        news_ok = bool(bundle.get("news"))
+        # News: treat "ok" as presence of at least one valid item (not just error markers)
+        news_items = bundle.get("news", [])
+        if isinstance(news_items, list):
+            news_ok = any(isinstance(n, dict) and not n.get("__error__") for n in news_items) or (len(news_items) > 0)
+        else:
+            news_ok = False
 
-        # If we saw explicit 402 from either fundamentals call, abort with suggestion
         def _mk402_message(where: str, err: dict) -> str:
             return (
-                f"Upstream API failure ({where}) for {symbol}: status={err.get('status')} "
-                f"- {err.get('message')}. Suggestion: provide a valid paid FMP API key or disable strict_mode."
+                f"Upstream API failure ({where}) for {symbol}: status={err.get('status')} - {err.get('message')}. "
+                "Suggestion: provide a valid paid FMP API key or disable strict_mode."
             )
 
-        if inc_err and inc_err.get("status") == 402:
+        if inc_err and isinstance(inc_err, dict) and inc_err.get("status") == 402:
             msg = _mk402_message("income_statement", inc_err)
             logger.error(msg)
             state["__fatal__"] = msg
             raise ValueError(msg)
 
-        if met_err and met_err.get("status") == 402:
+        if met_err and isinstance(met_err, dict) and met_err.get("status") == 402:
             msg = _mk402_message("key_metrics_ttm", met_err)
             logger.error(msg)
             state["__fatal__"] = msg
@@ -122,53 +185,109 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
 
         if strict:
             missing = []
-            if not prices_ok: missing.append("prices")
-            if not (inc_list and isinstance(inc_list, list)): missing.append("income_statement")
-            if not (met_list and isinstance(met_list, list)): missing.append("key_metrics_ttm")
-            if not news_ok: missing.append("news")
+            if not prices_ok:
+                missing.append("prices")
+            if not (inc_list and isinstance(inc_list, list)):
+                missing.append("income_statement")
+            if not (met_list and isinstance(met_list, list)):
+                missing.append("key_metrics_ttm")
+            if not news_ok:
+                missing.append("news")
 
             if missing:
-                # If fundamentals are missing and we don't have explicit 402 info, still guide the user
                 hint = ""
                 if "income_statement" in missing or "key_metrics_ttm" in missing:
                     hint = " Possible causes: free FMP quota exhausted, invalid API key, or endpoint not available for this ticker."
-
                 reason = f"Strict mode abort: missing critical data: {', '.join(missing)} for {symbol}.{hint}"
                 logger.error("%s", reason)
                 state["__fatal__"] = reason
                 raise ValueError(reason)
 
+        # Non-strict: proceed, but record warnings
+        if not strict:
+            for m in _bundle_error_summary(bundle):
+                _state_warn(state, f"Data warning for {symbol}: {m}")
+
+            if not prices_ok:
+                _state_warn(state, f"{symbol}: Price series missing/empty. Report generation may fail.")
+            if not (inc_list and isinstance(inc_list, list)):
+                _state_warn(state, f"{symbol}: Fundamentals income_statement missing. Using N/A placeholders.")
+            if not (met_list and isinstance(met_list, list)):
+                _state_warn(state, f"{symbol}: Fundamentals key_metrics_ttm missing. Using N/A placeholders.")
+            if not news_ok:
+                _state_warn(state, f"{symbol}: News feed empty/unavailable. Proceeding without headlines.")
+
         return state
 
     def node_analyze(state: dict):
-        logger.info("[Node: Analyze] Generating analyst note for %s", state["symbol"])
-        note = analyst.run(state["bundle"], state["days"])
-        state["analyst_note"] = note
-        logger.info("[Node: Analyze] Completed for %s", state["symbol"])
+        symbol = state["symbol"]
+        logger.info("[Run:%s][Node: Analyze] Generating analyst note for %s", state.get("run_id"), symbol)
+
+        try:
+            note = analyst.run(state["bundle"], state["days"])
+            if not isinstance(note, str) or not note.strip():
+                raise ValueError("AnalystAgent returned empty output.")
+            state["analyst_note"] = note
+        except Exception as e:
+            _state_warn(state, f"{symbol}: AnalystAgent failed, using fallback note. ({e})")
+            state["analyst_note"] = (
+                "Analyst note unavailable due to an upstream generation error. "
+                "The report continues with available market data and disclosures."
+            )
+
+        logger.info("[Run:%s][Node: Analyze] Completed for %s", state.get("run_id"), symbol)
         return state
 
     def node_compliance(state: dict):
-        logger.info("[Node: Compliance] Checking compliance for %s", state["symbol"])
-        final_note = compliance.run(state["analyst_note"])
+        symbol = state["symbol"]
+        logger.info("[Run:%s][Node: Compliance] Checking compliance for %s", state.get("run_id"), symbol)
+
+        try:
+            final_note = compliance.run(state["analyst_note"])
+            if not isinstance(final_note, str) or not final_note.strip():
+                raise ValueError("ComplianceAgent returned empty output.")
+        except Exception as e:
+            _state_warn(state, f"{symbol}: ComplianceAgent failed, using analyst note as fallback. ({e})")
+            final_note = state.get("analyst_note", "")
+
+        final_note = enforce_neutrality(final_note, cfg["compliance"]["forbidden_phrases"])
+        if "[REDACTED]" in final_note:
+            logger.warning("[Run:%s] Compliance redaction applied for %s", state.get("run_id"), symbol)
+
         state["final_note"] = final_note
-        logger.info("[Node: Compliance] Completed for %s", state["symbol"])
+        logger.info("[Run:%s][Node: Compliance] Completed for %s", state.get("run_id"), symbol)
         return state
 
     def node_supervise(state: dict):
-        """Combine all collected insights into a unified Markdown report with fundamentals, news, commentary,
-        and metadata, and automatically export it to PDF."""
-
         symbol, outdir = state["symbol"], state["outdir"]
         bundle = state["bundle"]
-        logger.info("[Node: Publish] Enriching and publishing unified report for %s", symbol)
 
-        # ----------------------------------------------------------------------
-        #  Compute snapshot stats safely
-        # ----------------------------------------------------------------------
+        # Data quality notes
+        dq_msgs = []
+        dq_msgs.extend(state.get("__warnings__", []) or [])
+        dq_msgs.extend(_bundle_error_summary(bundle))
+
+        dq_block = ""
+        if dq_msgs:
+            uniq = []
+            seen = set()
+            for m in dq_msgs:
+                m = str(m).strip()
+                if m and m not in seen:
+                    uniq.append(m)
+                    seen.add(m)
+            dq_lines = "\n".join([f"- {m}" for m in uniq[:8]])
+            dq_block = f"\n## Data Quality Notes\n{dq_lines}\n"
+
+        logger.info("[Run:%s][Node: Publish] Enriching and publishing unified report for %s", state.get("run_id"),
+                    symbol)
+
         price_rows = bundle.get("prices", {}).get("data", [])
         if not price_rows:
-            error_msg = f"No price data available for {symbol}. Symbol may be invalid or delisted. Skipping report " \
-                        f"generation."
+            error_msg = (
+                f"No price data available for {symbol}. Symbol may be invalid or delisted. "
+                "Skipping report generation."
+            )
             logger.error(error_msg)
             state["error"] = error_msg
             return state
@@ -182,83 +301,90 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
         min_ret = float(stats.get("min") or 0.0)
         max_ret = float(stats.get("max") or 0.0)
 
-        # ----------------------------------------------------------------------
-        #  Fundamentals extraction
-        # ----------------------------------------------------------------------
         fundamentals = bundle.get("fundamentals", {})
         inc_list = fundamentals.get("income_statement", [])
         met_list = fundamentals.get("key_metrics_ttm", [])
-        inc, met = (inc_list[0], met_list[0]) if inc_list and met_list else ({}, {})
+
+        inc = inc_list[0] if isinstance(inc_list, list) and inc_list else {}
+        met = met_list[0] if isinstance(met_list, list) and met_list else {}
         reported_currency = inc.get("reportedCurrency")
 
-        # ----------------------------------------------------------------------
-        #  Save price chart
-        # ----------------------------------------------------------------------
-        plot_path = save_price_plot(dates, closes, reported_currency, os.path.join(outdir, f"{symbol}_chart.png"))
-        logger.debug("[Node: Publish] Chart saved for %s -> %s", symbol, plot_path)
-        # ----------------------------------------------------------------------
-        #  News aggregation (clean alignment + safe escaping)
-        # ----------------------------------------------------------------------
+        # Chart generation (safe)
+        try:
+            plot_path = save_price_plot(dates, closes, reported_currency, os.path.join(outdir, f"{symbol}_chart.png"))
+        except Exception as e:
+            _state_warn(state, f"{symbol}: Chart generation failed. ({e})")
+            plot_path = ""
+
+        # --- News headlines (skip error markers) ---
         news_items = bundle.get("news", [])
-        if news_items:
-            cleaned_news = []
+        cleaned_news = []
+        if isinstance(news_items, list) and news_items:
             for n in news_items[:8]:
-                title = n.get("title", "Untitled").strip()
-                title = re.sub(r"[\[\]\n\r]+", " ", title)  # sanitize brackets/newlines
-                link = n.get("link", "").strip()
-                date_str = n.get("published", "")[:16] or "N/A"
+                if isinstance(n, dict) and n.get("__error__"):
+                    continue  # IMPORTANT: do not show error markers as headlines
+
+                title = (n.get("title", "Untitled") if isinstance(n, dict) else "Untitled").strip()
+                title = re.sub(r"[\[\]\n\r]+", " ", title)
+                link = (n.get("link", "") if isinstance(n, dict) else "").strip()
+                date_str = ((n.get("published", "") if isinstance(n, dict) else "")[:16] or "N/A")
+
                 if link:
                     cleaned_news.append(f"- [{title}]({link}) ({date_str})")
                 else:
                     cleaned_news.append(f"- {title} ({date_str})")
-            # Ensure list always starts after a blank line
+
+        if cleaned_news:
             news_summary = "\n" + "\n".join(cleaned_news)
         else:
             news_summary = "No significant news headlines found in this period."
 
-        # ----------------------------------------------------------------------
-        # Use SupervisorAgent to refine & stitch final commentary
-        # ----------------------------------------------------------------------
+        # SupervisorAgent synthesis (safe)
         try:
             supervisor_input_summary = f"""
             Prices: {len(price_rows)} rows
             Fundamentals available: {bool(inc_list and met_list)}
-            News items: {len(news_items)}
+            News items: {len([n for n in news_items if isinstance(n, dict) and not n.get("__error__")]) if isinstance(news_items, list) else 0}
             """
 
             supervisor_text = supervisor.run(
                 symbol=symbol,
                 data_summary=supervisor_input_summary,
-                final_note=state.get("final_note", "")
+                final_note=state.get("final_note", ""),
+            ).strip()
+
+            # Remove dangling "## Compliant Note\nFinal Note"
+            supervisor_text = re.sub(
+                r"(?is)\n##\s*Compliant Note\s*\n\s*(final note)?\s*$",
+                "",
+                supervisor_text,
             ).strip()
 
         except Exception as e:
             logger.warning("SupervisorAgent failed for %s, falling back to raw compliant text. (%s)", symbol, e)
             supervisor_text = state.get("final_note", "").strip()
 
-        # ----------------------------------------------------------------------
-        # Construct snapshot text safely
-        # ----------------------------------------------------------------------
-        if price_rows:
-            stats_block = (
-                f"- Mean: {mean_ret:.4f} ({mean_ret * 100:.2f}%)\n"
-                f"- Volatility: {vol_ret:.4f} ({vol_ret * 100:.2f}%)\n"
-                f"- Min: {min_ret:.4f} ({min_ret * 100:.2f}%)\n"
-                f"- Max: {max_ret:.4f} ({max_ret * 100:.2f}%)\n"
-            )
-        else:
-            stats_block = "- Insufficient price data for return statistics.\n"
+        stats_block = (
+            f"- Mean: {mean_ret:.4f} ({mean_ret * 100:.2f}%)\n"
+            f"- Volatility: {vol_ret:.4f} ({vol_ret * 100:.2f}%)\n"
+            f"- Min: {min_ret:.4f} ({min_ret * 100:.2f}%)\n"
+            f"- Max: {max_ret:.4f} ({max_ret * 100:.2f}%)\n"
+        )
 
-        # ----------------------------------------------------------------------
-        # Create unified Markdown content
-        # ----------------------------------------------------------------------
+        chart_block = ""
+        if plot_path:
+            chart_block = f"""
+<div style="text-align: center; margin-top: 25px; margin-bottom: 25px;">
+  <img src="{os.path.abspath(plot_path)}" alt="Price Chart" style="width: 70%; margin: auto; display: block;">
+  <p style="font-weight: bold; margin-top: 10px;">Price Chart</p>
+</div>
+""".strip()
+
         report_md = f"""
-    
-
 ## 1. Market Overview
 - Symbol: {symbol}
 - Data Coverage: {len(price_rows)} rows ({max(len(price_rows) - 1, 0)} returns)
-{stats_block}- News Items Processed: {len(news_items)}
+{stats_block}- News Items Processed: {len(cleaned_news)}
 
 ## 2. Fundamental Highlights
 - Fiscal Year: {int(inc.get('fiscalYear')) if inc.get('fiscalYear') else "N/A"}.
@@ -266,8 +392,8 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
 - Net Income: {safe_num(inc.get('netIncome'), reported_currency)}.
 - EPS (Diluted): {safe_num(inc.get('epsDiluted'), reported_currency)}.
 
-    ## 3. Recent News Headlines
-    {news_summary}
+## 3. Recent News Headlines
+{news_summary}
 
 ## 4. Analyst Commentary
 {supervisor_text}
@@ -278,11 +404,11 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
 - News via RSS feeds.
 - Volatility and returns calculated using numpy and pandas.
 - Report generated through LangGraph multi-agent orchestration:
-  - **Data Agent:** Market and fundamental data collection.
-  - **Analyst Agent:** Narrative generation.
-  - **Compliance Agent:** Disclosure and phrasing checks.
-  - **Supervisor Agent:** Final synthesis and report structuring.
-
+  - Data Agent: Market and fundamental data collection.
+  - Analyst Agent: Narrative generation.
+  - Compliance Agent: Disclosure and phrasing checks.
+  - Supervisor Agent: Final synthesis and report structuring.
+{dq_block}
 ## 6. Execution Metadata
 - Model: GPT-5.
 - Run Date: {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}.
@@ -291,42 +417,40 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
 - Data Sources: yfinance, FMP (Free/Fallback), Public RSS Feeds.
 - Pipeline: LangGraph Orchestration Framework.
 
-<div style="text-align: center; margin-top: 25px; margin-bottom: 25px;">
-  <img src="{os.path.abspath(plot_path)}" alt="Price Chart" style="width: 70%; margin: auto; display: block;">
-  <p style="font-weight: bold; margin-top: 10px;">Price Chart</p>
-</div>
+{chart_block}
 
+## 7. Compliance Disclaimer
+This automated report is generated by a multi-agent AI research framework (LangGraph + LangChain + GPT-5).
+It is intended for educational and informational purposes only and does not constitute investment advice.
+Past performance is not indicative of future results. Data accuracy is not guaranteed.
 
-    ## 7. Compliance Disclaimer
-    This automated report is generated by a multi-agent AI research framework (LangGraph + LangChain + GPT-5).  
-    It is intended for **educational and informational purposes only** and does **not** constitute investment advice.  
-    Past performance is not indicative of future results. Data accuracy is not guaranteed.
+Generated by the Automated Stock Research Multi-Agent System.
+"""
 
-
-    **Generated by the Automated Stock Research Multi-Agent System.**
-    """
-        # Normalize and enhance Markdown layout
         report_md = textwrap.dedent(report_md).strip()
         report_md = report_md.replace("## ", "\n## ")
 
-        # ----------------------------------------------------------------------
-        #  Save Markdown + JSON
-        # ----------------------------------------------------------------------
         file_name = render_filename(cfg["report"]["filename_template"], symbol=symbol)
         save_json(bundle, outdir, f"{symbol}_raw.json")
         save_markdown(report_md, outdir, file_name)
 
         state["report_path"] = os.path.join(outdir, file_name)
         state["plot_path"] = plot_path
-        logger.info("[Node: Publish] Unified report ready for %s -> %s", symbol, state["report_path"])
+        logger.info(
+            "[Run:%s][Node: Publish] Unified report ready for %s -> %s",
+            state.get("run_id"),
+            symbol,
+            state["report_path"],
+        )
 
-        # ----------------------------------------------------------------------
-        # Export PDF with CSS and image embedding
-        # ----------------------------------------------------------------------
+        # PDF export (safe)
         pdf_path = os.path.join(outdir, file_name.replace(".md", ".pdf"))
         try:
+            import pypandoc
+
             md_text = open(state["report_path"], "r", encoding="utf-8").read()
             css_path = os.path.abspath(os.path.join("assets", "pdf_style.css"))
+
             pypandoc.convert_text(
                 md_text,
                 "pdf",
@@ -338,17 +462,19 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
                     f"--metadata=title:{symbol} Stock Market Report - {state['days']}-Session",
                     f"--css={css_path}",
                     f"--resource-path={outdir}",
-                    f"--resource-path={os.path.dirname(plot_path)}"
+                    f"--resource-path={os.path.dirname(plot_path)}" if plot_path else f"--resource-path={outdir}",
                 ],
             )
-            logger.info("[Node: Publish] PDF version created for %s -> %s", symbol, pdf_path)
-            state["pdf_path"] = file_name.replace(".md", ".pdf")
+
+            logger.info("[Run:%s][Node: Publish] PDF version created for %s -> %s", state.get("run_id"), symbol,
+                        pdf_path)
+            state["pdf_path"] = pdf_path
+
         except Exception as e:
             logger.warning("PDF export failed for %s: %s", symbol, e)
 
         return state
 
-    # ---------------- Edges ----------------
     g.add_node("collect_data", node_collect_data)
     g.add_node("analyze", node_analyze)
     g.add_node("compliance", node_compliance)
@@ -364,19 +490,24 @@ def build_graph(cfg: Dict[str, Any], fmp_api_key: str | None = None):
     return g.compile()
 
 
-# ----------------------------------------------------------------------
-#  EXECUTION ENTRYPOINT
-# ----------------------------------------------------------------------
 def run_pipeline(symbol: str, days: int, outdir: str, human: bool = False) -> Dict[str, Any]:
     """
     Run the multi-agent pipeline end-to-end and return paths to generated artifacts.
     """
-    symbol_uppercase = symbol.upper()
-    outdir = os.path.join(outdir, symbol_uppercase)
-    load_dotenv()
-    logger.info("=== Starting pipeline for %s (days=%d) ===", symbol, days)
+    import yfinance as yf
+    req = validate_request(symbol=symbol, days=days, outdir=outdir)
+    symbol_uppercase = req.symbol
+    run_id = str(uuid.uuid4())[:8]
+    set_log_context(run_id=run_id, symbol=symbol_uppercase)
+    logger.info("Run ID: %s", run_id)
 
-    # ---------- Pre-check with yfinance ----------
+    days = req.days
+    outdir = os.path.join(req.outdir, symbol_uppercase)
+
+    load_dotenv()
+    logger.info("=== Starting pipeline for %s (days=%d) ===", symbol_uppercase, days)
+
+    # Pre-check with yfinance
     try:
         ticker = yf.Ticker(symbol_uppercase)
         info = ticker.info
@@ -390,36 +521,58 @@ def run_pipeline(symbol: str, days: int, outdir: str, human: bool = False) -> Di
                 "status": "error",
                 "symbol": symbol_uppercase,
                 "reason": error_msg,
-                "suggested_action": "Verify the ticker or try another symbol."
+                "suggested_action": "Verify the ticker or try another symbol.",
             }
     except Exception as exc:
         error_msg = f"Could not validate symbol {symbol_uppercase}: {exc}"
         logger.error(error_msg)
-        return {
-            "status": "error",
-            "symbol": symbol_uppercase,
-            "reason": error_msg,
-        }
+        return {"status": "error", "symbol": symbol_uppercase, "reason": error_msg}
 
     # Load YAML configuration
     cfg_path = os.path.join(os.path.dirname(__file__), "..", "config", "settings.yaml")
     with open(cfg_path, "r", encoding="utf-8") as f:
         cfg = yaml.safe_load(f)
 
-    # Fetch FMP key from env or default to demo
     fmp_key = os.getenv("FMP_API_KEY", "demo")
     logger.debug("Loaded configuration and API key.")
 
+    # Global timeout
+    timeout_sec = int(cfg.get("orchestration", {}).get("timeout_sec", 90))
+
     try:
         app = build_graph(cfg, fmp_api_key=fmp_key)
-        state = {"symbol": symbol_uppercase, "days": days, "outdir": outdir}
-        result = app.invoke(state)
+        state = {"symbol": symbol_uppercase, "days": days, "outdir": outdir, "run_id": run_id}
+
+        # ---- GLOBAL WORKFLOW TIMEOUT (Patch 4) ----
+        with cf.ThreadPoolExecutor(max_workers=1) as ex:
+            fut = ex.submit(app.invoke, state)
+            result = fut.result(timeout=timeout_sec)
+
+        if not result.get("report_path"):
+            reason = result.get("error") or "Report was not generated due to missing required data."
+            return {
+                "status": "error",
+                "symbol": symbol_uppercase,
+                "reason": reason,
+                "suggested_action": (
+                    "Try another symbol or adjust days. If strict_mode=true, consider disabling it."
+                ),
+            }
+
+    except cf.TimeoutError:
+        msg = f"Workflow timeout after {timeout_sec}s (symbol={symbol_uppercase})."
+        logger.error("[Run:%s] %s", run_id, msg)
+        return {
+            "status": "error",
+            "symbol": symbol_uppercase,
+            "reason": msg,
+            "suggested_action": "Reduce days, try again later, or increase orchestration.timeout_sec in settings.yaml.",
+        }
+
     except ValueError as e:
-        # Clean, structured error (raised by strict-mode or API-aware checks)
         msg = str(e)
         logger.error("Pipeline failed for %s: %s", symbol_uppercase, msg)
 
-        # Add a gentle suggestion if we detect 402 in the message
         suggestion = None
         if "402" in msg or "Payment Required" in msg:
             suggestion = "Provide a paid FMP API key or set strict_mode: false in config/settings.yaml."
@@ -428,8 +581,9 @@ def run_pipeline(symbol: str, days: int, outdir: str, human: bool = False) -> Di
             "status": "error",
             "symbol": symbol_uppercase,
             "reason": msg,
-            **({"suggested_action": suggestion} if suggestion else {})
+            **({"suggested_action": suggestion} if suggestion else {}),
         }
+
     except Exception as e:
         logger.exception("Pipeline failed for %s: %s", symbol_uppercase, e)
         return {

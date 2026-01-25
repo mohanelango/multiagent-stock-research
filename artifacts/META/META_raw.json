@@ -4,88 +4,48 @@
     "symbol": "META",
     "data": [
       {
-        "Date": "2025-10-31 00:00:00-04:00",
-        "Open": 674.510009765625,
-        "High": 674.8900146484375,
-        "Low": 645.5700073242188,
-        "Close": 648.3499755859375,
-        "Volume": 56953200
+        "Date": "2026-01-16 00:00:00-05:00",
+        "Open": 624.1799926757812,
+        "High": 629.0800170898438,
+        "Low": 620.0800170898438,
+        "Close": 620.25,
+        "Volume": 17012500
       },
       {
-        "Date": "2025-11-03 00:00:00-05:00",
-        "Open": 656.0,
-        "High": 659.3300170898438,
-        "Low": 636.1799926757812,
-        "Close": 637.7100219726562,
-        "Volume": 33003600
+        "Date": "2026-01-20 00:00:00-05:00",
+        "Open": 607.8800048828125,
+        "High": 611.4000244140625,
+        "Low": 600.0,
+        "Close": 604.1199951171875,
+        "Volume": 15169600
       },
       {
-        "Date": "2025-11-04 00:00:00-05:00",
-        "Open": 628.0399780273438,
-        "High": 641.739990234375,
-        "Low": 626.010009765625,
-        "Close": 627.3200073242188,
-        "Volume": 27356600
+        "Date": "2026-01-21 00:00:00-05:00",
+        "Open": 606.739990234375,
+        "High": 618.27001953125,
+        "Low": 600.0800170898438,
+        "Close": 612.9600219726562,
+        "Volume": 14494700
       },
       {
-        "Date": "2025-11-05 00:00:00-05:00",
-        "Open": 632.3099975585938,
-        "High": 642.22998046875,
-        "Low": 626.5399780273438,
-        "Close": 635.9500122070312,
-        "Volume": 20219900
+        "Date": "2026-01-22 00:00:00-05:00",
+        "Open": 629.3499755859375,
+        "High": 660.5700073242188,
+        "Low": 626.5499877929688,
+        "Close": 647.6300048828125,
+        "Volume": 21394700
       },
       {
-        "Date": "2025-11-06 00:00:00-05:00",
-        "Open": 635.8499755859375,
-        "High": 636.0,
-        "Low": 618.0,
-        "Close": 618.9400024414062,
-        "Volume": 23628800
-      },
-      {
-        "Date": "2025-11-07 00:00:00-05:00",
-        "Open": 616.489990234375,
-        "High": 622.1300048828125,
-        "Low": 601.2000122070312,
-        "Close": 621.7100219726562,
-        "Volume": 29946800
-      },
-      {
-        "Date": "2025-11-10 00:00:00-05:00",
-        "Open": 631.0900268554688,
-        "High": 635.0,
-        "Low": 618.1099853515625,
-        "Close": 631.760009765625,
-        "Volume": 19245000
-      },
-      {
-        "Date": "2025-11-11 00:00:00-05:00",
-        "Open": 628.0,
-        "High": 629.5599975585938,
-        "Low": 619.3900146484375,
-        "Close": 627.0800170898438,
-        "Volume": 13302200
-      },
-      {
-        "Date": "2025-11-12 00:00:00-05:00",
-        "Open": 628.1300048828125,
-        "High": 628.989990234375,
-        "Low": 607.77001953125,
-        "Close": 609.010009765625,
-        "Volume": 24493300
-      },
-      {
-        "Date": "2025-11-13 00:00:00-05:00",
-        "Open": 613.0700073242188,
-        "High": 617.6500244140625,
-        "Low": 603.0,
-        "Close": 609.8900146484375,
-        "Volume": 20930100
+        "Date": "2026-01-23 00:00:00-05:00",
+        "Open": 644.77001953125,
+        "High": 666.489990234375,
+        "Low": 644.4500122070312,
+        "Close": 658.760009765625,
+        "Volume": 22773600
       }
     ],
     "meta": {
-      "days": 10
+      "days": 5
     }
   },
   "fundamentals": {
@@ -176,29 +136,29 @@
     "key_metrics_ttm": [
       {
         "symbol": "META",
-        "marketCap": 1537244659689,
-        "enterpriseValueTTM": 1555891659689,
-        "evToSalesTTM": 8.212373571253636,
-        "evToOperatingCashFlowTTM": 14.463454549324185,
-        "evToFreeCashFlowTTM": 34.69796970828037,
-        "evToEBITDATTM": 15.211040109583818,
-        "netDebtToEBITDATTM": 0.18230078113543266,
+        "marketCap": 1660460651016,
+        "enterpriseValueTTM": 1701333651016,
+        "evToSalesTTM": 8.980051679357322,
+        "evToOperatingCashFlowTTM": 15.815472614349192,
+        "evToFreeCashFlowTTM": 37.94147434303427,
+        "evToEBITDATTM": 16.557186034898546,
+        "netDebtToEBITDATTM": 0.3977713979854995,
         "currentRatioTTM": 1.9784079225066291,
         "incomeQualityTTM": 1.837992072170585,
         "grahamNumberTTM": 200.8466593794897,
         "grahamNetNetTTM": -20.80145013905443,
         "taxBurdenTTM": 0.6956769799479383,
-        "interestBurdenTTM": 0.9941977263595755,
+        "interestBurdenTTM": 0.9887295804442355,
         "workingCapitalTTM": 36160000000,
         "investedCapitalTTM": 234960000000,
         "returnOnAssetsTTM": 0.19262516291254722,
         "operatingReturnOnAssetsTTM": 0.2736272695075745,
         "returnOnTangibleAssetsTTM": 0.20704244285178608,
         "returnOnEquityTTM": 0.30934379137475854,
-        "returnOnInvestedCapitalTTM": 0.21347116848705594,
+        "returnOnInvestedCapitalTTM": 0.21179434225716978,
         "returnOnCapitalEmployedTTM": 0.30685386269793097,
-        "earningsYieldTTM": 0.038126677044017517,
-        "freeCashFlowYieldTTM": 0.029169722410401337,
+        "earningsYieldTTM": 0.03529825590864024,
+        "freeCashFlowYieldTTM": 0.027005156654909445,
         "capexToOperatingCashFlowTTM": 0.5831613586926209,
         "capexToDepreciationTTM": 3.551259552787999,
         "capexToRevenueTTM": 0.3311199902880337,
@@ -214,67 +174,69 @@
         "daysOfInventoryOutstandingTTM": 0,
         "operatingCycleTTM": 33.32368294652613,
         "cashConversionCycleTTM": -50.1250680796261,
-        "freeCashFlowToEquityTTM": 26194000000,
-        "freeCashFlowToFirmTTM": 13949577397.154434,
+        "freeCashFlowToEquityTTM": 3968000000,
+        "freeCashFlowToFirmTTM": 14275154223.77008,
         "tangibleAssetValueTTM": 172908000000,
         "netCurrentAssetValueTTM": -36660000000
       }
-    ]
+    ],
+    "__errors__": []
   },
   "news": [
     {
-      "title": "Amazon, Microsoft back effort to restrict Nvidia's exports to China, WSJ reports",
-      "link": "https://finance.yahoo.com/news/amazon-microsoft-back-effort-restrict-025831694.html?.tsrc=rss",
-      "published": "Fri, 14 Nov 2025 02:58:31 +0000",
-      "summary": "(Reuters) -Amazon is joining Microsoft in backing legislation to further curb chipmaker Nvidia's ability to export chips to China, the Wall Street Journal reported on Thursday, citing people familiar"
+      "title": "Trump Adviser Says Crypto Market Structure Bill Is A 'Question Of When, Not If,' Argues Industry Cannot Continue To Run Without It",
+      "link": "https://finance.yahoo.com/news/trump-adviser-says-crypto-market-140211314.html?.tsrc=rss",
+      "published": "Sat, 24 Jan 2026 14:02:11 +0000",
+      "summary": "The cryptocurrency industry has been chided for its obstinacy over the Senate\u2019s cryptocurrency market structure bill by Patrick Witt, executive director of the President\u2019s Council of Advisors for Digital Assets. \"\u2018No bill is better than a bad bill,'\" Witt said..."
     },
     {
-      "title": "Luxembourg Minister's Bitcoin Prediction Just Came True: \"As Michael Saylor Says,...\"",
-      "link": "https://finance.yahoo.com/news/luxembourg-ministers-bitcoin-prediction-just-024607237.html?.tsrc=rss",
-      "published": "Fri, 14 Nov 2025 02:46:07 +0000",
-      "summary": "Bitcoin (CRYPTO: BTC) gained a powerful boost in Europe as Luxembourg's finance minister openly backed the asset for long-term sovereign allocation, while the Czech National Bank initiated its first digital-asset pilot. Minister Says Bitcoin Adoption ..."
+      "title": "Alphabet vs. Meta Platforms: Which AI Stock Will Make You Richer?",
+      "link": "https://www.fool.com/investing/2026/01/24/alphabet-meta-platforms-ai-stock-make-you-rich/?.tsrc=rss",
+      "published": "Sat, 24 Jan 2026 13:20:00 +0000",
+      "summary": "These powerful internet companies are thriving in the age of AI."
     },
     {
-      "title": "End Of An Era? YouTube Change Looms Amid Crypto Creator Uproar: 'It's TikTok Time I Guess'",
-      "link": "https://finance.yahoo.com/news/end-era-youtube-change-looms-000045807.html?.tsrc=rss",
-      "published": "Fri, 14 Nov 2025 00:00:45 +0000",
-      "summary": "YouTube announced a significant expansion of its online gambling content restrictions late last month, sparking immediate concern among cryptocurrency and gaming content creators who feared their livelihoods were about to disappear overnight. Crypto ..."
+      "title": "Jim Cramer Says \u201cMeta\u2019s Lost Its Way\u201d",
+      "link": "https://finance.yahoo.com/news/jim-cramer-says-meta-lost-113730543.html?.tsrc=rss",
+      "published": "Sat, 24 Jan 2026 11:37:30 +0000",
+      "summary": "Meta Platforms, Inc. (NASDAQ:META) is one of the stocks Jim Cramer shared his take on. Cramer discussed the market sentiment toward the stock, as he stated: Let\u2019s explain what\u2019s going on with the weakness so you understand what\u2019s happening with these iconic stocks that everyone used to talk about all the time. It should be [\u2026]"
     },
     {
-      "title": "With Layoffs Spreading Across Industries, These Careers Are Still 'Doing Fine Right Now'\u2014And Some Are Surprisingly Easy To Get Into",
-      "link": "https://finance.yahoo.com/news/layoffs-spreading-across-industries-careers-233117569.html?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 23:31:17 +0000",
-      "summary": "Despite the wave of layoffs and hiring freezes hitting major sectors like tech, not every career path is suffering. A Reddit thread asking people what fields are \u201cdoing fine right now\u201d received hundreds of replies; many of them from people currently working and thriving in those industries. Strong Demand Remains In Trades, Healthcare And Accounting Accountants were among the most confident responders. One person wrote, \u201cI\u2019m an accountant and I\u2019m doing fine. I was able to cold-quit a job in July"
+      "title": "3 No-Brainer AI Stocks to Buy Right Now",
+      "link": "https://www.fool.com/investing/2026/01/24/3-no-brainer-ai-stocks-to-buy-right-now/?.tsrc=rss",
+      "published": "Sat, 24 Jan 2026 11:25:00 +0000",
+      "summary": "The AI race is still heating up."
     },
     {
-      "title": "Mira Murati's Thinking Machines seeks $50 billion valuation in funding talks, Bloomberg News reports",
-      "link": "https://finance.yahoo.com/news/mira-muratis-thinking-machines-seeks-212328387.html?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 21:23:28 +0000",
-      "summary": "Some sources told Bloomberg that Thinking Machines \u200dis looking at a valuation of about $50 billion, while others said it could rise to \u200bcloser to $55 billion or $60 \u200cbillion.  Thinking Machines did not immediately respond to a Reuters request for comment.  The development follows a \u2060Wall Street Journal report last \u200bmonth that said Andrew \u200bTulloch, co-founder of Thinking Machines, left the AI company to \u200djoin Meta \u2060Platforms."
+      "title": "Oracle's Cash Is Vanishing \u2014 But Larry Ellison's Dividend Check Still Clears Tomorrow",
+      "link": "https://finance.yahoo.com/news/oracles-cash-vanishing-larry-ellisons-110121309.html?.tsrc=rss",
+      "published": "Sat, 24 Jan 2026 11:01:21 +0000",
+      "summary": "Oracle Corp (NYSE:ORCL) is torching cash to build its AI cloud\u2014but it's still sending billions back to shareholders. That tension is becoming one of the most underappreciated capital allocation stories in Big Tech. On Friday, Oracle will pay out roughly $1.4 billion in dividends, even as analysts expect nearly $23 billion in cash burn this fiscal year. On paper, cutting the dividend looks logical. In reality, it's complicated. Larry Ellison\u2019s Stake Raises The Bar For A Cut Co-founder and executi"
     },
     {
-      "title": "Oracle Stock Is a Bet on OpenAI\u2014and Investors Are Cashing In Their Chips",
-      "link": "https://finance.yahoo.com/m/99025ee1-a462-3fe7-a218-29cda40e66a6/oracle-stock-is-a-bet-on.html?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 20:33:00 +0000",
-      "summary": "Oracle  stock has given back all the gains from the cloud computing group\u2019s \u201c  Nvidia  Moment\u201d as investors grow increasingly cautious over investments linked to the artificial intelligence boom.  When Oracle reported earnings in September, the results included a massive revenue forecast.  One of its biggest commitments is a reported $300 billion agreement to buy computing power for Oracle, and that deal represented around 65% of its so-called \u201cRPO\u201d forecast that sent the stock soaring in early September."
+      "title": "Dow Jones Futures: Tesla, Microsoft, Meta, Apple Lead Earnings Wave; What To Do Now",
+      "link": "https://finance.yahoo.com/m/9c67d261-2ec7-3404-8375-4ecea0e235f3/dow-jones-futures%3A-tesla%2C.html?.tsrc=rss",
+      "published": "Sat, 24 Jan 2026 04:04:20 +0000",
+      "summary": "Tesla, Microsoft, Meta and Apple lead an earnings wave after the stock market weathered whipsaw action from President Trump's moves"
     },
     {
-      "title": "2 \"Magnificent Seven\" Stocks to Buy Before They Soar at Least 20%, According to Select Wall Street Analysts",
-      "link": "https://www.fool.com/investing/2025/11/13/2-magnificent-seven-stocks-to-buy-before-they-soar/?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 20:29:00 +0000",
-      "summary": "Meta Platforms and Amazon already sport massive market caps, but that doesn't mean they can't keep growing."
+      "title": "How To Earn $500 A Month From SLB Stock Ahead Of Q4 Earnings",
+      "link": "https://finance.yahoo.com/news/earn-500-month-slb-stock-033110187.html?.tsrc=rss",
+      "published": "Sat, 24 Jan 2026 03:31:10 +0000",
+      "summary": "SLB N.V. (NYSE:SLB) will release earnings for the fourth quarter before the opening bell on Friday, Jan. 23. Analysts expect the company to report fourth-quarter earnings of 74 cents per share. That's down from 92 cents per share in the year-ago period. The consensus estimate for SLB's quarterly revenue is $9.55 billion (it reported $9.28 billion last year), according to Benzinga Pro. On Wednesday, Stifel analyst Stephen Gengaro maintained SLB with a Buy rating and raised the price target from $"
     },
     {
-      "title": "Meta Platforms Is Giving HubSpot Stock a Giant AI Boost. Will It Help Save HUBS?",
-      "link": "https://www.barchart.com/story/news/36108921/meta-platforms-is-giving-hubspot-stock-a-giant-ai-boost-will-it-help-save-hubs?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 20:26:53 +0000",
-      "summary": "HubSpot's AI-driven automation attempts have so far not helped HUBS stock; Meta's head of business AI joining the board could help save the company."
+      "title": "1 AI Stock I'm Buying in 2026 and Holding Forever",
+      "link": "https://www.fool.com/investing/2026/01/23/1-ai-stock-im-buying-in-2026-and-holding-forever/?.tsrc=rss",
+      "published": "Sat, 24 Jan 2026 02:31:00 +0000",
+      "summary": "It's the rare AI stock that's trading at an affordable price."
     },
     {
-      "title": "CEO Lisa Su Says that \u2018Insatiable\u2019 Demand Is Powering AMD. Should You Buy Its Stock Here?",
-      "link": "https://www.barchart.com/story/news/36108526/ceo-lisa-su-says-that-insatiable-demand-is-powering-amd-should-you-buy-its-stock-here?.tsrc=rss",
-      "published": "Thu, 13 Nov 2025 20:01:20 +0000",
-      "summary": "AMD stock has more than doubled in the past year and remains a top investment due to its widening AI moat."
+      "title": "GE Aerospace Backlog Nears $190 Billion As Airlines Spend Big On Engine Upkeep",
+      "link": "https://finance.yahoo.com/news/ge-aerospace-backlog-nears-190-013133464.html?.tsrc=rss",
+      "published": "Sat, 24 Jan 2026 01:31:33 +0000",
+      "summary": "GE Aerospace (NYSE:GE) on Thursday reported strong fourth-quarter 2025 results, reflecting continued momentum across its businesses. It posted total revenue (GAAP) of $12.717 billion, up 18% year over year. Sales of $12.717 billion beat the $11.177 billion estimate, and adjusted EPS of $1.57 beat the $1.43 estimate. Continuing EPS (GAAP) was $2.31, up 32%, and adjusted EPS was $1.57, up 19%. Cash from operating activities was $2.096 billion, up 59%, and free cash flow was $1.760 billion, up 15%."
     }
-  ]
+  ],
+  "__errors__": []
 }

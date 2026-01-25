@@ -2,6 +2,16 @@ import logging
 import os
 from logging.handlers import RotatingFileHandler
 
+from src.utils.log_context import get_run_id, get_symbol
+
+
+class ContextFilter(logging.Filter):
+    def filter(self, record: logging.LogRecord) -> bool:
+        record.run_id = get_run_id()
+        record.symbol = get_symbol()
+        return True
+
+
 def get_logger(name: str):
     """
     Create or return a configured logger with both console and rotating file handlers.
@@ -27,11 +37,13 @@ def get_logger(name: str):
     fh.setLevel(level)
 
     formatter = logging.Formatter(
-        fmt="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+        fmt="%(asctime)s [%(levelname)s] run=%(run_id)s sym=%(symbol)s %(name)s: %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S"
     )
-    ch.setFormatter(formatter)
-    fh.setFormatter(formatter)
+
+    logger.addFilter(ContextFilter())
+    ch.addFilter(ContextFilter())
+    fh.addFilter(ContextFilter())
 
     logger.addHandler(ch)
     logger.addHandler(fh)

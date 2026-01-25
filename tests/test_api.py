@@ -5,9 +5,9 @@ client = TestClient(app)
 
 
 def test_health_check():
-    r = client.get("/")
+    r = client.get("/health")
     assert r.status_code == 200
-    assert "message" in r.json()
+    assert "service" in r.json()
 
 
 def test_analyze_endpoint(tmp_path):

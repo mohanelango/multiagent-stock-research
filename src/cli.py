@@ -15,7 +15,7 @@ def main():
     args = parser.parse_args()
 
     symbol = args.symbol.upper()
-    logger.info("CLI called with symbol=%s days=%d outdir=%s", symbol, args.days, args.outdir)
+    logger.info("CLI called with symbol= %s days=%d outdir=%s", symbol, args.days, args.outdir)
     os.makedirs(args.outdir, exist_ok=True)
 
     res = run_pipeline(args.symbol, args.days, args.outdir, human=(str(args.human).lower() == "true"))
