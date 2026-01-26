@@ -415,7 +415,7 @@ def main():
         """,
         unsafe_allow_html=True,
     )
-    # st.image("docs/Multiagent.svg", width='stretch')
+    # st.image("docs/_Multiagent.svg", width='stretch')
 
     # Input form (prevents rerun noise)
     with st.form("run_form", clear_on_submit=False):

@@ -16,7 +16,7 @@ This project uses multiple specialized AI agents working in sequence and orchest
 | **Compliance Agent** | Strips or flags forbidden phrases, enforces disclosures                 |
 | **Supervisor Agent** | Validates agent outputs and suggests improvements                       |
 ---
-### End-to-End Flow Diagram
+### Flow Diagram
 
 ```mermaid
 flowchart TD
