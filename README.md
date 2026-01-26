@@ -174,7 +174,7 @@ They communicate via a LangGraph state machine and are orchestrated end-to-end t
 ---
 ## Architecture Overview
 
-![Architecture Example](docs/MultiAgent.png)
+![Architecture Example](docs/Multiagent.svg)
 
 This architecture diagram shows how a stock symbol request flows through a LangGraph-powered multi-agent pipeline — from data collection, AI analysis, and compliance filtering to final report generation and artifact export.
 For a deeper explanation, see [`docs/architecture.md`](docs/architecture.md)
